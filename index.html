@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombicide Compendium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho Fixo -->
+    <header>
+        <!-- O título funciona como botão Home -->
+        <h1 id="site-title" onclick="mudarTela('home-view')" style="cursor: pointer;">
+            Zombicide Compendium
+        </h1>
+        <button id="btn-home" onclick="mudarTela('home-view')" class="hidden">🏠 Home</button>
+        
+        <!-- Botão de Idioma (que já tínhamos) -->
+        <button id="btn-language" onclick="toggleIdioma()">EN / PT</button>
+    </header>
+
+    <!-- TELA 1: Menu Inicial -->
+    <main id="home-view" class="view-section">
+        <h2>O que você deseja buscar?</h2>
+        <div class="menu-botoes">
+            <button onclick="mudarTela('skills-view')">📖 Buscar Habilidades</button>
+            <button onclick="mudarTela('characters-view')">🧟‍♂️ Buscar Sobreviventes</button>
+        </div>
+    </main>
+
+    <!-- TELA 2: Busca de Habilidades -->
+    <main id="skills-view" class="view-section hidden">
+        <h2>Busca de Habilidades</h2>
+        <div class="search-controls-mobile">
+            <input type="text" id="search-skills" placeholder="Digite o nome da habilidade...">
+            <button onclick="listarTodasHabilidades()" class="btn-acao">📖 Ver Todas as Habilidades</button>
+        </div>
+        <div id="skills-results" class="lista-resultados"></div>
+    </main>
+
+    <!-- TELA 3: Busca de Personagens -->
+    <main id="characters-view" class="view-section hidden">
+        <h2>Busca de Sobreviventes</h2>
+        
+        <div class="character-controls">
+            <input type="text" id="search-characters" placeholder="Digite o nome do personagem...">
+            <button onclick="sortearPersonagem()" class="btn-acao">🎲 Sobrevivente Aleatório</button>
+            <button onclick="listarPorCaixas()">📦 Ver Lista Completa</button>
+        </div>
+
+        <div id="characters-results"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

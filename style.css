@@ -1,0 +1,261 @@
+/* ==========================================
+   1. TEMA SOMBRIO ZOMBICIDE (MOBILE FIRST)
+   ========================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background: #1a1a1e;
+    border-bottom: 2px solid #b32d2e; /* Tom vermelho sangue/zumbi */
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#site-title {
+    font-size: 1.3em;
+    margin: 0;
+    color: #f1f1f1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Botões do Cabeçalho e Ações */
+button {
+    background: #28282d;
+    color: #e1e1e6;
+    border: 1px solid #44444c;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover, button:active {
+    background: #b32d2e;
+    border-color: #d43839;
+    color: #ffffff;
+}
+
+/* Menu de Início e Botões Principais no Celular */
+.view-section {
+    padding: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.menu-botoes, .character-controls, .search-controls-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-acao {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.05em;
+    text-align: center;
+    background: #202024;
+    border-color: #383840;
+}
+
+/* Campos de Busca (Touch-friendly) */
+input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid #383840;
+    background: #1a1a1e;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #b32d2e;
+    box-shadow: 0 0 0 2px rgba(179, 45, 46, 0.3);
+}
+
+/* ==========================================
+   2. LISTA CLICÁVEL (ACORDEÃO / GAVETA)
+   ========================================== */
+.card-habilidade-resumo, .sugestao-personagem, .item-sobrevivente-lista {
+    background: #1a1a1e;
+    border: 1px solid #2d2d34;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card-habilidade-resumo:hover, .sugestao-personagem:hover, .item-sobrevivente-lista:hover {
+    background: #25252b;
+    border-color: #44444c;
+}
+
+.titulo-hab-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.subtitulo-en {
+    color: #8c8c9a;
+    font-style: italic;
+    font-size: 0.85em;
+    margin-top: 4px;
+}
+
+/* Corpo da habilidade que expande ao clicar */
+.desc-gaveta {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed #383840;
+    color: #cccccc;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   3. FICHA DO SOBREVIVENTE (TEMA ESCURO)
+   ========================================== */
+.ficha-sobrevivente {
+    background: #1a1a1e;
+    border: 1px solid #383840;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.ficha-cabecalho h2 {
+    margin: 0 0 16px 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #383840;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.divisor-caixa {
+    color: #555560;
+    margin: 0 6px;
+}
+
+.texto-caixa {
+    font-size: 0.75em;
+    color: #9e9ea8;
+    font-weight: normal;
+}
+
+.linha-habilidade {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    background: #131316;
+    border: 1px solid #28282d;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.coluna-cor {
+    font-weight: 700;
+    width: 80px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.coluna-divisor {
+    color: #383840;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.coluna-texto strong {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* Cores das faixas ajustadas para brilhar no fundo preto */
+.cor-azul { color: #4b8efc; }
+.cor-amarelo { color: #fcc21b; }
+.cor-laranja { color: #ff8c3b; }
+.cor-vermelho { color: #ff4747; }
+
+.hidden {
+    display: none !important;
+}
+/* Item clicável na lista de sugestões (Autocomplete) */
+.item-sugestao-lista {
+    background: #1a1a1e;
+    border: 1px solid #2d2d34;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-sugestao-lista:hover, .item-sugestao-lista:active {
+    background: #28282f;
+    border-color: #b32d2e; /* Borda vermelha ao tocar/passar o mouse */
+    transform: translateX(3px);
+}
+
+.item-sugestao-lista strong {
+    color: #ffffff;
+    font-size: 1.02em;
+}
+
+.sub-sugestao {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+/* Card de Foco (A habilidade ou página selecionada) */
+.card-foco-habilidade {
+    background: #1a1a1e;
+    border: 1px solid #383840;
+    border-left: 6px solid #b32d2e; /* Destaque lateral temático */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.card-foco-habilidade h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.4em;
+    color: #ffffff;
+}
+
+.desc-foco {
+    margin-top: 15px;
+    color: #dedede;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
