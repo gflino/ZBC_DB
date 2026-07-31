@@ -860,8 +860,8 @@
     "tag_red3": "combat"
   },
   {
-    "id": "black_currangedt",
-    "name": "Black Currangedt",
+    "id": "black_currant",
+    "name": "Black Currant",
     "box": "Special Guest Carl Critchlow",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
@@ -3282,7 +3282,7 @@
   {
     "id": "annalisa",
     "name": "Annalisa",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -3300,9 +3300,9 @@
     "tag_red3": "ranged"
   },
   {
-    "id": "bertrangedd",
-    "name": "Bertrangedd",
-    "box": "La combatpagnia Della Forca",
+    "id": "bertrand",
+    "name": "Bertrand",
+    "box": "La Compagnia Della Forca",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -3320,9 +3320,9 @@
     "tag_red3": ""
   },
   {
-    "id": "branged",
-    "name": "Branged",
-    "box": "La combatpagnia Della Forca",
+    "id": "bran",
+    "name": "Bran",
+    "box": "La Compagnia Della Forca",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -3342,7 +3342,7 @@
   {
     "id": "captain_goliath",
     "name": "Captain Goliath",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hammer",
     "blue2": "",
@@ -3362,7 +3362,7 @@
   {
     "id": "ciacco",
     "name": "Ciacco",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "axe",
     "blue2": "",
@@ -3382,7 +3382,7 @@
   {
     "id": "doctor_nadir",
     "name": "Doctor Nadir",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "",
@@ -3400,9 +3400,9 @@
     "tag_red3": ""
   },
   {
-    "id": "grangedd_vizier",
-    "name": "Grangedd Vizier",
-    "box": "La combatpagnia Della Forca",
+    "id": "grand_vizier",
+    "name": "Grand Vizier",
+    "box": "La Compagnia Della Forca",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "crocca",
     "blue2": "",
@@ -3422,7 +3422,7 @@
   {
     "id": "imperial_messenger",
     "name": "Imperial Messenger",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -3440,9 +3440,9 @@
     "tag_red3": ""
   },
   {
-    "id": "rosencrangedz",
-    "name": "Rosencrangedz",
-    "box": "La combatpagnia Della Forca",
+    "id": "rosencranz",
+    "name": "Rosencranz",
+    "box": "La Compagnia Della Forca",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
@@ -3462,7 +3462,7 @@
   {
     "id": "sir_crumb",
     "name": "Sir Crumb",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "low_profile",
     "tag_blue1": "",
     "blue2": "",
@@ -3482,7 +3482,7 @@
   {
     "id": "sir_percy",
     "name": "Sir Percy",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -3502,7 +3502,7 @@
   {
     "id": "the_sparrow",
     "name": "The Sparrow",
-    "box": "La combatpagnia Della Forca",
+    "box": "La Compagnia Della Forca",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -3522,7 +3522,7 @@
   {
     "id": "cord_dankwart",
     "name": "Cord Dankwart",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "plus_1_free_[action]_action",
@@ -3542,7 +3542,7 @@
   {
     "id": "drakka",
     "name": "Drakka",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -3562,7 +3562,7 @@
   {
     "id": "einar",
     "name": "Einar",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "guards_[skill]",
@@ -3582,7 +3582,7 @@
   {
     "id": "freya",
     "name": "Freya",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3602,7 +3602,7 @@
   {
     "id": "lewyn",
     "name": "Lewyn",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -3622,7 +3622,7 @@
   {
     "id": "lotas",
     "name": "Lotas",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3642,7 +3642,7 @@
   {
     "id": "lotas_(werewolf)",
     "name": "Lotas (Werewolf)",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -3662,7 +3662,7 @@
   {
     "id": "marike",
     "name": "Marike",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3682,7 +3682,7 @@
   {
     "id": "neto_orash",
     "name": "Neto Orash",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3702,7 +3702,7 @@
   {
     "id": "otto",
     "name": "Otto",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -3722,7 +3722,7 @@
   {
     "id": "otto_(armored)",
     "name": "Otto (Armored)",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -3742,7 +3742,7 @@
   {
     "id": "rainer",
     "name": "Rainer",
-    "box": "combatic Book Extras (Road to Hell)",
+    "box": "Comic Book Extras (Road to Hell)",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5380,8 +5380,8 @@
     "tag_red3": ""
   },
   {
-    "id": "sarangeda_far_sight",
-    "name": "Sarangeda Far-Sight",
+    "id": "sarana_far_sight",
+    "name": "Sarana Far-Sight",
     "box": "Frozen Fortress",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
@@ -7455,6 +7455,11 @@
     "red1": "plus_1_damage_[action]",
     "tag_red1": "magic",
     "red2": "plus_1_free_[action]_action",
+    "tag_red2": "combat",
+    "red3": "plus_1_free_[action]_action",
+    "tag_red3": "magic"
+  }
+]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "magic"
