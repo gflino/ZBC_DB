@@ -361,3 +361,13 @@ header {
 .item-sugestao-lista:hover {
     background: #28282f;
 }
+/* Destaque visual quando uma CAIXA é sugerida no dropdown */
+.destaque-caixa {
+    background: #25252b;
+    border-left: 4px solid #ff4747;
+    color: #ff4747;
+}
+.destaque-caixa:hover {
+    background: #ff4747;
+    color: #fff;
+}
