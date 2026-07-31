@@ -117,7 +117,7 @@ function atualizarIdiomaInterface() {
 function traduzirTag(valorTag, idiomaRef = idiomaAtual) {
     if (!valorTag) return "";
     
-    // VERIFICAÇÃO PARA TAGS ANINHADAS (ex: plus_1_free_[action]_action:combat)
+    // VERIFICAÇÃO PARA TAGS ANINHADAS (ex: plus_1_die_[action]:combat)
     if (valorTag.includes(':')) {
         const partes = valorTag.split(':');
         const idHabilidadePrincipal = partes[0].trim();
@@ -133,14 +133,21 @@ function traduzirTag(valorTag, idiomaRef = idiomaAtual) {
 
     const chave = valorTag.trim().toLowerCase();
 
-    // 1º Dicionário Auxiliar (tags.json)
-    if (tagsBase[chave]) return tagsBase[chave][idiomaRef] || chave;
+    // 1º Dicionário Auxiliar (Lê o Array do tags.json exportado da planilha)
+    if (Array.isArray(tagsBase)) {
+        const tagObj = tagsBase.find(t => t.tags && t.tags.toLowerCase() === chave);
+        if (tagObj) {
+            return idiomaRef === 'pt' ? tagObj.tags_pt : tagObj.tags_en;
+        }
+    }
 
     // 2º Cadastro de Habilidades (para tags simples como "lucky")
     const habRef = habilidadesBase.find(s => s.id === chave);
-    if (habRef) return idiomaRef === 'pt' ? habRef.name_pt : habRef.name_en;
+    if (habRef) {
+        return idiomaRef === 'pt' ? habRef.name_pt : habRef.name_en;
+    }
 
-    // 3º Fallback
+    // 3º Fallback de Limpeza
     return chave.replace(/_/g, ' ');
 }
 
@@ -256,7 +263,26 @@ function sugerirPersonagens(termo) {
     }
 
     dropdown.classList.remove('hidden');
-    const filtrados = sobreviventesBase.filter(s => s.name.toLowerCase().includes(termo.toLowerCase()));
+    const termoMin = termo.toLowerCase();
+
+    // 1. Busca Caixas que batem com o termo
+    const caixasUnicas = [...new Set(sobreviventesBase.map(s => s.box))];
+    const caixasFiltradas = caixasUnicas.filter(c => c.toLowerCase().includes(termoMin));
+
+    caixasFiltradas.forEach(caixa => {
+        const itemBox = document.createElement('div');
+        itemBox.className = 'item-sugestao-lista destaque-caixa';
+        itemBox.innerHTML = `<strong>📦 Caixa: ${caixa}</strong>`;
+        itemBox.onclick = () => {
+            listarPersonagensDaCaixa(caixa);
+            dropdown.classList.add('hidden');
+            document.getElementById('search-characters').value = '';
+        };
+        dropdown.appendChild(itemBox);
+    });
+
+    // 2. Busca Personagens que batem com o termo
+    const filtrados = sobreviventesBase.filter(s => s.name.toLowerCase().includes(termoMin));
 
     filtrados.forEach(s => {
         const item = document.createElement('div');
@@ -271,6 +297,28 @@ function sugerirPersonagens(termo) {
         dropdown.appendChild(item);
     });
 }
+
+// Renderiza todos os personagens de uma caixa específica
+function listarPersonagensDaCaixa(caixaNome) {
+    const divResultados = document.getElementById('characters-results-foco');
+    divResultados.innerHTML = '';
+
+    const boxDiv = document.createElement('div');
+    boxDiv.className = 'bloco-caixa';
+    boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixaNome}</h3>`;
+    
+    const lista = sobreviventesBase.filter(s => s.box === caixaNome);
+    lista.forEach(s => {
+        const li = document.createElement('div');
+        li.className = 'item-sugestao-lista';
+        li.textContent = s.name;
+        li.onclick = () => renderizarFichaPersonagem(s);
+        boxDiv.appendChild(li);
+    });
+    
+    divResultados.appendChild(boxDiv);
+}
+
 
 function sortearPersonagem() {
     if (sobreviventesBase.length === 0) return;
