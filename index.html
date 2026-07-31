@@ -7,48 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho Fixo -->
+    <!-- Menu Lateral Oculto -->
+    <div id="overlay" class="overlay hidden" onclick="toggleMenu()"></div>
+    <nav id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <a href="#" onclick="mudarTela('home-view')" data-i18n="menuHome">🏠 Início</a>
+        <a href="#" onclick="mudarTela('skills-view')" data-i18n="menuSkills">📖 Habilidades</a>
+        <a href="#" onclick="mudarTela('characters-view')" data-i18n="menuSurvivors">🧟‍♂️ Sobreviventes</a>
+    </nav>
+
+    <!-- Cabeçalho Principal -->
     <header>
-        <!-- O título funciona como botão Home -->
-        <h1 id="site-title" onclick="mudarTela('home-view')" style="cursor: pointer;">
-            Zombicide Compendium
-        </h1>
-        <button id="btn-home" onclick="mudarTela('home-view')" class="hidden">🏠 Home</button>
-        
-        <!-- Botão de Idioma (que já tínhamos) -->
+        <button id="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1 id="site-title" onclick="mudarTela('home-view')" data-i18n="title">Zombicide Compêndio</h1>
         <button id="btn-language" onclick="toggleIdioma()">EN / PT</button>
     </header>
 
     <!-- TELA 1: Menu Inicial -->
     <main id="home-view" class="view-section">
-        <h2>O que você deseja buscar?</h2>
+        <h2 data-i18n="homeQuestion" class="text-center">O que você deseja buscar?</h2>
         <div class="menu-botoes">
-            <button onclick="mudarTela('skills-view')">📖 Buscar Habilidades</button>
-            <button onclick="mudarTela('characters-view')">🧟‍♂️ Buscar Sobreviventes</button>
+            <button class="btn-acao" onclick="mudarTela('skills-view')" data-i18n="btnSearchSkills">📖 Buscar Habilidades</button>
+            <button class="btn-acao" onclick="mudarTela('characters-view')" data-i18n="btnSearchSurvivors">🧟‍♂️ Buscar Sobreviventes</button>
         </div>
     </main>
 
     <!-- TELA 2: Busca de Habilidades -->
     <main id="skills-view" class="view-section hidden">
-        <h2>Busca de Habilidades</h2>
+        <h2 data-i18n="titleSkills">Busca de Habilidades</h2>
         <div class="search-controls-mobile">
-            <input type="text" id="search-skills" placeholder="Digite o nome da habilidade...">
-            <button onclick="listarTodasHabilidades()" class="btn-acao">📖 Ver Todas as Habilidades</button>
+            <!-- Container Relativo para o Dropdown flutuante -->
+            <div class="input-container">
+                <input type="text" id="search-skills" data-i18n="placeholderSkills" placeholder="Digite o nome da habilidade..." autocomplete="off">
+                <div id="skills-dropdown" class="autocomplete-dropdown hidden"></div>
+            </div>
+            <button onclick="listarTodasHabilidades()" class="btn-acao" data-i18n="btnAllSkills">📖 Ver Todas as Habilidades</button>
         </div>
-        <div id="skills-results" class="lista-resultados"></div>
+        <!-- Onde a habilidade selecionada ou a lista completa vai aparecer -->
+        <div id="skills-results-foco" class="lista-resultados"></div>
     </main>
 
     <!-- TELA 3: Busca de Personagens -->
     <main id="characters-view" class="view-section hidden">
-        <h2>Busca de Sobreviventes</h2>
-        
+        <h2 data-i18n="titleSurvivors">Busca de Sobreviventes</h2>
         <div class="character-controls">
-            <input type="text" id="search-characters" placeholder="Digite o nome do personagem...">
-            <button onclick="sortearPersonagem()" class="btn-acao">🎲 Sobrevivente Aleatório</button>
-            <button onclick="listarPorCaixas()">📦 Ver Lista Completa</button>
+            <!-- Container Relativo para o Dropdown flutuante -->
+            <div class="input-container">
+                <input type="text" id="search-characters" data-i18n="placeholderSurvivors" placeholder="Digite o nome do personagem..." autocomplete="off">
+                <div id="characters-dropdown" class="autocomplete-dropdown hidden"></div>
+            </div>
+            <button onclick="sortearPersonagem()" class="btn-acao" data-i18n="btnRandom">🎲 Sobrevivente Aleatório</button>
+            <button onclick="listarPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">📦 Ver Lista Completa</button>
         </div>
-
-        <div id="characters-results"></div>
+        <!-- Onde a ficha do personagem selecionado vai aparecer -->
+        <div id="characters-results-foco"></div>
     </main>
 
     <script src="script.js"></script>
