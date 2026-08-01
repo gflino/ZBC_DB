@@ -71,7 +71,12 @@ function limparTelasEBuscas() {
 
 function mudarTela(telaId) {
     limparTelasEBuscas();
-    toggleMenu(); // Fecha o menu lateral automaticamente
+    
+    // CORREÇÃO: Só fecha o menu lateral se ele realmente estiver aberto
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.classList.contains('aberto')) {
+        toggleMenu(); 
+    }
 
     document.querySelectorAll('.view-section').forEach(secao => {
         secao.classList.add('hidden');
@@ -90,9 +95,8 @@ function toggleIdioma() {
     idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
     atualizarIdiomaInterface();
 
-    // Se houver algum foco aberto na tela, redesenha
+    // Se houver algum foco aberto na tela, limpa a tela
     if (document.getElementById('skills-results-foco').innerHTML !== '') {
-        // Redesenhar focos exigiria guardar estado. Por simplicidade, limpamos a tela:
         limparTelasEBuscas();
     }
 }
