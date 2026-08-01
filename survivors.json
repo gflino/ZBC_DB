@@ -3320,8 +3320,8 @@
     "tag_red3": ""
   },
   {
-    "id": "bran",
-    "name": "Bran",
+    "id": "brand",
+    "name": "Brand",
     "box": "La Compagnia Della Forca",
     "blue1": "hit_run",
     "tag_blue1": "",
@@ -6461,7 +6461,7 @@
   },
   {
     "id": "khaz_magichur",
-    "name": "Khaz magichur",
+    "name": "Khaz Magichur",
     "box": "B-Sieged Crossover Pack",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
@@ -7455,11 +7455,6 @@
     "red1": "plus_1_damage_[action]",
     "tag_red1": "magic",
     "red2": "plus_1_free_[action]_action",
-    "tag_red2": "combat",
-    "red3": "plus_1_free_[action]_action",
-    "tag_red3": "magic"
-  }
-]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "magic"
