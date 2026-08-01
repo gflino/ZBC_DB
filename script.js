@@ -24,10 +24,23 @@ const i18nUI = {
     btnListBoxes: { pt: "📦 Ver Lista Completa", en: "📦 View Complete List" }
 };
 
+// Carregamento à prova de falhas: Cada arquivo tem seu próprio "catch"
 Promise.all([
-    fetch('skills.json').then(res => res.json()),
-    fetch('tags.json').then(res => res.json()),
-    fetch('survivors.json').then(res => res.json())
+    fetch('skills.json')
+        .then(res => res.json())
+        .catch(err => { console.error("Erro Skills:", err); return []; }),
+        
+    fetch('tags.json')
+        .then(res => res.json())
+        .catch(err => { console.error("Erro Tags:", err); return {}; }),
+        
+    fetch('survivors.json')
+        .then(res => res.json())
+        .catch(err => { 
+            alert("Aviso: O arquivo de Sobreviventes contém um erro de digitação (sintaxe) e não pôde ser carregado. As habilidades continuarão funcionando normalmente.");
+            console.error("Erro Survivors:", err); 
+            return []; // Retorna vazio para o app não travar
+        })
 ]).then(([skillsData, tagsData, survivorsData]) => {
     habilidadesBase = skillsData;
     tagsBase = tagsData;
@@ -36,7 +49,7 @@ Promise.all([
     configurarBuscas();
     atualizarIdiomaInterface();
     mudarTela('home-view');
-}).catch(error => console.error("Erro ao carregar dados:", error));
+});
 
 
 // ==========================================
@@ -56,15 +69,14 @@ function toggleMenu() {
 }
 
 function limparTelasEBuscas() {
-    // Limpa Inputs
     document.getElementById('search-skills').value = '';
     document.getElementById('search-characters').value = '';
     
-    // Limpa Dropdowns e Resultados Visuais
     document.getElementById('skills-dropdown').innerHTML = '';
     document.getElementById('skills-dropdown').classList.add('hidden');
     document.getElementById('characters-dropdown').innerHTML = '';
     document.getElementById('characters-dropdown').classList.add('hidden');
+    
     document.getElementById('skills-results-foco').innerHTML = '';
     document.getElementById('characters-results-foco').innerHTML = '';
 }
@@ -72,10 +84,10 @@ function limparTelasEBuscas() {
 function mudarTela(telaId) {
     limparTelasEBuscas();
     
-    // CORREÇÃO: Só fecha o menu lateral se ele realmente estiver aberto
+    // Só tenta fechar o menu lateral se ele estiver aberto (evita bug de tela travada)
     const sidebar = document.getElementById('sidebar');
     if (sidebar.classList.contains('aberto')) {
-        toggleMenu(); 
+        toggleMenu();
     }
 
     document.querySelectorAll('.view-section').forEach(secao => {
@@ -84,7 +96,6 @@ function mudarTela(telaId) {
     document.getElementById(telaId).classList.remove('hidden');
 }
 
-// Sobrescrevendo a função do título para não abrir o menu ao invés de ir pra Home
 document.getElementById('site-title').onclick = () => {
     limparTelasEBuscas();
     document.querySelectorAll('.view-section').forEach(s => s.classList.add('hidden'));
@@ -95,7 +106,6 @@ function toggleIdioma() {
     idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
     atualizarIdiomaInterface();
 
-    // Se houver algum foco aberto na tela, limpa a tela
     if (document.getElementById('skills-results-foco').innerHTML !== '') {
         limparTelasEBuscas();
     }
@@ -121,7 +131,7 @@ function atualizarIdiomaInterface() {
 function traduzirTag(valorTag, idiomaRef = idiomaAtual) {
     if (!valorTag) return "";
     
-    // VERIFICAÇÃO PARA TAGS ANINHADAS (ex: plus_1_die_[action]:combat)
+    // Verificação para tags duplas (ex: brother_in_arms:[skill])
     if (valorTag.includes(':')) {
         const partes = valorTag.split(':');
         const idHabilidadePrincipal = partes[0].trim();
@@ -137,7 +147,7 @@ function traduzirTag(valorTag, idiomaRef = idiomaAtual) {
 
     const chave = valorTag.trim().toLowerCase();
 
-    // 1º Dicionário Auxiliar (Lê o Array do tags.json exportado da planilha)
+    // 1º Busca no dicionário auxiliar exportado
     if (Array.isArray(tagsBase)) {
         const tagObj = tagsBase.find(t => t.tags && t.tags.toLowerCase() === chave);
         if (tagObj) {
@@ -145,13 +155,13 @@ function traduzirTag(valorTag, idiomaRef = idiomaAtual) {
         }
     }
 
-    // 2º Cadastro de Habilidades (para tags simples como "lucky")
+    // 2º Busca no cadastro principal de Habilidades
     const habRef = habilidadesBase.find(s => s.id === chave);
     if (habRef) {
         return idiomaRef === 'pt' ? habRef.name_pt : habRef.name_en;
     }
 
-    // 3º Fallback de Limpeza
+    // 3º Fallback de limpeza visual
     return chave.replace(/_/g, ' ');
 }
 
@@ -323,7 +333,6 @@ function listarPersonagensDaCaixa(caixaNome) {
     divResultados.appendChild(boxDiv);
 }
 
-
 function sortearPersonagem() {
     if (sobreviventesBase.length === 0) return;
     document.getElementById('characters-dropdown').classList.add('hidden');
@@ -378,7 +387,7 @@ function renderizarFichaPersonagem(sobrevivente) {
     const estrutura = [
         { cor: titulosNiveis[idiomaAtual].azul, classe: 'azul', slots: [{ id: sobrevivente.blue1, tag: sobrevivente.tag_blue1 }, { id: sobrevivente.blue2, tag: sobrevivente.tag_blue2 }] },
         { cor: titulosNiveis[idiomaAtual].amarelo, classe: 'amarelo', slots: [{ id: sobrevivente.yellow }] },
-        { cor: titulosNiveis[idiomaAtual].laranja, classe: 'laranja', slots: [{ id: sobrevivente.oranged1, tag: sobrevivente.tag_oranged1 }, { id: sobrevivente.oranged2, tag: sobrevivente.tag_oranged2 }] },
+        { cor: titulosNiveis[idiomaAtual].laranja, classe: 'laranja', slots: [{ id: sobrevivente.orange1, tag: sobrevivente.tag_orange1 }, { id: sobrevivente.orange2, tag: sobrevivente.tag_orange2 }] },
         { cor: titulosNiveis[idiomaAtual].vermelho, classe: 'vermelho', slots: [{ id: sobrevivente.red1, tag: sobrevivente.tag_red1 }, { id: sobrevivente.red2, tag: sobrevivente.tag_red2 }, { id: sobrevivente.red3, tag: sobrevivente.tag_red3 }] }
     ];
 
@@ -404,4 +413,5 @@ function renderizarFichaPersonagem(sobrevivente) {
             }
         });
     });
-}
+        }
+            
