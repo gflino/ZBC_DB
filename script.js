@@ -518,6 +518,33 @@ function renderizarFichaInimigo(inimigo) {
             </div>
         `;
     }
+    function listarInimigosPorCaixas() {
+    const divResultados = document.getElementById('enemies-results-foco');
+    document.getElementById('enemies-dropdown').classList.add('hidden');
+    divResultados.innerHTML = '';
+
+    const porCaixa = {};
+    inimigosBase.forEach(i => {
+        const caixa = i.set || 'Sem Caixa';
+        if (!porCaixa[caixa]) porCaixa[caixa] = [];
+        porCaixa[caixa].push(i);
+    });
+
+    for (const [caixa, lista] of Object.entries(porCaixa)) {
+        const boxDiv = document.createElement('div');
+        boxDiv.className = 'bloco-caixa';
+        boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
+        
+        lista.forEach(i => {
+            const li = document.createElement('div');
+            li.className = 'item-sugestao-lista';
+            li.textContent = idiomaAtual === 'pt' ? i.name_pt : i.name_en;
+            li.onclick = () => renderizarFichaInimigo(i);
+            boxDiv.appendChild(li);
+        });
+        divResultados.appendChild(boxDiv);
+    }
+    }
 
     divResultados.innerHTML = `
         <div class="ficha-inimigo">
@@ -685,6 +712,65 @@ function renderizarFichaEquipamento(equip) {
             </div>
         `;
     }
+    function listarEquipamentosPorCaixas() {
+    const divResultados = document.getElementById('equipment-results-foco');
+    document.getElementById('equipment-dropdown').classList.add('hidden');
+    divResultados.innerHTML = '';
+
+    const porCaixa = {};
+
+    equipamentosBase.forEach(e => {
+        if (!e.set) {
+            // Se não tiver caixa, joga em um grupo padrão
+            const caixaPadrao = 'Sem Caixa';
+            if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
+            porCaixa[caixaPadrao].push(e);
+            return;
+        }
+
+        // Separa o set por ';' ou '/' para lidar com itens que pertencem a múltiplas caixas
+        const caixasDoItem = e.set.split(/[;/]/).map(c => c.trim()).filter(Boolean);
+
+        caixasDoItem.forEach(caixaOriginal => {
+            // Formata o nome da caixa trocando eventuais separadores internos por barra se necessário
+            const caixaFormatada = caixaOriginal.replace(/;/g, ' / ');
+
+            if (!porCaixa[caixaFormatada]) {
+                porCaixa[caixaFormatada] = [];
+            }
+            // Adiciona o equipamento na lista desta caixa específica
+            porCaixa[caixaFormatada].push(e);
+        });
+    });
+
+    // Ordena os nomes das caixas alfabeticamente para ficar organizado na tela
+    const caixasOrdenadas = Object.keys(porCaixa).sort();
+
+    caixasOrdenadas.forEach(caixa => {
+        const boxDiv = document.createElement('div');
+        boxDiv.className = 'bloco-caixa';
+        boxDiv.innerHTML = `<h3 style="color:#4da6ff; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
+        
+        // Ordena os equipamentos dentro da caixa alfabeticamente pelo nome no idioma atual
+        const listaEquipamentos = porCaixa[caixa].sort((a, b) => {
+            const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
+            const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
+            return nomeA.localeCompare(nomeB);
+        });
+
+        listaEquipamentos.forEach(e => {
+            const li = document.createElement('div');
+            li.className = 'item-sugestao-lista';
+            li.textContent = idiomaAtual === 'pt' ? e.name_pt : e.name_en;
+            li.onclick = () => renderizarFichaEquipamento(e);
+            boxDiv.appendChild(li);
+        });
+
+        divResultados.appendChild(boxDiv);
+    });
+}
+
+    
     
     divResultados.innerHTML = `
         <div class="ficha-equipamento">
