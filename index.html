@@ -12,12 +12,13 @@
     <nav id="sidebar" class="sidebar">
         <button class="close-btn" onclick="toggleMenu()">×</button>
         <a href="#" onclick="mudarTela('home-view')" data-i18n="menuHome">Início</a>
-        <a href="#" onclick="mudarTela('skills-view')" data-i18n="menuSkills">Habilidades</a>
         <a href="#" onclick="mudarTela('characters-view')" data-i18n="menuSurvivors">Sobreviventes</a>
+        <a href="#" onclick="mudarTela('skills-view')" data-i18n="menuSkills">Habilidades</a>
         <a href="#" onclick="mudarTela('enemies-view')" data-i18n="menuEnemies">Inimigos</a>
         <a href="#" onclick="mudarTela('equipment-view')" data-i18n="menuEquipment">Equipamentos</a>
-        <a href="#" onclick="mudarTela('priority-view')" data-i18n="menuPriority">Prioridade de Alvos</a>
-        <a href="#" onclick="mudarTela('draw-view')" data-i18n="menuDraw">Sorteio de Zumbis</a>
+        <a href="#" onclick="mudarTela('priority-view')" data-i18n="menuPriority">Ordem de Prioridade</a>
+                <a href="https://gflino.github.io/ZBC_Spawn_Web/" target="_blank" data-i18n="menuDraw">Sorteio de Zumbis</a>
+        
     </nav>
 
     <!-- Cabeçalho Principal -->
@@ -30,12 +31,13 @@
     <!-- TELA 1: Menu Inicial -->
     <main id="home-view" class="view-section">
         <div class="menu-botoes">
-            <button class="btn-acao" onclick="mudarTela('skills-view')" data-i18n="btnSearchSkills">Buscar Habilidades</button>
             <button class="btn-acao" onclick="mudarTela('characters-view')" data-i18n="btnSearchSurvivors">Buscar Sobreviventes</button>
+            <button class="btn-acao" onclick="mudarTela('skills-view')" data-i18n="btnSearchSkills">Buscar Habilidades</button>
             <button class="btn-acao" onclick="mudarTela('enemies-view')" data-i18n="btnSearchEnemies">Buscar Inimigos</button>
             <button class="btn-acao" onclick="mudarTela('equipment-view')" data-i18n="btnSearchEquipment">Buscar Equipamentos</button>
             <button class="btn-acao" onclick="mudarTela('priority-view')" data-i18n="btnPriority">Ordem de Prioridade</button>
-            <button class="btn-acao" onclick="mudarTela('draw-view')" data-i18n="btnDraw">Sorteio de Zumbis</button>
+            <button class="btn-acao" onclick="window.open('https://gflino.github.io/ZBC_Spawn_Web/', '_blank')" data-i18n="btnDraw">Sorteio de Zumbis</button>
+            
         </div>
     </main>
 
@@ -74,6 +76,7 @@
                 <input type="text" id="search-enemies" data-i18n="placeholderEnemies" placeholder="Digite o nome do inimigo..." autocomplete="off">
                 <div id="enemies-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
+            <button onclick="listarInimigosPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Lista Completa</button>
         </div>
         <div id="enemies-results-foco"></div>
     </main>
@@ -86,10 +89,11 @@
                 <input type="text" id="search-equipment" data-i18n="placeholderEquipment" placeholder="Digite o nome do equipamento..." autocomplete="off">
                 <div id="equipment-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
+            <button onclick="listarEquipamentosPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Lista Completa</button>
         </div>
         <div id="equipment-results-foco"></div>
     </main>
-
+    
     <!-- TELA 6: Ordem de Prioridades -->
     <main id="priority-view" class="view-section hidden">
         <h2 data-i18n="titlePriority">Ordem de Prioridade de Alvos</h2>
