@@ -1,53 +1,37 @@
-// ==========================================
+/// ==========================================
 // 1. BANCOS DE DADOS E ESTADO GERAL
 // ==========================================
 let habilidadesBase = [];
-let tagsBase = {};
 let sobreviventesBase = [];
+let inimigosBase = [];
+let equipamentosBase = [];
+let auxBase = []; // <-- Substituiu o antigo tagsBase
+let priorityBpGhBase = [];
+let priorityWdBase = [];
 let idiomaAtual = 'pt';
 
-// Dicionário Global da Interface do Usuário (i18n)
-const i18nUI = {
-    title: { pt: "Zombicide Compêndio", en: "Zombicide Compendium" },
-    menuHome: { pt: "🏠 Início", en: "🏠 Home" },
-    menuSkills: { pt: "📖 Habilidades", en: "📖 Skills" },
-    menuSurvivors: { pt: "🧟‍♂️ Sobreviventes", en: "🧟‍♂️ Survivors" },
-    homeQuestion: { pt: "O que você deseja buscar?", en: "What do you want to search for?" },
-    btnSearchSkills: { pt: "📖 Buscar Habilidades", en: "📖 Search Skills" },
-    btnSearchSurvivors: { pt: "🧟‍♂️ Buscar Sobreviventes", en: "🧟‍♂️ Search Survivors" },
-    titleSkills: { pt: "Busca de Habilidades", en: "Skill Search" },
-    placeholderSkills: { pt: "Digite o nome da habilidade...", en: "Type the skill name..." },
-    btnAllSkills: { pt: "📖 Ver Todas as Habilidades", en: "📖 View All Skills" },
-    titleSurvivors: { pt: "Busca de Sobreviventes", en: "Survivor Search" },
-    placeholderSurvivors: { pt: "Digite o nome do personagem...", en: "Type the character's name..." },
-    btnRandom: { pt: "🎲 Sobrevivente Aleatório", en: "🎲 Random Survivor" },
-    btnListBoxes: { pt: "📦 Ver Lista Completa", en: "📦 View Complete List" }
-};
+// (Mantenha o seu const i18nUI = { ... } intacto aqui no meio)
 
-// Carregamento à prova de falhas: Cada arquivo tem seu próprio "catch"
 Promise.all([
-    fetch('skills.json')
-        .then(res => res.json())
-        .catch(err => { console.error("Erro Skills:", err); return []; }),
-        
-    fetch('tags.json')
-        .then(res => res.json())
-        .catch(err => { console.error("Erro Tags:", err); return {}; }),
-        
-    fetch('survivors.json')
-        .then(res => res.json())
-        .catch(err => { 
-            alert("Aviso: O arquivo de Sobreviventes contém um erro de digitação (sintaxe) e não pôde ser carregado. As habilidades continuarão funcionando normalmente.");
-            console.error("Erro Survivors:", err); 
-            return []; // Retorna vazio para o app não travar
-        })
-]).then(([skillsData, tagsData, survivorsData]) => {
-    habilidadesBase = skillsData;
-    tagsBase = tagsData;
-    sobreviventesBase = survivorsData;
+    fetch('skills.json').then(res => res.json()).catch(() => []),
+    fetch('survivors.json').then(res => res.json()).catch(() => []),
+    fetch('enemies.json').then(res => res.json()).catch(() => []),
+    fetch('equipment.json').then(res => res.json()).catch(() => []),
+    fetch('aux.json').then(res => res.json()).catch(() => []),
+    fetch('prioritybpgh.json').then(res => res.json()).catch(() => []),
+    fetch('prioritywd.json').then(res => res.json()).catch(() => [])
+]).then(results => {
+    habilidadesBase = results[0];
+    sobreviventesBase = results[1];
+    inimigosBase = results[2];
+    equipamentosBase = results[3];
+    auxBase = results[4];
+    priorityBpGhBase = results[5];
+    priorityWdBase = results[6];
     
     configurarBuscas();
     atualizarIdiomaInterface();
+    renderizarTabelasPrioridade(); 
     mudarTela('home-view');
 });
 
@@ -69,16 +53,28 @@ function toggleMenu() {
 }
 
 function limparTelasEBuscas() {
+    // Limpa Inputs
     document.getElementById('search-skills').value = '';
     document.getElementById('search-characters').value = '';
+    document.getElementById('search-enemies').value = '';
+    document.getElementById('search-equipment').value = '';
     
-    document.getElementById('skills-dropdown').innerHTML = '';
-    document.getElementById('skills-dropdown').classList.add('hidden');
-    document.getElementById('characters-dropdown').innerHTML = '';
-    document.getElementById('characters-dropdown').classList.add('hidden');
+    // Esconde Dropdowns
+    const dropdowns = ['skills-dropdown', 'characters-dropdown', 'enemies-dropdown', 'equipment-dropdown'];
+    dropdowns.forEach(id => {
+        const el = document.getElementById(id);
+        if(el) {
+            el.innerHTML = '';
+            el.classList.add('hidden');
+        }
+    });
     
-    document.getElementById('skills-results-foco').innerHTML = '';
-    document.getElementById('characters-results-foco').innerHTML = '';
+    // Limpa Resultados
+    const focos = ['skills-results-foco', 'characters-results-foco', 'enemies-results-foco', 'equipment-results-foco'];
+    focos.forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.innerHTML = '';
+    });
 }
 
 function mudarTela(telaId) {
@@ -147,11 +143,17 @@ function traduzirTag(valorTag, idiomaRef = idiomaAtual) {
 
     const chave = valorTag.trim().toLowerCase();
 
-    // 1º Busca no dicionário auxiliar exportado
-    if (Array.isArray(tagsBase)) {
-        const tagObj = tagsBase.find(t => t.tags && t.tags.toLowerCase() === chave);
+    // 1º Busca no dicionário global (aux.json)
+    if (Array.isArray(auxBase)) {
+        const tagObj = auxBase.find(t => 
+            (t.tags && t.tags.toLowerCase() === chave) || 
+            (t.id && t.id.toLowerCase() === chave) ||
+            (t.name && t.name.toLowerCase() === chave)
+        );
+        
         if (tagObj) {
-            return idiomaRef === 'pt' ? tagObj.tags_pt : tagObj.tags_en;
+            if (idiomaRef === 'pt') return tagObj.tags_pt || tagObj.pt || tagObj.name_pt;
+            return tagObj.tags_en || tagObj.en || tagObj.name_en;
         }
     }
 
@@ -196,6 +198,14 @@ function configurarBuscas() {
 
     document.getElementById('search-characters').addEventListener('input', (e) => {
         sugerirPersonagens(e.target.value);
+    });
+
+    document.getElementById('search-enemies').addEventListener('input', (e) => {
+        buscarInimigos(e.target.value);
+    });
+
+    document.getElementById('search-equipment').addEventListener('input', (e) => {
+        buscarEquipamentos(e.target.value);
     });
 }
 
@@ -279,9 +289,9 @@ function sugerirPersonagens(termo) {
     dropdown.classList.remove('hidden');
     const termoMin = termo.toLowerCase();
 
-    // 1. Busca Caixas que batem com o termo
-    const caixasUnicas = [...new Set(sobreviventesBase.map(s => s.box))];
-    const caixasFiltradas = caixasUnicas.filter(c => c.toLowerCase().includes(termoMin));
+    // 1. Busca Caixas (Sets) que batem com o termo
+    const caixasUnicas = [...new Set(sobreviventesBase.map(s => s.set))];
+    const caixasFiltradas = caixasUnicas.filter(c => c && c.toLowerCase().includes(termoMin));
 
     caixasFiltradas.forEach(caixa => {
         const itemBox = document.createElement('div');
@@ -301,7 +311,7 @@ function sugerirPersonagens(termo) {
     filtrados.forEach(s => {
         const item = document.createElement('div');
         item.className = 'item-sugestao-lista';
-        item.innerHTML = `<strong>${s.name}</strong> <span class="sub-sugestao">${s.box}</span>`;
+        item.innerHTML = `<strong>${s.name}</strong> <span class="sub-sugestao">${s.set}</span>`;
         
         item.onclick = () => {
             renderizarFichaPersonagem(s);
@@ -312,7 +322,7 @@ function sugerirPersonagens(termo) {
     });
 }
 
-// Renderiza todos os personagens de uma caixa específica
+// Renderiza todos os personagens de uma caixa (set) específica
 function listarPersonagensDaCaixa(caixaNome) {
     const divResultados = document.getElementById('characters-results-foco');
     divResultados.innerHTML = '';
@@ -321,7 +331,7 @@ function listarPersonagensDaCaixa(caixaNome) {
     boxDiv.className = 'bloco-caixa';
     boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixaNome}</h3>`;
     
-    const lista = sobreviventesBase.filter(s => s.box === caixaNome);
+    const lista = sobreviventesBase.filter(s => s.set === caixaNome);
     lista.forEach(s => {
         const li = document.createElement('div');
         li.className = 'item-sugestao-lista';
@@ -347,8 +357,8 @@ function listarPorCaixas() {
 
     const porCaixa = {};
     sobreviventesBase.forEach(s => {
-        if (!porCaixa[s.box]) porCaixa[s.box] = [];
-        porCaixa[s.box].push(s);
+        if (!porCaixa[s.set]) porCaixa[s.set] = [];
+        porCaixa[s.set].push(s);
     });
 
     for (const [caixa, lista] of Object.entries(porCaixa)) {
@@ -369,11 +379,36 @@ function listarPorCaixas() {
 
 function renderizarFichaPersonagem(sobrevivente) {
     const divResultados = document.getElementById('characters-results-foco');
+    
+    // 1. Injeção Condicional da Imagem
+    let imagemHtml = '';
+    if (sobrevivente.image && sobrevivente.image.trim() !== '') {
+        imagemHtml = `
+            <div class="sobrevivente-imagem-container">
+                <img src="${sobrevivente.image}" alt="${sobrevivente.name}" class="sobrevivente-img" loading="lazy" onerror="this.style.display='none'">
+            </div>
+        `;
+    }
+
+    // 2. Injeção Condicional do Body (Equipamento de Corpo)
+    const labelBody = idiomaAtual === 'pt' ? 'Equipamento de Corpo:' : 'Body Equipment:';
+    let bodyHtml = '';
+    if (sobrevivente.body && sobrevivente.body.trim() !== '') {
+        bodyHtml = `
+            <div class="sobrevivente-body-container">
+                <span class="label-body">${labelBody}</span> ${sobrevivente.body}
+            </div>
+        `;
+    }
+
+    // 3. Montagem da Interface Completa (com 'set' ao invés de 'box')
     divResultados.innerHTML = `
         <div class="ficha-sobrevivente">
             <div class="ficha-cabecalho">
-                <h2>${sobrevivente.name} <span class="divisor-caixa">|</span> <span class="texto-caixa">${sobrevivente.box}</span></h2>
+                <h2>${sobrevivente.name} <span class="divisor-caixa">|</span> <span class="texto-caixa">${sobrevivente.set}</span></h2>
             </div>
+            ${imagemHtml}
+            ${bodyHtml}
             <div id="ficha-niveis" class="niveis-container"></div>
         </div>
     `;
@@ -413,5 +448,267 @@ function renderizarFichaPersonagem(sobrevivente) {
             }
         });
     });
+}
+// ==========================================
+// 6. INIMIGOS
+// ==========================================
+
+function buscarInimigos(termo) {
+    const dropdown = document.getElementById('enemies-dropdown');
+    dropdown.innerHTML = '';
+    
+    if (!termo.trim()) {
+        dropdown.classList.add('hidden');
+        return;
+    }
+
+    dropdown.classList.remove('hidden');
+    const termoMin = termo.toLowerCase();
+    
+    const filtrados = inimigosBase.filter(i => {
+        const pt = (i.name_pt || "").toLowerCase();
+        const en = (i.name_en || "").toLowerCase();
+        return pt.includes(termoMin) || en.includes(termoMin);
+    });
+
+    filtrados.forEach(inimigo => {
+        const nomeVisivel = idiomaAtual === 'pt' ? inimigo.name_pt : inimigo.name_en;
+        const sub = inimigo.set || '';
+
+        const item = document.createElement('div');
+        item.className = 'item-sugestao-lista';
+        item.innerHTML = `<strong>${nomeVisivel}</strong> <span class="sub-sugestao">${sub}</span>`;
+        
+        item.onclick = () => {
+            renderizarFichaInimigo(inimigo);
+            dropdown.classList.add('hidden');
+            document.getElementById('search-enemies').value = ''; 
+        };
+        dropdown.appendChild(item);
+    });
+}
+
+function renderizarFichaInimigo(inimigo) {
+    const divResultados = document.getElementById('enemies-results-foco'); 
+    if (!divResultados) return;
+
+    const nome = idiomaAtual === 'pt' ? inimigo.name_pt : inimigo.name_en;
+    const regras = idiomaAtual === 'pt' ? inimigo.rules_pt : inimigo.rules_en;
+
+    const labels = {
+        acoes: idiomaAtual === 'pt' ? 'Ações' : 'Actions',
+        alcance: idiomaAtual === 'pt' ? 'Alcance' : 'Range',
+        dano: idiomaAtual === 'pt' ? 'Dano' : 'Damage',
+        movimento: idiomaAtual === 'pt' ? 'Mov.' : 'Move',
+        letal: idiomaAtual === 'pt' ? 'Letal' : 'Lethal',
+        pa: idiomaAtual === 'pt' ? 'PA' : 'AP'
+    };
+
+    let imagemHtml = '';
+    if (inimigo.image && inimigo.image.trim() !== '') {
+        imagemHtml = `
+            <div class="inimigo-imagem-container">
+                <img src="${inimigo.image}" alt="${nome}" class="inimigo-img" loading="lazy" onerror="this.style.display='none'">
+            </div>
+        `;
+    }
+
+    divResultados.innerHTML = `
+        <div class="ficha-inimigo">
+            <div class="inimigo-cabecalho">
+                <h2>${nome}</h2>
+                <div class="inimigo-subtitulo">${inimigo.class} | ${inimigo.set}</div>
+            </div>
+            ${imagemHtml}
+            <div class="inimigo-stats-grid">
+                <div class="stat-item"><span class="stat-label">${labels.acoes}</span><span class="stat-valor">${inimigo.actions}</span></div>
+                <div class="stat-item"><span class="stat-label">${labels.alcance}</span><span class="stat-valor">${inimigo.range}</span></div>
+                <div class="stat-item"><span class="stat-label">${labels.dano}</span><span class="stat-valor">${inimigo.damage}</span></div>
+                <div class="stat-item"><span class="stat-label">${labels.movimento}</span><span class="stat-valor">${inimigo.move}</span></div>
+                <div class="stat-item"><span class="stat-label">${labels.letal}</span><span class="stat-valor">${inimigo.lethal}</span></div>
+                <div class="stat-item"><span class="stat-label">${labels.pa}</span><span class="stat-valor">${inimigo.ap}</span></div>
+            </div>
+            <div class="inimigo-regras">
+                <p>${regras ? regras : ''}</p>
+            </div>
+        </div>
+    `;
+}
+
+// ==========================================
+// 7. ORDEM DE PRIORIDADES
+// ==========================================
+
+let tabelaPrioridadeAtual = 'bpgh';
+
+function alternarTabelaPrioridade(versao) {
+    tabelaPrioridadeAtual = versao;
+    renderizarTabelasPrioridade();
+}
+
+function renderizarTabelasPrioridade() {
+    const divResultados = document.getElementById('priority-results-foco');
+    if(!divResultados) return;
+
+    // Busca as traduções dos cabeçalhos no aux.json
+    const cabecalhos = {
+        prioridade: traduzirTag('priority') !== 'priority' ? traduzirTag('priority') : (idiomaAtual === 'pt' ? 'Prioridade' : 'Priority'),
+        nome: traduzirTag('target') !== 'target' ? traduzirTag('target') : (idiomaAtual === 'pt' ? 'Alvo' : 'Target'),
+        letal: traduzirTag('damage') !== 'damage' ? traduzirTag('damage') : (idiomaAtual === 'pt' ? 'Dano' : 'Damage'),
+        pa: traduzirTag('ap') !== 'ap' ? traduzirTag('ap') : (idiomaAtual === 'pt' ? 'PA' : 'AP')
+    };
+
+    let html = `
+        <table class="tabela-prioridade">
+            <thead>
+                <tr>
+                    <th>${cabecalhos.prioridade}</th>
+                    <th class="coluna-alvo-header">${cabecalhos.nome}</th>
+                    <th>${cabecalhos.letal}</th>
+                    <th>${cabecalhos.pa}</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+
+    const dados = tabelaPrioridadeAtual === 'bpgh' ? priorityBpGhBase : priorityWdBase;
+
+    dados.forEach((item) => {
+        // Usa a nossa função inteligente para traduzir o nome do zumbi buscando no aux.json
+        let nomeTraduzido = traduzirTag(item.name);
+
+        html += `
+            <tr>
+                <td class="coluna-destaque">${item.priority}</td>
+                <td class="coluna-alvo">${nomeTraduzido}</td>
+                <td>${item.lethal}</td>
+                <td>${item.ap}</td>
+            </tr>
+        `;
+    });
+
+    html += `</tbody></table>`;
+    divResultados.innerHTML = html;
+
+    // Atualiza o visual dos botões de alternância
+    const btnBpGh = document.getElementById('btn-prio-bpgh');
+    const btnWd = document.getElementById('btn-prio-wd');
+    
+    if(btnBpGh && btnWd) {
+        if(tabelaPrioridadeAtual === 'bpgh') {
+            btnBpGh.className = 'btn-toggle btn-ativo';
+            btnWd.className = 'btn-toggle btn-inativo';
+        } else {
+            btnWd.className = 'btn-toggle btn-ativo';
+            btnBpGh.className = 'btn-toggle btn-inativo';
         }
+    }
+}
+
+// Mantemos o gatilho para atualizar a tabela na hora se o idioma for trocado
+const toggleIdiomaOriginal = toggleIdioma;
+toggleIdioma = function() {
+    toggleIdiomaOriginal();
+    renderizarTabelasPrioridade(); 
+};
+// ==========================================
+// 8. EQUIPAMENTOS
+// ==========================================
+
+function buscarEquipamentos(termo) {
+    const dropdown = document.getElementById('equipment-dropdown');
+    dropdown.innerHTML = '';
+    
+    if (!termo.trim()) {
+        dropdown.classList.add('hidden');
+        return;
+    }
+
+    dropdown.classList.remove('hidden');
+    const termoMin = termo.toLowerCase();
+    
+    const filtrados = equipamentosBase.filter(e => {
+        const pt = (e.name_pt || "").toLowerCase();
+        const en = (e.name_en || "").toLowerCase();
+        return pt.includes(termoMin) || en.includes(termoMin);
+    });
+
+    filtrados.forEach(equip => {
+        const nomeVisivel = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
+        const sub = equip.set || '';
+
+        const item = document.createElement('div');
+        item.className = 'item-sugestao-lista';
+        item.innerHTML = `<strong>${nomeVisivel}</strong> <span class="sub-sugestao">${sub}</span>`;
+        
+        item.onclick = () => {
+            renderizarFichaEquipamento(equip);
+            dropdown.classList.add('hidden');
+            document.getElementById('search-equipment').value = ''; 
+        };
+        dropdown.appendChild(item);
+    });
+}
+
+function renderizarFichaEquipamento(equip) {
+    const divResultados = document.getElementById('equipment-results-foco'); 
+    if (!divResultados) return;
+
+    const nome = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
+    const texto = idiomaAtual === 'pt' ? equip.text_pt : equip.text_en;
+
+    // Helper para garantir que o '0' não desapareça
+    const formatarAtributo = (valor) => {
+        if (valor === 0 || valor === '0') return valor;
+        return valor ? valor : '-';
+    };
+
+    // Formatação do deck (trocando ';' por '/')
+    let deckFormatado = equip.deck ? traduzirTag(equip.deck) : null;
+    if (deckFormatado) {
+        deckFormatado = deckFormatado.replace(/;/g, ' /');
+    }
+
+    const tagsEquipamento = [
+        deckFormatado,
+        equip.class ? traduzirTag(equip.class) : null,
+        equip.type ? traduzirTag(equip.type) : null
+    ].filter(Boolean).join(' | ');
+
+    let imagemHtml = '';
+    if (equip.image && equip.image.trim() !== '') {
+        imagemHtml = `
+            <div class="equipamento-imagem-container">
+                <img src="${equip.image}" alt="${nome}" class="equipamento-img" loading="lazy" onerror="this.style.display='none'">
+            </div>
+        `;
+    }
+    
+    divResultados.innerHTML = `
+        <div class="ficha-equipamento">
+            <div class="equipamento-cabecalho">
+                <h2>${nome}</h2>
+                <div class="equipamento-set">${equip.set}</div>
+                <div class="equipamento-tags">${tagsEquipamento}</div>
+            </div>
             
+            ${imagemHtml}
+            
+            <div class="equipamento-stats-grid">
+                <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributo(equip.range)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributo(equip.dice)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributo(equip.accuracy)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributo(equip.damage)}</span></div>
+            </div>
+
+            <div class="equipamento-stats-grid">
+                <div class="stat-item"><span class="stat-label">${traduzirTag('danger')}</span><span class="stat-valor">${formatarAtributo(equip.danger)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('dual')}</span><span class="stat-valor">${formatarAtributo(equip.dual)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('noise')}</span><span class="stat-valor">${formatarAtributo(equip.noise)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('door')}</span><span class="stat-valor">${formatarAtributo(equip.door)}</span></div>
+            </div>
+            
+            ${texto ? `<div class="equipamento-texto"><p>${texto}</p></div>` : ''}
+        </div>
+    `;
+}

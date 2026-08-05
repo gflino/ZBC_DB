@@ -371,3 +371,282 @@ header {
     background: #ff4747;
     color: #fff;
 }
+/* Container da Imagem do Sobrevivente */
+.sobrevivente-imagem-container {
+    width: 100%;
+    margin-bottom: 12px;
+    border: 2px solid #2d2d34; 
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #0d0d0f; 
+}
+
+.sobrevivente-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Caixa do Equipamento (Body) */
+.sobrevivente-body-container {
+    width: 100%;
+    background-color: #1a1a1e;
+    border: 1px solid #383840;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 0.95em;
+    box-sizing: border-box; 
+}
+
+.label-body {
+    font-weight: bold;
+    color: #888; 
+    font-size: 0.85em;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+/* ==========================================
+   TELA DE INIMIGOS
+   ========================================== */
+.ficha-inimigo {
+    background-color: #121214;
+    border: 1px solid #2d2d34;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    color: #e0e0e0;
+}
+
+.inimigo-cabecalho {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.inimigo-cabecalho h2 {
+    color: #ff4747;
+    margin: 0 0 5px 0;
+    font-size: 1.6em;
+}
+
+.inimigo-subtitulo {
+    font-size: 0.85em;
+    color: #9e9ea8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.inimigo-imagem-container {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #2d2d34;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #0d0d0f;
+}
+
+.inimigo-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tabela de Atributos (CSS Grid perfeito para mobile) */
+.inimigo-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas no celular */
+    gap: 10px;
+    background-color: #1a1a1e;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #383840;
+    margin-bottom: 15px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.65em;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.stat-valor {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.inimigo-regras {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #d1d1d6;
+    text-align: justify;
+    padding-top: 10px;
+    border-top: 1px dashed #383840;
+}
+/* ==========================================
+   TELA DE EQUIPAMENTOS
+   ========================================== */
+.ficha-equipamento {
+    background-color: #121214;
+    border: 1px solid #2d2d34;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    color: #e0e0e0;
+}
+
+.equipamento-cabecalho {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.equipamento-cabecalho h2 {
+    color: #4da6ff; /* Cor azul claro para diferenciar dos inimigos (vermelho) */
+    margin: 0 0 5px 0;
+    font-size: 1.6em;
+}
+
+.equipamento-set {
+    font-size: 0.85em;
+    color: #9e9ea8;
+    margin-bottom: 5px;
+}
+
+.equipamento-tags {
+    font-size: 0.8em;
+    color: #d1d1d6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.equipamento-imagem-container {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #2d2d34;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #0d0d0f;
+}
+
+.equipamento-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Grids de Atributos com 4 colunas (Range, Dice, Accuracy, Damage etc) */
+.equipamento-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    background-color: #1a1a1e;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #383840;
+    margin-bottom: 10px;
+}
+
+.equipamento-texto {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #d1d1d6;
+    text-align: justify;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px dashed #383840;
+}
+/* ==========================================
+   TELA DE PRIORIDADES
+   ========================================== */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-toggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+.btn-ativo {
+    background-color: #ff4747; /* Vermelho temático do Zombicide */
+    color: #fff;
+}
+
+.btn-inativo {
+    background-color: #2d2d34;
+    color: #9e9ea8;
+}
+
+.tabela-prioridade {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #121214;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-prioridade thead tr {
+    background-color: #1a1a1e;
+    color: #888;
+}
+
+.tabela-prioridade th {
+    padding: 12px 10px;
+    border-bottom: 1px solid #383840;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.tabela-prioridade td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #2d2d34;
+    color: #d1d1d6;
+}
+
+/* Deixa linhas alternadas com fundo diferente */
+.tabela-prioridade tr:nth-child(even) {
+    background-color: #161619;
+}
+
+.tabela-prioridade .coluna-destaque {
+    font-weight: bold;
+    color: #ff4747;
+    font-size: 1.1em;
+}
+
+.tabela-prioridade .coluna-alvo-header {
+    text-align: left;
+}
+
+.tabela-prioridade .coluna-alvo {
+    text-align: left;
+    color: #e0e0e0;
+    text-transform: capitalize;
+}

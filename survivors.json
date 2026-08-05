@@ -2,7 +2,8 @@
   {
     "id": "ann",
     "name": "Ann",
-    "box": "Black Plague",
+    "set": "Black Plague",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -17,12 +18,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "baldric",
     "name": "Baldric",
-    "box": "Black Plague",
+    "set": "Black Plague",
+    "body": "",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "",
@@ -37,12 +40,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "clovis",
     "name": "Clovis",
-    "box": "Black Plague",
+    "set": "Black Plague",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -57,12 +62,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "nelly",
     "name": "Nelly",
-    "box": "Black Plague",
+    "set": "Black Plague",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -77,12 +84,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "samson",
     "name": "Samson",
-    "box": "Black Plague",
+    "set": "Black Plague",
+    "body": "",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -97,12 +106,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "silas",
     "name": "Silas",
-    "box": "Black Plague",
+    "set": "Black Plague",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -117,12 +128,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "iron_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ariane",
     "name": "Ariane",
-    "box": "Wulfsburg",
+    "set": "Wulfsburg",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -137,12 +150,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "ranged",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "karl",
     "name": "Karl",
-    "box": "Wulfsburg",
+    "set": "Wulfsburg",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -157,12 +172,14 @@
     "red2": "plus_1_max_range",
     "tag_red2": "",
     "red3": "marksman",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "morrigan",
     "name": "Morrigan",
-    "box": "Wulfsburg",
+    "set": "Wulfsburg",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -177,12 +194,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "bloodlust_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "theo",
     "name": "Theo",
-    "box": "Wulfsburg",
+    "set": "Wulfsburg",
+    "body": "",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -197,12 +216,14 @@
     "red2": "charge",
     "tag_red2": "",
     "red3": "marksman",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "arnaud",
     "name": "Arnaud",
-    "box": "Hero Box-1",
+    "set": "Hero Box-1",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "",
@@ -217,12 +238,14 @@
     "red2": "iron_hide",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "glynda",
     "name": "Glynda",
-    "box": "Hero Box-1",
+    "set": "Hero Box-1",
+    "body": "",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -237,12 +260,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "julian",
     "name": "Julian",
-    "box": "Hero Box-1",
+    "set": "Hero Box-1",
+    "body": "",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -257,12 +282,14 @@
     "red2": "jump",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "sylvia",
     "name": "Sylvia",
-    "box": "Hero Box-1",
+    "set": "Hero Box-1",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -277,12 +304,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "tucker",
     "name": "Tucker",
-    "box": "Hero Box-1",
+    "set": "Hero Box-1",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -297,12 +326,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "free_reload",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "bob",
     "name": "Bob",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
@@ -317,12 +348,14 @@
     "red2": "rotten",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "danton",
     "name": "Danton",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -337,12 +370,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "evil_troy",
     "name": "Evil Troy",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "free_reload",
     "tag_blue1": "",
     "blue2": "",
@@ -357,12 +392,14 @@
     "red2": "rotten",
     "tag_red2": "",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "falstaff",
     "name": "Falstaff",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -377,12 +414,14 @@
     "red2": "regeneration",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "gilbert",
     "name": "Gilbert",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -397,12 +436,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "hitch",
     "name": "Hitch",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -417,12 +458,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "james",
     "name": "James",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "search_plus_1_card",
     "tag_blue1": "",
     "blue2": "",
@@ -437,12 +480,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "combat",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lady_faye",
     "name": "Lady Faye",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -457,12 +502,14 @@
     "red2": "iron_hide",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "lucas",
     "name": "Lucas",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -477,12 +524,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "walker",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "montalban",
     "name": "Montalban",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -497,12 +546,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "morgan",
     "name": "Morgan",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -517,12 +568,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "melee",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "mortimer",
     "name": "Mortimer",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "great_sword",
     "blue2": "",
@@ -537,12 +590,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "charge",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "paul",
     "name": "Paul",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -557,12 +612,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "piper",
     "name": "Piper",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "dagger",
     "blue2": "",
@@ -577,12 +634,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "troy",
     "name": "Troy",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "free_reload",
     "tag_blue1": "",
     "blue2": "",
@@ -597,12 +656,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "ranged",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "william",
     "name": "William",
-    "box": "Huntsman Pack",
+    "set": "Huntsman Pack",
+    "body": "",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -617,12 +678,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "beauregard",
     "name": "Beauregard",
-    "box": "Knight Pack",
+    "set": "Knight Pack",
+    "body": "",
     "blue1": "collector_[zombie]",
     "tag_blue1": "walker",
     "blue2": "",
@@ -637,12 +700,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "walker",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "chauncey",
     "name": "Chauncey",
-    "box": "Knight Pack",
+    "set": "Knight Pack",
+    "body": "",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -657,12 +722,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "dr._stormcrow",
     "name": "Dr. Stormcrow",
-    "box": "Knight Pack",
+    "set": "Knight Pack",
+    "body": "",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -677,12 +744,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "gowan",
     "name": "Gowan",
-    "box": "Knight Pack",
+    "set": "Knight Pack",
+    "body": "",
     "blue1": "regeneration",
     "tag_blue1": "",
     "blue2": "",
@@ -697,12 +766,14 @@
     "red2": "",
     "tag_red2": "",
     "red3": "",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "gregoire",
     "name": "Gregoire",
-    "box": "Knight Pack",
+    "set": "Knight Pack",
+    "body": "",
     "blue1": "ironclad_[zombie]",
     "tag_blue1": "wolfz",
     "blue2": "",
@@ -717,12 +788,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "regeneration",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "scowl",
     "name": "Scowl",
-    "box": "Knight Pack",
+    "set": "Knight Pack",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -737,12 +810,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "jump",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "grom",
     "name": "Grom",
-    "box": "Grom and Thalia Box",
+    "set": "Grom and Thalia Box",
+    "body": "",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "",
@@ -757,12 +832,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "thalia",
     "name": "Thalia",
-    "box": "Grom and Thalia Box",
+    "set": "Grom and Thalia Box",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -777,12 +854,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "culnar",
     "name": "Cul'Nar",
-    "box": "Special Guest Adrian Smith",
+    "set": "Special Guest Adrian Smith",
+    "body": "",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -797,12 +876,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "gurbak",
     "name": "Gurbak",
-    "box": "Special Guest Adrian Smith",
+    "set": "Special Guest Adrian Smith",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -817,12 +898,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "combat",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jorvak",
     "name": "Jorvak",
-    "box": "Special Guest Adrian Smith",
+    "set": "Special Guest Adrian Smith",
+    "body": "",
     "blue1": "ironclad_[zombie]",
     "tag_blue1": "wolfz",
     "blue2": "",
@@ -837,12 +920,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "shakeel",
     "name": "Sha'Keel",
-    "box": "Special Guest Adrian Smith",
+    "set": "Special Guest Adrian Smith",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -857,12 +942,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "black_currant",
     "name": "Black Currant",
-    "box": "Special Guest Carl Critchlow",
+    "set": "Special Guest Carl Critchlow",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -877,12 +964,14 @@
     "red2": "iron_hide",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "persephone",
     "name": "Persephone",
-    "box": "Special Guest Carl Critchlow",
+    "set": "Special Guest Carl Critchlow",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -897,12 +986,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "thrud",
     "name": "Thrud",
-    "box": "Special Guest Carl Critchlow",
+    "set": "Special Guest Carl Critchlow",
+    "body": "",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "",
@@ -917,12 +1008,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "brickborn",
     "name": "Brickborn",
-    "box": "Special Guest Edouard Guiton",
+    "set": "Special Guest Edouard Guiton",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -937,12 +1030,14 @@
     "red2": "plus_1_die_[action]",
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "hewelin",
     "name": "Hewelin",
-    "box": "Special Guest Edouard Guiton",
+    "set": "Special Guest Edouard Guiton",
+    "body": "",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -957,12 +1052,14 @@
     "red2": "charge",
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "kaila",
     "name": "Kaila",
-    "box": "Special Guest Edouard Guiton",
+    "set": "Special Guest Edouard Guiton",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -977,12 +1074,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "frenzy_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "shalheira",
     "name": "Shalheira",
-    "box": "Special Guest Edouard Guiton",
+    "set": "Special Guest Edouard Guiton",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "longbow",
     "blue2": "",
@@ -997,12 +1096,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "ranged",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "celia_la_santa",
     "name": "Celia La Santa",
-    "box": "Special Guest Gipi",
+    "set": "Special Guest Gipi",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "healing",
     "blue2": "",
@@ -1017,12 +1118,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "lifesaver",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "donna_carlotta",
     "name": "Donna Carlotta",
-    "box": "Special Guest Gipi",
+    "set": "Special Guest Gipi",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1037,12 +1140,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "pipino",
     "name": "Pipino",
-    "box": "Special Guest Gipi",
+    "set": "Special Guest Gipi",
+    "body": "",
     "blue1": "frenzy_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -1057,12 +1162,14 @@
     "red2": "is_that_all_youve_got",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "the_little_prince",
     "name": "The Little Prince",
-    "box": "Special Guest Gipi",
+    "set": "Special Guest Gipi",
+    "body": "",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -1077,12 +1184,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "abomination"
+    "tag_red3": "abomination",
+    "image": ""
   },
   {
     "id": "cyrine",
     "name": "Cyrine",
-    "box": "Special Guest John Howe",
+    "set": "Special Guest John Howe",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "dragon_aura",
     "blue2": "",
@@ -1097,12 +1206,14 @@
     "red2": "spellbook",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "dravog",
     "name": "Dravog",
-    "box": "Special Guest John Howe",
+    "set": "Special Guest John Howe",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "great_sword",
     "blue2": "",
@@ -1117,12 +1228,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "regeneration",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "gorvin",
     "name": "Gorvin",
-    "box": "Special Guest John Howe",
+    "set": "Special Guest John Howe",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "axe",
     "blue2": "",
@@ -1137,12 +1250,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "hildir",
     "name": "Hildir",
-    "box": "Special Guest John Howe",
+    "set": "Special Guest John Howe",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hell_goat",
     "blue2": "",
@@ -1157,12 +1272,14 @@
     "red2": "spellcaster",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "johrgrund",
     "name": "Johrgrund",
-    "box": "Special Guest Jovem Nerd",
+    "set": "Special Guest Jovem Nerd",
+    "body": "",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -1177,12 +1294,14 @@
     "red2": "frenzy_[action]",
     "tag_red2": "combat",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "korin",
     "name": "Korin",
-    "box": "Special Guest Jovem Nerd",
+    "set": "Special Guest Jovem Nerd",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -1197,12 +1316,14 @@
     "red2": "iron_hide",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ruff_ghanor",
     "name": "Ruff Ghanor",
-    "box": "Special Guest Jovem Nerd",
+    "set": "Special Guest Jovem Nerd",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -1217,12 +1338,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "the_prior",
     "name": "The Prior",
-    "box": "Special Guest Jovem Nerd",
+    "set": "Special Guest Jovem Nerd",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1237,12 +1360,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "",
     "red3": "lifesaver",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "dame_ahelissa",
     "name": "Dame Ahelissa",
-    "box": "Special Guest Karl Kopinski",
+    "set": "Special Guest Karl Kopinski",
+    "body": "",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -1257,12 +1382,14 @@
     "red2": "iron_hide",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "garuk",
     "name": "Garuk",
-    "box": "Special Guest Karl Kopinski",
+    "set": "Special Guest Karl Kopinski",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1277,12 +1404,14 @@
     "red2": "shove",
     "tag_red2": "",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "marcus",
     "name": "Marcus",
-    "box": "Special Guest Karl Kopinski",
+    "set": "Special Guest Karl Kopinski",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -1297,12 +1426,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "mana_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ulfo",
     "name": "Ulfo",
-    "box": "Special Guest Karl Kopinski",
+    "set": "Special Guest Karl Kopinski",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -1317,12 +1448,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "antha",
     "name": "Antha",
-    "box": "Special Guest Marc Simonetti",
+    "set": "Special Guest Marc Simonetti",
+    "body": "",
     "blue1": "destiny",
     "tag_blue1": "",
     "blue2": "",
@@ -1337,12 +1470,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "cadence",
     "name": "Cadence",
-    "box": "Special Guest Marc Simonetti",
+    "set": "Special Guest Marc Simonetti",
+    "body": "",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -1357,12 +1492,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "lady_grimm",
     "name": "Lady Grimm",
-    "box": "Special Guest Marc Simonetti",
+    "set": "Special Guest Marc Simonetti",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -1377,12 +1514,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "is_that_all_youve_got",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "redcap_rodney",
     "name": "Redcap Rodney",
-    "box": "Special Guest Marc Simonetti",
+    "set": "Special Guest Marc Simonetti",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1397,12 +1536,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "merieil",
     "name": "Merieil",
-    "box": "Special Guest Naïade",
+    "set": "Special Guest Naïade",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -1417,12 +1558,14 @@
     "red2": "mana_rain",
     "tag_red2": "",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "milo",
     "name": "Milo",
-    "box": "Special Guest Naïade",
+    "set": "Special Guest Naïade",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -1437,12 +1580,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ostokar",
     "name": "Ostokar",
-    "box": "Special Guest Naïade",
+    "set": "Special Guest Naïade",
+    "body": "",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -1457,12 +1602,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "thundergut",
     "name": "Thundergut",
-    "box": "Special Guest Naïade",
+    "set": "Special Guest Naïade",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hammer",
     "blue2": "",
@@ -1477,12 +1624,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "alainon",
     "name": "Alainon",
-    "box": "Special Guest Neal Adams",
+    "set": "Special Guest Neal Adams",
+    "body": "",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -1497,12 +1646,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "golor",
     "name": "Golor",
-    "box": "Special Guest Neal Adams",
+    "set": "Special Guest Neal Adams",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hammer",
     "blue2": "",
@@ -1517,12 +1668,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "gronstag",
     "name": "Gronstag",
-    "box": "Special Guest Neal Adams",
+    "set": "Special Guest Neal Adams",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "flaming_great_sword",
     "blue2": "",
@@ -1537,12 +1690,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "yrina",
     "name": "Yrina",
-    "box": "Special Guest Neal Adams",
+    "set": "Special Guest Neal Adams",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -1557,12 +1712,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "arnwal",
     "name": "Arnwal",
-    "box": "Special Guest Paolo Parente",
+    "set": "Special Guest Paolo Parente",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -1577,12 +1734,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "two_zones_move",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "konrad",
     "name": "Konrad",
-    "box": "Special Guest Paolo Parente",
+    "set": "Special Guest Paolo Parente",
+    "body": "",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -1597,12 +1756,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "frenzy_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "sköll",
     "name": "Sköll",
-    "box": "Special Guest Paolo Parente",
+    "set": "Special Guest Paolo Parente",
+    "body": "",
     "blue1": "regeneration",
     "tag_blue1": "",
     "blue2": "",
@@ -1617,12 +1778,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "undraal",
     "name": "Undraal",
-    "box": "Special Guest Paolo Parente",
+    "set": "Special Guest Paolo Parente",
+    "body": "",
     "blue1": "charge",
     "tag_blue1": "",
     "blue2": "",
@@ -1637,12 +1800,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "lifesaver",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "genevieve",
     "name": "Genevieve",
-    "box": "Special Guest Paul Bonner",
+    "set": "Special Guest Paul Bonner",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -1657,12 +1822,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "klom",
     "name": "Klom",
-    "box": "Special Guest Paul Bonner",
+    "set": "Special Guest Paul Bonner",
+    "body": "",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "",
@@ -1677,12 +1844,14 @@
     "red2": "regeneration",
     "tag_red2": "",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lord_bazak",
     "name": "Lord Bazak",
-    "box": "Special Guest Paul Bonner",
+    "set": "Special Guest Paul Bonner",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1697,12 +1866,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "mizar",
     "name": "Mizar",
-    "box": "Special Guest Paul Bonner",
+    "set": "Special Guest Paul Bonner",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -1717,12 +1888,14 @@
     "red2": "marksman",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "azure",
     "name": "Azure",
-    "box": "Special Guest Stefan Kopinski",
+    "set": "Special Guest Stefan Kopinski",
+    "body": "",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -1737,12 +1910,14 @@
     "red2": "hit_run",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "gaak",
     "name": "Gaak",
-    "box": "Special Guest Stefan Kopinski",
+    "set": "Special Guest Stefan Kopinski",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1757,12 +1932,14 @@
     "red2": "hit_run",
     "tag_red2": "",
     "red3": "rotten",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "the_blackheart",
     "name": "The Blackheart",
-    "box": "Special Guest Stefan Kopinski",
+    "set": "Special Guest Stefan Kopinski",
+    "body": "",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -1777,12 +1954,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "combat",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ysabel",
     "name": "Ysabel",
-    "box": "Special Guest Stefan Kopinski",
+    "set": "Special Guest Stefan Kopinski",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "axe",
     "blue2": "",
@@ -1797,12 +1976,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "benson",
     "name": "Benson",
-    "box": "Benson Box",
+    "set": "Benson Box",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -1817,12 +1998,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "homer",
     "name": "Homer",
-    "box": "Homer Box",
+    "set": "Homer Box",
+    "body": "",
     "blue1": "tactician",
     "tag_blue1": "",
     "blue2": "",
@@ -1837,12 +2020,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "willow",
     "name": "Willow",
-    "box": "Willow Box",
+    "set": "Willow Box",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -1857,12 +2042,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "bruce",
     "name": "Bruce",
-    "box": "Game Night Kit",
+    "set": "Game Night Kit",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -1877,12 +2064,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "asim",
     "name": "Asim",
-    "box": "Green Horde",
+    "set": "Green Horde",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -1897,12 +2086,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "magic",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "berin",
     "name": "Berin",
-    "box": "Green Horde",
+    "set": "Green Horde",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -1917,12 +2108,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "johannes",
     "name": "Johannes",
-    "box": "Green Horde",
+    "set": "Green Horde",
+    "body": "",
     "blue1": "transmutation",
     "tag_blue1": "",
     "blue2": "",
@@ -1937,12 +2130,14 @@
     "red2": "plus_1_max_range",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "megan",
     "name": "Megan",
-    "box": "Green Horde",
+    "set": "Green Horde",
+    "body": "",
     "blue1": "double_casting",
     "tag_blue1": "",
     "blue2": "",
@@ -1957,12 +2152,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "rolf",
     "name": "Rolf",
-    "box": "Green Horde",
+    "set": "Green Horde",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1977,12 +2174,14 @@
     "red2": "battle_rage",
     "tag_red2": "",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "seli",
     "name": "Seli",
-    "box": "Green Horde",
+    "set": "Green Horde",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -1997,12 +2196,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "combat",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "doran",
     "name": "Doran",
-    "box": "Friends and Foes",
+    "set": "Friends and Foes",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -2017,12 +2218,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "magic",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "kabral",
     "name": "Kabral",
-    "box": "Friends and Foes",
+    "set": "Friends and Foes",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -2037,12 +2240,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "katelyn",
     "name": "Katelyn",
-    "box": "Friends and Foes",
+    "set": "Friends and Foes",
+    "body": "",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_die_[action]:combat",
     "blue2": "",
@@ -2057,12 +2262,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_damage_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "solveig",
     "name": "Solveig",
-    "box": "Friends and Foes",
+    "set": "Friends and Foes",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -2077,12 +2284,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "anton_guffen",
     "name": "Anton Guffen",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -2097,12 +2306,14 @@
     "red2": "point_blank",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "asmodeus",
     "name": "Asmodeus",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "curved_dagger",
     "blue2": "",
@@ -2117,12 +2328,14 @@
     "red2": "rotten",
     "tag_red2": "",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "badger",
     "name": "Badger",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "melee",
     "blue2": "",
@@ -2137,12 +2350,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "abomination"
+    "tag_red3": "abomination",
+    "image": ""
   },
   {
     "id": "billy",
     "name": "Billy",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -2157,12 +2372,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "brangednog",
     "name": "Brangednog",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "dwarven_hammer",
     "blue2": "",
@@ -2177,12 +2394,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "walker",
     "red3": "tough",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "brix_moonshine",
     "name": "Brix Moonshine",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "search_plus_1_card",
     "blue2": "taunt",
@@ -2197,12 +2416,14 @@
     "red2": "barbarian",
     "tag_red2": "",
     "red3": "mana_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "cassius",
     "name": "Cassius",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "battle_rage",
     "tag_blue1": "",
     "blue2": "",
@@ -2217,12 +2438,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "brute",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "countess_ordelia",
     "name": "Countess Ordelia",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -2237,12 +2460,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "earl_jaimie",
     "name": "Earl Jaimie",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -2257,12 +2482,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "finarton",
     "name": "Finarton",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "giant",
     "tag_blue1": "",
     "blue2": "throw",
@@ -2277,12 +2504,14 @@
     "red2": "barbarian",
     "tag_red2": "",
     "red3": "battle_rage",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "fylguria",
     "name": "Fylguria",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -2297,12 +2526,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "mana_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "gannicus",
     "name": "Gannicus",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -2317,12 +2548,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "grayson_grüber",
     "name": "Grayson Grüber",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -2337,12 +2570,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "enchantment"
+    "tag_red3": "enchantment",
+    "image": ""
   },
   {
     "id": "hyg",
     "name": "Hyg",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_die_[action]:combat",
     "blue2": "",
@@ -2357,12 +2592,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_free_[action]_action:melee",
     "red3": "swordmaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "hyld",
     "name": "Hyld",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "norse_shield",
     "blue2": "",
@@ -2377,12 +2614,14 @@
     "red2": "born_leader",
     "tag_red2": "",
     "red3": "lifesaver",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jeanne",
     "name": "Jeanne",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -2397,12 +2636,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "brother_in_arms_[game_effect]",
-    "tag_red3": "plus_1_die_[action]:combat"
+    "tag_red3": "plus_1_die_[action]:combat",
+    "image": ""
   },
   {
     "id": "kelsey",
     "name": "Kelsey",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "",
@@ -2417,12 +2658,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lividia",
     "name": "Lividia",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "combat",
     "blue2": "",
@@ -2437,12 +2680,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "lifesaver",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lorentz",
     "name": "Lorentz",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "",
@@ -2457,12 +2702,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "princess_ayla",
     "name": "Princess Ayla",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "super_strength",
     "tag_blue1": "",
     "blue2": "",
@@ -2477,12 +2724,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "rocco",
     "name": "Rocco",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "crossbow",
     "blue2": "",
@@ -2497,12 +2746,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "ranged",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ryan_john",
     "name": "Ryan John",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "roll_6_plus_1_die_[action]",
@@ -2517,12 +2768,14 @@
     "red2": "barbarian",
     "tag_red2": "",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "sigrun",
     "name": "Sigrun",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -2537,12 +2790,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_zone_move",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sir_schwarz",
     "name": "Sir Schwarz",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "is_that_all_youve_got",
     "tag_blue1": "",
     "blue2": "",
@@ -2557,12 +2812,14 @@
     "red2": "charge",
     "tag_red2": "",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "spearhead",
     "name": "Spearhead",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -2577,12 +2834,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "frenzy_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "the_deathmaster",
     "name": "The Deathmaster",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "taunt",
@@ -2597,12 +2856,14 @@
     "red2": "barbarian",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "the_marquis",
     "name": "The Marquis",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "swordmaster",
@@ -2617,12 +2878,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "thomas",
     "name": "Thomas",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "",
@@ -2637,12 +2900,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "ygraine",
     "name": "Ygraine",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -2657,12 +2922,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "zanzibar",
     "name": "Zanzibar",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "spellcaster",
@@ -2677,12 +2944,14 @@
     "red2": "double_casting",
     "tag_red2": "",
     "red3": "mana_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "zee",
     "name": "Zee",
-    "box": "Horde Box",
+    "set": "Horde Box",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "",
@@ -2697,12 +2966,14 @@
     "red2": "double_casting",
     "tag_red2": "",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "abomination"
+    "tag_red3": "abomination",
+    "image": ""
   },
   {
     "id": "liam",
     "name": "Liam",
-    "box": "Liam Box",
+    "set": "Liam Box",
+    "body": "",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -2717,12 +2988,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "rotten",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "north_the_halfling",
     "name": "North the Halfling",
-    "box": "North the Halfling Box",
+    "set": "North the Halfling Box",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "",
@@ -2737,12 +3010,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "carol_black_oak",
     "name": "Carol Black-Oak",
-    "box": "Special Guest Paul Bonner 2",
+    "set": "Special Guest Paul Bonner 2",
+    "body": "",
     "blue1": "collector_[zombie]",
     "tag_blue1": "runner",
     "blue2": "",
@@ -2757,12 +3032,14 @@
     "red2": "charge",
     "tag_red2": "",
     "red3": "collector_[zombie]",
-    "tag_red3": "walker"
+    "tag_red3": "walker",
+    "image": ""
   },
   {
     "id": "kirag",
     "name": "Kirag",
-    "box": "Special Guest Paul Bonner 2",
+    "set": "Special Guest Paul Bonner 2",
+    "body": "",
     "blue1": "tactician",
     "tag_blue1": "",
     "blue2": "no_move_actions",
@@ -2777,12 +3054,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "brother_in_arms_[game_effect]",
-    "tag_red3": "iron_hide"
+    "tag_red3": "iron_hide",
+    "image": ""
   },
   {
     "id": "thorg",
     "name": "Thorg",
-    "box": "Special Guest Paul Bonner 2",
+    "set": "Special Guest Paul Bonner 2",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "carries_kirag",
@@ -2797,12 +3076,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "brother_in_arms_[game_effect]",
-    "tag_red3": "plus_1_free_[action]_action:combat"
+    "tag_red3": "plus_1_free_[action]_action:combat",
+    "image": ""
   },
   {
     "id": "tola",
     "name": "Tola",
-    "box": "Special Guest Paul Bonner 2",
+    "set": "Special Guest Paul Bonner 2",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -2817,12 +3098,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "birmbauer",
     "name": "Birmbauer",
-    "box": "Special Guest Sean A Murray",
+    "set": "Special Guest Sean A Murray",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "lightning_ball",
     "blue2": "",
@@ -2837,12 +3120,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "point_blank",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "kendra",
     "name": "Kendra",
-    "box": "Special Guest Sean A Murray",
+    "set": "Special Guest Sean A Murray",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -2857,12 +3142,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "spellbones",
     "name": "Spellbones",
-    "box": "Special Guest Sean A Murray",
+    "set": "Special Guest Sean A Murray",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
@@ -2877,12 +3164,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "magic",
     "red3": "rotten",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ultimate_ann",
     "name": "Ultimate Ann",
-    "box": "Black Plague Ultimate Survivors",
+    "set": "Black Plague Ultimate Survivors",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "iron_hide",
@@ -2897,12 +3186,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "ultimate_baldric",
     "name": "Ultimate Baldric",
-    "box": "Black Plague Ultimate Survivors",
+    "set": "Black Plague Ultimate Survivors",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "spellcaster",
@@ -2917,12 +3208,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "ultimate_clovis",
     "name": "Ultimate Clovis",
-    "box": "Black Plague Ultimate Survivors",
+    "set": "Black Plague Ultimate Survivors",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "taunt",
@@ -2937,12 +3230,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ultimate_nelly",
     "name": "Ultimate Nelly",
-    "box": "Black Plague Ultimate Survivors",
+    "set": "Black Plague Ultimate Survivors",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "lifesaver",
@@ -2957,12 +3252,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "plus_1_zone_move",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ultimate_samson",
     "name": "Ultimate Samson",
-    "box": "Black Plague Ultimate Survivors",
+    "set": "Black Plague Ultimate Survivors",
+    "body": "",
     "blue1": "charge",
     "tag_blue1": "",
     "blue2": "iron_hide",
@@ -2977,12 +3274,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "ultimate_silas",
     "name": "Ultimate Silas",
-    "box": "Black Plague Ultimate Survivors",
+    "set": "Black Plague Ultimate Survivors",
+    "body": "",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "plus_1_roll_[action]",
@@ -2997,12 +3296,14 @@
     "red2": "iron_rain",
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "lion_o",
     "name": "Lion-O",
-    "box": "Thundercats Pack 1",
+    "set": "Thundercats Pack 1",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -3017,12 +3318,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "cheetara",
     "name": "Cheetara",
-    "box": "Thundercats Pack 1",
+    "set": "Thundercats Pack 1",
+    "body": "",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -3037,12 +3340,14 @@
     "red2": "slippery",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "snarf",
     "name": "Snarf",
-    "box": "Thundercats Pack 1",
+    "set": "Thundercats Pack 1",
+    "body": "",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -3057,12 +3362,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "slithe",
     "name": "Slithe",
-    "box": "Thundercats Pack 1",
+    "set": "Thundercats Pack 1",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -3077,12 +3384,14 @@
     "red2": "frenzy_[action]",
     "tag_red2": "combat",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "panthro",
     "name": "Panthro",
-    "box": "Thundercats Pack 2",
+    "set": "Thundercats Pack 2",
+    "body": "",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -3097,12 +3406,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "walker",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "tygra",
     "name": "Tygra",
-    "box": "Thundercats Pack 2",
+    "set": "Thundercats Pack 2",
+    "body": "",
     "blue1": "tactician",
     "tag_blue1": "",
     "blue2": "",
@@ -3117,12 +3428,14 @@
     "red2": "shove",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "wilykit",
     "name": "WilyKit",
-    "box": "Thundercats Pack 2",
+    "set": "Thundercats Pack 2",
+    "body": "",
     "blue1": "low_profile",
     "tag_blue1": "",
     "blue2": "",
@@ -3137,12 +3450,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "ranged",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "wilykat",
     "name": "WilyKat",
-    "box": "Thundercats Pack 2",
+    "set": "Thundercats Pack 2",
+    "body": "",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -3157,12 +3472,14 @@
     "red2": "slippery",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jackalman",
     "name": "Jackalman",
-    "box": "Thundercats Pack 2",
+    "set": "Thundercats Pack 2",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -3177,12 +3494,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "ranged",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "pharaoh_eddie",
     "name": "Pharaoh Eddie",
-    "box": "Iron Maiden Pack 1",
+    "set": "Iron Maiden Pack 1",
+    "body": "",
     "blue1": "powerslave",
     "tag_blue1": "",
     "blue2": "",
@@ -3197,12 +3516,14 @@
     "red2": "born_leader",
     "tag_red2": "",
     "red3": "brother_in_arms_[game_effect]",
-    "tag_red3": "plus_1_die_[action]:ranged"
+    "tag_red3": "plus_1_die_[action]:ranged",
+    "image": ""
   },
   {
     "id": "reaper_eddie",
     "name": "Reaper Eddie",
-    "box": "Iron Maiden Pack 1",
+    "set": "Iron Maiden Pack 1",
+    "body": "",
     "blue1": "dance_of_death",
     "tag_blue1": "",
     "blue2": "",
@@ -3217,12 +3538,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "samurai_eddie",
     "name": "Samurai Eddie",
-    "box": "Iron Maiden Pack 1",
+    "set": "Iron Maiden Pack 1",
+    "body": "",
     "blue1": "flash_of_the_blade",
     "tag_blue1": "",
     "blue2": "",
@@ -3237,12 +3560,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "melee",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "mummy_eddie",
     "name": "Mummy Eddie",
-    "box": "Iron Maiden Pack 2",
+    "set": "Iron Maiden Pack 2",
+    "body": "",
     "blue1": "heaven_can_wait",
     "tag_blue1": "",
     "blue2": "",
@@ -3257,12 +3582,14 @@
     "red2": "lifesaver",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "shaman_eddie",
     "name": "Shaman Eddie",
-    "box": "Iron Maiden Pack 2",
+    "set": "Iron Maiden Pack 2",
+    "body": "",
     "blue1": "death_or_glory",
     "tag_blue1": "",
     "blue2": "",
@@ -3277,12 +3604,14 @@
     "red2": "frenzy_[action]",
     "tag_red2": "magic",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "annalisa",
     "name": "Annalisa",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -3297,12 +3626,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "bertrand",
     "name": "Bertrand",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -3317,12 +3648,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "trick_shot",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "brand",
     "name": "Brand",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -3337,12 +3670,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "tactician",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "captain_goliath",
     "name": "Captain Goliath",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hammer",
     "blue2": "",
@@ -3357,12 +3692,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "tactician",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ciacco",
     "name": "Ciacco",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "axe",
     "blue2": "",
@@ -3377,12 +3714,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "break_in",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "doctor_nadir",
     "name": "Doctor Nadir",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "",
@@ -3397,12 +3736,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "mana_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "grand_vizier",
     "name": "Grand Vizier",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "crocca",
     "blue2": "",
@@ -3417,12 +3758,14 @@
     "red2": "spellcaster",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "imperial_messenger",
     "name": "Imperial Messenger",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -3437,12 +3780,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "search",
     "red3": "born_leader",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "rosencranz",
     "name": "Rosencranz",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
@@ -3457,12 +3802,14 @@
     "red2": "destiny",
     "tag_red2": "",
     "red3": "lifesaver",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sir_crumb",
     "name": "Sir Crumb",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "low_profile",
     "tag_blue1": "",
     "blue2": "",
@@ -3477,12 +3824,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sir_percy",
     "name": "Sir Percy",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -3497,12 +3846,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "the_sparrow",
     "name": "The Sparrow",
-    "box": "La Compagnia Della Forca",
+    "set": "La Compagnia Della Forca",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -3517,12 +3868,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "melee",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "cord_dankwart",
     "name": "Cord Dankwart",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "plus_1_free_[action]_action",
@@ -3537,12 +3890,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "tactician",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "drakka",
     "name": "Drakka",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -3557,12 +3912,14 @@
     "red2": "battle_rage",
     "tag_red2": "",
     "red3": "born_leader",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "einar",
     "name": "Einar",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "guards_[skill]",
@@ -3577,12 +3934,14 @@
     "red2": "mana_rain",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "freya",
     "name": "Freya",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3597,12 +3956,14 @@
     "red2": "slippery",
     "tag_red2": "",
     "red3": "sprint",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lewyn",
     "name": "Lewyn",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -3617,12 +3978,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "double_casting",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lotas",
     "name": "Lotas",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3637,12 +4000,14 @@
     "red2": "",
     "tag_red2": "",
     "red3": "",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lotas_(werewolf)",
     "name": "Lotas (Werewolf)",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -3657,12 +4022,14 @@
     "red2": "sprint",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "marike",
     "name": "Marike",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3677,12 +4044,14 @@
     "red2": "battle_rage",
     "tag_red2": "",
     "red3": "frenzy_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "neto_orash",
     "name": "Neto Orash",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3697,12 +4066,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "swordmaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "otto",
     "name": "Otto",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -3717,12 +4088,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "reaper_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "otto_(armored)",
     "name": "Otto (Armored)",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -3737,12 +4110,14 @@
     "red2": "shove",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "rainer",
     "name": "Rainer",
-    "box": "Comic Book Extras (Road to Hell)",
+    "set": "Comic Book Extras (Road to Hell)",
+    "body": "",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3757,12 +4132,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "ranged",
     "red3": "iron_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "dragomir",
     "name": "Dragomir",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -3777,12 +4154,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "ranged",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "dragomir_ee",
     "name": "Dragomir EE",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -3797,12 +4176,14 @@
     "red2": "iron_hide",
     "tag_red2": "",
     "red3": "chi_[skill]",
-    "tag_red3": "iron_rain"
+    "tag_red3": "iron_rain",
+    "image": ""
   },
   {
     "id": "jenia",
     "name": "Jenia",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "search_2_cards",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -3817,12 +4198,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "born_leader",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jenia_ee",
     "name": "Jenia EE",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "search_2_cards",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -3837,12 +4220,14 @@
     "red2": "born_leader",
     "tag_red2": "",
     "red3": "chi_[skill]",
-    "tag_red3": "hit_run"
+    "tag_red3": "hit_run",
+    "image": ""
   },
   {
     "id": "lorna",
     "name": "Lorna",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -3857,12 +4242,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lorna_ee",
     "name": "Lorna EE",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -3877,12 +4264,14 @@
     "red2": "chi_[skill]",
     "tag_red2": "roll_6_plus_1_dice_roll_[action]:combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "ogon",
     "name": "Ogon",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -3897,12 +4286,14 @@
     "red2": "combat_reflexes",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "ogon_ee",
     "name": "Ogon EE",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -3917,12 +4308,14 @@
     "red2": "chi_[skill]",
     "tag_red2": "barbarian",
     "red3": "combat_reflexes",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sarnaï",
     "name": "Sarnaï",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3937,12 +4330,14 @@
     "red2": "double_casting",
     "tag_red2": "",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sarnaï_ee",
     "name": "Sarnaï EE",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3957,12 +4352,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "meditation",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "yasuke",
     "name": "Yasuke",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "freeze_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -3977,12 +4374,14 @@
     "red2": "jump",
     "tag_red2": "",
     "red3": "plus_1_damage_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "yasuke_ee",
     "name": "Yasuke EE",
-    "box": "White Death",
+    "set": "White Death",
+    "body": "",
     "blue1": "chi_[skill]",
     "tag_blue1": "freeze_[action]:combat",
     "blue2": "guards_[skill]",
@@ -3997,12 +4396,14 @@
     "red2": "jump",
     "tag_red2": "",
     "red3": "plus_1_damage_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "fengbao",
     "name": "Fengbao",
-    "box": "Eternal Empire",
+    "set": "Eternal Empire",
+    "body": "",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_2_dice_[action]:combat",
     "blue2": "guards_[skill]",
@@ -4017,12 +4418,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "marksman",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jianrui",
     "name": "Jianrui",
-    "box": "Eternal Empire",
+    "set": "Eternal Empire",
+    "body": "",
     "blue1": "chi_[skill]",
     "tag_blue1": "damage_2_[action]:combat",
     "blue2": "plus_1_free_[action]_action",
@@ -4037,12 +4440,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "shao",
     "name": "Shao",
-    "box": "Eternal Empire",
+    "set": "Eternal Empire",
+    "body": "",
     "blue1": "chi_[skill]",
     "tag_blue1": "jump",
     "blue2": "guards_evade",
@@ -4057,12 +4462,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "yinying",
     "name": "Yinying",
-    "box": "Eternal Empire",
+    "set": "Eternal Empire",
+    "body": "",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_1_free_[action]_action:melee",
     "blue2": "guards_[skill]",
@@ -4077,12 +4484,14 @@
     "red2": "sprint",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "zhi_shen",
     "name": "Zhi Shen",
-    "box": "Eternal Empire",
+    "set": "Eternal Empire",
+    "body": "",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_1_free_[action]_action:magic",
     "blue2": "guards_[skill]",
@@ -4097,12 +4506,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "enchantment",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "zhi_yang",
     "name": "Zhi Yang",
-    "box": "Eternal Empire",
+    "set": "Eternal Empire",
+    "body": "",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_1_roll_[action]:combat",
     "blue2": "guards_push",
@@ -4117,12 +4528,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "chang_e",
     "name": "Chang' E",
-    "box": "Chang' E and Hou Yi Box",
+    "set": "Chang' E and Hou Yi Box",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4137,12 +4550,14 @@
     "red2": "freeze_[action]",
     "tag_red2": "magic",
     "red3": "sprint",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "hou_yi",
     "name": "Hou Yi",
-    "box": "Chang' E and Hou Yi Box",
+    "set": "Chang' E and Hou Yi Box",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -4157,12 +4572,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "april_oneil",
     "name": "April O'Neil",
-    "box": "TMNT Timecrash",
+    "set": "TMNT Timecrash",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "aprils_harp",
     "blue2": "plus_1_die_[action]",
@@ -4177,12 +4594,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "casey_jones",
     "name": "Casey Jones",
-    "box": "TMNT Timecrash",
+    "set": "TMNT Timecrash",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "caseys_hockey_stick",
     "blue2": "improvised_weapon_[action]",
@@ -4197,12 +4616,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "jump",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "donatello",
     "name": "Donatello",
-    "box": "TMNT Timecrash",
+    "set": "TMNT Timecrash",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "donatellos_bo_staff",
     "blue2": "transmutation",
@@ -4217,12 +4638,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "turtle_focus_plus_3_dice_combat",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "leonardo",
     "name": "Leonardo",
-    "box": "TMNT Timecrash",
+    "set": "TMNT Timecrash",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "leonardos_ninjatos",
     "blue2": "brother_in_arms_[game_effect]",
@@ -4237,12 +4660,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "turtle_focus_plus_2_dice_roll_combat",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "michelangelo",
     "name": "Michelangelo",
-    "box": "TMNT Timecrash",
+    "set": "TMNT Timecrash",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "michelangelos_nunchakus",
     "blue2": "taunt",
@@ -4257,12 +4682,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "turtle_focus_plus_3_dice_combat",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "raphael",
     "name": "Raphael",
-    "box": "TMNT Timecrash",
+    "set": "TMNT Timecrash",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "raphaels_sai",
     "blue2": "plus_1_die_[action]",
@@ -4277,12 +4704,14 @@
     "red2": "barbarian",
     "tag_red2": "",
     "red3": "turtle_focus_damage_3_combat",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "splinter",
     "name": "Splinter",
-    "box": "TMNT Timecrash",
+    "set": "TMNT Timecrash",
+    "body": "",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "splinters_cane",
     "blue2": "hit_run",
@@ -4297,12 +4726,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "one_free_turtle_power",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jennika",
     "name": "Jennika",
-    "box": "Jennika Box",
+    "set": "Jennika Box",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "starts_with_[equipment]",
@@ -4317,12 +4748,14 @@
     "red2": "reaper_[action]",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_damage_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "alghara_steel_sworn",
     "name": "Alghara Steel-Sworn",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -4337,12 +4770,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "andrea",
     "name": "Andrea",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "plus_1_free_[action]_action",
@@ -4357,12 +4792,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "artema",
     "name": "Artema",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4377,12 +4814,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "badang",
     "name": "Badang",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "super_strength",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4397,12 +4836,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "jump",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "byakko_maru",
     "name": "Byakko-Maru",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4417,12 +4858,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "caishen_ye",
     "name": "Caishen Ye",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "can_search_more_than_once",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4437,12 +4880,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "magic",
     "red3": "hoard",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "cao_ren",
     "name": "Cao Ren",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -4457,12 +4902,14 @@
     "red2": "damage_2_[action]",
     "tag_red2": "melee",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "cirina_black_mantle",
     "name": "Cirina Black-Mantle",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4477,12 +4924,14 @@
     "red2": "damage_2_[action]",
     "tag_red2": "magic",
     "red3": "freeze_[action]",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "cristina",
     "name": "Cristina",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -4497,12 +4946,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "marksman",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "da_qiao",
     "name": "Da Qiao",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "plus_1_free_[action]_action",
@@ -4517,12 +4968,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "runner"
+    "tag_red3": "runner",
+    "image": ""
   },
   {
     "id": "date_masamune",
     "name": "Date Masamune",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "escalation_[action]",
     "tag_blue1": "combat",
     "blue2": "plus_1_free_[action]_action",
@@ -4537,12 +4990,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "born_leader",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "dd",
     "name": "DD",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4557,12 +5012,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "dian_wei",
     "name": "Dian Wei",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4577,12 +5034,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "melee",
     "red3": "swordmaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "diao_chan",
     "name": "Diao Chan",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4597,12 +5056,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "ranged",
     "red3": "marksman",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "gan_ning",
     "name": "Gan Ning",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4617,12 +5078,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "damage_2_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "genghis_khan",
     "name": "Genghis Khan",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -4637,12 +5100,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "haya",
     "name": "Haya",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "guards_[skill]",
@@ -4657,12 +5122,14 @@
     "red2": "plus_1_max_range",
     "tag_red2": "",
     "red3": "marksman",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "honda_takadatsu",
     "name": "Honda Takadatsu",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -4677,12 +5144,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "regeneration",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "hong_var",
     "name": "Hong Var",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "guards_push",
@@ -4697,12 +5166,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "hua_mulan",
     "name": "Hua Mulan",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4717,12 +5188,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "huang_gai",
     "name": "Huang Gai",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "damage_2_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4737,12 +5210,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "huang_zhong",
     "name": "Huang Zhong",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -4757,12 +5232,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "ranged",
     "red3": "escalation_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "ichiro",
     "name": "Ichiro",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -4777,12 +5254,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "inugami",
     "name": "Inugami",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "regeneration",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4797,12 +5276,14 @@
     "red2": "damage_2_[action]",
     "tag_red2": "melee",
     "red3": "escalation_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "jade_empress",
     "name": "Jade Empress",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "guards_[skill]",
@@ -4817,12 +5298,14 @@
     "red2": "plus_1_die_[action]",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "jie_ke",
     "name": "Jie Ke",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -4837,12 +5320,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "combat",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jiraiya",
     "name": "Jiraiya",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -4857,12 +5342,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "kido_maru",
     "name": "Kido-Maru",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4877,12 +5364,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "kodai_in",
     "name": "Kodai-In",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4897,12 +5386,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "escalation_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "komatsuhime",
     "name": "Komatsuhime",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "freeze_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -4917,12 +5408,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "ranged",
     "red3": "escalation_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "kotahi",
     "name": "Kotahi",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4937,12 +5430,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "melee",
     "red3": "jump",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "kurokage_maru",
     "name": "Kurokage-Maru",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "damage_2_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4957,12 +5452,14 @@
     "red2": "hit_run",
     "tag_red2": "",
     "red3": "roll_6_plus_1_damage_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "lakshmana",
     "name": "Lakshmana",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_free_[action]_action:ranged",
     "blue2": "guards_[skill]",
@@ -4977,12 +5474,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lapu_lapu",
     "name": "Lapu Lapu",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -4997,12 +5496,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "melee",
     "red3": "freeze_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "lu_bu",
     "name": "Lu Bu",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "guards_[skill]",
@@ -5017,12 +5518,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "ma_chao",
     "name": "Ma Chao",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -5037,12 +5540,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "maeda_matsu",
     "name": "Maeda Matsu",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5057,12 +5562,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "maki",
     "name": "Maki",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5077,12 +5584,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "escalation_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "marquis_of_mao",
     "name": "Marquis of Mao",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "improvised_weapon_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_evade",
@@ -5097,12 +5606,14 @@
     "red2": "damage_2_[action]",
     "tag_red2": "melee",
     "red3": "jump",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "meili",
     "name": "Meili",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5117,12 +5628,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "damage_2_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "midoriko",
     "name": "Midoriko",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5137,12 +5650,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "enchantment",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "miyamoto_musashi",
     "name": "Miyamoto Musashi",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "starts_with_[equipment]",
@@ -5157,12 +5672,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "mu_guiying",
     "name": "Mu Guiying",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "melee",
     "blue2": "guards_push",
@@ -5177,12 +5694,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "nezha",
     "name": "Nezha",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5197,12 +5716,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "ohori_tsuruhime",
     "name": "Ohori Tsuruhime",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5217,12 +5738,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "okuni",
     "name": "Okuni",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -5237,12 +5760,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "spellbook",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "rajaraja_chola",
     "name": "Rajaraja Chola",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -5257,12 +5782,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "rama",
     "name": "Rama",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "roll_6_plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5277,12 +5804,14 @@
     "red2": "plus_1_max_range",
     "tag_red2": "",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "rebecca",
     "name": "Rebecca",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "choose_any_skill",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5297,12 +5826,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "lifesaver",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "renart",
     "name": "Renart",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5317,12 +5848,14 @@
     "red2": "roll_6_plus_1_damage_[action]",
     "tag_red2": "magic",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "richard",
     "name": "Richard",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5337,12 +5870,14 @@
     "red2": "plus_1_max_range",
     "tag_red2": "",
     "red3": "iron_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "saika_magicoichi",
     "name": "Saika magicoichi",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5357,12 +5892,14 @@
     "red2": "hit_run",
     "tag_red2": "",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sanada_yukimura",
     "name": "Sanada Yukimura",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5377,12 +5914,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sarana_far_sight",
     "name": "Sarana Far-Sight",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5397,12 +5936,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "sha_wujing",
     "name": "Sha Wujing",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "hoard",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5417,12 +5958,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "enchantment",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "she_saihua",
     "name": "She Saihua",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "plus_1_free_[action]_action",
@@ -5437,12 +5980,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sun_quan",
     "name": "Sun Quan",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5457,12 +6002,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sun_tzu",
     "name": "Sun Tzu",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_free_[action]_action:combat",
     "blue2": "plus_1_free_[action]_action",
@@ -5477,12 +6024,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "sun_wukong",
     "name": "Sun Wukong",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5497,12 +6046,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "suzuka_gozen",
     "name": "Suzuka Gozen",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5517,12 +6068,14 @@
     "red2": "plus_1_zone_move",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "tang_sanzang",
     "name": "Tang Sanzang",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "damage_2_[action]",
     "tag_blue1": "magic",
     "blue2": "guards_push",
@@ -5537,12 +6090,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "the_young_phoenix",
     "name": "The Young Phoenix",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "",
     "tag_blue1": "",
     "blue2": "",
@@ -5557,12 +6112,14 @@
     "red2": "",
     "tag_red2": "",
     "red3": "",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "tomoe_gozen",
     "name": "Tomoe Gozen",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "guards_[skill]",
@@ -5577,12 +6134,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "uesugi_aya",
     "name": "Uesugi Aya",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5597,12 +6156,14 @@
     "red2": "damage_2_[action]",
     "tag_red2": "magic",
     "red3": "double_casting",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "wei_yan",
     "name": "Wei Yan",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5617,12 +6178,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_damage_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "xiahou_yuan",
     "name": "Xiahou Yuan",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -5637,12 +6200,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "ranged",
     "red3": "escalation_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "xu_chu",
     "name": "Xu Chu",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5657,12 +6222,14 @@
     "red2": "barbarian",
     "tag_red2": "",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "yi_sun_sin",
     "name": "Yi Sun-Sin",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5677,12 +6244,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "ironclad_[zombie]:abomination",
     "red3": "born_leader",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "zhao_yun",
     "name": "Zhao Yun",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "close_quarter_master",
@@ -5697,12 +6266,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "guard_action"
+    "tag_red3": "guard_action",
+    "image": ""
   },
   {
     "id": "zuo_ci",
     "name": "Zuo Ci",
-    "box": "Frozen Fortress",
+    "set": "Frozen Fortress",
+    "body": "",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5717,12 +6288,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "roll_6_plus_1_damage_[action]",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "miyamoto_usagi",
     "name": "Miyamoto Usagi",
-    "box": "Usagi Yojimbo Box",
+    "set": "Usagi Yojimbo Box",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "starts_with_[equipment]",
@@ -5737,12 +6310,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "alrakis",
     "name": "Alrakis",
-    "box": "Celestial Knights",
+    "set": "Celestial Knights",
+    "body": "",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -5757,12 +6332,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "avenging_princess_stellar",
     "name": "Avenging Princess Stellar",
-    "box": "Celestial Knights",
+    "set": "Celestial Knights",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -5777,12 +6354,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "brother_in_arms_[game_effect]",
-    "tag_red3": "escalation_[action]:combat"
+    "tag_red3": "escalation_[action]:combat",
+    "image": ""
   },
   {
     "id": "eridan",
     "name": "Eridan",
-    "box": "Celestial Knights",
+    "set": "Celestial Knights",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -5797,12 +6376,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "markan",
     "name": "Markan",
-    "box": "Celestial Knights",
+    "set": "Celestial Knights",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -5817,12 +6398,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "barbarian",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "mirak",
     "name": "Mirak",
-    "box": "Celestial Knights",
+    "set": "Celestial Knights",
+    "body": "",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -5837,12 +6420,14 @@
     "red2": "close_quarter_master",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sadir",
     "name": "Sadir",
-    "box": "Celestial Knights",
+    "set": "Celestial Knights",
+    "body": "",
     "blue1": "roll_6_plus_1_damage_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -5857,12 +6442,14 @@
     "red2": "plus_1_max_range",
     "tag_red2": "",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "homare",
     "name": "Homare",
-    "box": "Virtues of Bushido",
+    "set": "Virtues of Bushido",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5877,12 +6464,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "isamu",
     "name": "Isamu",
-    "box": "Virtues of Bushido",
+    "set": "Virtues of Bushido",
+    "body": "",
     "blue1": "damage_2_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5897,12 +6486,14 @@
     "red2": "roll_6_plus_1_damage_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jin",
     "name": "Jin",
-    "box": "Virtues of Bushido",
+    "set": "Virtues of Bushido",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_evade",
@@ -5917,12 +6508,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "melee",
     "red3": "jump",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "makoto",
     "name": "Makoto",
-    "box": "Virtues of Bushido",
+    "set": "Virtues of Bushido",
+    "body": "",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -5937,12 +6530,14 @@
     "red2": "jump",
     "tag_red2": "",
     "red3": "lucky",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "rei",
     "name": "Rei",
-    "box": "Virtues of Bushido",
+    "set": "Virtues of Bushido",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5957,12 +6552,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "tadashi",
     "name": "Tadashi",
-    "box": "Virtues of Bushido",
+    "set": "Virtues of Bushido",
+    "body": "",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5977,12 +6574,14 @@
     "red2": "damage_2_[action]",
     "tag_red2": "melee",
     "red3": "damage_2_[action]",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "yoshitada",
     "name": "Yoshitada",
-    "box": "Virtues of Bushido",
+    "set": "Virtues of Bushido",
+    "body": "",
     "blue1": "escalation_[action]",
     "tag_blue1": "melee",
     "blue2": "plus_1_free_[action]_action",
@@ -5997,12 +6596,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "brother_in_arms_[game_effect]",
-    "tag_red3": "plus_1_free_[action]_action:combat"
+    "tag_red3": "plus_1_free_[action]_action:combat",
+    "image": ""
   },
   {
     "id": "cao_cao",
     "name": "Cao Cao",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -6017,12 +6618,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "guan_yu",
     "name": "Guan Yu",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6037,12 +6640,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "damage_2_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "liu_bei",
     "name": "Liu Bei",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_free_[action]_action:combat",
     "blue2": "plus_1_free_[action]_action",
@@ -6057,12 +6662,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "roll_6_plus_1_damage_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "sima_yi",
     "name": "Sima Yi",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -6077,12 +6684,14 @@
     "red2": "spellbook",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sun_jian",
     "name": "Sun Jian",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "plus_1_free_[action]_action",
@@ -6097,12 +6706,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "damage_2_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "zhang_fei",
     "name": "Zhang Fei",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6117,12 +6728,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "melee",
     "red3": "sprint",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "zhou_yu",
     "name": "Zhou Yu",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "freeze_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6137,12 +6750,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "zhuge_liang",
     "name": "Zhuge Liang",
-    "box": "Warlords of the Middle Kingdom",
+    "set": "Warlords of the Middle Kingdom",
+    "body": "",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6157,12 +6772,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "akechi_mitsuhide",
     "name": "Akechi Mitsuhide",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -6177,12 +6794,14 @@
     "red2": "escalation_[action]",
     "tag_red2": "ranged",
     "red3": "point_blank",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "hattori_hanzo",
     "name": "Hattori Hanzo",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6197,12 +6816,14 @@
     "red2": "jump",
     "tag_red2": "",
     "red3": "roll_6_plus_1_damage_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "ishida_mitsunari",
     "name": "Ishida Mitsunari",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "can_search_more_than_once",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6217,12 +6838,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "freeze_[action]",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   },
   {
     "id": "oda_nobunaga",
     "name": "Oda Nobunaga",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -6237,12 +6860,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "brother_in_arms_[game_effect]",
-    "tag_red3": "escalation_[action]:combat"
+    "tag_red3": "escalation_[action]:combat",
+    "image": ""
   },
   {
     "id": "takeda_shingen",
     "name": "Takeda Shingen",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "plus_1_free_[action]_action",
@@ -6257,12 +6882,14 @@
     "red2": "hit_run",
     "tag_red2": "",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "walker"
+    "tag_red3": "walker",
+    "image": ""
   },
   {
     "id": "tokugawa_ieyasu",
     "name": "Tokugawa Ieyasu",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6277,12 +6904,14 @@
     "red2": "roll_6_plus_1_damage_[action]",
     "tag_red2": "combat",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "toyotomi_hideyoshi",
     "name": "Toyotomi Hideyoshi",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -6297,12 +6926,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "uesugi_kenshin",
     "name": "Uesugi Kenshin",
-    "box": "Warlords of the Rising Sun",
+    "set": "Warlords of the Rising Sun",
+    "body": "",
     "blue1": "once_per_turn_[skill]",
     "tag_blue1": "roll_1_equals_6",
     "blue2": "guards_[skill]",
@@ -6317,12 +6948,14 @@
     "red2": "roll_6_plus_1_damage_[action]",
     "tag_red2": "combat",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "eileen",
     "name": "Eileen",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -6337,12 +6970,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "move"
+    "tag_red3": "move",
+    "image": ""
   },
   {
     "id": "kador",
     "name": "Kador",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "",
@@ -6357,12 +6992,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lugh",
     "name": "Lugh",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6377,12 +7014,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "myrinia",
     "name": "Myrinia",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "",
@@ -6397,12 +7036,14 @@
     "red2": "hit_run",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "orobox",
     "name": "Orobox",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6417,12 +7058,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "osvith",
     "name": "Osvith",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6437,12 +7080,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "bjorn_bs",
     "name": "Bjorn BS",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -6457,12 +7102,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "khaz_magichur",
     "name": "Khaz Magichur",
-    "box": "B-Sieged Crossover Pack",
+    "set": "B-Sieged Crossover Pack",
+    "body": "",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "",
@@ -6477,12 +7124,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "iron_rain",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ajax",
     "name": "Ajax",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -6497,12 +7146,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "magic",
     "red3": "regeneration",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "azrael",
     "name": "Azrael",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -6517,12 +7168,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "bjorn_md",
     "name": "Bjorn MD",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6537,12 +7190,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "elias",
     "name": "Elias",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -6557,12 +7212,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "combat",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lilned",
     "name": "Lil'Ned",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6577,12 +7234,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "frenzy_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "malleus",
     "name": "Malleus",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -6597,12 +7256,14 @@
     "red2": "lucky",
     "tag_red2": "",
     "red3": "spellcaster",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "mila",
     "name": "Mila",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -6617,12 +7278,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "jump",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "moira",
     "name": "Moira",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -6637,12 +7300,14 @@
     "red2": "roll_6_plus_1_die_[action]",
     "tag_red2": "magic",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "myriam",
     "name": "Myriam",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "point_blank",
     "tag_blue1": "",
     "blue2": "",
@@ -6657,12 +7322,14 @@
     "red2": "plus_1_max_range",
     "tag_red2": "",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ostara",
     "name": "Ostara",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6677,12 +7344,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "owen",
     "name": "Owen",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -6697,12 +7366,14 @@
     "red2": "regeneration",
     "tag_red2": "",
     "red3": "zombie_link",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sarah",
     "name": "Sarah",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -6717,12 +7388,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "walker"
+    "tag_red3": "walker",
+    "image": ""
   },
   {
     "id": "sibyl",
     "name": "Sibyl",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_zone_move",
     "tag_blue1": "",
     "blue2": "",
@@ -6737,12 +7410,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sicarius",
     "name": "Sicarius",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -6757,12 +7432,14 @@
     "red2": "plus_1_roll_[action]",
     "tag_red2": "melee",
     "red3": "plus_1_die_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "siegfried",
     "name": "Siegfried",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "frenzy_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -6777,12 +7454,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "taunt",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "silence",
     "name": "Silence",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -6797,12 +7476,14 @@
     "red2": "bloodlust_[action]",
     "tag_red2": "melee",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sylvan",
     "name": "Sylvan",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -6817,12 +7498,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "valerie",
     "name": "Valerie",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -6837,12 +7520,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "victoria",
     "name": "Victoria",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6857,12 +7542,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "whisper",
     "name": "Whisper",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6877,12 +7564,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "zoe",
     "name": "Zoe",
-    "box": "Massive Darkness Crossover Pack",
+    "set": "Massive Darkness Crossover Pack",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -6897,12 +7586,14 @@
     "red2": "barbarian",
     "tag_red2": "",
     "red3": "iron_hide",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "berko",
     "name": "Berko",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -6917,12 +7608,14 @@
     "red2": "two_zones_move",
     "tag_red2": "",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "cassiel",
     "name": "Cassiel",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -6937,12 +7630,14 @@
     "red2": "shove",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "daisy",
     "name": "Daisy",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "break_in",
     "tag_blue1": "",
     "blue2": "",
@@ -6957,12 +7652,14 @@
     "red2": "regeneration",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "dylan",
     "name": "Dylan",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "",
     "tag_blue1": "",
     "blue2": "",
@@ -6977,12 +7674,14 @@
     "red2": "",
     "tag_red2": "",
     "red3": "",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ego",
     "name": "Ego",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "",
@@ -6997,12 +7696,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "two_zones_move",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "father_corvus",
     "name": "Father Corvus",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7017,12 +7718,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "feydra",
     "name": "Feydra",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "low_profile",
     "tag_blue1": "",
     "blue2": "",
@@ -7037,12 +7740,14 @@
     "red2": "shove",
     "tag_red2": "",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "gera",
     "name": "Gera",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -7057,12 +7762,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "gheta",
     "name": "Gheta",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "frenzy_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7077,12 +7784,14 @@
     "red2": "charge",
     "tag_red2": "",
     "red3": "reaper_[action]",
-    "tag_red3": "combat"
+    "tag_red3": "combat",
+    "image": ""
   },
   {
     "id": "harin",
     "name": "Harin",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7097,12 +7806,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "brute"
+    "tag_red3": "brute",
+    "image": ""
   },
   {
     "id": "harriet",
     "name": "Harriet",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "",
@@ -7117,12 +7828,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "runner"
+    "tag_red3": "runner",
+    "image": ""
   },
   {
     "id": "irk",
     "name": "Irk",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -7137,12 +7850,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "ivan",
     "name": "Ivan",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "frenzy_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -7157,12 +7872,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "shove",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "jebediah",
     "name": "Jebediah",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -7177,12 +7894,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "move",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "walker"
+    "tag_red3": "walker",
+    "image": ""
   },
   {
     "id": "kaylee",
     "name": "Kaylee",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "ambidextrous",
     "tag_blue1": "",
     "blue2": "",
@@ -7197,12 +7916,14 @@
     "red2": "shove",
     "tag_red2": "",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "lyn",
     "name": "Lyn",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -7217,12 +7938,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "walker",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "mathrin",
     "name": "Mathrin",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "roll_6_plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7237,12 +7960,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "abomination"
+    "tag_red3": "abomination",
+    "image": ""
   },
   {
     "id": "mist",
     "name": "Mist",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "break_in",
     "tag_blue1": "",
     "blue2": "",
@@ -7257,12 +7982,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "reaper_[action]",
-    "tag_red3": "melee"
+    "tag_red3": "melee",
+    "image": ""
   },
   {
     "id": "mortemyr",
     "name": "Mortemyr",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -7277,12 +8004,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "abomination",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "nahias",
     "name": "Nahias",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -7297,12 +8026,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "slippery",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "riya",
     "name": "Riya",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -7317,12 +8048,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "ranged"
+    "tag_red3": "ranged",
+    "image": ""
   },
   {
     "id": "ryff",
     "name": "Ryff",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -7337,12 +8070,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "search_plus_1_card",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "sir_ronen",
     "name": "Sir Ronen",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -7357,12 +8092,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "melee",
     "red3": "regeneration",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "thalia_md2",
     "name": "Thalia MD2",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -7377,12 +8114,14 @@
     "red2": "brother_in_arms_[game_effect]",
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "hit_run",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "valdis",
     "name": "Valdis",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7397,12 +8136,14 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
-    "tag_red3": "runner"
+    "tag_red3": "runner",
+    "image": ""
   },
   {
     "id": "victor",
     "name": "Victor",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -7417,12 +8158,14 @@
     "red2": "regeneration",
     "tag_red2": "",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "ygraine_md2",
     "name": "Ygraine MD2",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "rotten",
     "tag_blue1": "",
     "blue2": "",
@@ -7437,12 +8180,14 @@
     "red2": "ironclad_[zombie]",
     "tag_red2": "walker_runner",
     "red3": "super_strength",
-    "tag_red3": ""
+    "tag_red3": "",
+    "image": ""
   },
   {
     "id": "zuri",
     "name": "Zuri",
-    "box": "Massive Darkness 2 Crossover Pack",
+    "set": "Massive Darkness 2 Crossover Pack",
+    "body": "",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7457,6 +8202,7 @@
     "red2": "plus_1_free_[action]_action",
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
-    "tag_red3": "magic"
+    "tag_red3": "magic",
+    "image": ""
   }
 ]

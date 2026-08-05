@@ -11,9 +11,13 @@
     <div id="overlay" class="overlay hidden" onclick="toggleMenu()"></div>
     <nav id="sidebar" class="sidebar">
         <button class="close-btn" onclick="toggleMenu()">×</button>
-        <a href="#" onclick="mudarTela('home-view')" data-i18n="menuHome">🏠 Início</a>
-        <a href="#" onclick="mudarTela('skills-view')" data-i18n="menuSkills">📖 Habilidades</a>
-        <a href="#" onclick="mudarTela('characters-view')" data-i18n="menuSurvivors">🧟‍♂️ Sobreviventes</a>
+        <a href="#" onclick="mudarTela('home-view')" data-i18n="menuHome">Início</a>
+        <a href="#" onclick="mudarTela('skills-view')" data-i18n="menuSkills">Habilidades</a>
+        <a href="#" onclick="mudarTela('characters-view')" data-i18n="menuSurvivors">Sobreviventes</a>
+        <a href="#" onclick="mudarTela('enemies-view')" data-i18n="menuEnemies">Inimigos</a>
+        <a href="#" onclick="mudarTela('equipment-view')" data-i18n="menuEquipment">Equipamentos</a>
+        <a href="#" onclick="mudarTela('priority-view')" data-i18n="menuPriority">Prioridade de Alvos</a>
+        <a href="#" onclick="mudarTela('draw-view')" data-i18n="menuDraw">Sorteio de Zumbis</a>
     </nav>
 
     <!-- Cabeçalho Principal -->
@@ -25,10 +29,13 @@
 
     <!-- TELA 1: Menu Inicial -->
     <main id="home-view" class="view-section">
-        <h2 data-i18n="homeQuestion" class="text-center">O que você deseja buscar?</h2>
         <div class="menu-botoes">
-            <button class="btn-acao" onclick="mudarTela('skills-view')" data-i18n="btnSearchSkills">📖 Buscar Habilidades</button>
-            <button class="btn-acao" onclick="mudarTela('characters-view')" data-i18n="btnSearchSurvivors">🧟‍♂️ Buscar Sobreviventes</button>
+            <button class="btn-acao" onclick="mudarTela('skills-view')" data-i18n="btnSearchSkills">Buscar Habilidades</button>
+            <button class="btn-acao" onclick="mudarTela('characters-view')" data-i18n="btnSearchSurvivors">Buscar Sobreviventes</button>
+            <button class="btn-acao" onclick="mudarTela('enemies-view')" data-i18n="btnSearchEnemies">Buscar Inimigos</button>
+            <button class="btn-acao" onclick="mudarTela('equipment-view')" data-i18n="btnSearchEquipment">Buscar Equipamentos</button>
+            <button class="btn-acao" onclick="mudarTela('priority-view')" data-i18n="btnPriority">Ordem de Prioridade</button>
+            <button class="btn-acao" onclick="mudarTela('draw-view')" data-i18n="btnDraw">Sorteio de Zumbis</button>
         </div>
     </main>
 
@@ -36,14 +43,12 @@
     <main id="skills-view" class="view-section hidden">
         <h2 data-i18n="titleSkills">Busca de Habilidades</h2>
         <div class="search-controls-mobile">
-            <!-- Container Relativo para o Dropdown flutuante -->
             <div class="input-container">
                 <input type="text" id="search-skills" data-i18n="placeholderSkills" placeholder="Digite o nome da habilidade..." autocomplete="off">
                 <div id="skills-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
-            <button onclick="listarTodasHabilidades()" class="btn-acao" data-i18n="btnAllSkills">📖 Ver Todas as Habilidades</button>
+            <button onclick="listarTodasHabilidades()" class="btn-acao" data-i18n="btnAllSkills">Ver Todas as Habilidades</button>
         </div>
-        <!-- Onde a habilidade selecionada ou a lista completa vai aparecer -->
         <div id="skills-results-foco" class="lista-resultados"></div>
     </main>
 
@@ -51,16 +56,50 @@
     <main id="characters-view" class="view-section hidden">
         <h2 data-i18n="titleSurvivors">Busca de Sobreviventes</h2>
         <div class="character-controls">
-            <!-- Container Relativo para o Dropdown flutuante -->
             <div class="input-container">
                 <input type="text" id="search-characters" data-i18n="placeholderSurvivors" placeholder="Digite o nome do personagem..." autocomplete="off">
                 <div id="characters-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
-            <button onclick="sortearPersonagem()" class="btn-acao" data-i18n="btnRandom">🎲 Sobrevivente Aleatório</button>
-            <button onclick="listarPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">📦 Ver Lista Completa</button>
+            <button onclick="sortearPersonagem()" class="btn-acao" data-i18n="btnRandom">Sobrevivente Aleatório</button>
+            <button onclick="listarPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Lista Completa</button>
         </div>
-        <!-- Onde a ficha do personagem selecionado vai aparecer -->
         <div id="characters-results-foco"></div>
+    </main>
+
+    <!-- TELA 4: Busca de Inimigos -->
+    <main id="enemies-view" class="view-section hidden">
+        <h2 data-i18n="titleEnemies">Busca de Inimigos</h2>
+        <div class="character-controls">
+            <div class="input-container">
+                <input type="text" id="search-enemies" data-i18n="placeholderEnemies" placeholder="Digite o nome do inimigo..." autocomplete="off">
+                <div id="enemies-dropdown" class="autocomplete-dropdown hidden"></div>
+            </div>
+        </div>
+        <div id="enemies-results-foco"></div>
+    </main>
+
+    <!-- TELA 5: Busca de Equipamentos -->
+    <main id="equipment-view" class="view-section hidden">
+        <h2 data-i18n="titleEquipment">Busca de Equipamentos</h2>
+        <div class="character-controls">
+            <div class="input-container">
+                <input type="text" id="search-equipment" data-i18n="placeholderEquipment" placeholder="Digite o nome do equipamento..." autocomplete="off">
+                <div id="equipment-dropdown" class="autocomplete-dropdown hidden"></div>
+            </div>
+        </div>
+        <div id="equipment-results-foco"></div>
+    </main>
+
+    <!-- TELA 6: Ordem de Prioridades -->
+    <main id="priority-view" class="view-section hidden">
+        <h2 data-i18n="titlePriority">Ordem de Prioridade de Alvos</h2>
+        
+        <div class="toggle-container">
+            <button id="btn-prio-bpgh" class="btn-toggle btn-ativo" onclick="alternarTabelaPrioridade('bpgh')">Black Plague / Green Horde</button>
+            <button id="btn-prio-wd" class="btn-toggle btn-inativo" onclick="alternarTabelaPrioridade('wd')">White Death</button>
+        </div>
+
+        <div id="priority-results-foco"></div>
     </main>
 
     <script src="script.js"></script>
