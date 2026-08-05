@@ -655,7 +655,7 @@ function renderizarFichaEquipamento(equip) {
     if (!divResultados) return;
 
     const nome = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
-    const texto = idiomaAtual === 'pt' ? equip.desc_pt : equip.desc_en;
+    const texto = idiomaAtual === 'pt' ? equip.effect_pt : equip.effect_en;
 
     // Helper para garantir que o '0' não desapareça
     const formatarAtributo = (valor) => {
