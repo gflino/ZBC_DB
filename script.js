@@ -99,12 +99,18 @@ document.getElementById('site-title').onclick = () => {
 };
 
 function toggleIdioma() {
+    // 1. Troca o idioma no estado do aplicativo
     idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
+    
+    // 2. Traduz os textos fixos da interface (HTML)
     atualizarIdiomaInterface();
 
-    if (document.getElementById('skills-results-foco').innerHTML !== '') {
-        limparTelasEBuscas();
-    }
+    // 3. Atualiza a tabela de prioridades em tempo real para o novo idioma
+    renderizarTabelasPrioridade();
+
+    // 4. Limpa as pesquisas ativas para forçar o usuário a buscar novamente no novo idioma
+    // (Evita que fichas fiquem com metades em PT e metades em EN)
+    limparTelasEBuscas();
 }
 
 function atualizarIdiomaInterface() {
@@ -604,13 +610,6 @@ function renderizarTabelasPrioridade() {
         }
     }
 }
-
-// Mantemos o gatilho para atualizar a tabela na hora se o idioma for trocado
-const toggleIdiomaOriginal = toggleIdioma;
-toggleIdioma = function() {
-    toggleIdiomaOriginal();
-    renderizarTabelasPrioridade(); 
-};
 // ==========================================
 // 8. EQUIPAMENTOS
 // ==========================================
