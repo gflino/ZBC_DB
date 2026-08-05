@@ -635,7 +635,8 @@ function buscarEquipamentos(termo) {
 
     filtrados.forEach(equip => {
         const nomeVisivel = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
-        const sub = equip.set || '';
+        // Substitui o ; por / na sugestão da barra de pesquisa
+        const sub = equip.set ? equip.set.replace(/;/g, ' / ') : '';
 
         const item = document.createElement('div');
         item.className = 'item-sugestao-lista';
@@ -655,7 +656,10 @@ function renderizarFichaEquipamento(equip) {
     if (!divResultados) return;
 
     const nome = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
+    // Apontando para as chaves corretas do seu JSON
     const texto = idiomaAtual === 'pt' ? equip.effect_pt : equip.effect_en;
+    // Substitui o ; por / na ficha final
+    const setFormatado = equip.set ? equip.set.replace(/;/g, ' / ') : ''; 
 
     // Helper para garantir que o '0' não desapareça
     const formatarAtributo = (valor) => {
@@ -663,10 +667,9 @@ function renderizarFichaEquipamento(equip) {
         return valor ? valor : '-';
     };
 
-    // Formatação do deck (trocando ';' por '/')
     let deckFormatado = equip.deck ? traduzirTag(equip.deck) : null;
     if (deckFormatado) {
-        deckFormatado = deckFormatado.replace(/;/g, ' /');
+        deckFormatado = deckFormatado.replace(/;/g, ' / ');
     }
 
     const tagsEquipamento = [
@@ -688,7 +691,7 @@ function renderizarFichaEquipamento(equip) {
         <div class="ficha-equipamento">
             <div class="equipamento-cabecalho">
                 <h2>${nome}</h2>
-                <div class="equipamento-set">${equip.set}</div>
+                <div class="equipamento-set">${setFormatado}</div>
                 <div class="equipamento-tags">${tagsEquipamento}</div>
             </div>
             
