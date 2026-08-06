@@ -1,6 +1,12 @@
 tags,tags_en,tags_pt
+priority,Priority,Prioridade
+name,Name,Nome
 combat,Combat,Combate
+lethal,Lethal,Letal
+damage,Damage,Dano
 guard_action,Guard Action,Ação de Guarda
+actions,Actions,Ações
+ap,AP,PA
 magic,Magic,Magia
 melee,Melee,Corpo a Corpo
 meditation,Meditation,Meditação
@@ -20,6 +26,13 @@ combat_spell,Combat Spell,Feitiço de Combate
 melee_weapon,Melee Weapon,Arma Corpo a Corpo
 ranged_weapon,Ranged Weapon,Arma de Longa Distância
 mixed_weapon,Mixed Weapon,Arma Mista
+range,Range,Alcance
+dice,Dice,Dados
+accuracy,Accuracy,Precisão
+danger,Danger,Perigo
+dual,Dual,Dupla
+noise,Noise,Barulho
+door,Door,Porta
 blue,Blue,Azul
 yellow,Yellow,Amarelo
 orange,Orange,Laranja
@@ -53,6 +66,7 @@ abomination,Abomination,Abominação
 dragon,Dragon,Dragão
 brute,Brute,Bruto
 murder_of_crowz,Murder of Crowz,Bando de Corvoz
+necromancer,Necromancer,Necromante
 runner,Runner,Corredor
 swarm_of_ratz,Swarms of Ratz,Enxame de Ratoz
 walker,Walker,Lerdo
@@ -79,13 +93,13 @@ blitz,Blitz,Blitz
 bloodlust_[action],Bloodlust: [Action],Sede de sangue: [Ação] / Louco por Sangue [Ação]
 born_leader,Born leader,Líder Nato
 break_in,Break-in,Arrombar / Invasor
-bridge_walker,Bridge Walker,
+bridge_walker,Bridge Walker,Perito em Pontes
 brother_in_arms_[game_effect],Brother in Arms: [game effect],Irmão de Armas: [efeito de jogo] 
 can_search_more_than_once,Can Search More Than Once,Pode Procurar Mais de Uma Vez
 carries_kirag,Carries Kirag,Carrega Kirag
 charge,Charge,Carga / Atacar
 choose_any_skill,Choose Any Skill,Escolha Qualquer Habilidade
-chi_[skill],Chi [Skill],
+chi_[skill],Chi [Skill],Chi [Habilidade]
 close_quarter_master,Close-Quarter Master,Mestre da Curta Distância
 collector_[zombie],Collector: [Zombie type],Colecionador: [tipo de Zumbi] 
 combat_reflexes,Combat Reflexes,Reflexos de Combate
@@ -108,15 +122,15 @@ giant,Giant,Gigante
 guards_[skill],Guards: [Skill],Guardas: [Habilidade] 
 guards_evade,Guards: Evade,Guardas: Esquivar
 guards_push,Guards: Push,Guardas: Empurrar
-guards_warden_killers,Guards: Warden Killers,
+guards_warden_killers,Guards: Warden Killers,Guardas: Matadores de Vigias
 heaven_can_wait,Heaven Can Wait,Heaven Can Wait
 hit_run,Hit & run,Bate & Corre
 hoard,Hoard,Acumulador
 hold_your_nose,Hold your nose,Raspa do Tacho / Prenda a Respiração
-ice_walker,Ice Walker,
-ice_warrior,Ice Warrior,
+ice_walker,Ice Walker,Andarilho do Gelo
+ice_warrior,Ice Warrior,Guerreiro do Gelo
 improvised_weapon_[action],Improvised Weapon: [Action],Arma Improvisada: [Ação]
-inner_god,Inner God,
+inner_god,Inner God,Deus Interior
 ironclad_[zombie],Ironclad: [Zombie type],Encouraçado: [tipo de Zumbi] 
 iron_hide,Iron hide,Pele de Ferro
 iron_rain,Iron rain,Chuva de Ferro
@@ -165,7 +179,7 @@ starts_with_[equipment],Starts with a [Equipment],Começa com um(a) [Equipamento
 swordmaster,Swordmaster,Mestre Espadachim
 tactician,Tactician,Estrategista
 taunt,Taunt,Provocação / Provocar
-throw,Throw,
+throw,Throw,Arremesso
 tough,Tough,Durão
 trasform_werewolf,Transform into Lotas (Werewolf),Transforma em Lotas (Lobisomem)
 transmutation,Transmutation,Transmutação
@@ -177,5 +191,5 @@ turtle_focus_damage_3_combat,Turtle Focus: Damage 3: Combat,Foco de Tartaruga: D
 turtle_power_2_for_1,Turtle Power: 2 for 1,Poder de Tartaruga: 2 por 1
 vault_picker,Vault Picker,Trapeiro de Cripta
 wall_climber,Wall Climber,Escalador de Muralhas
-warden_killers,Warden Killers,
+warden_killers,Warden Killers,Matador de Brutos
 zombie_link,Zombie link,Conexão Zumbi

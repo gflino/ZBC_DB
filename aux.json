@@ -1,13 +1,58 @@
 [
   {
+    "tags": "priority",
+    "tags_en": "Priority",
+    "tags_pt": "Prioridade"
+  },
+  {
+    "tags": "yes",
+    "tags_en": "Yes",
+    "tags_pt": "Sim"
+  },
+  {
+    "tags": "no",
+    "tags_en": "No",
+    "tags_pt": "Não"
+  },
+  {
+    "tags": "body",
+    "tags_en": "Body",
+    "tags_pt": "Corpo"
+  },
+  {
+    "tags": "name",
+    "tags_en": "Name",
+    "tags_pt": "Nome"
+  },
+  {
     "tags": "combat",
     "tags_en": "Combat",
     "tags_pt": "Combate"
   },
   {
+    "tags": "lethal",
+    "tags_en": "Lethal",
+    "tags_pt": "Letal"
+  },
+  {
+    "tags": "damage",
+    "tags_en": "Damage",
+    "tags_pt": "Dano"
+  },
+  {
     "tags": "guard_action",
     "tags_en": "Guard Action",
     "tags_pt": "Ação de Guarda"
+  },
+  {
+    "tags": "actions",
+    "tags_en": "Actions",
+    "tags_pt": "Ações"
+  },
+  {
+    "tags": "ap",
+    "tags_en": "AP",
+    "tags_pt": "PA"
   },
   {
     "tags": "magic",
@@ -103,6 +148,41 @@
     "tags": "mixed_weapon",
     "tags_en": "Mixed Weapon",
     "tags_pt": "Arma Mista"
+  },
+  {
+    "tags": "range",
+    "tags_en": "Range",
+    "tags_pt": "Alcance"
+  },
+  {
+    "tags": "dice",
+    "tags_en": "Dice",
+    "tags_pt": "Dados"
+  },
+  {
+    "tags": "accuracy",
+    "tags_en": "Accuracy",
+    "tags_pt": "Precisão"
+  },
+  {
+    "tags": "danger",
+    "tags_en": "Danger",
+    "tags_pt": "Perigo"
+  },
+  {
+    "tags": "dual",
+    "tags_en": "Dual",
+    "tags_pt": "Dupla"
+  },
+  {
+    "tags": "noise",
+    "tags_en": "Noise",
+    "tags_pt": "Barulho"
+  },
+  {
+    "tags": "door",
+    "tags_en": "Door",
+    "tags_pt": "Porta"
   },
   {
     "tags": "blue",
@@ -270,6 +350,11 @@
     "tags_pt": "Bando de Corvoz"
   },
   {
+    "tags": "necromancer",
+    "tags_en": "Necromancer",
+    "tags_pt": "Necromante"
+  },
+  {
     "tags": "runner",
     "tags_en": "Runner",
     "tags_pt": "Corredor"
@@ -402,7 +487,7 @@
   {
     "tags": "bridge_walker",
     "tags_en": "Bridge Walker",
-    "tags_pt": ""
+    "tags_pt": "Perito em Pontes"
   },
   {
     "tags": "brother_in_arms_[game_effect]",
@@ -432,7 +517,7 @@
   {
     "tags": "chi_[skill]",
     "tags_en": "Chi [Skill]",
-    "tags_pt": ""
+    "tags_pt": "Chi [Habilidade]"
   },
   {
     "tags": "close_quarter_master",
@@ -547,7 +632,7 @@
   {
     "tags": "guards_warden_killers",
     "tags_en": "Guards: Warden Killers",
-    "tags_pt": ""
+    "tags_pt": "Guardas: Matadores de Vigias"
   },
   {
     "tags": "heaven_can_wait",
@@ -572,12 +657,12 @@
   {
     "tags": "ice_walker",
     "tags_en": "Ice Walker",
-    "tags_pt": ""
+    "tags_pt": "Andarilho do Gelo"
   },
   {
     "tags": "ice_warrior",
     "tags_en": "Ice Warrior",
-    "tags_pt": ""
+    "tags_pt": "Guerreiro do Gelo"
   },
   {
     "tags": "improvised_weapon_[action]",
@@ -587,7 +672,7 @@
   {
     "tags": "inner_god",
     "tags_en": "Inner God",
-    "tags_pt": ""
+    "tags_pt": "Deus Interior"
   },
   {
     "tags": "ironclad_[zombie]",
@@ -832,7 +917,7 @@
   {
     "tags": "throw",
     "tags_en": "Throw",
-    "tags_pt": ""
+    "tags_pt": "Arremesso"
   },
   {
     "tags": "tough",
@@ -892,7 +977,7 @@
   {
     "tags": "warden_killers",
     "tags_en": "Warden Killers",
-    "tags_pt": ""
+    "tags_pt": "Matador de Brutos"
   },
   {
     "tags": "zombie_link",

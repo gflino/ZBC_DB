@@ -142,9 +142,9 @@
   {
     "id": "bridge_walker",
     "name_en": "Bridge Walker",
-    "name_pt": "",
+    "name_pt": "Perito em Pontes",
     "desc_en": "The Survivor can enter or exit a Bridge Zone through its sides (not only through its ends).",
-    "desc_pt": ""
+    "desc_pt": "O Sobrevivente pode entrar ou sair de uma Zona de Ponte pelas laterais (não somente pelas saídas)."
   },
   {
     "id": "brother_in_arms_[game_effect]",
@@ -184,9 +184,9 @@
   {
     "id": "chi_[skill]",
     "name_en": "Chi [Skill]",
-    "name_pt": "",
+    "name_pt": "Chi [Habilidade]",
     "desc_en": "The Survivor may spend 1 Chi to use the specified Skill.",
-    "desc_pt": ""
+    "desc_pt": "O Sobrevivente pode gastar 1 Chi para reforçar uma Ação ou Habilidade especificada."
   },
   {
     "id": "close_quarter_master",
@@ -319,7 +319,7 @@
     "name_en": "Giant",
     "name_pt": "Gigante",
     "desc_en": "The Survivor may trace Lines Of Sight over buildings and Hedges to Zones beyond them (but not into a building through walls or closed doors). Likewise, Actors in these Zones can trace Lines Of Sight to the Survivor. The Survivor can use this special Line of Sight to perform Attacks (and vice-versa).",
-    "desc_pt": ""
+    "desc_pt": "O Sobrevivente pode traçar Linha de Visão por construções e Muralhas para Zonas próximas a elas (porém não dentro de construções ou portas fechadas). Da mesma forma, outros Atores podem traçar Linha de Visão para o Sobrevivente. Esta Linha de Visão pode ser utilizada para realizar Ataques."
   },
   {
     "id": "guards_[skill]",
@@ -345,9 +345,9 @@
   {
     "id": "guards_warden_killers",
     "name_en": "Guards: Warden Killers",
-    "name_pt": "",
+    "name_pt": "Guardas: Matadores de Vigias",
     "desc_en": "This Skill may be used whenever the Survivor performs a Melee or Ranged Guard Action. Guards consider Warden Brutes as standard Brutes for the ensuing Melee or Ranged Action. They can kill Zombies without anyone spending Chi!",
-    "desc_pt": ""
+    "desc_pt": "Esta Habilidade pode ser usada sempre que o Sobrevivente realizar uma Ação de guarda Corpo a Corpo ou de Longa Distância. Guardas consideram Brutos Vigia como Brutos comuns para o Ataque realizado."
   },
   {
     "id": "heaven_can_wait",
@@ -380,16 +380,16 @@
   {
     "id": "ice_walker",
     "name_en": "Ice Walker",
-    "name_pt": "",
+    "name_pt": "Andarilho do Gelo",
     "desc_en": "Once per Turn, the Survivor may perform 1 free Move Action when standing in an Ice Zone.",
-    "desc_pt": ""
+    "desc_pt": "Uma vez por Turno, o Sobrevivente pode realizar 1 Ação de Movimento gratuita quando estiver em uma Zona de Gelo."
   },
   {
     "id": "ice_warrior",
     "name_en": "Ice Warrior",
-    "name_pt": "",
+    "name_pt": "Guerreiro do Gelo",
     "desc_en": "The Survivor can perform Combat Actions while standing in Ice Zones.",
-    "desc_pt": ""
+    "desc_pt": "O Sobrevivente pode realizar Ações de Combate enquanto está em Zonas de Gelo"
   },
   {
     "id": "improvised_weapon_[action]",
@@ -401,9 +401,9 @@
   {
     "id": "inner_god",
     "name_en": "Inner God",
-    "name_pt": "",
+    "name_pt": "Deus Interior",
     "desc_en": "The Survivor does not lose a Chi point when a God-Eater Abomination card is drawn.",
-    "desc_pt": ""
+    "desc_pt": "O Sobrevivente não perde um ponto de Chi quando uma carta de Abominação Devoradora de Deuses é comprada."
   },
   {
     "id": "ironclad_[zombie]",
@@ -599,7 +599,7 @@
     "name_en": "Roll 6: +1 to dice roll: [Action]",
     "name_pt": "Resultado 6: +1 no Resultado: [Ação]",
     "desc_en": "When resolving an Action of the specified type (Combat, Melee, or Ranged), for each result of 6 add 1 to the result of each die (maximum value of 6).",
-    "desc_pt": ""
+    "desc_pt": "Quando estiver realizando uma Ação do tipo especificado (Combate, Magia, Corpo a Corpo ou Longo Alcance), para cada resultado 6 no dado adicione mais 1 resultado no dado de cada dado (máximo de 6)."
   },
   {
     "id": "rotten",
@@ -744,9 +744,9 @@
   {
     "id": "throw",
     "name_en": "Throw",
-    "name_pt": "",
+    "name_pt": "Arremesso",
     "desc_en": "The Survivor can use this Skill, for free, once during each of their Turns. Choose an Actor in the same Zone (Dragons and Giants are excluded). The Actor’s miniature is removed from the Zone, then placed in a target Zone within Range 1-2 and Line Of Sight of the thrower. A Ranged Attack is then performed in the target Zone: it automatically hits a Zombie, ignoring the thrown Actor. The Attack inflicts as much Damage as an equipped weapon of the thrown Survivor or the Damage value of the thrown Zombie.",
-    "desc_pt": ""
+    "desc_pt": "O Sobrevivente pode usar esta Habilidade, de forma gratuita, uma vez durante cada um de seus Turnos. Escolha um Ator na mesma Zona (Dragões e Gigantes estão excluídos). A miniatura do Ator é removida da Zona e, em seguida, colocada em uma Zona alvo dentro de Alcance 1-2 e Linha de Visão do lançador. Um Ataque à Distância é então realizado na Zona alvo: ele acerta automaticamente um Zumbi, ignorando o Ator arremessado. O Ataque causa Dano equivalente a arma equipada do Sobrevivente arremessado ou o valor de Dano do Zumbi arremessado."
   },
   {
     "id": "tough",
@@ -828,9 +828,9 @@
   {
     "id": "warden_killers",
     "name_en": "Warden Killers",
-    "name_pt": "",
+    "name_pt": "Matador de Brutos",
     "desc_en": "Consider Warden Brutes as standard Brutes for Combat Actions.",
-    "desc_pt": ""
+    "desc_pt": "Considere Brutos Vigia como Brutos comuns para Ações de Combate."
   },
   {
     "id": "zombie_link",

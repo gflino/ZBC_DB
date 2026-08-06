@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zombicide Compendium</title>
+    <title>Zombicide DB</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,86 +17,94 @@
         <a href="#" onclick="mudarTela('enemies-view')" data-i18n="menuEnemies">Inimigos</a>
         <a href="#" onclick="mudarTela('equipment-view')" data-i18n="menuEquipment">Equipamentos</a>
         <a href="#" onclick="mudarTela('priority-view')" data-i18n="menuPriority">Ordem de Prioridade</a>
-                <a href="https://gflino.github.io/ZBC_Spawn_Web/" target="_blank" data-i18n="menuDraw">Sorteio de Zumbis</a>
+                <a href="https://gflino.github.io/ZBC_Spawn_Web/" target="_blank" data-i18n="menuDraw">Gerenciamento de Entradas de Zumbi</a>
         
     </nav>
 
     <!-- Cabeçalho Principal -->
     <header>
         <button id="menu-btn" onclick="toggleMenu()">☰</button>
-        <h1 id="site-title" onclick="mudarTela('home-view')" data-i18n="title">Zombicide Compêndio</h1>
-        <button id="btn-language" onclick="toggleIdioma()">EN / PT</button>
+        <h1 id="site-title" onclick="mudarTela('home-view')" data-i18n="title">Zombicide DB</h1>
+        
+        <!-- Novo Seletor de Idioma Discreto -->
+        <div class="lang-container">
+            <span>🌐</span>
+            <select id="lang-selector" onchange="mudarIdiomaSelecionado(this.value)">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
     </header>
 
     <!-- TELA 1: Menu Inicial -->
     <main id="home-view" class="view-section">
         <div class="menu-botoes">
-            <button class="btn-acao" onclick="mudarTela('characters-view')" data-i18n="btnSearchSurvivors">Buscar Sobreviventes</button>
-            <button class="btn-acao" onclick="mudarTela('skills-view')" data-i18n="btnSearchSkills">Buscar Habilidades</button>
-            <button class="btn-acao" onclick="mudarTela('enemies-view')" data-i18n="btnSearchEnemies">Buscar Inimigos</button>
-            <button class="btn-acao" onclick="mudarTela('equipment-view')" data-i18n="btnSearchEquipment">Buscar Equipamentos</button>
+            <button class="btn-acao" onclick="mudarTela('characters-view')" data-i18n="btnSearchSurvivors">Sobreviventes</button>
+            <button class="btn-acao" onclick="mudarTela('skills-view')" data-i18n="btnSearchSkills">Habilidades</button>
+            <button class="btn-acao" onclick="mudarTela('enemies-view')" data-i18n="btnSearchEnemies">Inimigos</button>
+            <button class="btn-acao" onclick="mudarTela('equipment-view')" data-i18n="btnSearchEquipment">Equipamentos</button>
             <button class="btn-acao" onclick="mudarTela('priority-view')" data-i18n="btnPriority">Ordem de Prioridade</button>
-            <button class="btn-acao" onclick="window.open('https://gflino.github.io/ZBC_Spawn_Web/', '_blank')" data-i18n="btnDraw">Sorteio de Zumbis</button>
+            <button class="btn-acao" onclick="window.open('https://gflino.github.io/ZBC_Spawn_Web/', '_blank')" data-i18n="btnDraw">Gerenciamento de Entradas de Zumbi</button>
             
         </div>
     </main>
 
     <!-- TELA 2: Busca de Habilidades -->
     <main id="skills-view" class="view-section hidden">
-        <h2 data-i18n="titleSkills">Busca de Habilidades</h2>
+        <h2 data-i18n="titleSkills">Habilidades</h2>
         <div class="search-controls-mobile">
             <div class="input-container">
                 <input type="text" id="search-skills" data-i18n="placeholderSkills" placeholder="Digite o nome da habilidade..." autocomplete="off">
                 <div id="skills-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
-            <button onclick="listarTodasHabilidades()" class="btn-acao" data-i18n="btnAllSkills">Ver Todas as Habilidades</button>
+            <button onclick="listarTodasHabilidades()" class="btn-acao" data-i18n="btnAllSkills">Ver Tudo</button>
         </div>
         <div id="skills-results-foco" class="lista-resultados"></div>
     </main>
 
     <!-- TELA 3: Busca de Personagens -->
     <main id="characters-view" class="view-section hidden">
-        <h2 data-i18n="titleSurvivors">Busca de Sobreviventes</h2>
+        <h2 data-i18n="titleSurvivors">Sobreviventes</h2>
         <div class="character-controls">
             <div class="input-container">
                 <input type="text" id="search-characters" data-i18n="placeholderSurvivors" placeholder="Digite o nome do personagem..." autocomplete="off">
                 <div id="characters-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
             <button onclick="sortearPersonagem()" class="btn-acao" data-i18n="btnRandom">Sobrevivente Aleatório</button>
-            <button onclick="listarPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Lista Completa</button>
+            <button onclick="listarPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Tudo</button>
         </div>
         <div id="characters-results-foco"></div>
     </main>
 
     <!-- TELA 4: Busca de Inimigos -->
     <main id="enemies-view" class="view-section hidden">
-        <h2 data-i18n="titleEnemies">Busca de Inimigos</h2>
+        <h2 data-i18n="titleEnemies">Inimigos</h2>
         <div class="character-controls">
             <div class="input-container">
                 <input type="text" id="search-enemies" data-i18n="placeholderEnemies" placeholder="Digite o nome do inimigo..." autocomplete="off">
                 <div id="enemies-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
-            <button onclick="listarInimigosPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Lista Completa</button>
+            <button onclick="listarInimigosPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Tudo</button>
         </div>
         <div id="enemies-results-foco"></div>
     </main>
 
     <!-- TELA 5: Busca de Equipamentos -->
     <main id="equipment-view" class="view-section hidden">
-        <h2 data-i18n="titleEquipment">Busca de Equipamentos</h2>
+        <h2 data-i18n="titleEquipment">Equipamentos</h2>
         <div class="character-controls">
             <div class="input-container">
                 <input type="text" id="search-equipment" data-i18n="placeholderEquipment" placeholder="Digite o nome do equipamento..." autocomplete="off">
                 <div id="equipment-dropdown" class="autocomplete-dropdown hidden"></div>
             </div>
-            <button onclick="listarEquipamentosPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Lista Completa</button>
+            <button onclick="listarEquipamentosPorCaixas()" class="btn-acao" data-i18n="btnListBoxes">Ver Tudo</button>
         </div>
         <div id="equipment-results-foco"></div>
     </main>
     
     <!-- TELA 6: Ordem de Prioridades -->
     <main id="priority-view" class="view-section hidden">
-        <h2 data-i18n="titlePriority">Ordem de Prioridade de Alvos</h2>
+        <h2 data-i18n="titlePriority">Ordem de Prioridade</h2>
         
         <div class="toggle-container">
             <button id="btn-prio-bpgh" class="btn-toggle btn-ativo" onclick="alternarTabelaPrioridade('bpgh')">Black Plague / Green Horde</button>

@@ -1,16 +1,125 @@
-/// ==========================================
+// ==========================================
 // 1. BANCOS DE DADOS E ESTADO GERAL
 // ==========================================
 let habilidadesBase = [];
 let sobreviventesBase = [];
 let inimigosBase = [];
 let equipamentosBase = [];
-let auxBase = []; // <-- Substituiu o antigo tagsBase
+let auxBase = []; 
 let priorityBpGhBase = [];
 let priorityWdBase = [];
 let idiomaAtual = 'pt';
 
-// (Mantenha o seu const i18nUI = { ... } intacto aqui no meio)
+// Dicionário Global da Interface do Usuário (i18n)
+const i18nUI = {
+    title: { pt: "Zombicide Compêndio", en: "Zombicide Compendium" },
+    menuHome: { pt: "Início", en: "Home" },
+    menuSkills: { pt: "Habilidades", en: "Skills" },
+    menuSurvivors: { pt: "Sobreviventes", en: "Survivors" },
+    menuEnemies: { pt: "Inimigos", en: "Enemies" },
+    menuEquipment: { pt: "Equipamentos", en: "Equipment" },
+    menuPriority: { pt: "Ordem de Prioridade", en: "Priority Order" },
+    menuDraw: { pt: "Gerenciamento de Entradas de Zumbi", en: "Zombie Spawn Manager" },
+    btnSearchSkills: { pt: "Habilidades", en: "Skills" },
+    btnSearchSurvivors: { pt: "Sobreviventes", en: "Survivors" },
+    btnSearchEnemies: { pt: "Inimigos", en: "Enemies" },
+    btnSearchEquipment: { pt: "Equipamentos", en: "Equipment" },
+    btnPriority: { pt: "Ordem de Prioridade", en: "Priority Order" },
+    btnDraw: { pt: "Gerenciamento de Entradas de Zumbi", en: "Zombie Spawn Manager" },
+    titleSkills: { pt: "Habilidades", en: "Skill" },
+    titleSurvivors: { pt: "Sobreviventes", en: "Survivors" },
+    titleEnemies: { pt: "Inimigos", en: "Enemies" },
+    titleEquipment: { pt: "Equipamentos", en: "Equipment" },
+    titlePriority: { pt: "Ordem de Prioridade", en: "Priority Order" },
+    placeholderSkills: { pt: "Digite o nome da habilidade...", en: "Type the skill name..." },
+    placeholderSurvivors: { pt: "Digite o nome do personagem...", en: "Type the character's name..." },
+    placeholderEnemies: { pt: "Digite o nome do inimigo...", en: "Type the enemy's name..." },
+    placeholderEquipment: { pt: "Digite o nome do equipamento...", en: "Type the equipment's name..." },
+    btnAllSkills: { pt: "Ver Tudo", en: "Show All" },
+    btnRandom: { pt: "Sobrevivente Aleatório", en: "Random Survivor" },
+    btnListBoxes: { pt: "Ver Tudo", en: "Show All" }
+};
+const ordemCaixasPreferida = [
+        // === ERA BLACK PLAGUE (2015) ===
+        "Black Plague",
+        "Wulfsburg",
+        "Hero Box-1",
+        "NPC-1",
+        "NPC-2",
+        "Zombie Bosses Abomination Pack",
+        "Deadeye Walkers",
+        "Murder of Crowz",
+        "Huntsman Pack",
+        "Knight Pack",
+        "Grom and Thalia Box",
+        "Evil Troy Box",
+        "Erik the Summoner Box",
+        "Benson Box",
+        "Homer Box",
+        "Willow Box",
+        "Special Guest Adrian Smith",
+        "Special Guest Edouard Guiton",
+        "Special Guest Gipi",
+        "Special Guest John Howe",
+        "Special Guest Jovem Nerd",
+        "Special Guest Karl Kopinski",
+        "Special Guest Marc Simonetti",
+        "Special Guest Naïade",
+        "Special Guest Neal Adams",
+        "Special Guest Paolo Parente",
+        "Special Guest Paul Bonner",
+        "B-Sieged Crossover Pack",
+        "Game Night Kit",
+
+        // === ERA GREEN HORDE (2017) ===
+        "Green Horde",
+        "Friends and Foes",
+        "No Rest for the Wicked",
+        "Horde Box",
+        "Fatty Bursters Box",
+        "Rat King & Swamp Troll",
+        "Abominarat and Dr Stormcrow Box",
+        "Grin and Scowl Box",
+        "Liam Box",
+        "North the Halfling Box",
+        "Special Guest Adrian Smith 2",
+        "Special Guest Carl Critchlow",
+        "Special Guest Paul Bonner 2",
+        "Special Guest Sean A. Murray",
+        "Special Guest Stefan Kopinski",
+        "Massive Darkness Crossover Pack",
+        "Black Plague Ultimate Survivors",
+        "Time Machine PNP",
+
+        // === CROSSOVERS E PACOTES ESPECIAIS (2019-2022) ===
+        "Massive Darkness 2 Crossover Pack",
+        "Comic Book Extras (Road to Hell)",
+        "Thundercats Pack 1",
+        "Thundercats Pack 2",
+        "Thundercats Pack 3",
+        "Iron Maiden Pack 1",
+        "Iron Maiden Pack 2",
+        "Iron Maiden Pack 3",
+        "La Compagnia Della Forca",
+
+        // === ERA WHITE DEATH (2023) ===
+        "White Death",
+        "Eternal Empire",
+        "Frozen Fortress",
+        "Crossfire Pack",
+        "Divine Beasts",
+        "Berserker Walkers",
+        "Climbers & Terrorcotta Walkers",
+        "Celestial Knights",
+        "Virtues of Bushido",
+        "Warlords of the Middle Kingdom",
+        "Warlords of the Rising Sun",
+        "Chang' E and Hou Yi Box",
+        "TMNT Timecrash",
+        "TMNT Bebop & Rocksteady",
+        "Jennika Box",
+        "Usagi Yojimbo Box"
+    ];
 
 Promise.all([
     fetch('skills.json').then(res => res.json()).catch(() => []),
@@ -34,7 +143,6 @@ Promise.all([
     renderizarTabelasPrioridade(); 
     mudarTela('home-view');
 });
-
 
 // ==========================================
 // 2. SISTEMA DE NAVEGAÇÃO, MENU E IDIOMA
@@ -98,29 +206,36 @@ function mudarTela(telaId) {
 }
 
 
-function toggleIdioma() {
-    // 1. Troca o idioma no estado do aplicativo
-    idiomaAtual = idiomaAtual === 'pt' ? 'en' : 'pt';
+// ==========================================
+// SISTEMA DE IDIOMA E INTERFACE
+// ==========================================
+
+function mudarIdiomaSelecionado(novoIdioma) {
+    idiomaAtual = novoIdioma;
     
-    // 2. Traduz os textos fixos da interface (HTML)
+    // Executa a tradução de todo o site
     atualizarIdiomaInterface();
-
-    // 3. Atualiza a tabela de prioridades em tempo real para o novo idioma
+    
+    // Remonta a tabela de prioridades no novo idioma
     renderizarTabelasPrioridade();
-
-    // 4. Limpa as pesquisas ativas para forçar o usuário a buscar novamente no novo idioma
-    // (Evita que fichas fiquem com metades em PT e metades em EN)
+    
+    // Limpa as pesquisas antigas para evitar bilinguismo nas fichas abertas
     limparTelasEBuscas();
 }
 
 function atualizarIdiomaInterface() {
+    // Varre TODOS os elementos do HTML que possuem o atributo data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const chave = el.getAttribute('data-i18n');
-        if (i18nUI[chave]) {
+        
+        // Se a chave existir no nosso dicionário (i18nUI)
+        if (i18nUI[chave] && i18nUI[chave][idiomaAtual]) {
+            // Se o elemento for um campo de digitação, traduz o "placeholder"
             if (el.tagName === 'INPUT') {
-                el.placeholder = i18nUI[chave][idiomaAtual];
+                el.setAttribute('placeholder', i18nUI[chave][idiomaAtual]);
             } else {
-                el.textContent = i18nUI[chave][idiomaAtual];
+                // Se for um título, botão ou texto normal, traduz o conteúdo
+                el.innerHTML = i18nUI[chave][idiomaAtual];
             }
         }
     });
@@ -356,90 +471,163 @@ function sortearPersonagem() {
     renderizarFichaPersonagem(sobreviventesBase[aleatorio]);
 }
 
+// ==========================================
+// FUNÇÃO DE LISTAGEM - SOBREVIVENTES
+// ==========================================
 function listarPorCaixas() {
     const divResultados = document.getElementById('characters-results-foco');
-    document.getElementById('characters-dropdown').classList.add('hidden');
+    const dropdown = document.getElementById('characters-dropdown');
+    if (dropdown) dropdown.classList.add('hidden');
+    if (!divResultados) return;
+    
     divResultados.innerHTML = '';
-
     const porCaixa = {};
+
     sobreviventesBase.forEach(s => {
-        if (!porCaixa[s.set]) porCaixa[s.set] = [];
-        porCaixa[s.set].push(s);
+        if (!s.set || String(s.set).trim() === '') {
+            const caixaPadrao = 'Sem Caixa';
+            if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
+            porCaixa[caixaPadrao].push(s);
+            return;
+        }
+
+        // Separa, limpa espaços em branco e ignora vazios
+        const caixasDoItem = String(s.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
+
+        caixasDoItem.forEach(caixa => {
+            if (!porCaixa[caixa]) {
+                porCaixa[caixa] = [];
+            }
+            porCaixa[caixa].push(s);
+        });
     });
 
-    for (const [caixa, lista] of Object.entries(porCaixa)) {
+    // Ordenação blindada
+    const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
+        const indexA = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === a.toLowerCase());
+        const indexB = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === b.toLowerCase());
+
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.localeCompare(b);
+    });
+
+    caixasOrdenadas.forEach(caixa => {
+        if (porCaixa[caixa].length === 0) return;
+
         const boxDiv = document.createElement('div');
         boxDiv.className = 'bloco-caixa';
         boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
         
-        lista.forEach(s => {
+        const listaPersonagens = porCaixa[caixa].sort((a, b) => {
+            const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || a.name || '';
+            const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || b.name || '';
+            return nomeA.localeCompare(nomeB);
+        });
+
+        listaPersonagens.forEach(s => {
             const li = document.createElement('div');
             li.className = 'item-sugestao-lista';
-            li.textContent = s.name;
+            li.textContent = (idiomaAtual === 'pt' ? s.name_pt : s.name_en) || s.name;
             li.onclick = () => renderizarFichaPersonagem(s);
             boxDiv.appendChild(li);
         });
         divResultados.appendChild(boxDiv);
-    }
+    });
 }
 
 function renderizarFichaPersonagem(sobrevivente) {
     const divResultados = document.getElementById('characters-results-foco');
+    if (!divResultados) return;
     
-    // 1. Injeção Condicional da Imagem
+    // 1. Título e Caixas
+    const nome = (idiomaAtual === 'pt' ? sobrevivente.name_pt : sobrevivente.name_en) || sobrevivente.name;
+    const caixas = sobrevivente.set ? sobrevivente.set.replace(/;/g, ' / ') : '';
+
+    // 2. Injeção do Body (Equipamento Inicial) - Centralizado e com tradução dinâmica
+    let bodyHtml = '';
+    if (sobrevivente.body && sobrevivente.body.trim() !== '') {
+        const tituloBody = traduzirTag('body');
+        const termoBody = sobrevivente.body.trim().toLowerCase();
+        
+        const equip = equipamentosBase.find(e => 
+            (e.id && e.id.toLowerCase() === termoBody) ||
+            (e.name_en && e.name_en.toLowerCase() === termoBody) ||
+            (e.name_pt && e.name_pt.toLowerCase() === termoBody) ||
+            (e.name && e.name.toLowerCase() === termoBody)
+        );
+        
+        let equipamentoBody = sobrevivente.body;
+        if (equip) {
+            equipamentoBody = idiomaAtual === 'pt' ? (equip.name_pt || equip.name) : (equip.name_en || equip.name);
+        } else {
+            equipamentoBody = traduzirTag(sobrevivente.body);
+        }
+
+        bodyHtml = `
+            <div style="text-align: center; margin-top: 5px; margin-bottom: 15px; font-size: 0.9em;">
+                <span style="color: #4da6ff; text-transform: uppercase; letter-spacing: 1px; margin-right: 5px;">${tituloBody}:</span>
+                <span style="color: #e0e0e0; font-weight: bold; text-transform: capitalize;">${equipamentoBody}</span>
+            </div>
+        `;
+    }
+
+    // 3. Injeção Condicional da Imagem - Centralizada
     let imagemHtml = '';
     if (sobrevivente.image && sobrevivente.image.trim() !== '') {
         imagemHtml = `
             <div class="sobrevivente-imagem-container">
-                <img src="${sobrevivente.image}" alt="${sobrevivente.name}" class="sobrevivente-img" loading="lazy" onerror="this.style.display='none'">
+                <img src="${sobrevivente.image}" alt="${nome}" class="sobrevivente-img" loading="lazy" onerror="this.style.display='none'">
             </div>
         `;
     }
 
-    // 2. Injeção Condicional do Body (Equipamento de Corpo)
-    const labelBody = idiomaAtual === 'pt' ? 'Equipamento de Corpo:' : 'Body Equipment:';
-    let bodyHtml = '';
-    if (sobrevivente.body && sobrevivente.body.trim() !== '') {
-        bodyHtml = `
-            <div class="sobrevivente-body-container">
-                <span class="label-body">${labelBody}</span> ${sobrevivente.body}
-            </div>
-        `;
-    }
-
-    // 3. Montagem da Interface Completa (com 'set' ao invés de 'box')
+    // 4. Montagem do Cabeçalho
     divResultados.innerHTML = `
         <div class="ficha-sobrevivente">
-            <div class="ficha-cabecalho">
-                <h2>${sobrevivente.name} <span class="divisor-caixa">|</span> <span class="texto-caixa">${sobrevivente.set}</span></h2>
+            <div class="ficha-cabecalho" style="text-align: center;">
+                <h2>${nome} <span class="divisor-caixa">|</span> <span class="texto-caixa">${caixas}</span></h2>
             </div>
-            ${imagemHtml}
             ${bodyHtml}
+            ${imagemHtml}
             <div id="ficha-niveis" class="niveis-container"></div>
         </div>
     `;
 
+    // 5. Motor Robusto de Habilidades (Procura por chaves com ou sem números)
     const containerNiveis = document.getElementById('ficha-niveis');
     const titulosNiveis = {
         pt: { azul: 'Azul', amarelo: 'Amarelo', laranja: 'Laranja', vermelho: 'Vermelho' },
         en: { azul: 'Blue', amarelo: 'Yellow', laranja: 'Orange', vermelho: 'Red' }
     };
 
+    const extrairSlots = (corBase) => {
+        let slots = [];
+        const chaves = [corBase, `${corBase}1`, `${corBase}2`, `${corBase}3`, `${corBase}4`];
+        chaves.forEach(chave => {
+            if (sobrevivente[chave] && sobrevivente[chave].trim() !== '') {
+                const chaveTag = chave === corBase ? `tag_${corBase}` : `tag_${chave}`;
+                slots.push({ id: sobrevivente[chave], tag: sobrevivente[chaveTag] });
+            }
+        });
+        return slots;
+    };
+
     const estrutura = [
-        { cor: titulosNiveis[idiomaAtual].azul, classe: 'azul', slots: [{ id: sobrevivente.blue1, tag: sobrevivente.tag_blue1 }, { id: sobrevivente.blue2, tag: sobrevivente.tag_blue2 }] },
-        { cor: titulosNiveis[idiomaAtual].amarelo, classe: 'amarelo', slots: [{ id: sobrevivente.yellow }] },
-        { cor: titulosNiveis[idiomaAtual].laranja, classe: 'laranja', slots: [{ id: sobrevivente.orange1, tag: sobrevivente.tag_orange1 }, { id: sobrevivente.orange2, tag: sobrevivente.tag_orange2 }] },
-        { cor: titulosNiveis[idiomaAtual].vermelho, classe: 'vermelho', slots: [{ id: sobrevivente.red1, tag: sobrevivente.tag_red1 }, { id: sobrevivente.red2, tag: sobrevivente.tag_red2 }, { id: sobrevivente.red3, tag: sobrevivente.tag_red3 }] }
+        { cor: titulosNiveis[idiomaAtual].azul, classe: 'azul', slots: extrairSlots('blue') },
+        { cor: titulosNiveis[idiomaAtual].amarelo, classe: 'amarelo', slots: extrairSlots('yellow') },
+        { cor: titulosNiveis[idiomaAtual].laranja, classe: 'laranja', slots: extrairSlots('orange') },
+        { cor: titulosNiveis[idiomaAtual].vermelho, classe: 'vermelho', slots: extrairSlots('red') }
     ];
 
     estrutura.forEach(bloco => {
-        const slotsValidos = bloco.slots.filter(slot => slot && slot.id && slot.id.trim() !== '');
-        if (slotsValidos.length === 0) return;
+        if (bloco.slots.length === 0) return;
 
-        slotsValidos.forEach(slot => {
+        bloco.slots.forEach(slot => {
             const hab = obterHabilidadeFormatada(slot.id, slot.tag);
             if (hab) {
-                const sub = idiomaAtual === 'pt' ? `<div class="subtitulo-en">${hab.nomeEn}</div>` : '';
+                const sub = idiomaAtual === 'pt' ? `<div class="subtitulo-en" style="color: #9e9ea8; font-size: 0.85em; font-style: italic;">${hab.nomeEn}</div>` : '';
                 const div = document.createElement('div');
                 div.className = 'linha-habilidade';
                 div.innerHTML = `
@@ -447,7 +635,7 @@ function renderizarFichaPersonagem(sobrevivente) {
                     <div class="coluna-divisor">|</div>
                     <div class="coluna-texto">
                         <strong>${hab.nome}</strong>${sub}
-                        <p class="desc-habilidade">${hab.desc}</p>
+                        <p class="desc-habilidade" style="margin-top: 6px; color: #dedede; font-size: 0.9em; line-height: 1.4;">${hab.desc}</p>
                     </div>
                 `;
                 containerNiveis.appendChild(div);
@@ -479,7 +667,8 @@ function buscarInimigos(termo) {
 
     filtrados.forEach(inimigo => {
         const nomeVisivel = idiomaAtual === 'pt' ? inimigo.name_pt : inimigo.name_en;
-        const sub = inimigo.set || '';
+        // Substitui o ; por / na sugestão do autocomplete
+        const sub = inimigo.set ? inimigo.set.replace(/;/g, ' / ') : '';
 
         const item = document.createElement('div');
         item.className = 'item-sugestao-lista';
@@ -500,14 +689,21 @@ function renderizarFichaInimigo(inimigo) {
 
     const nome = idiomaAtual === 'pt' ? inimigo.name_pt : inimigo.name_en;
     const regras = idiomaAtual === 'pt' ? inimigo.rules_pt : inimigo.rules_en;
+    
+    // Substitui o ; por / nas caixas na exibição da ficha
+    const caixasFormatadas = inimigo.set ? inimigo.set.replace(/;/g, ' / ') : '';
 
+    // Traduz a classe buscando no aux.json (suporta classes duplas separadas por ponto e vírgula)
+    const classFormatada = inimigo.class ? String(inimigo.class).split(';').map(c => traduzirTag(c.trim())).join(' / ') : '';
+
+    // Utiliza o dicionário inteligente (se disponível) ou fallback para os status
     const labels = {
-        acoes: idiomaAtual === 'pt' ? 'Ações' : 'Actions',
-        alcance: idiomaAtual === 'pt' ? 'Alcance' : 'Range',
-        dano: idiomaAtual === 'pt' ? 'Dano' : 'Damage',
-        movimento: idiomaAtual === 'pt' ? 'Mov.' : 'Move',
-        letal: idiomaAtual === 'pt' ? 'Letal' : 'Lethal',
-        pa: idiomaAtual === 'pt' ? 'PA' : 'AP'
+        acoes: traduzirTag('actions') || (idiomaAtual === 'pt' ? 'Ações' : 'Actions'),
+        alcance: traduzirTag('range') || (idiomaAtual === 'pt' ? 'Alcance' : 'Range'),
+        dano: traduzirTag('damage') || (idiomaAtual === 'pt' ? 'Dano' : 'Damage'),
+        movimento: traduzirTag('move') || (idiomaAtual === 'pt' ? 'Mov.' : 'Move'),
+        letal: traduzirTag('lethal') || (idiomaAtual === 'pt' ? 'Letal' : 'Lethal'),
+        pa: traduzirTag('ap') || (idiomaAtual === 'pt' ? 'PA' : 'AP')
     };
 
     let imagemHtml = '';
@@ -523,7 +719,7 @@ function renderizarFichaInimigo(inimigo) {
         <div class="ficha-inimigo">
             <div class="inimigo-cabecalho">
                 <h2>${nome}</h2>
-                <div class="inimigo-subtitulo">${inimigo.class} | ${inimigo.set}</div>
+                <div class="inimigo-subtitulo">${classFormatada} | ${caixasFormatadas}</div>
             </div>
             ${imagemHtml}
             <div class="inimigo-stats-grid">
@@ -541,7 +737,9 @@ function renderizarFichaInimigo(inimigo) {
     `;
 }
 
-// Função de listar por caixas retirada de dentro da ficha (agora global e acessível pelo botão)
+// ==========================================
+// FUNÇÃO DE LISTAGEM - INIMIGOS
+// ==========================================
 function listarInimigosPorCaixas() {
     const divResultados = document.getElementById('enemies-results-foco');
     const dropdown = document.getElementById('enemies-dropdown');
@@ -549,20 +747,50 @@ function listarInimigosPorCaixas() {
     if (!divResultados) return;
     
     divResultados.innerHTML = '';
-
     const porCaixa = {};
+    
     inimigosBase.forEach(i => {
-        const caixa = i.set || 'Sem Caixa';
-        if (!porCaixa[caixa]) porCaixa[caixa] = [];
-        porCaixa[caixa].push(i);
+        if (!i.set || String(i.set).trim() === '') {
+            const caixaPadrao = 'Sem Caixa';
+            if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
+            porCaixa[caixaPadrao].push(i);
+            return;
+        }
+
+        const caixasDoItem = String(i.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
+
+        caixasDoItem.forEach(caixa => {
+            if (!porCaixa[caixa]) {
+                porCaixa[caixa] = [];
+            }
+            porCaixa[caixa].push(i);
+        });
     });
 
-    for (const [caixa, lista] of Object.entries(porCaixa)) {
+    const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
+        const indexA = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === a.toLowerCase());
+        const indexB = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === b.toLowerCase());
+
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.localeCompare(b);
+    });
+
+    caixasOrdenadas.forEach(caixa => {
+        if (porCaixa[caixa].length === 0) return;
+
         const boxDiv = document.createElement('div');
         boxDiv.className = 'bloco-caixa';
         boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
         
-        lista.forEach(i => {
+        const listaInimigos = porCaixa[caixa].sort((a, b) => {
+            const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
+            const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
+            return nomeA.localeCompare(nomeB);
+        });
+
+        listaInimigos.forEach(i => {
             const li = document.createElement('div');
             li.className = 'item-sugestao-lista';
             li.textContent = idiomaAtual === 'pt' ? i.name_pt : i.name_en;
@@ -570,7 +798,7 @@ function listarInimigosPorCaixas() {
             boxDiv.appendChild(li);
         });
         divResultados.appendChild(boxDiv);
-    }
+    });
 }
 
 
@@ -659,6 +887,9 @@ function buscarEquipamentos(termo) {
     const termoMin = termo.toLowerCase();
     
     const filtrados = equipamentosBase.filter(e => {
+        // Filtro Blindado: converte qualquer formato de 'false' para ocultar a entrada
+        if (e.visible !== undefined && String(e.visible).trim().toLowerCase() === 'false') return false;
+
         const pt = (e.name_pt || "").toLowerCase();
         const en = (e.name_en || "").toLowerCase();
         return pt.includes(termoMin) || en.includes(termoMin);
@@ -689,20 +920,40 @@ function renderizarFichaEquipamento(equip) {
     const texto = idiomaAtual === 'pt' ? equip.effect_pt : equip.effect_en;
     const setFormatado = equip.set ? equip.set.replace(/;/g, ' / ') : ''; 
 
-    const formatarAtributo = (valor) => {
-        if (valor === 0 || valor === '0') return valor;
-        return valor ? valor : '-';
+    // 1. Helper Inteligente para Separar Atributos (Armas Mistas)
+    const formatarAtributoSplit = (valor, index) => {
+        if (valor === 0 || valor === '0') {
+            return index === 0 ? '0' : '-'; 
+        }
+        if (valor === undefined || valor === null || String(valor).trim() === '') return '-';
+        
+        const parts = String(valor).split(';');
+        if (parts.length > index) {
+            const part = parts[index].trim();
+            if (part === '0') return '0';
+            return part ? part : '-';
+        }
+        return '-';
     };
 
-    let deckFormatado = equip.deck ? traduzirTag(equip.deck) : null;
-    if (deckFormatado) {
-        deckFormatado = deckFormatado.replace(/;/g, ' / ');
-    }
+    // 2. Helper de Tradução Múltipla (Resolve o problema do "search;starter")
+    const traduzirMultiplos = (campo) => {
+        if (!campo || String(campo).trim() === '') return null;
+        // Corta por ;, traduz cada pedaço independentemente no aux.json e junta com /
+        return String(campo).split(';').map(tag => traduzirTag(tag.trim())).join(' / ');
+    };
 
+    // 3. Helper Tradutor para Atributos Secundários (Danger, Dual, etc)
+    const formatarETraduzir = (valor) => {
+        if (!valor || String(valor).trim() === '') return '-';
+        return String(valor).split(';').map(v => traduzirTag(v.trim())).join(' / ');
+    };
+
+    // Aplica a tradução múltipla corrigida para Deck, Classe e Tipo
     const tagsEquipamento = [
-        deckFormatado,
-        equip.class ? traduzirTag(equip.class) : null,
-        equip.type ? traduzirTag(equip.type) : null
+        traduzirMultiplos(equip.deck),
+        traduzirMultiplos(equip.class),
+        traduzirMultiplos(equip.type)
     ].filter(Boolean).join(' | ');
 
     let imagemHtml = '';
@@ -714,6 +965,35 @@ function renderizarFichaEquipamento(equip) {
         `;
     }
     
+    // 4. Verificador de Armas Mistas (Checa se há ponto e vírgula nos atributos numéricos)
+    const hasSecondMode = (equip.range && String(equip.range).includes(';')) ||
+                          (equip.dice && String(equip.dice).includes(';')) ||
+                          (equip.accuracy && String(equip.accuracy).includes(';')) ||
+                          (equip.damage && String(equip.damage).includes(';'));
+
+    // 5. Constrói a 1ª Caixa de Combate
+    let statsHtml = `
+        <div class="equipamento-stats-grid">
+            <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributoSplit(equip.range, 0)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributoSplit(equip.dice, 0)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributoSplit(equip.accuracy, 0)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributoSplit(equip.damage, 0)}</span></div>
+        </div>
+    `;
+
+    // 6. Constrói a 2ª Caixa de Combate (apenas se for Arma Mista)
+    if (hasSecondMode) {
+        statsHtml += `
+        <div class="equipamento-stats-grid" style="margin-top: 8px;">
+            <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributoSplit(equip.range, 1)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributoSplit(equip.dice, 1)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributoSplit(equip.accuracy, 1)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributoSplit(equip.damage, 1)}</span></div>
+        </div>
+        `;
+    }
+    
+    // 7. Renderização Final do HTML
     divResultados.innerHTML = `
         <div class="ficha-equipamento">
             <div class="equipamento-cabecalho">
@@ -724,18 +1004,13 @@ function renderizarFichaEquipamento(equip) {
             
             ${imagemHtml}
             
-            <div class="equipamento-stats-grid">
-                <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributo(equip.range)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributo(equip.dice)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributo(equip.accuracy)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributo(equip.damage)}</span></div>
-            </div>
+            ${statsHtml}
 
             <div class="equipamento-stats-grid">
-                <div class="stat-item"><span class="stat-label">${traduzirTag('danger')}</span><span class="stat-valor">${formatarAtributo(equip.danger)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('dual')}</span><span class="stat-valor">${formatarAtributo(equip.dual)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('noise')}</span><span class="stat-valor">${formatarAtributo(equip.noise)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('door')}</span><span class="stat-valor">${formatarAtributo(equip.door)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('danger')}</span><span class="stat-valor">${formatarETraduzir(equip.danger)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('dual')}</span><span class="stat-valor">${formatarETraduzir(equip.dual)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('noise')}</span><span class="stat-valor">${formatarETraduzir(equip.noise)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('door')}</span><span class="stat-valor">${formatarETraduzir(equip.door)}</span></div>
             </div>
             
             ${texto ? `<div class="equipamento-texto"><p>${texto}</p></div>` : ''}
@@ -743,7 +1018,9 @@ function renderizarFichaEquipamento(equip) {
     `;
 }
 
-// Função de listar equipamentos por caixas retirada de dentro da ficha
+// ==========================================
+// FUNÇÃO DE LISTAGEM - EQUIPAMENTOS
+// ==========================================
 function listarEquipamentosPorCaixas() {
     const divResultados = document.getElementById('equipment-results-foco');
     const dropdown = document.getElementById('equipment-dropdown');
@@ -751,32 +1028,41 @@ function listarEquipamentosPorCaixas() {
     if (!divResultados) return;
     
     divResultados.innerHTML = '';
-
     const porCaixa = {};
 
     equipamentosBase.forEach(e => {
-        if (!e.set) {
+        if (e.visible !== undefined && String(e.visible).trim().toLowerCase() === 'false') return;
+
+        if (!e.set || String(e.set).trim() === '') {
             const caixaPadrao = 'Sem Caixa';
             if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
             porCaixa[caixaPadrao].push(e);
             return;
         }
 
-        const caixasDoItem = e.set.split(/[;/]/).map(c => c.trim()).filter(Boolean);
+        const caixasDoItem = String(e.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
 
-        caixasDoItem.forEach(caixaOriginal => {
-            const caixaFormatada = caixaOriginal.replace(/;/g, ' / ');
-
-            if (!porCaixa[caixaFormatada]) {
-                porCaixa[caixaFormatada] = [];
+        caixasDoItem.forEach(caixa => {
+            if (!porCaixa[caixa]) {
+                porCaixa[caixa] = [];
             }
-            porCaixa[caixaFormatada].push(e);
+            porCaixa[caixa].push(e);
         });
     });
 
-    const caixasOrdenadas = Object.keys(porCaixa).sort();
+    const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
+        const indexA = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === a.toLowerCase());
+        const indexB = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === b.toLowerCase());
+
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.localeCompare(b);
+    });
 
     caixasOrdenadas.forEach(caixa => {
+        if (porCaixa[caixa].length === 0) return;
+
         const boxDiv = document.createElement('div');
         boxDiv.className = 'bloco-caixa';
         boxDiv.innerHTML = `<h3 style="color:#4da6ff; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
@@ -794,7 +1080,6 @@ function listarEquipamentosPorCaixas() {
             li.onclick = () => renderizarFichaEquipamento(e);
             boxDiv.appendChild(li);
         });
-
         divResultados.appendChild(boxDiv);
     });
 }

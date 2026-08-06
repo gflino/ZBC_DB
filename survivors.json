@@ -3,7 +3,7 @@
     "id": "ann",
     "name": "Ann",
     "set": "Black Plague",
-    "body": "",
+    "body": "dagger",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -19,13 +19,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/Ann.png"
   },
   {
     "id": "baldric",
     "name": "Baldric",
     "set": "Black Plague",
-    "body": "",
+    "body": "sword",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "",
@@ -41,13 +41,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1a/Baldrick.png"
   },
   {
     "id": "clovis",
     "name": "Clovis",
     "set": "Black Plague",
-    "body": "",
+    "body": "shield",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -63,13 +63,13 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/28/Clovis.png"
   },
   {
     "id": "nelly",
     "name": "Nelly",
     "set": "Black Plague",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -85,13 +85,13 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/Nelly.png"
   },
   {
     "id": "samson",
     "name": "Samson",
     "set": "Black Plague",
-    "body": "",
+    "body": "shield",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -107,13 +107,13 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/Samson.png/"
   },
   {
     "id": "silas",
     "name": "Silas",
     "set": "Black Plague",
-    "body": "",
+    "body": "sword",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -129,13 +129,13 @@
     "tag_red2": "combat",
     "red3": "iron_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a6/Silas.png/"
   },
   {
     "id": "ariane",
     "name": "Ariane",
     "set": "Wulfsburg",
-    "body": "",
+    "body": "crossbow",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -151,13 +151,13 @@
     "tag_red2": "ranged",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f4/Ariane.png/"
   },
   {
     "id": "karl",
     "name": "Karl",
     "set": "Wulfsburg",
-    "body": "",
+    "body": "fireball",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -173,13 +173,13 @@
     "tag_red2": "",
     "red3": "marksman",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/bd/KarlFantasy.png/"
   },
   {
     "id": "morrigan",
     "name": "Morrigan",
     "set": "Wulfsburg",
-    "body": "",
+    "body": "dagger",
     "blue1": "reaper_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -195,13 +195,13 @@
     "tag_red2": "magic",
     "red3": "bloodlust_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/39/Morrigan.png/"
   },
   {
     "id": "theo",
     "name": "Theo",
     "set": "Wulfsburg",
-    "body": "",
+    "body": "sword",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -217,13 +217,13 @@
     "tag_red2": "",
     "red3": "marksman",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/51/Theo.png/"
   },
   {
     "id": "arnaud",
     "name": "Arnaud",
     "set": "Hero Box-1",
-    "body": "",
+    "body": "torch",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "",
@@ -239,13 +239,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/af/Arnaud.png/"
   },
   {
     "id": "glynda",
     "name": "Glynda",
     "set": "Hero Box-1",
-    "body": "",
+    "body": "hammer",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -261,13 +261,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c3/Glynda.png/"
   },
   {
     "id": "julian",
     "name": "Julian",
     "set": "Hero Box-1",
-    "body": "",
+    "body": "dagger",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -283,13 +283,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/00/JULIAN.png/"
   },
   {
     "id": "sylvia",
     "name": "Sylvia",
     "set": "Hero Box-1",
-    "body": "",
+    "body": "axe",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -305,13 +305,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/Sylvia.png/"
   },
   {
     "id": "tucker",
     "name": "Tucker",
     "set": "Hero Box-1",
-    "body": "",
+    "body": "axe",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -327,13 +327,13 @@
     "tag_red2": "combat",
     "red3": "free_reload",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cc/Tucker.png/"
   },
   {
     "id": "bob",
     "name": "Bob",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "transmutation",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
@@ -349,13 +349,13 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Bob.png/"
   },
   {
     "id": "danton",
     "name": "Danton",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "great_sword",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -371,13 +371,13 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/Danton.png/"
   },
   {
     "id": "evil_troy",
     "name": "Evil Troy",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "hand_crossbow",
     "blue1": "free_reload",
     "tag_blue1": "",
     "blue2": "",
@@ -393,13 +393,13 @@
     "tag_red2": "",
     "red3": "spellbook",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c9/EvilTroy.png/"
   },
   {
     "id": "falstaff",
     "name": "Falstaff",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "great_sword",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -415,13 +415,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f7/Falstaff.png"
   },
   {
     "id": "gilbert",
     "name": "Gilbert",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "shield",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -437,13 +437,13 @@
     "tag_red2": "melee",
     "red3": "barbarian",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/eb/Gilbert.png"
   },
   {
     "id": "hitch",
     "name": "Hitch",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -459,13 +459,13 @@
     "tag_red2": "melee",
     "red3": "taunt",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8c/Hitch.png"
   },
   {
     "id": "james",
     "name": "James",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "torch",
     "blue1": "search_plus_1_card",
     "tag_blue1": "",
     "blue2": "",
@@ -481,13 +481,13 @@
     "tag_red2": "combat",
     "red3": "spellbook",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d2/JamesFantasy.png"
   },
   {
     "id": "lady_faye",
     "name": "Lady Faye",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "apples",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -503,13 +503,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/31/LadyFaye.png"
   },
   {
     "id": "lucas",
     "name": "Lucas",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "short_sword",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -525,13 +525,13 @@
     "tag_red2": "walker",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a6/Lucas.png"
   },
   {
     "id": "montalban",
     "name": "Montalban",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "shield",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -547,13 +547,13 @@
     "tag_red2": "move",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/17/Montalban.png"
   },
   {
     "id": "morgan",
     "name": "Morgan",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "lightning_bolt",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -569,13 +569,13 @@
     "tag_red2": "melee",
     "red3": "spellbook",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b5/Morgan.png"
   },
   {
     "id": "mortimer",
     "name": "Mortimer",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "great_sword",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "great_sword",
     "blue2": "",
@@ -591,13 +591,13 @@
     "tag_red2": "combat",
     "red3": "charge",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/39/Mortimer.png"
   },
   {
     "id": "paul",
     "name": "Paul",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "axe",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -613,13 +613,13 @@
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e0/PaulFantasy.png"
   },
   {
     "id": "piper",
     "name": "Piper",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "dagger",
     "blue2": "",
@@ -635,13 +635,13 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/Piper.png"
   },
   {
     "id": "troy",
     "name": "Troy",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "hand_crossbow",
     "blue1": "free_reload",
     "tag_blue1": "",
     "blue2": "",
@@ -657,13 +657,13 @@
     "tag_red2": "ranged",
     "red3": "spellbook",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/Troy.png"
   },
   {
     "id": "william",
     "name": "William",
     "set": "Huntsman Pack",
-    "body": "",
+    "body": "great_sword",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -679,13 +679,13 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/0b/William.png"
   },
   {
     "id": "beauregard",
     "name": "Beauregard",
     "set": "Knight Pack",
-    "body": "",
+    "body": "shield",
     "blue1": "collector_[zombie]",
     "tag_blue1": "walker",
     "blue2": "",
@@ -701,13 +701,13 @@
     "tag_red2": "walker",
     "red3": "slippery",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8d/Beauregard.png"
   },
   {
     "id": "chauncey",
     "name": "Chauncey",
     "set": "Knight Pack",
-    "body": "",
+    "body": "bastard_sword",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -723,13 +723,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/13/Chauncey.png"
   },
   {
     "id": "dr._stormcrow",
     "name": "Dr. Stormcrow",
     "set": "Knight Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -745,13 +745,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/DoctorStormcrow.png"
   },
   {
     "id": "gowan",
     "name": "Gowan",
     "set": "Knight Pack",
-    "body": "",
+    "body": "bastard_sword",
     "blue1": "regeneration",
     "tag_blue1": "",
     "blue2": "",
@@ -767,13 +767,13 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7a/Gowan.png"
   },
   {
     "id": "gregoire",
     "name": "Gregoire",
     "set": "Knight Pack",
-    "body": "",
+    "body": "crossbow",
     "blue1": "ironclad_[zombie]",
     "tag_blue1": "wolfz",
     "blue2": "",
@@ -789,13 +789,13 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c4/Gregoire.png"
   },
   {
     "id": "scowl",
     "name": "Scowl",
     "set": "Knight Pack",
-    "body": "",
+    "body": "axe",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -811,13 +811,13 @@
     "tag_red2": "combat",
     "red3": "jump",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/Scowl.png"
   },
   {
     "id": "grom",
     "name": "Grom",
     "set": "Grom and Thalia Box",
-    "body": "",
+    "body": "great_sword",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "",
@@ -833,13 +833,13 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/35/Grom.png"
   },
   {
     "id": "thalia",
     "name": "Thalia",
     "set": "Grom and Thalia Box",
-    "body": "",
+    "body": "dagger",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -855,13 +855,13 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/43/Thalia.png"
   },
   {
     "id": "culnar",
     "name": "Cul'Nar",
     "set": "Special Guest Adrian Smith",
-    "body": "",
+    "body": "shield",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -877,13 +877,13 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/65/CulNar.png"
   },
   {
     "id": "gurbak",
     "name": "Gurbak",
     "set": "Special Guest Adrian Smith",
-    "body": "",
+    "body": "earthquake_hammer",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -899,13 +899,13 @@
     "tag_red2": "combat",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d6/Gurbak.png"
   },
   {
     "id": "jorvak",
     "name": "Jorvak",
     "set": "Special Guest Adrian Smith",
-    "body": "",
+    "body": "ironclad:_zombie_wolfz",
     "blue1": "ironclad_[zombie]",
     "tag_blue1": "wolfz",
     "blue2": "",
@@ -921,13 +921,13 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d5/Jorvak.png"
   },
   {
     "id": "shakeel",
     "name": "Sha'Keel",
     "set": "Special Guest Adrian Smith",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -943,13 +943,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1e/ShaKeel.png"
   },
   {
     "id": "black_currant",
     "name": "Black Currant",
     "set": "Special Guest Carl Critchlow",
-    "body": "",
+    "body": "great_sword",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -965,13 +965,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/BlackCurrant.png"
   },
   {
     "id": "persephone",
     "name": "Persephone",
     "set": "Special Guest Carl Critchlow",
-    "body": "",
+    "body": "bastard_sword",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -987,13 +987,13 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Persephone.png"
   },
   {
     "id": "thrud",
     "name": "Thrud",
     "set": "Special Guest Carl Critchlow",
-    "body": "",
+    "body": "axe",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "",
@@ -1009,13 +1009,13 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4a/Thrud.png"
   },
   {
     "id": "brickborn",
     "name": "Brickborn",
     "set": "Special Guest Edouard Guiton",
-    "body": "",
+    "body": "hammer",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1031,13 +1031,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1c/Brickborn.png"
   },
   {
     "id": "hewelin",
     "name": "Hewelin",
     "set": "Special Guest Edouard Guiton",
-    "body": "",
+    "body": "sword",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -1053,13 +1053,13 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/3d/Hewelin.png"
   },
   {
     "id": "kaila",
     "name": "Kaila",
     "set": "Special Guest Edouard Guiton",
-    "body": "",
+    "body": "dagger",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1075,13 +1075,13 @@
     "tag_red2": "magic",
     "red3": "frenzy_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d8/Kalia.png"
   },
   {
     "id": "shalheira",
     "name": "Shalheira",
     "set": "Special Guest Edouard Guiton",
-    "body": "",
+    "body": "longbow",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "longbow",
     "blue2": "",
@@ -1097,13 +1097,13 @@
     "tag_red2": "ranged",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ac/Shalheira.png"
   },
   {
     "id": "celia_la_santa",
     "name": "Celia La Santa",
     "set": "Special Guest Gipi",
-    "body": "",
+    "body": "healing",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "healing",
     "blue2": "",
@@ -1119,13 +1119,13 @@
     "tag_red2": "combat",
     "red3": "lifesaver",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/CeliaLaSanta.png"
   },
   {
     "id": "donna_carlotta",
     "name": "Donna Carlotta",
     "set": "Special Guest Gipi",
-    "body": "",
+    "body": "hammer",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1141,13 +1141,13 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e5/DonnaCarlotta.png"
   },
   {
     "id": "pipino",
     "name": "Pipino",
     "set": "Special Guest Gipi",
-    "body": "",
+    "body": "great_sword",
     "blue1": "frenzy_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -1163,13 +1163,13 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/3d/Pipino.png"
   },
   {
     "id": "the_little_prince",
     "name": "The Little Prince",
     "set": "Special Guest Gipi",
-    "body": "",
+    "body": "sword",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -1185,13 +1185,13 @@
     "tag_red2": "combat",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/TheLittlePrince.png"
   },
   {
     "id": "cyrine",
     "name": "Cyrine",
     "set": "Special Guest John Howe",
-    "body": "",
+    "body": "dragon_aura",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "dragon_aura",
     "blue2": "",
@@ -1207,13 +1207,13 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/14/Cyrine.png"
   },
   {
     "id": "dravog",
     "name": "Dravog",
     "set": "Special Guest John Howe",
-    "body": "",
+    "body": "great_sword",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "great_sword",
     "blue2": "",
@@ -1229,13 +1229,13 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/37/Dravog.png"
   },
   {
     "id": "gorvin",
     "name": "Gorvin",
     "set": "Special Guest John Howe",
-    "body": "",
+    "body": "axe",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "axe",
     "blue2": "",
@@ -1251,13 +1251,13 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c9/Gorvin.png"
   },
   {
     "id": "hildir",
     "name": "Hildir",
     "set": "Special Guest John Howe",
-    "body": "",
+    "body": "hell_goat",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hell_goat",
     "blue2": "",
@@ -1273,13 +1273,13 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c6/Hildir.png"
   },
   {
     "id": "johrgrund",
     "name": "Johrgrund",
     "set": "Special Guest Jovem Nerd",
-    "body": "",
+    "body": "dagger",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -1295,13 +1295,13 @@
     "tag_red2": "combat",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/96/Johrgrund.png"
   },
   {
     "id": "korin",
     "name": "Korin",
     "set": "Special Guest Jovem Nerd",
-    "body": "",
+    "body": "shield",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -1317,13 +1317,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/88/Korin.png"
   },
   {
     "id": "ruff_ghanor",
     "name": "Ruff Ghanor",
     "set": "Special Guest Jovem Nerd",
-    "body": "",
+    "body": "hammer",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -1339,13 +1339,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c3/RuffGhanor.png"
   },
   {
     "id": "the_prior",
     "name": "The Prior",
     "set": "Special Guest Jovem Nerd",
-    "body": "",
+    "body": "hammer",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1361,13 +1361,13 @@
     "tag_red2": "",
     "red3": "lifesaver",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/ThePrior.png"
   },
   {
     "id": "dame_ahelissa",
     "name": "Dame Ahelissa",
     "set": "Special Guest Karl Kopinski",
-    "body": "",
+    "body": "sword",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -1383,13 +1383,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f7/DameAhelissa.png"
   },
   {
     "id": "garuk",
     "name": "Garuk",
     "set": "Special Guest Karl Kopinski",
-    "body": "",
+    "body": "axe",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1405,13 +1405,13 @@
     "tag_red2": "",
     "red3": "taunt",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/73/Garuk.png"
   },
   {
     "id": "marcus",
     "name": "Marcus",
     "set": "Special Guest Karl Kopinski",
-    "body": "",
+    "body": "invisibility",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -1427,13 +1427,13 @@
     "tag_red2": "move",
     "red3": "mana_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a3/Marcus.png"
   },
   {
     "id": "ulfo",
     "name": "Ulfo",
     "set": "Special Guest Karl Kopinski",
-    "body": "",
+    "body": "axe",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -1449,13 +1449,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/01/Ulfo.png"
   },
   {
     "id": "antha",
     "name": "Antha",
     "set": "Special Guest Marc Simonetti",
-    "body": "",
+    "body": "healing",
     "blue1": "destiny",
     "tag_blue1": "",
     "blue2": "",
@@ -1471,13 +1471,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8b/Antha.png"
   },
   {
     "id": "cadence",
     "name": "Cadence",
     "set": "Special Guest Marc Simonetti",
-    "body": "",
+    "body": "longbow",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -1493,13 +1493,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/63/Cadence.png"
   },
   {
     "id": "lady_grimm",
     "name": "Lady Grimm",
     "set": "Special Guest Marc Simonetti",
-    "body": "",
+    "body": "hammer",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -1515,13 +1515,13 @@
     "tag_red2": "combat",
     "red3": "is_that_all_youve_got",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/07/LadyGrimm.png"
   },
   {
     "id": "redcap_rodney",
     "name": "Redcap Rodney",
     "set": "Special Guest Marc Simonetti",
-    "body": "",
+    "body": "axe",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1537,13 +1537,13 @@
     "tag_red2": "melee",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ac/RedcapRodney.png"
   },
   {
     "id": "merieil",
     "name": "Merieil",
     "set": "Special Guest Naïade",
-    "body": "",
+    "body": "transmutation",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -1559,13 +1559,13 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fb/Merieil.png"
   },
   {
     "id": "milo",
     "name": "Milo",
     "set": "Special Guest Naïade",
-    "body": "",
+    "body": "speed",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -1581,13 +1581,13 @@
     "tag_red2": "move",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5c/Milo.png"
   },
   {
     "id": "ostokar",
     "name": "Ostokar",
     "set": "Special Guest Naïade",
-    "body": "",
+    "body": "speed",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -1603,13 +1603,13 @@
     "tag_red2": "magic",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a8/Ostokar.png"
   },
   {
     "id": "thundergut",
     "name": "Thundergut",
     "set": "Special Guest Naïade",
-    "body": "",
+    "body": "hammer",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hammer",
     "blue2": "",
@@ -1625,13 +1625,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9a/Thundergut.png"
   },
   {
     "id": "alainon",
     "name": "Alainon",
     "set": "Special Guest Neal Adams",
-    "body": "",
+    "body": "torch",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -1647,13 +1647,13 @@
     "tag_red2": "combat",
     "red3": "lucky",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/22/Alainon.png"
   },
   {
     "id": "golor",
     "name": "Golor",
     "set": "Special Guest Neal Adams",
-    "body": "",
+    "body": "hammer",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hammer",
     "blue2": "",
@@ -1669,13 +1669,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/57/Golor.png"
   },
   {
     "id": "gronstag",
     "name": "Gronstag",
     "set": "Special Guest Neal Adams",
-    "body": "",
+    "body": "flaming_great_sword",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "flaming_great_sword",
     "blue2": "",
@@ -1691,13 +1691,13 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9a/Gronstag.png"
   },
   {
     "id": "yrina",
     "name": "Yrina",
     "set": "Special Guest Neal Adams",
-    "body": "",
+    "body": "sword",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -1713,13 +1713,13 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/42/Yrina.png"
   },
   {
     "id": "arnwal",
     "name": "Arnwal",
     "set": "Special Guest Paolo Parente",
-    "body": "",
+    "body": "sword",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -1735,13 +1735,13 @@
     "tag_red2": "move",
     "red3": "two_zones_move",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/51/Arnwal.png"
   },
   {
     "id": "konrad",
     "name": "Konrad",
     "set": "Special Guest Paolo Parente",
-    "body": "",
+    "body": "shield",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -1757,13 +1757,13 @@
     "tag_red2": "combat",
     "red3": "frenzy_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/Konrad.png"
   },
   {
     "id": "sköll",
     "name": "Sköll",
     "set": "Special Guest Paolo Parente",
-    "body": "",
+    "body": "great_sword",
     "blue1": "regeneration",
     "tag_blue1": "",
     "blue2": "",
@@ -1779,13 +1779,13 @@
     "tag_red2": "melee",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/15/Skoll.png"
   },
   {
     "id": "undraal",
     "name": "Undraal",
     "set": "Special Guest Paolo Parente",
-    "body": "",
+    "body": "sword",
     "blue1": "charge",
     "tag_blue1": "",
     "blue2": "",
@@ -1801,13 +1801,13 @@
     "tag_red2": "melee",
     "red3": "lifesaver",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/Undraal.png"
   },
   {
     "id": "genevieve",
     "name": "Genevieve",
     "set": "Special Guest Paul Bonner",
-    "body": "",
+    "body": "crossbow",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -1823,13 +1823,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Genevieve.png"
   },
   {
     "id": "klom",
     "name": "Klom",
     "set": "Special Guest Paul Bonner",
-    "body": "",
+    "body": "axe",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "",
@@ -1845,13 +1845,13 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/64/Klom.png"
   },
   {
     "id": "lord_bazak",
     "name": "Lord Bazak",
     "set": "Special Guest Paul Bonner",
-    "body": "",
+    "body": "great_sword",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1867,13 +1867,13 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2e/Lord_Bazak.png"
   },
   {
     "id": "mizar",
     "name": "Mizar",
     "set": "Special Guest Paul Bonner",
-    "body": "",
+    "body": "death_strike",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -1889,13 +1889,13 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1f/Mizar.png"
   },
   {
     "id": "azure",
     "name": "Azure",
     "set": "Special Guest Stefan Kopinski",
-    "body": "",
+    "body": "longbow",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -1911,13 +1911,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c0/Azure.png"
   },
   {
     "id": "gaak",
     "name": "Gaak",
     "set": "Special Guest Stefan Kopinski",
-    "body": "",
+    "body": "short_sword",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -1933,13 +1933,13 @@
     "tag_red2": "",
     "red3": "rotten",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/Gaak.png"
   },
   {
     "id": "the_blackheart",
     "name": "The Blackheart",
     "set": "Special Guest Stefan Kopinski",
-    "body": "",
+    "body": "invisibility",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -1955,13 +1955,13 @@
     "tag_red2": "combat",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/TheBlackheart.png"
   },
   {
     "id": "ysabel",
     "name": "Ysabel",
     "set": "Special Guest Stefan Kopinski",
-    "body": "",
+    "body": "axe",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "axe",
     "blue2": "",
@@ -1977,13 +1977,13 @@
     "tag_red2": "combat",
     "red3": "taunt",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/be/Ysabel.png"
   },
   {
     "id": "benson",
     "name": "Benson",
     "set": "Benson Box",
-    "body": "",
+    "body": "sword",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -1999,13 +1999,13 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/bd/Benson.png"
   },
   {
     "id": "homer",
     "name": "Homer",
     "set": "Homer Box",
-    "body": "",
+    "body": "dagger",
     "blue1": "tactician",
     "tag_blue1": "",
     "blue2": "",
@@ -2021,13 +2021,13 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/33/Homer.png"
   },
   {
     "id": "willow",
     "name": "Willow",
     "set": "Willow Box",
-    "body": "",
+    "body": "longbow",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -2043,13 +2043,13 @@
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Willow.png"
   },
   {
     "id": "bruce",
     "name": "Bruce",
     "set": "Game Night Kit",
-    "body": "",
+    "body": "sword",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -2065,13 +2065,13 @@
     "tag_red2": "move",
     "red3": "lucky",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/14/Bruce.png"
   },
   {
     "id": "asim",
     "name": "Asim",
     "set": "Green Horde",
-    "body": "",
+    "body": "curved_dagger",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -2087,13 +2087,13 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5a/Asim.png"
   },
   {
     "id": "berin",
     "name": "Berin",
     "set": "Green Horde",
-    "body": "",
+    "body": "dwarven_axe",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -2109,13 +2109,13 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ac/Berin.png"
   },
   {
     "id": "johannes",
     "name": "Johannes",
     "set": "Green Horde",
-    "body": "",
+    "body": "crossbow",
     "blue1": "transmutation",
     "tag_blue1": "",
     "blue2": "",
@@ -2131,13 +2131,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/Johannes.png"
   },
   {
     "id": "megan",
     "name": "Megan",
     "set": "Green Horde",
-    "body": "",
+    "body": "speed",
     "blue1": "double_casting",
     "tag_blue1": "",
     "blue2": "",
@@ -2153,13 +2153,13 @@
     "tag_red2": "magic",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e5/Megan.png"
   },
   {
     "id": "rolf",
     "name": "Rolf",
     "set": "Green Horde",
-    "body": "",
+    "body": "great_axe",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -2175,13 +2175,13 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/66/Rolf.png"
   },
   {
     "id": "seli",
     "name": "Seli",
     "set": "Green Horde",
-    "body": "",
+    "body": "curved_dagger",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -2197,13 +2197,13 @@
     "tag_red2": "combat",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/04/Seli.png"
   },
   {
     "id": "doran",
     "name": "Doran",
     "set": "Friends and Foes",
-    "body": "",
+    "body": "power_wave",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -2219,13 +2219,13 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/43/Doran.png"
   },
   {
     "id": "kabral",
     "name": "Kabral",
     "set": "Friends and Foes",
-    "body": "",
+    "body": "heavy_dagger",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -2241,13 +2241,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/96/Kabral.png"
   },
   {
     "id": "katelyn",
     "name": "Katelyn",
     "set": "Friends and Foes",
-    "body": "",
+    "body": "horn_bow",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_die_[action]:combat",
     "blue2": "",
@@ -2263,13 +2263,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6f/Katelyn.png"
   },
   {
     "id": "solveig",
     "name": "Solveig",
     "set": "Friends and Foes",
-    "body": "",
+    "body": "heavy_sword",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -2285,13 +2285,13 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/65/Solveig.png"
   },
   {
     "id": "anton_guffen",
     "name": "Anton Guffen",
     "set": "Horde Box",
-    "body": "",
+    "body": "repulse",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -2307,13 +2307,13 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c8/AntonGuffen.png"
   },
   {
     "id": "asmodeus",
     "name": "Asmodeus",
     "set": "Horde Box",
-    "body": "",
+    "body": "curved_dagger",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "curved_dagger",
     "blue2": "",
@@ -2329,13 +2329,13 @@
     "tag_red2": "",
     "red3": "taunt",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/34/Asmodeus.png"
   },
   {
     "id": "badger",
     "name": "Badger",
     "set": "Horde Box",
-    "body": "",
+    "body": "healing",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "melee",
     "blue2": "",
@@ -2351,13 +2351,13 @@
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/ff/Badger.png"
   },
   {
     "id": "billy",
     "name": "Billy",
     "set": "Horde Box",
-    "body": "",
+    "body": "norse_shield",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -2373,13 +2373,13 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/Billy.png"
   },
   {
     "id": "brangednog",
     "name": "Brangednog",
     "set": "Horde Box",
-    "body": "",
+    "body": "dwarven_hammer",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "dwarven_hammer",
     "blue2": "",
@@ -2395,13 +2395,13 @@
     "tag_red2": "walker",
     "red3": "tough",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7f/Brannog.png"
   },
   {
     "id": "brix_moonshine",
     "name": "Brix Moonshine",
     "set": "Horde Box",
-    "body": "",
+    "body": "curved_dagger",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "search_plus_1_card",
     "blue2": "taunt",
@@ -2417,13 +2417,13 @@
     "tag_red2": "",
     "red3": "mana_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/04/BrixMoonshine.png"
   },
   {
     "id": "cassius",
     "name": "Cassius",
     "set": "Horde Box",
-    "body": "",
+    "body": "falchion",
     "blue1": "battle_rage",
     "tag_blue1": "",
     "blue2": "",
@@ -2439,13 +2439,13 @@
     "tag_red2": "brute",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7f/Cassius.png"
   },
   {
     "id": "countess_ordelia",
     "name": "Countess Ordelia",
     "set": "Horde Box",
-    "body": "",
+    "body": "hand_crossbow",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -2461,13 +2461,13 @@
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "taunt",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e2/CountessOrdelia.png"
   },
   {
     "id": "earl_jaimie",
     "name": "Earl Jaimie",
     "set": "Horde Box",
-    "body": "",
+    "body": "death_gale",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -2483,13 +2483,13 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/05/EarlJaimie.png"
   },
   {
     "id": "finarton",
     "name": "Finarton",
     "set": "Horde Box",
-    "body": "",
+    "body": "only_great_axe_or_shield",
     "blue1": "giant",
     "tag_blue1": "",
     "blue2": "throw",
@@ -2505,13 +2505,13 @@
     "tag_red2": "",
     "red3": "battle_rage",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/0b/Finarton.png"
   },
   {
     "id": "fylguria",
     "name": "Fylguria",
     "set": "Horde Box",
-    "body": "",
+    "body": "lightning_ball",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -2527,13 +2527,13 @@
     "tag_red2": "move",
     "red3": "mana_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Fylguria.png"
   },
   {
     "id": "gannicus",
     "name": "Gannicus",
     "set": "Horde Box",
-    "body": "",
+    "body": "tremor",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -2549,13 +2549,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/72/Gannicus.png"
   },
   {
     "id": "grayson_grüber",
     "name": "Grayson Grüber",
     "set": "Horde Box",
-    "body": "",
+    "body": "death_gale",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -2571,13 +2571,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "enchantment",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f4/GraysonGruber.png"
   },
   {
     "id": "hyg",
     "name": "Hyg",
     "set": "Horde Box",
-    "body": "",
+    "body": "great_axe",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_die_[action]:combat",
     "blue2": "",
@@ -2593,13 +2593,13 @@
     "tag_red2": "plus_1_free_[action]_action:melee",
     "red3": "swordmaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4c/Hyg.png"
   },
   {
     "id": "hyld",
     "name": "Hyld",
     "set": "Horde Box",
-    "body": "",
+    "body": "norse_shield",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "norse_shield",
     "blue2": "",
@@ -2615,13 +2615,13 @@
     "tag_red2": "",
     "red3": "lifesaver",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6e/Hyld.png"
   },
   {
     "id": "jeanne",
     "name": "Jeanne",
     "set": "Horde Box",
-    "body": "",
+    "body": "dragon_bile",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -2637,13 +2637,13 @@
     "tag_red2": "combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "plus_1_die_[action]:combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e7/Jeanne.png"
   },
   {
     "id": "kelsey",
     "name": "Kelsey",
     "set": "Horde Box",
-    "body": "",
+    "body": "healing",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "",
@@ -2659,13 +2659,13 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/Kelsey.png"
   },
   {
     "id": "lividia",
     "name": "Lividia",
     "set": "Horde Box",
-    "body": "",
+    "body": "norse_shield",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "combat",
     "blue2": "",
@@ -2681,13 +2681,13 @@
     "tag_red2": "move",
     "red3": "lifesaver",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/51/Lividia.png"
   },
   {
     "id": "lorentz",
     "name": "Lorentz",
     "set": "Horde Box",
-    "body": "",
+    "body": "longbow",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "",
@@ -2703,13 +2703,13 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d9/Lorentz.png"
   },
   {
     "id": "princess_ayla",
     "name": "Princess Ayla",
     "set": "Horde Box",
-    "body": "",
+    "body": "tremor",
     "blue1": "super_strength",
     "tag_blue1": "",
     "blue2": "",
@@ -2725,13 +2725,13 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e6/PrincessAyla.png"
   },
   {
     "id": "rocco",
     "name": "Rocco",
     "set": "Horde Box",
-    "body": "",
+    "body": "ghost_sight",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "crossbow",
     "blue2": "",
@@ -2747,13 +2747,13 @@
     "tag_red2": "ranged",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1c/Rocco.png"
   },
   {
     "id": "ryan_john",
     "name": "Ryan John",
     "set": "Horde Box",
-    "body": "",
+    "body": "norse_shield",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "roll_6_plus_1_die_[action]",
@@ -2769,13 +2769,13 @@
     "tag_red2": "",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b0/RyanJohn.png"
   },
   {
     "id": "sigrun",
     "name": "Sigrun",
     "set": "Horde Box",
-    "body": "",
+    "body": "scimitar",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -2791,13 +2791,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_zone_move",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/65/Sigrun.png"
   },
   {
     "id": "sir_schwarz",
     "name": "Sir Schwarz",
     "set": "Horde Box",
-    "body": "",
+    "body": "norse_sword",
     "blue1": "is_that_all_youve_got",
     "tag_blue1": "",
     "blue2": "",
@@ -2813,13 +2813,13 @@
     "tag_red2": "",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/37/SirSchwarz.png"
   },
   {
     "id": "spearhead",
     "name": "Spearhead",
     "set": "Horde Box",
-    "body": "",
+    "body": "torch",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "",
@@ -2835,13 +2835,13 @@
     "tag_red2": "combat",
     "red3": "frenzy_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/ce/Spearhead.png"
   },
   {
     "id": "the_deathmaster",
     "name": "The Deathmaster",
     "set": "Horde Box",
-    "body": "",
+    "body": "great_axe",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "taunt",
@@ -2857,13 +2857,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d3/TheDeathmaster.png"
   },
   {
     "id": "the_marquis",
     "name": "The Marquis",
     "set": "Horde Box",
-    "body": "",
+    "body": "falchion",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "swordmaster",
@@ -2879,13 +2879,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cd/TheMarquis.png"
   },
   {
     "id": "thomas",
     "name": "Thomas",
     "set": "Horde Box",
-    "body": "",
+    "body": "healing",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "",
@@ -2901,13 +2901,13 @@
     "tag_red2": "magic",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/42/Thomas.png"
   },
   {
     "id": "ygraine",
     "name": "Ygraine",
     "set": "Horde Box",
-    "body": "",
+    "body": "norse_sword",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -2923,13 +2923,13 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/Ygraine.png"
   },
   {
     "id": "zanzibar",
     "name": "Zanzibar",
     "set": "Horde Box",
-    "body": "",
+    "body": "ghost_sight",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "spellcaster",
@@ -2945,13 +2945,13 @@
     "tag_red2": "",
     "red3": "mana_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/24/Zanzibar.png"
   },
   {
     "id": "zee",
     "name": "Zee",
     "set": "Horde Box",
-    "body": "",
+    "body": "telekinetic_blast",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "",
@@ -2967,13 +2967,13 @@
     "tag_red2": "",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9d/Zee.png"
   },
   {
     "id": "liam",
     "name": "Liam",
     "set": "Liam Box",
-    "body": "",
+    "body": "curved_dagger",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -2989,13 +2989,13 @@
     "tag_red2": "move",
     "red3": "rotten",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/15/Liam.png"
   },
   {
     "id": "north_the_halfling",
     "name": "North the Halfling",
     "set": "North the Halfling Box",
-    "body": "",
+    "body": "torch",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "",
@@ -3011,13 +3011,13 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fe/NorthTheHalfling.png"
   },
   {
     "id": "carol_black_oak",
     "name": "Carol Black-Oak",
     "set": "Special Guest Paul Bonner 2",
-    "body": "",
+    "body": "dwarven_hammer",
     "blue1": "collector_[zombie]",
     "tag_blue1": "runner",
     "blue2": "",
@@ -3033,13 +3033,13 @@
     "tag_red2": "",
     "red3": "collector_[zombie]",
     "tag_red3": "walker",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5e/CarolBlackOak.png"
   },
   {
     "id": "kirag",
     "name": "Kirag",
     "set": "Special Guest Paul Bonner 2",
-    "body": "",
+    "body": "dwarven_hammer",
     "blue1": "tactician",
     "tag_blue1": "",
     "blue2": "no_move_actions",
@@ -3055,13 +3055,13 @@
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "iron_hide",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b6/Kirag.png"
   },
   {
     "id": "thorg",
     "name": "Thorg",
     "set": "Special Guest Paul Bonner 2",
-    "body": "",
+    "body": "dragon_bile",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "carries_kirag",
@@ -3077,13 +3077,13 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "plus_1_free_[action]_action:combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/98/Thorg.png"
   },
   {
     "id": "tola",
     "name": "Tola",
     "set": "Special Guest Paul Bonner 2",
-    "body": "",
+    "body": "norse_shield",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -3099,13 +3099,13 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/85/Tola.png"
   },
   {
     "id": "birmbauer",
     "name": "Birmbauer",
     "set": "Special Guest Sean A Murray",
-    "body": "",
+    "body": "lightning_ball",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "lightning_ball",
     "blue2": "",
@@ -3121,13 +3121,13 @@
     "tag_red2": "magic",
     "red3": "point_blank",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/Birmbauer.png"
   },
   {
     "id": "kendra",
     "name": "Kendra",
     "set": "Special Guest Sean A Murray",
-    "body": "",
+    "body": "telekinetic_blast",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -3143,13 +3143,13 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/88/Kendra.png"
   },
   {
     "id": "spellbones",
     "name": "Spellbones",
     "set": "Special Guest Sean A Murray",
-    "body": "",
+    "body": "ghost_sight",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
@@ -3165,13 +3165,13 @@
     "tag_red2": "magic",
     "red3": "rotten",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2f/Spellbones.png"
   },
   {
     "id": "ultimate_ann",
     "name": "Ultimate Ann",
     "set": "Black Plague Ultimate Survivors",
-    "body": "",
+    "body": "shield",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "iron_hide",
@@ -3187,13 +3187,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/AnnUltimate.png"
   },
   {
     "id": "ultimate_baldric",
     "name": "Ultimate Baldric",
     "set": "Black Plague Ultimate Survivors",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "spellcaster",
@@ -3209,13 +3209,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/64/BaldricUltimate.png"
   },
   {
     "id": "ultimate_clovis",
     "name": "Ultimate Clovis",
     "set": "Black Plague Ultimate Survivors",
-    "body": "",
+    "body": "shield",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "taunt",
@@ -3231,13 +3231,13 @@
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/53/ClovisUltimate.png"
   },
   {
     "id": "ultimate_nelly",
     "name": "Ultimate Nelly",
     "set": "Black Plague Ultimate Survivors",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "lifesaver",
@@ -3253,13 +3253,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_zone_move",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/NellyUltimate.png"
   },
   {
     "id": "ultimate_samson",
     "name": "Ultimate Samson",
     "set": "Black Plague Ultimate Survivors",
-    "body": "",
+    "body": "hammer",
     "blue1": "charge",
     "tag_blue1": "",
     "blue2": "iron_hide",
@@ -3275,13 +3275,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9e/SamsonUltimate.png"
   },
   {
     "id": "ultimate_silas",
     "name": "Ultimate Silas",
     "set": "Black Plague Ultimate Survivors",
-    "body": "",
+    "body": "longbow",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "plus_1_roll_[action]",
@@ -3297,13 +3297,13 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/3e/SilasUltimate.png"
   },
   {
     "id": "lion_o",
     "name": "Lion-O",
     "set": "Thundercats Pack 1",
-    "body": "",
+    "body": "sword_of_omens_or_claw_shield",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -3319,13 +3319,13 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4e/LionO.png"
   },
   {
     "id": "cheetara",
     "name": "Cheetara",
     "set": "Thundercats Pack 1",
-    "body": "",
+    "body": "cheetaras_bo_staff",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -3341,13 +3341,13 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/0b/Cheetara.png"
   },
   {
     "id": "snarf",
     "name": "Snarf",
     "set": "Thundercats Pack 1",
-    "body": "",
+    "body": "shield",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "",
@@ -3363,13 +3363,13 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2f/Snarf.png"
   },
   {
     "id": "slithe",
     "name": "Slithe",
     "set": "Thundercats Pack 1",
-    "body": "",
+    "body": "slithes_battleaxe",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -3385,13 +3385,13 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/60/Slithe.png"
   },
   {
     "id": "panthro",
     "name": "Panthro",
     "set": "Thundercats Pack 2",
-    "body": "",
+    "body": "panthros_nunchuck",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -3413,7 +3413,7 @@
     "id": "tygra",
     "name": "Tygra",
     "set": "Thundercats Pack 2",
-    "body": "",
+    "body": "tygras_bolo_whip",
     "blue1": "tactician",
     "tag_blue1": "",
     "blue2": "",
@@ -3435,7 +3435,7 @@
     "id": "wilykit",
     "name": "WilyKit",
     "set": "Thundercats Pack 2",
-    "body": "",
+    "body": "kits_and_kats_bombs_and_capsules",
     "blue1": "low_profile",
     "tag_blue1": "",
     "blue2": "",
@@ -3457,7 +3457,7 @@
     "id": "wilykat",
     "name": "WilyKat",
     "set": "Thundercats Pack 2",
-    "body": "",
+    "body": "kits_and_kats_bombs_and_capsules",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -3479,7 +3479,7 @@
     "id": "jackalman",
     "name": "Jackalman",
     "set": "Thundercats Pack 2",
-    "body": "",
+    "body": "axe",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -3501,7 +3501,7 @@
     "id": "pharaoh_eddie",
     "name": "Pharaoh Eddie",
     "set": "Iron Maiden Pack 1",
-    "body": "",
+    "body": "fireball",
     "blue1": "powerslave",
     "tag_blue1": "",
     "blue2": "",
@@ -3517,13 +3517,13 @@
     "tag_red2": "",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "plus_1_die_[action]:ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/84/PharaohEddie_IM.png"
   },
   {
     "id": "reaper_eddie",
     "name": "Reaper Eddie",
     "set": "Iron Maiden Pack 1",
-    "body": "",
+    "body": "reapers_scythe",
     "blue1": "dance_of_death",
     "tag_blue1": "",
     "blue2": "",
@@ -3539,13 +3539,13 @@
     "tag_red2": "melee",
     "red3": "lucky",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/89/ReaperEddie_IM.png"
   },
   {
     "id": "samurai_eddie",
     "name": "Samurai Eddie",
     "set": "Iron Maiden Pack 1",
-    "body": "",
+    "body": "maiden_japan",
     "blue1": "flash_of_the_blade",
     "tag_blue1": "",
     "blue2": "",
@@ -3567,7 +3567,7 @@
     "id": "mummy_eddie",
     "name": "Mummy Eddie",
     "set": "Iron Maiden Pack 2",
-    "body": "",
+    "body": "lightning_ball",
     "blue1": "heaven_can_wait",
     "tag_blue1": "",
     "blue2": "",
@@ -3583,13 +3583,13 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/ShamanEddie_IM.png"
   },
   {
     "id": "shaman_eddie",
     "name": "Shaman Eddie",
     "set": "Iron Maiden Pack 2",
-    "body": "",
+    "body": "dagger",
     "blue1": "death_or_glory",
     "tag_blue1": "",
     "blue2": "",
@@ -3611,7 +3611,7 @@
     "id": "annalisa",
     "name": "Annalisa",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "longbow",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -3627,13 +3627,13 @@
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/bc/Annalisa.png"
   },
   {
     "id": "bertrand",
     "name": "Bertrand",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "transmutation",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "",
@@ -3649,13 +3649,13 @@
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "trick_shot",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a8/Bertrand.png"
   },
   {
     "id": "brand",
     "name": "Brand",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "short_sword",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "",
@@ -3671,13 +3671,13 @@
     "tag_red2": "move",
     "red3": "tactician",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/90/Bran.png"
   },
   {
     "id": "captain_goliath",
     "name": "Captain Goliath",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "hammer",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "hammer",
     "blue2": "",
@@ -3693,13 +3693,13 @@
     "tag_red2": "melee",
     "red3": "tactician",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/48/CaptainGoliath.png"
   },
   {
     "id": "ciacco",
     "name": "Ciacco",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "axe",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "axe",
     "blue2": "",
@@ -3715,13 +3715,13 @@
     "tag_red2": "melee",
     "red3": "break_in",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5e/Ciacco.png"
   },
   {
     "id": "doctor_nadir",
     "name": "Doctor Nadir",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "transmutation",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "",
@@ -3737,13 +3737,13 @@
     "tag_red2": "magic",
     "red3": "mana_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/94/DoctorNadir.png"
   },
   {
     "id": "grand_vizier",
     "name": "Grand Vizier",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "crocca",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "crocca",
     "blue2": "",
@@ -3759,13 +3759,13 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/GrandVizier.png"
   },
   {
     "id": "imperial_messenger",
     "name": "Imperial Messenger",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "healing",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -3781,13 +3781,13 @@
     "tag_red2": "search",
     "red3": "born_leader",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/3b/ImperialMessenger.png"
   },
   {
     "id": "rosencranz",
     "name": "Rosencranz",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "torch",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
@@ -3803,13 +3803,13 @@
     "tag_red2": "",
     "red3": "lifesaver",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1b/Rosencranz.png"
   },
   {
     "id": "sir_crumb",
     "name": "Sir Crumb",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "shield",
     "blue1": "low_profile",
     "tag_blue1": "",
     "blue2": "",
@@ -3825,13 +3825,13 @@
     "tag_red2": "",
     "red3": "slippery",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d3/SirCrumb.png"
   },
   {
     "id": "sir_percy",
     "name": "Sir Percy",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "sword",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -3847,13 +3847,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f9/SirPercy.png"
   },
   {
     "id": "the_sparrow",
     "name": "The Sparrow",
     "set": "La Compagnia Della Forca",
-    "body": "",
+    "body": "sword",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "sword",
     "blue2": "",
@@ -3869,13 +3869,13 @@
     "tag_red2": "melee",
     "red3": "slippery",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5a/TheSparrow.png"
   },
   {
     "id": "cord_dankwart",
     "name": "Cord Dankwart",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "great_sword",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "sword",
     "blue2": "plus_1_free_[action]_action",
@@ -3891,13 +3891,13 @@
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "tactician",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f2/CordDankwart.png"
   },
   {
     "id": "drakka",
     "name": "Drakka",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "great_axe",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -3913,13 +3913,13 @@
     "tag_red2": "",
     "red3": "born_leader",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/73/Drakka.png"
   },
   {
     "id": "einar",
     "name": "Einar",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "disintegrate",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "guards_[skill]",
@@ -3935,13 +3935,13 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9e/Einar.png"
   },
   {
     "id": "freya",
     "name": "Freya",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "dagger",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -3957,13 +3957,13 @@
     "tag_red2": "",
     "red3": "sprint",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/29/Freya.png"
   },
   {
     "id": "lewyn",
     "name": "Lewyn",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "lightning_bolt",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -3979,13 +3979,13 @@
     "tag_red2": "magic",
     "red3": "double_casting",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/Lewyn.png"
   },
   {
     "id": "lotas",
     "name": "Lotas",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "sword",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4001,13 +4001,13 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/69/Lotas.png"
   },
   {
     "id": "lotas_(werewolf)",
     "name": "Lotas (Werewolf)",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "sword",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4023,13 +4023,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/91/LotasWerewolf.png"
   },
   {
     "id": "marike",
     "name": "Marike",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "great_axe",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4045,13 +4045,13 @@
     "tag_red2": "",
     "red3": "frenzy_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d9/Marike.png"
   },
   {
     "id": "neto_orash",
     "name": "Neto Orash",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "sword",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4067,13 +4067,13 @@
     "tag_red2": "melee",
     "red3": "swordmaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/87/NetoOrash.png"
   },
   {
     "id": "otto",
     "name": "Otto",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "sword",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -4089,13 +4089,13 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/Otto.png"
   },
   {
     "id": "otto_(armored)",
     "name": "Otto (Armored)",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "sword",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -4111,13 +4111,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/OttoArmored.png"
   },
   {
     "id": "rainer",
     "name": "Rainer",
     "set": "Comic Book Extras (Road to Hell)",
-    "body": "",
+    "body": "war_bow",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4133,13 +4133,13 @@
     "tag_red2": "ranged",
     "red3": "iron_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f3/Rainer.png"
   },
   {
     "id": "dragomir",
     "name": "Dragomir",
     "set": "White Death",
-    "body": "",
+    "body": "crossbow",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -4155,13 +4155,35 @@
     "tag_red2": "ranged",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/Dragomir_WD.png"
   },
   {
     "id": "dragomir_ee",
     "name": "Dragomir EE",
     "set": "White Death",
-    "body": "",
+    "body": "crossbow_(chi)",
+    "blue1": "plus_1_die_[action]",
+    "tag_blue1": "ranged",
+    "blue2": "guards_[skill]",
+    "tag_blue2": "plus_1_max_range",
+    "yellow": "plus_1_action",
+    "orange1": "plus_1_free_[action]_action",
+    "tag_orange1": "ranged",
+    "orange2": "range_plus_2_[skill]",
+    "tag_orange2": "plus_1_damage_[action]:ranged",
+    "red1": "plus_1_roll_[action]",
+    "tag_red1": "ranged",
+    "red2": "escalation_[action]",
+    "tag_red2": "ranged",
+    "red3": "iron_hide",
+    "tag_red3": "",
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/Dragomir_WD.png"
+  },
+  {
+    "id": "jenia",
+    "name": "Jenia",
+    "set": "White Death",
+    "body": "horn_bow",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -4177,13 +4199,35 @@
     "tag_red2": "",
     "red3": "chi_[skill]",
     "tag_red3": "iron_rain",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/91/Jenia_WD.png"
   },
   {
-    "id": "jenia",
-    "name": "Jenia",
+    "id": "jenia_ee",
+    "name": "Jenia EE",
     "set": "White Death",
-    "body": "",
+    "body": "horn_bow_(chi)",
+    "blue1": "plus_1_die_[action]",
+    "tag_blue1": "ranged",
+    "blue2": "guards_[skill]",
+    "tag_blue2": "plus_1_max_range",
+    "yellow": "plus_1_action",
+    "orange1": "chi_[skill]",
+    "tag_orange1": "plus_1_damage_[action]:ranged",
+    "orange2": "plus_1_free_[action]_action",
+    "tag_orange2": "ranged",
+    "red1": "plus_1_roll_[action]",
+    "tag_red1": "ranged",
+    "red2": "iron_hide",
+    "tag_red2": "",
+    "red3": "chi_[skill]",
+    "tag_red3": "iron_rain",
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/91/Jenia_WD.png"
+  },
+  {
+    "id": "lorna",
+    "name": "Lorna",
+    "set": "White Death",
+    "body": "spear",
     "blue1": "search_2_cards",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -4199,13 +4243,35 @@
     "tag_red2": "move",
     "red3": "born_leader",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f3/Lorna_WD.png"
   },
   {
-    "id": "jenia_ee",
-    "name": "Jenia EE",
+    "id": "lorna_ee",
+    "name": "Lorna EE",
     "set": "White Death",
-    "body": "",
+    "body": "spear",
+    "blue1": "search_2_cards",
+    "tag_blue1": "",
+    "blue2": "plus_1_free_[action]_action",
+    "tag_blue2": "guard_action",
+    "yellow": "plus_1_action",
+    "orange1": "plus_1_die_[action]",
+    "tag_orange1": "combat",
+    "orange2": "plus_1_free_[action]_action",
+    "tag_orange2": "melee",
+    "red1": "plus_1_free_[action]_action",
+    "tag_red1": "combat",
+    "red2": "plus_1_free_[action]_action",
+    "tag_red2": "move",
+    "red3": "born_leader",
+    "tag_red3": "",
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f3/Lorna_WD.png"
+  },
+  {
+    "id": "ogon",
+    "name": "Ogon",
+    "set": "White Death",
+    "body": "combat_shield",
     "blue1": "search_2_cards",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -4221,13 +4287,35 @@
     "tag_red2": "",
     "red3": "chi_[skill]",
     "tag_red3": "hit_run",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4b/Ogon_WD.png"
   },
   {
-    "id": "lorna",
-    "name": "Lorna",
+    "id": "ogon_ee",
+    "name": "Ogon EE",
     "set": "White Death",
-    "body": "",
+    "body": "combat_shield",
+    "blue1": "search_2_cards",
+    "tag_blue1": "",
+    "blue2": "plus_1_free_[action]_action",
+    "tag_blue2": "guard_action",
+    "yellow": "plus_1_action",
+    "orange1": "plus_1_free_[action]_action",
+    "tag_orange1": "melee",
+    "orange2": "chi_[skill]",
+    "tag_orange2": "plus_2_dice_[action]:combat",
+    "red1": "plus_1_free_[action]_action",
+    "tag_red1": "combat",
+    "red2": "born_leader",
+    "tag_red2": "",
+    "red3": "chi_[skill]",
+    "tag_red3": "hit_run",
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4b/Ogon_WD.png"
+  },
+  {
+    "id": "sarnaï",
+    "name": "Sarnaï",
+    "set": "White Death",
+    "body": "ice_storm",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -4243,13 +4331,35 @@
     "tag_red2": "combat",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/84/Sarnai_WD.png"
   },
   {
-    "id": "lorna_ee",
-    "name": "Lorna EE",
+    "id": "sarnaï_ee",
+    "name": "Sarnaï EE",
     "set": "White Death",
-    "body": "",
+    "body": "ice_storm",
+    "blue1": "plus_1_free_[action]_action",
+    "tag_blue1": "move",
+    "blue2": "guards_[skill]",
+    "tag_blue2": "damage_2_[action]:ranged",
+    "yellow": "plus_1_action",
+    "orange1": "plus_1_die_[action]",
+    "tag_orange1": "combat",
+    "orange2": "freeze_[action]",
+    "tag_orange2": "combat",
+    "red1": "plus_1_die_[action]",
+    "tag_red1": "combat",
+    "red2": "plus_1_free_[action]_action",
+    "tag_red2": "combat",
+    "red3": "super_strength",
+    "tag_red3": "",
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/84/Sarnai_WD.png"
+  },
+  {
+    "id": "yasuke",
+    "name": "Yasuke",
+    "set": "White Death",
+    "body": "katana",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -4265,145 +4375,35 @@
     "tag_red2": "roll_6_plus_1_dice_roll_[action]:combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "combat",
-    "image": ""
-  },
-  {
-    "id": "ogon",
-    "name": "Ogon",
-    "set": "White Death",
-    "body": "",
-    "blue1": "shove",
-    "tag_blue1": "",
-    "blue2": "guards_push",
-    "tag_blue2": "",
-    "yellow": "plus_1_action",
-    "orange1": "bloodlust_[action]",
-    "tag_orange1": "melee",
-    "orange2": "iron_hide",
-    "tag_orange2": "",
-    "red1": "plus_1_free_[action]_action",
-    "tag_red1": "combat",
-    "red2": "combat_reflexes",
-    "tag_red2": "",
-    "red3": "reaper_[action]",
-    "tag_red3": "melee",
-    "image": ""
-  },
-  {
-    "id": "ogon_ee",
-    "name": "Ogon EE",
-    "set": "White Death",
-    "body": "",
-    "blue1": "shove",
-    "tag_blue1": "",
-    "blue2": "guards_push",
-    "tag_blue2": "",
-    "yellow": "plus_1_action",
-    "orange1": "bloodlust_[action]",
-    "tag_orange1": "melee",
-    "orange2": "iron_hide",
-    "tag_orange2": "",
-    "red1": "chi_[skill]",
-    "tag_red1": "plus_1_action",
-    "red2": "chi_[skill]",
-    "tag_red2": "barbarian",
-    "red3": "combat_reflexes",
-    "tag_red3": "",
-    "image": ""
-  },
-  {
-    "id": "sarnaï",
-    "name": "Sarnaï",
-    "set": "White Death",
-    "body": "",
-    "blue1": "spellcaster",
-    "tag_blue1": "",
-    "blue2": "guards_[skill]",
-    "tag_blue2": "slippery",
-    "yellow": "plus_1_action",
-    "orange1": "plus_1_max_range",
-    "tag_orange1": "",
-    "orange2": "freeze_[action]",
-    "tag_orange2": "magic",
-    "red1": "plus_1_free_[action]_action",
-    "tag_red1": "combat",
-    "red2": "double_casting",
-    "tag_red2": "",
-    "red3": "spellbook",
-    "tag_red3": "",
-    "image": ""
-  },
-  {
-    "id": "sarnaï_ee",
-    "name": "Sarnaï EE",
-    "set": "White Death",
-    "body": "",
-    "blue1": "spellcaster",
-    "tag_blue1": "",
-    "blue2": "guards_[skill]",
-    "tag_blue2": "slippery",
-    "yellow": "plus_1_action",
-    "orange1": "plus_1_max_range",
-    "tag_orange1": "",
-    "orange2": "chi_[skill]",
-    "tag_orange2": "freeze_[action]:combat",
-    "red1": "plus_1_free_[action]_action",
-    "tag_red1": "combat",
-    "red2": "plus_1_free_[action]_action",
-    "tag_red2": "meditation",
-    "red3": "spellbook",
-    "tag_red3": "",
-    "image": ""
-  },
-  {
-    "id": "yasuke",
-    "name": "Yasuke",
-    "set": "White Death",
-    "body": "",
-    "blue1": "freeze_[action]",
-    "tag_blue1": "melee",
-    "blue2": "guards_[skill]",
-    "tag_blue2": "damage_2_[action]:melee",
-    "yellow": "plus_1_action",
-    "orange1": "plus_1_free_[action]_action",
-    "tag_orange1": "melee",
-    "orange2": "hit_run",
-    "tag_orange2": "",
-    "red1": "bloodlust_[action]",
-    "tag_red1": "melee",
-    "red2": "jump",
-    "tag_red2": "",
-    "red3": "plus_1_damage_[action]",
-    "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/67/Yasuke_WD.png"
   },
   {
     "id": "yasuke_ee",
     "name": "Yasuke EE",
     "set": "White Death",
-    "body": "",
-    "blue1": "chi_[skill]",
-    "tag_blue1": "freeze_[action]:combat",
+    "body": "katana_(chi)",
+    "blue1": "plus_1_free_[action]_action",
+    "tag_blue1": "move",
     "blue2": "guards_[skill]",
-    "tag_blue2": "damage_2_[action]:melee",
+    "tag_blue2": "damage_2_[action]:ranged",
     "yellow": "plus_1_action",
-    "orange1": "chi_[skill]",
-    "tag_orange1": "charge",
-    "orange2": "hit_run",
-    "tag_orange2": "",
-    "red1": "bloodlust_[action]",
-    "tag_red1": "melee",
-    "red2": "jump",
-    "tag_red2": "",
-    "red3": "plus_1_damage_[action]",
-    "tag_red3": "melee",
-    "image": ""
+    "orange1": "plus_1_die_[action]",
+    "tag_orange1": "combat",
+    "orange2": "freeze_[action]",
+    "tag_orange2": "combat",
+    "red1": "chi_[skill]",
+    "tag_red1": "roll_6_plus_1_damage_[action]:combat",
+    "red2": "chi_[skill]",
+    "tag_red2": "roll_6_plus_1_dice_roll_[action]:combat",
+    "red3": "plus_1_free_[action]_action",
+    "tag_red3": "combat",
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/67/Yasuke_WD.png"
   },
   {
     "id": "fengbao",
     "name": "Fengbao",
     "set": "Eternal Empire",
-    "body": "",
+    "body": "war_bow_(chi)",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_2_dice_[action]:combat",
     "blue2": "guards_[skill]",
@@ -4419,13 +4419,13 @@
     "tag_red2": "combat",
     "red3": "marksman",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/44/Fengbao_EE.png"
   },
   {
     "id": "jianrui",
     "name": "Jianrui",
     "set": "Eternal Empire",
-    "body": "",
+    "body": "dragon_lance_(chi)",
     "blue1": "chi_[skill]",
     "tag_blue1": "damage_2_[action]:combat",
     "blue2": "plus_1_free_[action]_action",
@@ -4441,13 +4441,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/17/Jianrui_EE.png"
   },
   {
     "id": "shao",
     "name": "Shao",
     "set": "Eternal Empire",
-    "body": "",
+    "body": "halberd_(chi)",
     "blue1": "chi_[skill]",
     "tag_blue1": "jump",
     "blue2": "guards_evade",
@@ -4463,13 +4463,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Shao_EE.png"
   },
   {
     "id": "yinying",
     "name": "Yinying",
     "set": "Eternal Empire",
-    "body": "",
+    "body": "dagger_(chi)",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_1_free_[action]_action:melee",
     "blue2": "guards_[skill]",
@@ -4485,13 +4485,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7c/Yinying_EE.png"
   },
   {
     "id": "zhi_shen",
     "name": "Zhi Shen",
     "set": "Eternal Empire",
-    "body": "",
+    "body": "power_blast_(chi)",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_1_free_[action]_action:magic",
     "blue2": "guards_[skill]",
@@ -4507,13 +4507,13 @@
     "tag_red2": "enchantment",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/97/ZhiShen_EE.png"
   },
   {
     "id": "zhi_yang",
     "name": "Zhi Yang",
     "set": "Eternal Empire",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "chi_[skill]",
     "tag_blue1": "plus_1_roll_[action]:combat",
     "blue2": "guards_push",
@@ -4529,13 +4529,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/ZhiYang_EE.png"
   },
   {
     "id": "chang_e",
     "name": "Chang' E",
     "set": "Chang' E and Hou Yi Box",
-    "body": "",
+    "body": "jump_(chi)",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4551,13 +4551,13 @@
     "tag_red2": "magic",
     "red3": "sprint",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8e/ChangE.png"
   },
   {
     "id": "hou_yi",
     "name": "Hou Yi",
     "set": "Chang' E and Hou Yi Box",
-    "body": "",
+    "body": "war_bow_(chi)",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -4573,13 +4573,13 @@
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/ce/HouYi.png"
   },
   {
     "id": "april_oneil",
     "name": "April O'Neil",
     "set": "TMNT Timecrash",
-    "body": "",
+    "body": "aprils_harp",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "aprils_harp",
     "blue2": "plus_1_die_[action]",
@@ -4595,13 +4595,13 @@
     "tag_red2": "combat",
     "red3": "spellbook",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e9/AprilONeil.png"
   },
   {
     "id": "casey_jones",
     "name": "Casey Jones",
     "set": "TMNT Timecrash",
-    "body": "",
+    "body": "caseys_hockey_stick",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "caseys_hockey_stick",
     "blue2": "improvised_weapon_[action]",
@@ -4617,13 +4617,13 @@
     "tag_red2": "combat",
     "red3": "jump",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1b/CaseyJones.png"
   },
   {
     "id": "donatello",
     "name": "Donatello",
     "set": "TMNT Timecrash",
-    "body": "",
+    "body": "donatellos_bo_staff",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "donatellos_bo_staff",
     "blue2": "transmutation",
@@ -4639,13 +4639,13 @@
     "tag_red2": "move",
     "red3": "turtle_focus_plus_3_dice_combat",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5c/DonatelloFantasy.png"
   },
   {
     "id": "leonardo",
     "name": "Leonardo",
     "set": "TMNT Timecrash",
-    "body": "",
+    "body": "leonardos_ninjatos",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "leonardos_ninjatos",
     "blue2": "brother_in_arms_[game_effect]",
@@ -4661,13 +4661,13 @@
     "tag_red2": "melee",
     "red3": "turtle_focus_plus_2_dice_roll_combat",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8a/LeonardoFantasy.png"
   },
   {
     "id": "michelangelo",
     "name": "Michelangelo",
     "set": "TMNT Timecrash",
-    "body": "",
+    "body": "michelangelos_nunchakus",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "michelangelos_nunchakus",
     "blue2": "taunt",
@@ -4683,13 +4683,13 @@
     "tag_red2": "",
     "red3": "turtle_focus_plus_3_dice_combat",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b7/MichelangeloFantasy.png"
   },
   {
     "id": "raphael",
     "name": "Raphael",
     "set": "TMNT Timecrash",
-    "body": "",
+    "body": "raphaels_sai",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "raphaels_sai",
     "blue2": "plus_1_die_[action]",
@@ -4705,13 +4705,13 @@
     "tag_red2": "",
     "red3": "turtle_focus_damage_3_combat",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7f/RaphaelFantasy.png"
   },
   {
     "id": "splinter",
     "name": "Splinter",
     "set": "TMNT Timecrash",
-    "body": "",
+    "body": "splinters_cane",
     "blue1": "starts_with_[equipment]",
     "tag_blue1": "splinters_cane",
     "blue2": "hit_run",
@@ -4727,13 +4727,13 @@
     "tag_red2": "combat",
     "red3": "one_free_turtle_power",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/Splinter.png"
   },
   {
     "id": "jennika",
     "name": "Jennika",
     "set": "Jennika Box",
-    "body": "",
+    "body": "jennikas_tekko_kagi",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "starts_with_[equipment]",
@@ -4749,13 +4749,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6d/Jennika.png"
   },
   {
     "id": "alghara_steel_sworn",
     "name": "Alghara Steel-Sworn",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -4771,13 +4771,13 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/0d/AlgharaSteelSworn_FR.png"
   },
   {
     "id": "andrea",
     "name": "Andrea",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "plus_1_free_[action]_action",
@@ -4793,13 +4793,13 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/AndreaFantasy.png"
   },
   {
     "id": "artema",
     "name": "Artema",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4815,13 +4815,13 @@
     "tag_red2": "melee",
     "red3": "barbarian",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/Artema_FF.png"
   },
   {
     "id": "badang",
     "name": "Badang",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "super_strength",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4837,13 +4837,13 @@
     "tag_red2": "move",
     "red3": "jump",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d6/Badang_FR.png"
   },
   {
     "id": "byakko_maru",
     "name": "Byakko-Maru",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -4859,13 +4859,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d0/ByakkoMaru_FR.png"
   },
   {
     "id": "caishen_ye",
     "name": "Caishen Ye",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "can_search_more_than_once",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4881,13 +4881,13 @@
     "tag_red2": "magic",
     "red3": "hoard",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/bd/CaishenYe_FR.png"
   },
   {
     "id": "cao_ren",
     "name": "Cao Ren",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "great_sword",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -4903,13 +4903,13 @@
     "tag_red2": "melee",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/bc/CaoRen_FR.png"
   },
   {
     "id": "cirina_black_mantle",
     "name": "Cirina Black-Mantle",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -4925,13 +4925,13 @@
     "tag_red2": "magic",
     "red3": "freeze_[action]",
     "tag_red3": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fd/CirinaBlackMantle_FR.png"
   },
   {
     "id": "cristina",
     "name": "Cristina",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "power_blast",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -4947,13 +4947,13 @@
     "tag_red2": "combat",
     "red3": "marksman",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/df/Cristina.png"
   },
   {
     "id": "da_qiao",
     "name": "Da Qiao",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "enchantment",
     "blue2": "plus_1_free_[action]_action",
@@ -4969,13 +4969,13 @@
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
     "tag_red3": "runner",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c6/DaQiao_FR.png"
   },
   {
     "id": "date_masamune",
     "name": "Date Masamune",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "escalation_[action]",
     "tag_blue1": "combat",
     "blue2": "plus_1_free_[action]_action",
@@ -4991,13 +4991,13 @@
     "tag_red2": "melee",
     "red3": "born_leader",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c2/DateMasamune_FR.png"
   },
   {
     "id": "dd",
     "name": "DD",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "disintegrate",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5013,13 +5013,13 @@
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/68/DD.png"
   },
   {
     "id": "dian_wei",
     "name": "Dian Wei",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "halberd",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5035,13 +5035,13 @@
     "tag_red2": "melee",
     "red3": "swordmaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/0f/DianWei_FR.png"
   },
   {
     "id": "diao_chan",
     "name": "Diao Chan",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5057,13 +5057,13 @@
     "tag_red2": "ranged",
     "red3": "marksman",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/21/DiaoChan_FR.png"
   },
   {
     "id": "gan_ning",
     "name": "Gan Ning",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "great_axe",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5079,13 +5079,13 @@
     "tag_red2": "move",
     "red3": "damage_2_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/GanNing_FR.png"
   },
   {
     "id": "genghis_khan",
     "name": "Genghis Khan",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_shield",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -5101,13 +5101,13 @@
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d0/GenghisKhan_FR.png"
   },
   {
     "id": "haya",
     "name": "Haya",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "crossbow",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "guards_[skill]",
@@ -5123,13 +5123,13 @@
     "tag_red2": "",
     "red3": "marksman",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/Haya_FR.png"
   },
   {
     "id": "honda_takadatsu",
     "name": "Honda Takadatsu",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_polearm",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5145,13 +5145,13 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/28/HondaTakadatsu_FR.png"
   },
   {
     "id": "hong_var",
     "name": "Hong Var",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "ice_storm",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "guards_push",
@@ -5167,13 +5167,13 @@
     "tag_red2": "magic",
     "red3": "spellbook",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/06/HongVar_FF.png"
   },
   {
     "id": "hua_mulan",
     "name": "Hua Mulan",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5189,13 +5189,13 @@
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a3/HuaMulan_FR.png"
   },
   {
     "id": "huang_gai",
     "name": "Huang Gai",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "great_sword",
     "blue1": "damage_2_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5217,7 +5217,7 @@
     "id": "huang_zhong",
     "name": "Huang Zhong",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5239,7 +5239,7 @@
     "id": "ichiro",
     "name": "Ichiro",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5255,13 +5255,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c7/Ichiro_FR.png"
   },
   {
     "id": "inugami",
     "name": "Inugami",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "regeneration",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5283,7 +5283,7 @@
     "id": "jade_empress",
     "name": "Jade Empress",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "jump",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "guards_[skill]",
@@ -5299,13 +5299,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/JadeEmpress_FF.png"
   },
   {
     "id": "jie_ke",
     "name": "Jie Ke",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5321,13 +5321,13 @@
     "tag_red2": "combat",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/20/JieKe_FR.png"
   },
   {
     "id": "jiraiya",
     "name": "Jiraiya",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5343,13 +5343,13 @@
     "tag_red2": "combat",
     "red3": "lucky",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d2/Jiraiya_FR.png"
   },
   {
     "id": "kido_maru",
     "name": "Kido-Maru",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5365,13 +5365,13 @@
     "tag_red2": "melee",
     "red3": "taunt",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/31/KidoMaru_FR.png"
   },
   {
     "id": "kodai_in",
     "name": "Kodai-In",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5387,13 +5387,13 @@
     "tag_red2": "melee",
     "red3": "escalation_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/da/KodaiIn_FF.png"
   },
   {
     "id": "komatsuhime",
     "name": "Komatsuhime",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "freeze_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5415,7 +5415,7 @@
     "id": "kotahi",
     "name": "Kotahi",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "combat_shield",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5437,7 +5437,7 @@
     "id": "kurokage_maru",
     "name": "Kurokage-Maru",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "katana",
     "blue1": "damage_2_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -5453,13 +5453,13 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/77/KurokageMaru_FF.png"
   },
   {
     "id": "lakshmana",
     "name": "Lakshmana",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_free_[action]_action:ranged",
     "blue2": "guards_[skill]",
@@ -5475,13 +5475,13 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7e/Lakshmana_FR.png"
   },
   {
     "id": "lapu_lapu",
     "name": "Lapu Lapu",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5503,7 +5503,7 @@
     "id": "lu_bu",
     "name": "Lu Bu",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "halberd",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "guards_[skill]",
@@ -5519,13 +5519,13 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d7/LuBu_FR.png"
   },
   {
     "id": "ma_chao",
     "name": "Ma Chao",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "guisarme",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -5547,7 +5547,7 @@
     "id": "maeda_matsu",
     "name": "Maeda Matsu",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "great_sword",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5569,7 +5569,7 @@
     "id": "maki",
     "name": "Maki",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "great_axe",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5585,13 +5585,13 @@
     "tag_red2": "melee",
     "red3": "escalation_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/93/MakiFantasy.png"
   },
   {
     "id": "marquis_of_mao",
     "name": "Marquis of Mao",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "improvised_weapon_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_evade",
@@ -5613,7 +5613,7 @@
     "id": "meili",
     "name": "Meili",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "horn_bow",
     "blue1": "hit_run",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5635,7 +5635,7 @@
     "id": "midoriko",
     "name": "Midoriko",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5657,7 +5657,7 @@
     "id": "miyamoto_musashi",
     "name": "Miyamoto Musashi",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "starts_with_[equipment]",
@@ -5679,7 +5679,7 @@
     "id": "mu_guiying",
     "name": "Mu Guiying",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "melee",
     "blue2": "guards_push",
@@ -5695,13 +5695,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/12/MuGuiying_FF.png"
   },
   {
     "id": "nezha",
     "name": "Nezha",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sprint",
     "blue1": "jump",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5717,13 +5717,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b9/Nezha_FR.png"
   },
   {
     "id": "ohori_tsuruhime",
     "name": "Ohori Tsuruhime",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "reaper_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5745,7 +5745,7 @@
     "id": "okuni",
     "name": "Okuni",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -5761,13 +5761,13 @@
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "spellbook",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f7/Okuni_FF.png"
   },
   {
     "id": "rajaraja_chola",
     "name": "Rajaraja Chola",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -5783,13 +5783,13 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a2/RajarajaChola.png"
   },
   {
     "id": "rama",
     "name": "Rama",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "roll_6_plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5805,13 +5805,13 @@
     "tag_red2": "",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f1/Rama.png"
   },
   {
     "id": "rebecca",
     "name": "Rebecca",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "choose_any_skill",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5827,13 +5827,13 @@
     "tag_red2": "move",
     "red3": "lifesaver",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8d/Rebecca_FR.png"
   },
   {
     "id": "renart",
     "name": "Renart",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "power_blast",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -5849,13 +5849,13 @@
     "tag_red2": "magic",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cc/Renart_FF.png"
   },
   {
     "id": "richard",
     "name": "Richard",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -5871,13 +5871,13 @@
     "tag_red2": "",
     "red3": "iron_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/Richard.png"
   },
   {
     "id": "saika_magicoichi",
     "name": "Saika magicoichi",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "horn_bow",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5899,7 +5899,7 @@
     "id": "sanada_yukimura",
     "name": "Sanada Yukimura",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "halberd",
     "blue1": "barbarian",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5921,7 +5921,7 @@
     "id": "sarana_far_sight",
     "name": "Sarana Far-Sight",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "horn_bow",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -5943,7 +5943,7 @@
     "id": "sha_wujing",
     "name": "Sha Wujing",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "hoard",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -5965,7 +5965,7 @@
     "id": "she_saihua",
     "name": "She Saihua",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "plus_1_free_[action]_action",
@@ -5987,7 +5987,7 @@
     "id": "sun_quan",
     "name": "Sun Quan",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6009,7 +6009,7 @@
     "id": "sun_tzu",
     "name": "Sun Tzu",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_free_[action]_action:combat",
     "blue2": "plus_1_free_[action]_action",
@@ -6031,7 +6031,7 @@
     "id": "sun_wukong",
     "name": "Sun Wukong",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_polearm",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -6047,13 +6047,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/79/SunWukong_FF.png"
   },
   {
     "id": "suzuka_gozen",
     "name": "Suzuka Gozen",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -6075,7 +6075,7 @@
     "id": "tang_sanzang",
     "name": "Tang Sanzang",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "damage_2_[action]",
     "tag_blue1": "magic",
     "blue2": "guards_push",
@@ -6119,7 +6119,7 @@
     "id": "tomoe_gozen",
     "name": "Tomoe Gozen",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sprint",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "guards_[skill]",
@@ -6135,13 +6135,13 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5c/TomoeGozen_FF.png"
   },
   {
     "id": "uesugi_aya",
     "name": "Uesugi Aya",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_enchantment",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6163,7 +6163,7 @@
     "id": "wei_yan",
     "name": "Wei Yan",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "halberd",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -6185,7 +6185,7 @@
     "id": "xiahou_yuan",
     "name": "Xiahou Yuan",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "war_bow",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_[skill]",
@@ -6207,7 +6207,7 @@
     "id": "xu_chu",
     "name": "Xu Chu",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "great_axe",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6229,7 +6229,7 @@
     "id": "yi_sun_sin",
     "name": "Yi Sun-Sin",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sword",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -6245,13 +6245,13 @@
     "tag_red2": "ironclad_[zombie]:abomination",
     "red3": "born_leader",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/YiSunSin_FR.png"
   },
   {
     "id": "zhao_yun",
     "name": "Zhao Yun",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "any_polearm",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "close_quarter_master",
@@ -6273,7 +6273,7 @@
     "id": "zuo_ci",
     "name": "Zuo Ci",
     "set": "Frozen Fortress",
-    "body": "",
+    "body": "sprint",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -6295,7 +6295,7 @@
     "id": "miyamoto_usagi",
     "name": "Miyamoto Usagi",
     "set": "Usagi Yojimbo Box",
-    "body": "",
+    "body": "katana",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "starts_with_[equipment]",
@@ -6311,13 +6311,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/MiyamotoUsagi.png"
   },
   {
     "id": "alrakis",
     "name": "Alrakis",
     "set": "Celestial Knights",
-    "body": "",
+    "body": "only_armor",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -6339,7 +6339,7 @@
     "id": "avenging_princess_stellar",
     "name": "Avenging Princess Stellar",
     "set": "Celestial Knights",
-    "body": "",
+    "body": "only_armor",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -6361,7 +6361,7 @@
     "id": "eridan",
     "name": "Eridan",
     "set": "Celestial Knights",
-    "body": "",
+    "body": "only_armor",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -6383,7 +6383,7 @@
     "id": "markan",
     "name": "Markan",
     "set": "Celestial Knights",
-    "body": "",
+    "body": "only_armor",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -6405,7 +6405,7 @@
     "id": "mirak",
     "name": "Mirak",
     "set": "Celestial Knights",
-    "body": "",
+    "body": "only_armor",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -6427,7 +6427,7 @@
     "id": "sadir",
     "name": "Sadir",
     "set": "Celestial Knights",
-    "body": "",
+    "body": "only_armor",
     "blue1": "roll_6_plus_1_damage_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -6449,7 +6449,7 @@
     "id": "homare",
     "name": "Homare",
     "set": "Virtues of Bushido",
-    "body": "",
+    "body": "katana",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6471,7 +6471,7 @@
     "id": "isamu",
     "name": "Isamu",
     "set": "Virtues of Bushido",
-    "body": "",
+    "body": "katana",
     "blue1": "damage_2_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6493,7 +6493,7 @@
     "id": "jin",
     "name": "Jin",
     "set": "Virtues of Bushido",
-    "body": "",
+    "body": "katana",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "guards_evade",
@@ -6515,7 +6515,7 @@
     "id": "makoto",
     "name": "Makoto",
     "set": "Virtues of Bushido",
-    "body": "",
+    "body": "katana",
     "blue1": "hold_your_nose",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -6537,7 +6537,7 @@
     "id": "rei",
     "name": "Rei",
     "set": "Virtues of Bushido",
-    "body": "",
+    "body": "katana",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6559,7 +6559,7 @@
     "id": "tadashi",
     "name": "Tadashi",
     "set": "Virtues of Bushido",
-    "body": "",
+    "body": "katana",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -6581,7 +6581,7 @@
     "id": "yoshitada",
     "name": "Yoshitada",
     "set": "Virtues of Bushido",
-    "body": "",
+    "body": "katana",
     "blue1": "escalation_[action]",
     "tag_blue1": "melee",
     "blue2": "plus_1_free_[action]_action",
@@ -6603,7 +6603,7 @@
     "id": "cao_cao",
     "name": "Cao Cao",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "dagger",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "guards_evade",
@@ -6619,13 +6619,13 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/CaoCao_WMK.png"
   },
   {
     "id": "guan_yu",
     "name": "Guan Yu",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "guisarme",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6647,7 +6647,7 @@
     "id": "liu_bei",
     "name": "Liu Bei",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "sword",
     "blue1": "brother_in_arms_[game_effect]",
     "tag_blue1": "plus_1_free_[action]_action:combat",
     "blue2": "plus_1_free_[action]_action",
@@ -6669,7 +6669,7 @@
     "id": "sima_yi",
     "name": "Sima Yi",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "jump",
     "blue1": "slippery",
     "tag_blue1": "",
     "blue2": "guards_[skill]",
@@ -6691,7 +6691,7 @@
     "id": "sun_jian",
     "name": "Sun Jian",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "great_sword",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "plus_1_free_[action]_action",
@@ -6713,7 +6713,7 @@
     "id": "zhang_fei",
     "name": "Zhang Fei",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "halberd",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6735,7 +6735,7 @@
     "id": "zhou_yu",
     "name": "Zhou Yu",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "sword",
     "blue1": "freeze_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6757,7 +6757,7 @@
     "id": "zhuge_liang",
     "name": "Zhuge Liang",
     "set": "Warlords of the Middle Kingdom",
-    "body": "",
+    "body": "power_blast",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6779,7 +6779,7 @@
     "id": "akechi_mitsuhide",
     "name": "Akechi Mitsuhide",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "war_bow",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "guards_[skill]",
@@ -6801,7 +6801,7 @@
     "id": "hattori_hanzo",
     "name": "Hattori Hanzo",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "dagger",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "guards_[skill]",
@@ -6823,7 +6823,7 @@
     "id": "ishida_mitsunari",
     "name": "Ishida Mitsunari",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "repulse",
     "blue1": "can_search_more_than_once",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6845,7 +6845,7 @@
     "id": "oda_nobunaga",
     "name": "Oda Nobunaga",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "katana",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -6867,7 +6867,7 @@
     "id": "takeda_shingen",
     "name": "Takeda Shingen",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "katana",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "combat",
     "blue2": "plus_1_free_[action]_action",
@@ -6889,7 +6889,7 @@
     "id": "tokugawa_ieyasu",
     "name": "Tokugawa Ieyasu",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "power_blast",
     "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "guards_push",
@@ -6911,7 +6911,7 @@
     "id": "toyotomi_hideyoshi",
     "name": "Toyotomi Hideyoshi",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "great_sword",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "plus_1_free_[action]_action",
@@ -6933,7 +6933,7 @@
     "id": "uesugi_kenshin",
     "name": "Uesugi Kenshin",
     "set": "Warlords of the Rising Sun",
-    "body": "",
+    "body": "katana",
     "blue1": "once_per_turn_[skill]",
     "tag_blue1": "roll_1_equals_6",
     "blue2": "guards_[skill]",
@@ -6955,7 +6955,7 @@
     "id": "eileen",
     "name": "Eileen",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "longbow",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -6971,13 +6971,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/43/Eileen.png"
   },
   {
     "id": "kador",
     "name": "Kador",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "torch",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "",
@@ -6993,13 +6993,13 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/48/Kador.png"
   },
   {
     "id": "lugh",
     "name": "Lugh",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "hammer",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7015,13 +7015,13 @@
     "tag_red2": "combat",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/74/Lugh.png"
   },
   {
     "id": "myrinia",
     "name": "Myrinia",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "search",
     "blue2": "",
@@ -7037,13 +7037,13 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b8/Myrinia.png"
   },
   {
     "id": "orobox",
     "name": "Orobox",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "axe",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7059,13 +7059,13 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5a/Orobox.png"
   },
   {
     "id": "osvith",
     "name": "Osvith",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "shield",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7081,13 +7081,13 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8a/Osvith.png"
   },
   {
     "id": "bjorn_bs",
     "name": "Bjorn BS",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "shield",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -7103,13 +7103,13 @@
     "tag_red2": "combat",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1a/BjornBS.png"
   },
   {
     "id": "khaz_magichur",
     "name": "Khaz Magichur",
     "set": "B-Sieged Crossover Pack",
-    "body": "",
+    "body": "crossbow",
     "blue1": "plus_1_max_range",
     "tag_blue1": "",
     "blue2": "",
@@ -7125,13 +7125,13 @@
     "tag_red2": "combat",
     "red3": "iron_rain",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/36/KhazMaghur.png"
   },
   {
     "id": "ajax",
     "name": "Ajax",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "dragon_bile",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7147,13 +7147,13 @@
     "tag_red2": "magic",
     "red3": "regeneration",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c0/Ajax.png"
   },
   {
     "id": "azrael",
     "name": "Azrael",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -7169,13 +7169,13 @@
     "tag_red2": "combat",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fa/Azrael.png"
   },
   {
     "id": "bjorn_md",
     "name": "Bjorn MD",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "short_bow",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7191,13 +7191,13 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/28/BjornMassiveDarkness.png"
   },
   {
     "id": "elias",
     "name": "Elias",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "torch",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7213,13 +7213,13 @@
     "tag_red2": "combat",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/20/Elias.png"
   },
   {
     "id": "lilned",
     "name": "Lil'Ned",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "hammer",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7235,13 +7235,13 @@
     "tag_red2": "melee",
     "red3": "frenzy_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/08/LilNed.png"
   },
   {
     "id": "malleus",
     "name": "Malleus",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "healing",
     "blue1": "bloodlust_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7257,13 +7257,13 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/Malleus.png"
   },
   {
     "id": "mila",
     "name": "Mila",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "short_bow",
     "blue1": "shove",
     "tag_blue1": "",
     "blue2": "",
@@ -7279,13 +7279,13 @@
     "tag_red2": "combat",
     "red3": "jump",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/Mila.png"
   },
   {
     "id": "moira",
     "name": "Moira",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "torch",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7301,13 +7301,13 @@
     "tag_red2": "magic",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b5/Moira.png"
   },
   {
     "id": "myriam",
     "name": "Myriam",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "speed",
     "blue1": "point_blank",
     "tag_blue1": "",
     "blue2": "",
@@ -7323,13 +7323,13 @@
     "tag_red2": "",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d5/Myriam.png"
   },
   {
     "id": "ostara",
     "name": "Ostara",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "shield",
     "blue1": "reaper_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7345,13 +7345,13 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/74/OstaraMassiveDarkness.png"
   },
   {
     "id": "owen",
     "name": "Owen",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "shield",
     "blue1": "iron_hide",
     "tag_blue1": "",
     "blue2": "",
@@ -7367,13 +7367,13 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/db/Owen.png"
   },
   {
     "id": "sarah",
     "name": "Sarah",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -7389,13 +7389,13 @@
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
     "tag_red3": "walker",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fd/Sarah.png"
   },
   {
     "id": "sibyl",
     "name": "Sibyl",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_zone_move",
     "tag_blue1": "",
     "blue2": "",
@@ -7411,13 +7411,13 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/ee/Sibyl.png"
   },
   {
     "id": "sicarius",
     "name": "Sicarius",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "swordmaster",
     "tag_blue1": "",
     "blue2": "",
@@ -7433,13 +7433,13 @@
     "tag_red2": "melee",
     "red3": "plus_1_die_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f4/Sicarius.png"
   },
   {
     "id": "siegfried",
     "name": "Siegfried",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "hammer",
     "blue1": "frenzy_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -7455,13 +7455,13 @@
     "tag_red2": "combat",
     "red3": "taunt",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/Siegfried.png"
   },
   {
     "id": "silence",
     "name": "Silence",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "move",
     "blue2": "",
@@ -7477,13 +7477,13 @@
     "tag_red2": "melee",
     "red3": "slippery",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Silence.png"
   },
   {
     "id": "sylvan",
     "name": "Sylvan",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "longbow",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -7499,13 +7499,13 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d1/Sylvan.png"
   },
   {
     "id": "valerie",
     "name": "Valerie",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "dagger",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -7521,13 +7521,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/3f/Valerie.png"
   },
   {
     "id": "victoria",
     "name": "Victoria",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "healing",
     "blue1": "plus_1_roll_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7543,13 +7543,13 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1f/Victoria.png"
   },
   {
     "id": "whisper",
     "name": "Whisper",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "crossbow",
     "blue1": "plus_1_damage_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7565,13 +7565,13 @@
     "tag_red2": "move",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/44/Whisper.png"
   },
   {
     "id": "zoe",
     "name": "Zoe",
     "set": "Massive Darkness Crossover Pack",
-    "body": "",
+    "body": "hammer",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -7587,13 +7587,13 @@
     "tag_red2": "",
     "red3": "iron_hide",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4a/Zoe.png"
   },
   {
     "id": "berko",
     "name": "Berko",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_melee_weapon",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -7609,13 +7609,13 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/Berko.png"
   },
   {
     "id": "cassiel",
     "name": "Cassiel",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_shield",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -7631,13 +7631,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/Cassiel.png"
   },
   {
     "id": "daisy",
     "name": "Daisy",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_equipment",
     "blue1": "break_in",
     "tag_blue1": "",
     "blue2": "",
@@ -7653,13 +7653,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c1/Daisy.png"
   },
   {
     "id": "dylan",
     "name": "Dylan",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_dagger",
     "blue1": "",
     "tag_blue1": "",
     "blue2": "",
@@ -7675,13 +7675,13 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/72/Dylan.png"
   },
   {
     "id": "ego",
     "name": "Ego",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "spellbook",
     "tag_blue1": "",
     "blue2": "",
@@ -7697,13 +7697,13 @@
     "tag_red2": "magic",
     "red3": "two_zones_move",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c7/Ego.png"
   },
   {
     "id": "father_corvus",
     "name": "Father Corvus",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_dagger",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7719,13 +7719,13 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/ff/FatherCorvus.png"
   },
   {
     "id": "feydra",
     "name": "Feydra",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_dagger",
     "blue1": "low_profile",
     "tag_blue1": "",
     "blue2": "",
@@ -7741,13 +7741,13 @@
     "tag_red2": "",
     "red3": "slippery",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/05/Feydra.png"
   },
   {
     "id": "gera",
     "name": "Gera",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_axe",
     "blue1": "tough",
     "tag_blue1": "",
     "blue2": "",
@@ -7763,13 +7763,13 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/68/Gera.png"
   },
   {
     "id": "gheta",
     "name": "Gheta",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_axe",
     "blue1": "frenzy_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7785,13 +7785,13 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/Gheta.png"
   },
   {
     "id": "harin",
     "name": "Harin",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_sword",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "melee",
     "blue2": "",
@@ -7807,13 +7807,13 @@
     "tag_red2": "combat",
     "red3": "ironclad_[zombie]",
     "tag_red3": "brute",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7d/Harin.png"
   },
   {
     "id": "harriet",
     "name": "Harriet",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "spellcaster",
     "tag_blue1": "",
     "blue2": "",
@@ -7829,13 +7829,13 @@
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
     "tag_red3": "runner",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a7/Harriet.png"
   },
   {
     "id": "irk",
     "name": "Irk",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "healing",
     "blue1": "lifesaver",
     "tag_blue1": "",
     "blue2": "",
@@ -7851,13 +7851,13 @@
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6b/Irk.png"
   },
   {
     "id": "ivan",
     "name": "Ivan",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_axe",
     "blue1": "frenzy_[action]",
     "tag_blue1": "combat",
     "blue2": "",
@@ -7873,13 +7873,13 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a5/Ivan.png"
   },
   {
     "id": "jebediah",
     "name": "Jebediah",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_equipment",
     "blue1": "sprint",
     "tag_blue1": "",
     "blue2": "",
@@ -7895,13 +7895,13 @@
     "tag_red2": "move",
     "red3": "ironclad_[zombie]",
     "tag_red3": "walker",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f1/Jebediah.png"
   },
   {
     "id": "kaylee",
     "name": "Kaylee",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_equipment",
     "blue1": "ambidextrous",
     "tag_blue1": "",
     "blue2": "",
@@ -7917,13 +7917,13 @@
     "tag_red2": "",
     "red3": "slippery",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cc/Kaylee.png"
   },
   {
     "id": "lyn",
     "name": "Lyn",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_crossbow",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "ranged",
     "blue2": "",
@@ -7939,13 +7939,13 @@
     "tag_red2": "walker",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/45/Lyn.png"
   },
   {
     "id": "mathrin",
     "name": "Mathrin",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "roll_6_plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -7961,13 +7961,13 @@
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b8/Mathrin.png"
   },
   {
     "id": "mist",
     "name": "Mist",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_dagger",
     "blue1": "break_in",
     "tag_blue1": "",
     "blue2": "",
@@ -7983,13 +7983,13 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/Mist.png"
   },
   {
     "id": "mortemyr",
     "name": "Mortemyr",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "zombie_link",
     "tag_blue1": "",
     "blue2": "",
@@ -8005,13 +8005,13 @@
     "tag_red2": "abomination",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/15/Mortemyr.png"
   },
   {
     "id": "nahias",
     "name": "Nahias",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_crossbow",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -8027,13 +8027,13 @@
     "tag_red2": "combat",
     "red3": "slippery",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/db/Nahias.png"
   },
   {
     "id": "riya",
     "name": "Riya",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_sword",
     "blue1": "marksman",
     "tag_blue1": "",
     "blue2": "",
@@ -8049,13 +8049,13 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/75/Riya.png"
   },
   {
     "id": "ryff",
     "name": "Ryff",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_shield",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -8071,13 +8071,13 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "search_plus_1_card",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a0/Ryff.png"
   },
   {
     "id": "sir_ronen",
     "name": "Sir Ronen",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_sword",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -8093,13 +8093,13 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/SirRonen.png"
   },
   {
     "id": "thalia_md2",
     "name": "Thalia MD2",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "healing",
     "blue1": "born_leader",
     "tag_blue1": "",
     "blue2": "",
@@ -8115,13 +8115,13 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "hit_run",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/ThaliaMD.png"
   },
   {
     "id": "valdis",
     "name": "Valdis",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "plus_1_die_[action]",
     "tag_blue1": "magic",
     "blue2": "",
@@ -8137,13 +8137,13 @@
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
     "tag_red3": "runner",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/89/Valdis.png"
   },
   {
     "id": "victor",
     "name": "Victor",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_shield",
     "blue1": "taunt",
     "tag_blue1": "",
     "blue2": "",
@@ -8159,13 +8159,13 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/59/VictorMD.png"
   },
   {
     "id": "ygraine_md2",
     "name": "Ygraine MD2",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "any_combat_spell",
     "blue1": "rotten",
     "tag_blue1": "",
     "blue2": "",
@@ -8181,13 +8181,13 @@
     "tag_red2": "walker_runner",
     "red3": "super_strength",
     "tag_red3": "",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/75/YgraineMD.png"
   },
   {
     "id": "zuri",
     "name": "Zuri",
     "set": "Massive Darkness 2 Crossover Pack",
-    "body": "",
+    "body": "healing",
     "blue1": "plus_1_free_[action]_action",
     "tag_blue1": "magic",
     "blue2": "",
@@ -8203,6 +8203,6 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fe/Zuri.png"
   }
 ]

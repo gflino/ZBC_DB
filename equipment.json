@@ -17,7 +17,8 @@
     "damage": "",
     "effect_en": "ARMOR 5+. Once per Enemy phase, when any Survivor within Range 1 would be Attacked, you may Move to their Zone, ignoring Enemies, and choose to assign the Attack(s) to you instead. Set 1/2. FULL SET: Damage +1, Armor 4+.",
     "effect_pt": "ARMADURA 5+. Uma vez por fase Inimiga, quando qualquer Sobrevivente em Alcance 1 for Atacado, você pode se Mover até sua Zona, ingorando Inimigos, e escolher receber o Ataque em seu lugar. CONJUNTO 1/2. CONJUNTO COMPLETO: Dano +1, Armadura 4+.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fd/AegisOfTheTower_DT.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fd/AegisOfTheTower_DT.png",
+    "visible": "TRUE"
   },
   {
     "id": "animal_armor",
@@ -37,7 +38,8 @@
     "damage": "",
     "effect_en": "Your Familiars gain: Armor 4+.",
     "effect_pt": "Seu Familiar ganha: Armadura 4+.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/4/49/AnimalArmor_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/49/AnimalArmor_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "apples",
@@ -57,7 +59,8 @@
     "damage": "",
     "effect_en": "Black Plague / Green Horde: Discard this card: Gain 1 experience point. White Death / Eternal Empire: Discard this card: Gain 3 experience points.",
     "effect_pt": "Black Plague/ Green Horde: Descarte esta carta: Ganhe 1 ponto de experiência. White Death: Descarte esta carta: Ganhe 3 pontos de adrenalina.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/63/Apples_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/63/Apples_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "aprils_harp",
@@ -77,7 +80,8 @@
     "damage": 1,
     "effect_en": "Take a Pizza token: Flip this card.",
     "effect_pt": "Pegar uma ficha de Pizza: Vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "aprils_ultimate_harp",
@@ -97,7 +101,8 @@
     "damage": 1,
     "effect_en": "Ghost Sight. Roll 6: +1 Chi.",
     "effect_pt": "Visão Fantasma. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "axe",
@@ -117,7 +122,8 @@
     "damage": 1,
     "effect_en": "Can open doors without rolling dice.",
     "effect_pt": "Pode abrir portas sem rolar dados.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4b/Axe_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4b/Axe_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "axe_of_carnage",
@@ -137,7 +143,8 @@
     "damage": 2,
     "effect_en": "Add an additional success on each Melee Action resolved with this weapon.",
     "effect_pt": "Adicione um sucesso extra em cada ação Corpo a Corpo realizada com esta arma.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/2/23/AxeOfCarnage_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/23/AxeOfCarnage_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "baba_yagas_blessing",
@@ -157,7 +164,8 @@
     "damage": "",
     "effect_en": "Once per Turn. Choose 1: +1 die: Combat, +1 to dice roll: Combat, +1 max Range, Damage 2: Combat. The targeted Survivor benefits of the chosen Skill for their next Combat Action. May be used in the Backpack.",
     "effect_pt": "Uma vez por turno. Escolha 1: +1 dado Combate, +1 no Resultado: Combate, Alcance Máximo +1, Dano 2: Combate. O Sobrevivente alvo se beneficia da Habilidade selecionada em sua próxima Ação de Combate. Pode ser usado na Mochila.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "baba_yagas_pestle",
@@ -177,7 +185,8 @@
     "damage": 2,
     "effect_en": "Kill a Zombie with this weapon: Kill all Zombies in the Zone.",
     "effect_pt": "Elimine um Zumbi com esta arma: Elimine todos os Zumbis na Zona.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "bang_staff",
@@ -197,7 +206,8 @@
     "damage": 1,
     "effect_en": "You may re-roll all Ranged Attacks once with this weapon. The new result takes the place of the previous one.",
     "effect_pt": "Você pode rerrolar todos os Ataques de Longo Alcance uma vez com esta arma. O novo resultado é o que vale.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1a/BangStaff_NPC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/1a/BangStaff_NPC.png",
+    "visible": "TRUE"
   },
   {
     "id": "bastard_sword",
@@ -217,7 +227,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/BastardSword_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/BastardSword_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "beast’s_head",
@@ -237,7 +248,8 @@
     "damage": "",
     "effect_en": "Whenever you roll one or more 6s, add 1 Noise token to this card. Spend 1 Action and discard 3 tokens to eliminate all Walkers and Runners in your Zone. If this card is traded, keep the tokens on it.",
     "effect_pt": "Sempre que você rolar um ou mais 6, adicione 1 ficha de Barulho a esta carta. Gaste 1 Ação e descarte 3 fichas para eliminar todos os Lerdos e Corredores em sua Zona. Se esta carta for trocada, mantenha as fichas nela.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "black_snake_(chi)",
@@ -257,7 +269,8 @@
     "damage": "1/2",
     "effect_en": "POLEARM. Roll 6: +1 Chi.",
     "effect_pt": "ARMA DE HASTE. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "blizzard_(chi)",
@@ -277,7 +290,8 @@
     "damage": "1/2",
     "effect_en": "Freeze",
     "effect_pt": "Congelar",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "bolts_of_jade_(chi)",
@@ -297,7 +311,8 @@
     "damage": 2,
     "effect_en": "Roll 6: +1 Chi.",
     "effect_pt": "Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "bone_kukri",
@@ -317,7 +332,8 @@
     "damage": 1,
     "effect_en": "Add +1 Damage to another equipped Melee weapon.",
     "effect_pt": "Adicione +1 Dano para outra arma Corpo a Corpo equipada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b9/BoneKukri_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b9/BoneKukri_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "bone_sword",
@@ -337,7 +353,8 @@
     "damage": 1,
     "effect_en": "Gain +2 dice if Bone Kukri is also equipped.",
     "effect_pt": "Ganhe +2 dados se Kukri de Ossos também estiver equipada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/BoneSword_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/BoneSword_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "caseys_hockey_stick",
@@ -357,7 +374,8 @@
     "damage": 2,
     "effect_en": "Take a Pizza token: Flip this card.",
     "effect_pt": "Pegar uma ficha de Pizza: Vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "caseys_ultimate_hockey_stick",
@@ -377,7 +395,8 @@
     "damage": 2,
     "effect_en": "Roll 6: +1 Chi.",
     "effect_pt": "Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "chain_lightning",
@@ -397,7 +416,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 die.",
     "effect_pt": "Resultado 6: +1 Dado.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/0/05/ChainLightning_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/05/ChainLightning_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "chainmail_armor",
@@ -417,7 +437,8 @@
     "damage": "",
     "effect_en": "ARMOR 4+.",
     "effect_pt": "ARMADURA 4+;",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c5/ChainmailArmor_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c5/ChainmailArmor_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "chaos_longbow",
@@ -437,7 +458,8 @@
     "damage": 2,
     "effect_en": "ARROWS. 4 or more hits on a Ranged Action with this weapon: Dragon Fire in the targeted Zone.",
     "effect_pt": "FLECHAS: 4 ou mais acertos em uma Ação de Longo Alcance com esta arma: Fogo de Dragão na Zona alvo.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/7/79/ChaosLongbow_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/79/ChaosLongbow_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "cheetaras_bo_staff",
@@ -457,7 +479,8 @@
     "damage": 2,
     "effect_en": "Gain the Jump Skill.",
     "effect_pt": "Ganhe a Habilidade Pulo.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e3/CheetarasBoStaff_TC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e3/CheetarasBoStaff_TC.png",
+    "visible": "TRUE"
   },
   {
     "id": "claw_shield",
@@ -477,7 +500,8 @@
     "damage": 1,
     "effect_en": "Once per Turn, pull 1 Zombie at Range 1 into your Zone.",
     "effect_pt": "Uma vez por Turno, puxe 1 Zumbi no alcance 1 para sua Zona.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/ClawShield_TC.png/"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/ClawShield_TC.png/",
+    "visible": "TRUE"
   },
   {
     "id": "combat_shield",
@@ -497,7 +521,8 @@
     "damage": "",
     "effect_en": "ARMOR 5+. Add +1 die to another equipped Melee weapon.",
     "effect_pt": "ARMADURA 5+. Adicione +1 dado para outra arma Corpo a Corpo equipada.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "combat_shield_(chi)",
@@ -517,7 +542,8 @@
     "damage": "",
     "effect_en": "ARMOR 5+. Add +1 die to another equipped Melee weapon. Chi: Armor 3+",
     "effect_pt": "ARMADURA 5+. Adicione +1 dado para outra arma Corpo a Corpo equipada. Chi: Armadura 3+;",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "crocca",
@@ -537,7 +563,8 @@
     "damage": 1,
     "effect_en": "Crocca has the following Skills: 3 Zones per Move Action, Bird's-eye view, Low profile, Search, Slippery. If Crocca is in the same Zone as its handler, that Survivor gains: Bird's-eye view",
     "effect_pt": "Crocca tem as seguintes Habilidades: 3 Zonas por Ação de Movimento, Visão Aérea, Esguio, Procura, Liso. Se Crocca está na mesma Zona que seu treinador, o Sobrevivente ganha: Visão Arérea.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dc/Crocca.png/"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dc/Crocca.png/",
+    "visible": "TRUE"
   },
   {
     "id": "crossbow",
@@ -557,7 +584,8 @@
     "damage": 2,
     "effect_en": "BOLTS.",
     "effect_pt": "VIROTES.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6e/Crossbow_BP.png/"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6e/Crossbow_BP.png/",
+    "visible": "TRUE"
   },
   {
     "id": "crossbow_(chi)",
@@ -577,7 +605,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "curved_dagger",
@@ -597,7 +626,8 @@
     "damage": 1,
     "effect_en": "Add +1 die to another equipped Melee weapon.",
     "effect_pt": "Adicione +1 dado a outra arma Corpo a Corpo equipada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/CurvedDagger_GH.png/"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/CurvedDagger_GH.png/",
+    "visible": "TRUE"
   },
   {
     "id": "dagger",
@@ -617,7 +647,8 @@
     "damage": 1,
     "effect_en": "Gain +1 die with another equipped Melee weapon.",
     "effect_pt": "Adicione +1 dado a outra arma Corpo a Corpo equipada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/4/46/Dagger_BP.png/"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/46/Dagger_BP.png/",
+    "visible": "TRUE"
   },
   {
     "id": "dagger_(chi)",
@@ -637,7 +668,8 @@
     "damage": "1/2",
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "death_gale",
@@ -657,7 +689,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d7/DeathGale_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d7/DeathGale_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "death_strike",
@@ -677,7 +710,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e6/DeathStrike_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e6/DeathStrike_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "deflecting_dagger",
@@ -697,7 +731,8 @@
     "damage": 1,
     "effect_en": "Gain +1 die with another equipped Melee weapon. Counts as a melee weapon and a shield (Armor roll 4+ or re-roll Armor rolls once).",
     "effect_pt": "Adicione +1 dado a outra arma Corpo a Corpo equipada. Conta como arma Corpo a Corpo e Escudo. (ARMADURA 4+ OU rerrole rolagens de armadura uma vez).",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/DeflectingDagger_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/DeflectingDagger_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "demon_spear_(chi)",
@@ -717,7 +752,8 @@
     "damage": 1,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "dervish_blade",
@@ -737,7 +773,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicid/images/f/ff/DervishBlade_WD.png"
+    "image": "https://static.wikia.nocookie.net/zombicid/images/f/ff/DervishBlade_WD.png",
+    "visible": "TRUE"
   },
   {
     "id": "disintegrate",
@@ -757,7 +794,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage.",
     "effect_pt": "Resultado 6: +1 Dano",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e4/Disintegrate_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e4/Disintegrate_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "disintegrate_(chi)",
@@ -777,7 +815,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage.",
     "effect_pt": "Resultado 6: +1 Dano",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "donatellos_bo_staff",
@@ -797,7 +836,8 @@
     "damage": 1,
     "effect_en": "POLEARM. Take a Pizza token: Flip this card.",
     "effect_pt": "ARMA DE HASTE. Pegar uma ficha de Pizza: Vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "donatellos_ultimate_bo_staff",
@@ -817,7 +857,8 @@
     "damage": 2,
     "effect_en": "POLEARM. Roll 6: +1 Chi.",
     "effect_pt": "ARMA DE HASTE. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "dragon_aura",
@@ -837,7 +878,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor gains Armor 4+ until the end of the Game Round.",
     "effect_pt": "Uma vez por Turno. O Sobrevivente alvo recebe Armadura 4+ até o fim da Rodada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f2/DragonAura_SG.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f2/DragonAura_SG.png",
+    "visible": "TRUE"
   },
   {
     "id": "dragon_bile",
@@ -857,7 +899,8 @@
     "damage": "",
     "effect_en": "Black Plague / Green Horde: Spend an Action and discard Dragon Bile from hand. Put a Dragon Bile token at Range 0-1. White Death / Eternal Empire: Spend an Action and discard with a Torch. Resolve a Dragon Fire at Range 1 and Within Line of Sight. May be used in the Backpack.",
     "effect_pt": "Black Plague / Green Horde: Gaste uma Ação e descarte Bile de Dragão de sua mão. Coloque uma ficha de Bile de Dragão no alcance 0-1. White Death: Gaste uma Ação e descarte com uma Tocha. Resolva um Fogo de Dragão no Alcance 1 e dentro da Linha de Visão. Pode ser usado na Mochila.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/1/12/DragonBile_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/12/DragonBile_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "dragon_fire_blade",
@@ -877,7 +920,8 @@
     "damage": 2,
     "effect_en": "Discard this card: Create a Dragon Fire at Range 0-1.",
     "effect_pt": "Descarte esta carta: Crie um Fogo de Dragão no Alcance 0-1.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c7/DragonFireBlade_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c7/DragonFireBlade_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "dragon_lance_(chi)",
@@ -897,7 +941,8 @@
     "damage": 2,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "dwarven_axe",
@@ -917,7 +962,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage.",
     "effect_pt": "Resultado 6: +1 Dano",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/8/85/DwarvenAxe_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/85/DwarvenAxe_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "dwarven_hammer",
@@ -937,7 +983,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b5/DwarvenHammer_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b5/DwarvenHammer_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "dwarven_shield",
@@ -957,7 +1004,8 @@
     "damage": "",
     "effect_en": "The wearer gets Armor rolls against Abomination Attacks. - No equipped Armor: Armor 4+ - Equipped Armor: You may re-roll once Armor rolls made with the equipped armor. The new roll takes the place of the previous one.",
     "effect_pt": "O usuário ganha rolagens de Armadura contra Ataques de Abominação. -Sem Armadura equipada: Armadura 4+. Armadura equipada: Você pode rerrolar uma vez rolagens de Armadura com a armadura equipada. O novo resultado é o que vale.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/54/DwarvenShield_NPC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/54/DwarvenShield_NPC.png",
+    "visible": "TRUE"
   },
   {
     "id": "earthquake",
@@ -977,7 +1025,8 @@
     "damage": 1,
     "effect_en": "Roll 1 success or more with this Combat spell: all Actors in the target Zone lose their next Activation (lay down their miniatures).",
     "effect_pt": "Role um sucesso ou mais com este Feitiço de Combate: todos os Atores na Zona alvo perdem sua próxima Ativação. (Deite suas miniaturas).",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/Earthquake_NPC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/Earthquake_NPC.png",
+    "visible": "TRUE"
   },
   {
     "id": "earthquake_hammer",
@@ -997,7 +1046,8 @@
     "damage": 2,
     "effect_en": "Roll 6: +1 die and +1 Damage.",
     "effect_pt": "Resultado 6: +1 Dado e Dano +1.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/EarthquakeHammer_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/EarthquakeHammer_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "emperors_bow_(chi)",
@@ -1017,7 +1067,8 @@
     "damage": 2,
     "effect_en": "Marksman.",
     "effect_pt": "Atirador.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "falchion",
@@ -1037,7 +1088,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/Falchion_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/Falchion_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "fire_bolt",
@@ -1057,7 +1109,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d6/FireBolt_WD.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d6/FireBolt_WD.png",
+    "visible": "TRUE"
   },
   {
     "id": "fire_bolt_(chi)",
@@ -1077,7 +1130,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "fireball",
@@ -1097,7 +1151,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/94/Fireball_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/94/Fireball_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "flaming_great_sword",
@@ -1117,7 +1172,8 @@
     "damage": 2,
     "effect_en": "1 Action: Ignite Dragon Bile at Range 0-1 (Dragon Fire).",
     "effect_pt": "Gaste 1 Ação: Acenda uma Bile de Dragão no Alcance 0-1 (Fogo de Dragão)",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/FlamingGreatSword_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/FlamingGreatSword_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "fury_of_aykay_the_47th",
@@ -1137,7 +1193,8 @@
     "damage": 2,
     "effect_en": "Mana rain.",
     "effect_pt": "Chuva de Mana.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dd/FuryOfAykayThe47th_WD.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dd/FuryOfAykayThe47th_WD.png",
+    "visible": "TRUE"
   },
   {
     "id": "gavel_of_approval",
@@ -1157,7 +1214,8 @@
     "damage": 2,
     "effect_en": "Roll 1 die for each Enemy in your Zone. You may also apply the hits to one adjacent Zone. Set 1/2. FULL SET: Damage +1, Armor 4+.",
     "effect_pt": "Role 1 dado para cada Inimigo em sua Zona. Você também pode distribuir os acertos em uma Zona adjacente. CONJUNTO 1/2. CONJUNTO COMPLETO: Dano +1, Armadura 4+.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/7/78/GavelOfApproval_DT.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/78/GavelOfApproval_DT.png",
+    "visible": "TRUE"
   },
   {
     "id": "ghost_sight",
@@ -1177,7 +1235,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor can trace Lines of Sight and attack through obstacles, like closed doors, walls, and hedges, during this Game Round.",
     "effect_pt": "Uma vez por Turno. O Sobrevivente alvo pode traçar Linha de Visão e atacar através de obstáculos como portas, paredes e sebes durante esta Rodada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6f/GhostSight_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6f/GhostSight_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "gog",
@@ -1197,7 +1256,8 @@
     "damage": 1,
     "effect_en": "Gog has the following Skills: Low profile, Search, Slippery. If Gog is in the same Zone as its handler, that Survivor gains: +1 die: Melee",
     "effect_pt": "Gog tem as seguintes Habilidades: Esguio, Procura, Liso. Se Gog estiver na mesma Zona que seu treinador, o Sobrevivente ganha: +1 dado: Corpo a Corpo.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/0/03/Gog.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/03/Gog.png",
+    "visible": "TRUE"
   },
   {
     "id": "gold_dragon_(chi)",
@@ -1217,7 +1277,8 @@
     "damage": 2,
     "effect_en": "POLEARM. 3+ hits: Trigger a Dragon Fire in the targeted Zone.",
     "effect_pt": "ARMA DE HASTE. 3 ou mais acertos: Crie um Fogo de Dragão na Zona alvo,",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "grappling_lance",
@@ -1237,7 +1298,8 @@
     "damage": 2,
     "effect_en": "Once per Round, may prevent 1 Zombie at Range 0-1 from Activating.",
     "effect_pt": "Uma vez por Turno, pode prevenir um Zumbi no Alcance 0-1 de Ativar.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d0/GrapplingLance_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d0/GrapplingLance_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "great_axe",
@@ -1257,7 +1319,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/GreatAxe_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/GreatAxe_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "great_axe_(chi)",
@@ -1277,7 +1340,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "great_sword",
@@ -1297,7 +1361,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/54/GreatSword_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/54/GreatSword_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "guisarme",
@@ -1317,7 +1382,8 @@
     "damage": 2,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "hail_storm_(chi)",
@@ -1337,7 +1403,8 @@
     "damage": 1,
     "effect_en": "Chi: Freeze.",
     "effect_pt": "Chi: Congelar.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "halberd",
@@ -1357,7 +1424,8 @@
     "damage": 2,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "halberd_(chi)",
@@ -1377,7 +1445,8 @@
     "damage": 2,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "hammer",
@@ -1397,7 +1466,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/3/3e/Hammer_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/3e/Hammer_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "hand_crossbow",
@@ -1417,13 +1487,14 @@
     "damage": 1,
     "effect_en": "BOLTS. 1 Action to reload. Free in End Phase.",
     "effect_pt": "VIROTES. 1 Ação para recarregar. Grátis na Fase Final.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/0/02/HandCrossbow_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/02/HandCrossbow_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "healing",
     "name_en": "Healing",
     "name_pt": "Cura",
-    "set": "Black Plague, Green Horde, White Death",
+    "set": "Black Plague; Green Horde; White Death",
     "deck": "search",
     "class": "enchantment",
     "type": "",
@@ -1437,7 +1508,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor recovers 1 Wound (up to his starting total). Healing can't be used to resurrect a Survivor.",
     "effect_pt": "Uma vez por turno. O Sobrevivente alvo recupera 1 Ferimento (até o total inicial). Cura não pode ser utilizada para ressuscitar um Sobrevivente.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/57/Healing_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/57/Healing_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "healing_(chi)",
@@ -1457,7 +1529,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor recovers 1 Wound (up to his starting total). Healing can't be used to resurrect a Survivor. Chi: Can be cast a second time.",
     "effect_pt": "Uma vez por turno. O Sobrevivente alvo recupera 1 Ferimento (até o total inicial). Cura não pode ser utilizada para ressuscitar um Sobrevivente. Chi: Pode ser usada uma segunda vez.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "heavy_armor",
@@ -1477,7 +1550,8 @@
     "damage": "",
     "effect_en": "ARMOR 3+.",
     "effect_pt": "ARMADURA 3+",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "heavy_armor_(chi)",
@@ -1497,7 +1571,8 @@
     "damage": "",
     "effect_en": "ARMOR 3+. Chi: Armor Re-roll.",
     "effect_pt": "ARMADURA 3+. Chi: Rerrolar Armadura.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "heavy_crossbow",
@@ -1517,7 +1592,8 @@
     "damage": 3,
     "effect_en": "BOLTS.",
     "effect_pt": "VIROTES.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/55/HeavyCrossbow_NPC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/55/HeavyCrossbow_NPC.png",
+    "visible": "TRUE"
   },
   {
     "id": "heavy_dagger",
@@ -1537,7 +1613,8 @@
     "damage": 2,
     "effect_en": "Another Equipped Melee weapon gains +1 die and Damage 2.",
     "effect_pt": "A outra arma Corpo a Corpo Equipada ganha +1 dado e Dano 2.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c9/HeavyDagger_FF.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c9/HeavyDagger_FF.png",
+    "visible": "TRUE"
   },
   {
     "id": "heavy_sword",
@@ -1557,7 +1634,8 @@
     "damage": 1,
     "effect_en": "Gain +1 die if another Equipped card is a Heavy Dagger.",
     "effect_pt": "Ganha +1 dado se a outra arma Equipada for Adaga Pesada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/ca/HeavySword_FF.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/ca/HeavySword_FF.png",
+    "visible": "TRUE"
   },
   {
     "id": "hell_goat",
@@ -1577,7 +1655,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor gains the Shove Skill until the end of the Game Round.",
     "effect_pt": "Uma vez por Turno. O Sobrevivente alvo ganha a Habilidade Empurrão até o final da Rodada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/92/HellGoat_SG.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/92/HellGoat_SG.png",
+    "visible": "TRUE"
   },
   {
     "id": "holy_orb_of_death",
@@ -1597,7 +1676,8 @@
     "damage": "",
     "effect_en": "Spend an Action, discard the Orb from Hand, and select a Zone within Range 0-1 and Line of Sight: Resolve a Dragon Fire.",
     "effect_pt": "Gaste uma Ação, descarte a Orbe da Mão e selecione uma Zona no Alcance 0-1 dentro do Campo de Visão: Resolva um Fogo de Dragão.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/69/HolyOrbOfDeath_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/69/HolyOrbOfDeath_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "horn_bow",
@@ -1617,7 +1697,8 @@
     "damage": 2,
     "effect_en": "ARROWS. Choose the targets when performing Ranged Actions with this weapon.",
     "effect_pt": "FLECHAS. Escolha os alvos quando estiver realizando Ações de Longo Alcance com esta arma.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/1/10/HornBow_FF.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/10/HornBow_FF.png",
+    "visible": "TRUE"
   },
   {
     "id": "horn_bow_(chi)",
@@ -1637,7 +1718,8 @@
     "damage": 2,
     "effect_en": "Marksman.",
     "effect_pt": "Atirador.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "ice_blast",
@@ -1657,7 +1739,8 @@
     "damage": 1,
     "effect_en": "Roll 6: Zombies in the Zone cannot move this turn.",
     "effect_pt": "Resultado 6: Zumbis na Zona não podem se mover neste turno.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9c/ManaBlast_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9c/ManaBlast_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "ice_bow",
@@ -1677,7 +1760,8 @@
     "damage": 1,
     "effect_en": "Freeze: Ranged",
     "effect_pt": "Congelar: Longo Alcance.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "ice_storm",
@@ -1697,7 +1781,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "inferno",
@@ -1717,7 +1802,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/Inferno_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/Inferno_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "invisibility",
@@ -1737,7 +1823,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor benefits of the Rotten Skill's effects until the end of Game Round. If he Attacks or makes Noise, the Enchantment is cancelled.",
     "effect_pt": "Uma vez por Turno: O Sobrevivente selecionado se beneficia da Habilidade Apodrecido até o fim da Rodada. Se ele Atacar ou fizer Barulho o Encantamento é cancelado.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Invisibility_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Invisibility_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "ironclad:_zombie_wolfz",
@@ -1757,7 +1844,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor gains the Ironclad: Zombie Wolfz Skill until the end of Game Round.",
     "effect_pt": "Uma vez por Turno: O Sobrevivente alvo ganha a Habilidade: Encouraçado: Loboz Zumbis até o fim da Rodada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/0/07/IroncladZombieWolfz_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/07/IroncladZombieWolfz_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "jennikas_tekko_kagi",
@@ -1777,7 +1865,8 @@
     "damage": 1,
     "effect_en": "+1 die to another equipped Melee weapon. Take a Pizza token: Flip this card.",
     "effect_pt": "+1 dado para outra arma Corpo a Corpo equipada. Pegar uma fica de Pizza: Vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "jennikas_ultimate_tekko_kagi",
@@ -1797,7 +1886,8 @@
     "damage": 1,
     "effect_en": "+1 die to another equipped Melee weapon. Roll 6: +1 Chi.",
     "effect_pt": "+1 dado para outra arma Corpo a Corpo equipada. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "jump",
@@ -1817,7 +1907,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor may immediately perform 1 free Action to use the Jump Skill.",
     "effect_pt": "Uma vez por Turno: O Sobrevivente alvo pode realizar 1 Ação grátis para utilizar a Habilidade Pulo imediatamente.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/Jump_WD.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/Jump_WD.png",
+    "visible": "TRUE"
   },
   {
     "id": "jump_(chi)",
@@ -1837,13 +1928,14 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor may immediately perform 1 free Action to use the Jump Skill. Chi: Can be cast a second time.",
     "effect_pt": "Uma vez por Turno: O Sobrevivente alvo pode realizar 1 Ação grátis para utilizar a Habilidade Pulo imediatamente. Chi: Pode ser utilizado uma segunda vez",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "katana",
     "name_en": "Katana",
     "name_pt": "Katana",
-    "set": "White Death, Virtues of Bushido",
+    "set": "White Death; Virtues of Bushido",
     "deck": "search; starter",
     "class": "weapon",
     "type": "melee_weapon",
@@ -1857,13 +1949,14 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage",
     "effect_pt": "Resultado 6: Dano +1.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "katana_(chi)",
     "name_en": "Katana (Chi)",
     "name_pt": "Katana  (Chi)",
-    "set": "Eternal Empire, Virtues of Bushido",
+    "set": "Eternal Empire; Virtues of Bushido",
     "deck": "starter",
     "class": "weapon",
     "type": "melee_weapon",
@@ -1877,7 +1970,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage.",
     "effect_pt": "Resultado 6: Dano +1.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "kings_mace",
@@ -1897,7 +1991,8 @@
     "damage": 2,
     "effect_en": "For each friendly Survivor at Range 0-1 and within Line Of Sight, get +1 die for all Melee Actions resolved with this weapon.",
     "effect_pt": "Para cada Sobrevivente aliado no Alcance 0-1 e dentro da Linha de Visão ganhe +1 dado para todas as Ações Corpo a Corpo realizadas com esta arma.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6f/KingsMace_NPC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6f/KingsMace_NPC.png",
+    "visible": "TRUE"
   },
   {
     "id": "kings_sword_(chi)",
@@ -1917,7 +2012,8 @@
     "damage": 2,
     "effect_en": "+1 free Guard Action",
     "effect_pt": "+1 Ação de Guarda gratuita.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "kits_and_kats_bombs_and_capsules",
@@ -1937,7 +2033,8 @@
     "damage": "",
     "effect_en": "Discard this card: Choose a Zone at Range 0-1. Zombies in this Zone can't activate this round.",
     "effect_pt": "Descarte esta carta: Escolha uma Zona no Alcance 0-1. Zumbis nesta Zona não podem ativar neste Turno.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/7/77/KitsAndKatsBombsAndCapsules_TC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/77/KitsAndKatsBombsAndCapsules_TC.png",
+    "visible": "TRUE"
   },
   {
     "id": "lance",
@@ -1957,7 +2054,8 @@
     "damage": 1,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "lance_(chi)",
@@ -1977,7 +2075,8 @@
     "damage": "1/2",
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "lava_burst",
@@ -1997,7 +2096,8 @@
     "damage": 2,
     "effect_en": "Roll 6: The target Zone is subject to a Dragon Fire effect instead.",
     "effect_pt": "Resultado 6: A Zona alvo é submetida a um Fogo de Dragão.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/2/21/LavaBurst_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/21/LavaBurst_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "leather_armor",
@@ -2017,7 +2117,8 @@
     "damage": "",
     "effect_en": "ARMOR 5+.",
     "effect_pt": "ARMADURA 5+.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/LeatherArmor_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/LeatherArmor_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "leonardos_ninjatos",
@@ -2037,7 +2138,8 @@
     "damage": 1,
     "effect_en": "Take a Pizza token: Flip this card.",
     "effect_pt": "Pegar uma ficha de Pizza: Vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "leonardos_ultimate_ninjatos",
@@ -2057,7 +2159,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage: Melee. Roll 6: +1 Chi.",
     "effect_pt": "Resultado 6: Dano +1: Corpo a Corpo. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "light_sword_(chi)",
@@ -2077,7 +2180,8 @@
     "damage": 1,
     "effect_en": "Dual: Damage 2.",
     "effect_pt": "Dupla: Dano 2.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "lightning_ball",
@@ -2097,13 +2201,14 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/0/07/LightningBall_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/07/LightningBall_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "lightning_bolt",
     "name_en": "Lightning Bolt",
     "name_pt": "Relâmpago",
-    "set": "Black Plague, White Death",
+    "set": "Black Plague; White Death",
     "deck": "search",
     "class": "weapon",
     "type": "combat_spell",
@@ -2117,7 +2222,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/LightningBolt_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/LightningBolt_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "lightning_bolt_(chi)",
@@ -2137,13 +2243,14 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "longbow",
     "name_en": "Longbow",
     "name_pt": "Arco Longo",
-    "set": "Black Plague, Green Horde",
+    "set": "Black Plague; Green Horde",
     "deck": "search",
     "class": "weapon",
     "type": "ranged_weapon",
@@ -2157,7 +2264,8 @@
     "damage": 1,
     "effect_en": "ARROWS.",
     "effect_pt": "FLECHAS.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/da/Longbow_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/da/Longbow_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "mace",
@@ -2177,7 +2285,8 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/db/Mace_FF.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/db/Mace_FF.png",
+    "visible": "TRUE"
   },
   {
     "id": "mace_gun",
@@ -2191,13 +2300,14 @@
     "dual": "yes",
     "noise": "no",
     "door": "no",
-    "range": "1;0-1",
+    "range": "0;0-1",
     "dice": "1;1",
     "accuracy": "3+;4+",
     "damage": "1;2",
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/2/21/MaceGun_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/21/MaceGun_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "magic_ball_of_destiny",
@@ -2217,7 +2327,8 @@
     "damage": "",
     "effect_en": "Before rolling any Attack, you may roll 1 die: 1 - All 6 are considered as 1. 2-3 - No change to Attack roll. 4-6 - All 1 are considered as 6.",
     "effect_pt": "Antes de rolar qualquer Ataque, você pode rolar 1 dado. 1: Todos os 6 são considerados 1. 2-3: Nenhuma alteração na rolagem. 4-6: Todos os 1 são considerados 6.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/MagicBallOfDestiny_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/MagicBallOfDestiny_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "magog",
@@ -2237,7 +2348,8 @@
     "damage": 1,
     "effect_en": "Magog has the following Skills: Low profile, Search, Slippery. If Magog is in the same Zone as its handler, that Survivor gains: +1 die: Melee",
     "effect_pt": "Magog tem as seguintes Habilidades: Esguio, Procura, Liso. Se Magog estiver na mesma Zona que seu treinador, o Sobrevivente ganha: +1 dado: Corpo a Corpo.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7c/Magog.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7c/Magog.png",
+    "visible": "TRUE"
   },
   {
     "id": "maiden_japan",
@@ -2257,13 +2369,14 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "mana_blast",
     "name_en": "Mana Blast",
     "name_pt": "Explosão de Mana",
-    "set": "Black Plague, Wulfsburg",
+    "set": "Black Plague; Wulfsburg",
     "deck": "search; starter",
     "class": "weapon",
     "type": "combat_spell",
@@ -2277,7 +2390,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9c/ManaBlast_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9c/ManaBlast_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "michelangelos_nunchakus",
@@ -2297,7 +2411,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 die: Melee. Take a Pizza token: Flip this card.",
     "effect_pt": "Resultado 6: +1 Dado: Corpo a Corpo. Pegar uma ficha de Pizza: Vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "michelangelos_ultimate_nunchakus",
@@ -2317,7 +2432,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 die: Melee. Roll 6: +1 Chi.",
     "effect_pt": "Resultado 6: +1 Dado: Corpo a Corpo. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "no_dachi_(chi)",
@@ -2337,7 +2453,8 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage.",
     "effect_pt": "Resultado 6: Dano +1",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "norse_shield",
@@ -2357,7 +2474,8 @@
     "damage": "",
     "effect_en": "ARMOR 4+. Add +1 die to another equipped Melee weapon.",
     "effect_pt": "ARMOR 4+. Adicione +1 dado para outra arma Corpo a Corpo equipada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d5/NorseShield_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d5/NorseShield_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "norse_sword",
@@ -2377,7 +2495,8 @@
     "damage": 2,
     "effect_en": "Gain +2 dice if another Equipped card is a Norse Shield.",
     "effect_pt": "Ganhe +2 dados se a outra carta Equipada for o Escudo Nórdico.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/1/11/NorseSword_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/11/NorseSword_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "nucifer",
@@ -2397,7 +2516,8 @@
     "damage": 2,
     "effect_en": "Nucifer has the following Skills: Low profile, Slippery. If Nucifer is in the same Zone as its handler, that Survivor gains: +2 dice: Melee",
     "effect_pt": "Nucifer tem as seguintes Habilidades: Esguio, Liso. Se Nucifer estiver na mesma Zona que seu treinador, o Sobrevivente ganha: +2 dados: Corpo a Corpo.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/1/11/Nucifer.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/11/Nucifer.png",
+    "visible": "TRUE"
   },
   {
     "id": "orcish_bow",
@@ -2417,7 +2537,8 @@
     "damage": "1;1",
     "effect_en": "ARROWS.",
     "effect_pt": "FLECHAS.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/f/ff/OrcishBow_NPC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/ff/OrcishBow_NPC.png",
+    "visible": "TRUE"
   },
   {
     "id": "orcish_crossbow",
@@ -2426,7 +2547,7 @@
     "set": "Black Plague",
     "deck": "vault",
     "class": "weapon",
-    "type": "ranged_weapon",
+    "type": "mixed_weapon",
     "danger": "blue",
     "dual": "no",
     "noise": "no",
@@ -2437,7 +2558,8 @@
     "damage": "2;2",
     "effect_en": "BOLTS.",
     "effect_pt": "VIROTES.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/ce/OrcishCrossbow_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/ce/OrcishCrossbow_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "panthros_nunchuck",
@@ -2457,7 +2579,8 @@
     "damage": 1,
     "effect_en": "If you have both Nunchucks, add +1 die to each Nunchuck.",
     "effect_pt": "Se você possuir ambos Nunchuks, adicione +1 dado para cada Nunchuk.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dc/PanthrosNunchuck_TC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dc/PanthrosNunchuck_TC.png",
+    "visible": "TRUE"
   },
   {
     "id": "pit_fighter_gloves",
@@ -2477,7 +2600,8 @@
     "damage": 1,
     "effect_en": "Gain +1 free Melee Action to use this Weapon. May be used in the Backpack slot.",
     "effect_pt": "Ganhe +1 Ação grátis Corpo a Corpo com esta arma. Pode ser usada na Mochila.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/PitFighterGloves_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/PitFighterGloves_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "plague_mask",
@@ -2497,13 +2621,14 @@
     "damage": "",
     "effect_en": "The Survivor is immune to Tainted Blood Spray.",
     "effect_pt": "O Sobrevivente é imune ao Esguicho de Sangue Maculado.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/68/PlagueMask_FF.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/68/PlagueMask_FF.png",
+    "visible": "TRUE"
   },
   {
     "id": "plate_armor",
     "name_en": "Plate Armor",
     "name_pt": "Armadura de Placas",
-    "set": "Black Plague, Green Horde",
+    "set": "Black Plague; Green Horde",
     "deck": "search",
     "class": "armor",
     "type": "",
@@ -2517,13 +2642,14 @@
     "damage": "",
     "effect_en": "ARMOR 3+.",
     "effect_pt": "ARMOR 3+.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/PlateArmor_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/PlateArmor_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "plenty_of_arrows",
     "name_en": "Plenty Of Arrows",
     "name_pt": "Muitas Flechas",
-    "set": "Black Plague, Green Horde",
+    "set": "Black Plague; Green Horde",
     "deck": "search",
     "class": "item",
     "type": "",
@@ -2537,13 +2663,14 @@
     "damage": "",
     "effect_en": "You may re-roll all Ranged Attacks once with weapons with the Arrows keyword. The new result takes the place of the previous one.",
     "effect_pt": "Você pode rerrolar Ataques de Longo Alcance uma vez com armas com a palavra FLECHAS. O novo resultado é o que vale.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/PlentyOfArrows_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/PlentyOfArrows_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "plenty_of_bolts",
     "name_en": "Plenty Of Bolts",
     "name_pt": "Muitos Virotes",
-    "set": "Black Plague, Green Horde",
+    "set": "Black Plague; Green Horde",
     "deck": "search",
     "class": "item",
     "type": "",
@@ -2557,7 +2684,8 @@
     "damage": "",
     "effect_en": "You may re-roll all Ranged Attacks once with weapons with the Bolts keyword. The new result takes the place of the previous one.",
     "effect_pt": "Você pode rerrolar Ataques de Longo Alcance uma vez com armas com a palavra VIROTES. O novo resultado é o que vale.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9d/PlentyOfBolts_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9d/PlentyOfBolts_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "power_blast",
@@ -2577,7 +2705,8 @@
     "damage": 1,
     "effect_en": "+1 die to other equipped Combat spell",
     "effect_pt": "+1 dado para o outro Feitiço de Combate equipado.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "power_blast_(chi)",
@@ -2597,7 +2726,8 @@
     "damage": 1,
     "effect_en": "+1 die to other equipped Combat spell",
     "effect_pt": "+1 dado para o outro Feitiço de Combate equipado.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "power_wave",
@@ -2617,7 +2747,8 @@
     "damage": 1,
     "effect_en": "Add +1 die to another Equipped Combat spell.",
     "effect_pt": "Adicione +1 dado para outro Feitiço de Combate equipado.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b4/PowerWave_FF.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b4/PowerWave_FF.png",
+    "visible": "TRUE"
   },
   {
     "id": "quicksilver_sword",
@@ -2637,7 +2768,8 @@
     "damage": 1,
     "effect_en": "Gain the Lucky Skill.",
     "effect_pt": "Ganhe a Habilidade Sortudo.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b3/QuicksilverSword_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b3/QuicksilverSword_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "raphaels_sai",
@@ -2657,7 +2789,8 @@
     "damage": 1,
     "effect_en": "Armor 5+. Add +1 die to another equipped Melee weapon. Take a Pizza token: Flip this card.",
     "effect_pt": "ARMADURA 5+. Adicione +1 dado para outra arma Corpo a Corpo equipada. Pegar uma ficha de Pizza: vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "raphaels_ultimate_sai",
@@ -2677,7 +2810,8 @@
     "damage": 1,
     "effect_en": "Armor 5+. Add +1 die to another equipped Melee weapon. Roll 6: +1 Chi.",
     "effect_pt": "ARMADURA 5+. Adicione +1 dado para outra arma Corpo a Corpo equipada. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "reapers_scythe",
@@ -2697,13 +2831,14 @@
     "damage": 2,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "repeating_crossbow",
     "name_en": "Repeating Crossbow",
     "name_pt": "Besta de Repetição",
-    "set": "Black Plague, Green Horde",
+    "set": "Black Plague; Green Horde",
     "deck": "search",
     "class": "weapon",
     "type": "ranged_weapon",
@@ -2717,7 +2852,8 @@
     "damage": 1,
     "effect_en": "BOLTS.",
     "effect_pt": "VIROTES.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dd/RepeatingCrossbow_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/dd/RepeatingCrossbow_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "repeating_crossbow_(chi)",
@@ -2737,13 +2873,14 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "repulse",
     "name_en": "Repulse",
     "name_pt": "Repulsão",
-    "set": "Black Plague, Green Horde, White Death",
+    "set": "Black Plague; Green Horde; White Death",
     "deck": "search",
     "class": "enchantment",
     "type": "",
@@ -2757,7 +2894,8 @@
     "damage": "",
     "effect_en": "Once per Turn. Select a target Zone the Survivor can see, then a destination Zone at Range 1 from it, sharing an open path, and 1 Zone further from the Survivor. Zombies standing in the target Zone are pushed to the destination Zone.",
     "effect_pt": "Uma vez por Turno. Selecione uma Zona que o Sobrevivente possa ver e então uma Zona destino no Alcance 1 dela. Zumbis na Zona alvo são empurrados para a Zona destino.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/Repulse_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/Repulse_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "repulse_(chi)",
@@ -2777,7 +2915,8 @@
     "damage": "",
     "effect_en": "Once per Turn. Select a target Zone the Survivor can see, then a destination Zone at Range 1 from it, sharing an open path, and 1 Zone further from the Survivor. Zombies standing in the target Zone are pushed to the destination Zone. Chi: Can be cast a second time.",
     "effect_pt": "Uma vez por Turno. Selecione uma Zona que o Sobrevivente possa ver e então uma Zona destino no Alcance 1 dela. Zumbis na Zona alvo são empurrados para a Zona destino. Chi: Pode ser usada uma segunda vez.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "royal_guards_halberd",
@@ -2797,13 +2936,14 @@
     "damage": 2,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "salted_meat",
     "name_en": "Salted Meat",
     "name_pt": "Carne Seca",
-    "set": "Black Plague, Green Horde, White Death, Eternal Empire",
+    "set": "Black Plague; Green Horde; White Death; Eternal Empire",
     "deck": "search",
     "class": "item",
     "type": "",
@@ -2817,7 +2957,8 @@
     "damage": "",
     "effect_en": "Black Plague / Green Horde: Discard this card: Gain 1 experience point. White Death / Eternal Empire: Discard this card: Gain 3 experience points.",
     "effect_pt": "Black Plague/ Green Horde: Descarte esta carta: Ganhe 1 ponto de experiência. White Death: Descarte esta carta: Ganhe 3 pontos de adrenalina.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/0/0f/SaltedMeat_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/0f/SaltedMeat_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "scimitar",
@@ -2837,7 +2978,8 @@
     "damage": 1,
     "effect_en": "Gain +1 die if Curved Dagger is also equipped.",
     "effect_pt": "Ganhe +1 dado se Adaga Curva também estiver equipada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/92/Scimitar_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/92/Scimitar_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "seth",
@@ -2857,7 +2999,8 @@
     "damage": 1,
     "effect_en": "Seth has the following Skills: Bird's-eye view, Low profile, Search, Slippery. If Seth is in the same Zone as its handler, that Survivor gains: +1 max Range, Bird's-eye view",
     "effect_pt": "Seth possui as seguintes Habilidades: Visão Aérea, Esguio, Procura, Liso. Se Seth estiver na mesma Zona que seu treinador, o Sobrevivente ganha: Alcance +1, Visão Aérea.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/7/79/SethFantasy.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/79/SethFantasy.png",
+    "visible": "TRUE"
   },
   {
     "id": "shashka",
@@ -2877,13 +3020,14 @@
     "damage": 1,
     "effect_en": "Dual: 2 damage",
     "effect_pt": "Dupla: Dano 2.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "shield",
     "name_en": "Shield",
     "name_pt": "Escudo",
-    "set": "Black Plague, Green Horde",
+    "set": "Black Plague; Green Horde",
     "deck": "search",
     "class": "shield",
     "type": "",
@@ -2897,7 +3041,8 @@
     "damage": "",
     "effect_en": "Choose 1: Armor 4+ / Re-roll once Armor rolls made with another equipped armor. The new roll takes the place of the previous one.",
     "effect_pt": "Escolha1: Armadura 4+ OU Rerrole uma vez rolagens de Armadura realizadas com outra armadura equipada. O novo resultado é o que vale.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cd/Shield_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cd/Shield_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "shield_gauntlet",
@@ -2917,7 +3062,8 @@
     "damage": 1,
     "effect_en": "Add +1 dice to another Equipped Melee weapon. Armor 4+ OR Re-roll other Armor.",
     "effect_pt": "Adicione +1 dado para outra arma Corpo a Corpo equipada. ARMADURA 4+ OU rerrole outra Armadura.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/97/ShieldGauntlet_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/97/ShieldGauntlet_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "shield_of_ages",
@@ -2937,13 +3083,14 @@
     "damage": "",
     "effect_en": "Gain the Shove Skill. Choose one: Armor 4+ OR Re-roll once Armor rolls made with another equipped armor. The new roll takes the place of the previous one.",
     "effect_pt": "Ganhe a Habilidade Empurrão. Escolha 1: ARMADURA 4+ OU  Rerrole uma vez rolagens de Armadura realizadas com outra armadura equipada. O novo resultado é o que vale.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/de/ShieldOfAges_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/de/ShieldOfAges_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "short_bow",
     "name_en": "Short Bow",
     "name_pt": "Arco Curto",
-    "set": "Black Plague, Wulfsburg, White Death",
+    "set": "Black Plague; Wulfsburg; White Death",
     "deck": "search; starter",
     "class": "weapon",
     "type": "ranged_weapon",
@@ -2957,7 +3104,8 @@
     "damage": 1,
     "effect_en": "ARROWS.",
     "effect_pt": "FLECHAS.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c0/ShortBow_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c0/ShortBow_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "short_bow_(chi)",
@@ -2977,13 +3125,14 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "short_sword",
     "name_en": "Short Sword",
     "name_pt": "Espada Curta",
-    "set": "Black Plague, Wulfsburg, Hero Box-1, Green Horde",
+    "set": "Black Plague; Wulfsburg; Hero Box-1; Green Horde",
     "deck": "search; starter",
     "class": "weapon",
     "type": "melee_weapon",
@@ -2997,7 +3146,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/4/45/ShortSword_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/45/ShortSword_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "slithes_battleaxe",
@@ -3017,7 +3167,8 @@
     "damage": 1,
     "effect_en": "Roll 6: 2 Damage. Can open doors without rolling dice.",
     "effect_pt": "Resultado 6: Dano 2. Pode abrir portas sem rolar dados",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/4/49/SlithesBattleAxe_TC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/49/SlithesBattleAxe_TC.png",
+    "visible": "TRUE"
   },
   {
     "id": "spear",
@@ -3037,13 +3188,14 @@
     "damage": 1,
     "effect_en": "POLEARM.",
     "effect_pt": "ARMA DE HASTE.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "speed",
     "name_en": "Speed",
     "name_pt": "Velocidade",
-    "set": "Black Plague, Green Horde",
+    "set": "Black Plague; Green Horde",
     "deck": "search",
     "class": "enchantment",
     "type": "",
@@ -3057,7 +3209,8 @@
     "damage": "",
     "effect_en": "Once per Turn. Select a Survivor in a Zone without Zombies. He may immediately perform a Move Action of up to 2 Zones.",
     "effect_pt": "Uma vez por Turno: Selecione um Sobrevivente em uma Zona sem Zumbis. Ele pode imediatamente realizar uma Ação de Movimento de até 2 Zonas",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5f/Speed_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5f/Speed_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "spiked_armor",
@@ -3077,7 +3230,8 @@
     "damage": "",
     "effect_en": "ARMOR 4+ All Zombies attacking the Survivor at Range 0 suffer 1 Damage after the Attack (the Survivor gains the experience).",
     "effect_pt": "ARMADURA 4+. Todos os Zumbis que atacarem o Sobrevivente no Alcance 0 sofrem Dano 1 após o ataque. (O Sobrevivente ganha experiência).",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cd/SpikedArmor_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cd/SpikedArmor_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "spiked_bow",
@@ -3097,7 +3251,8 @@
     "damage": "1;1",
     "effect_en": "ARROWS.",
     "effect_pt": "FLECHAS.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/4/42/SpikedBow_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/42/SpikedBow_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "splinters_cane",
@@ -3117,7 +3272,8 @@
     "damage": 1,
     "effect_en": "Shove. Take a Pizza token: Flip this card.",
     "effect_pt": "Empurrão. Pegar uma ficha de Pizza: Vire esta carta.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "splinters_ultimate_cane",
@@ -3137,7 +3293,8 @@
     "damage": 1,
     "effect_en": "POLEARM. Shove. Roll 6: +1 Chi.",
     "effect_pt": "ARMA DE HASTE. Empurrão. Resultado 6: +1 Chi.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "sprint",
@@ -3157,7 +3314,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor may immediately perform 1 free Action to use the Sprint Skill.",
     "effect_pt": "Uma vez por Turno: O Sobrevivente alvo pode realizar 1 Ação grátis para utilizar a Habilidade Corrida imediatamente.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "sprint_(chi)",
@@ -3177,7 +3335,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The targeted Survivor may immediately perform 1 free Action to use the Sprint Skill. Chi: Can be cast a second time.",
     "effect_pt": "Uma vez por Turno: O Sobrevivente alvo pode realizar 1 Ação grátis para utilizar a Habilidade Corrida imediatamente. Chi: Pode ser utilizada uma segunda vez.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "steel_bow",
@@ -3197,7 +3356,8 @@
     "damage": 1,
     "effect_en": "The Survivor can trace Lines of Sight through obstacles that don't block movement, like hedges.",
     "effect_pt": "O Sobrevivente pode traçar Linha de Visão por obstáculos que não bloqueiam movimento, como sebes.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/0/03/SteelBow_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/0/03/SteelBow_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "storm_bow",
@@ -3217,7 +3377,8 @@
     "damage": 1,
     "effect_en": "ARROWS. Roll 6: +1 die.",
     "effect_pt": "FLECHAS. Resultado 6: +1 dado.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fc/StormBow_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fc/StormBow_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "storm_crossbow",
@@ -3237,13 +3398,14 @@
     "damage": 2,
     "effect_en": "Iron rain.",
     "effect_pt": "Chuva de Ferro.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "sword",
     "name_en": "Sword",
     "name_pt": "Espada",
-    "set": "Black Plague, White Death",
+    "set": "Black Plague; White Death",
     "deck": "search",
     "class": "weapon",
     "type": "melee_weapon",
@@ -3257,7 +3419,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/9/94/Sword_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/94/Sword_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "sword_(chi)",
@@ -3277,7 +3440,8 @@
     "damage": "1/2",
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "sword_gauntlet",
@@ -3297,7 +3461,8 @@
     "damage": 2,
     "effect_en": "Grants the Iron hide Skill as long as it is Equipped.",
     "effect_pt": "Garante a Habilidade Pele de Ferro enquanto estiver equipada.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/1/16/SwordGauntlet_HB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/16/SwordGauntlet_HB.png",
+    "visible": "TRUE"
   },
   {
     "id": "sword_of_omens",
@@ -3317,7 +3482,8 @@
     "damage": 2,
     "effect_en": "Once per Turn, you may look at the top card of any deck.",
     "effect_pt": "Uma vez por turno, você pode olhar a carta do topo de qualquer baralho.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c4/SwordOfOmens_TC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/c4/SwordOfOmens_TC.png",
+    "visible": "TRUE"
   },
   {
     "id": "telekinetic_blast",
@@ -3337,7 +3503,8 @@
     "damage": 1,
     "effect_en": "Spend an Action: Open a door within Range and Line of Sight.",
     "effect_pt": "Gaste uma Ação: Abra uma porta dentro do Alcance e do Campo de Visão.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/1/12/TelekineticBlast_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/1/12/TelekineticBlast_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "the_partizan",
@@ -3357,7 +3524,8 @@
     "damage": 2,
     "effect_en": "POLEARM. Escalation: Melee.",
     "effect_pt": "ARMA DE HASTE. Reação em Cadeia: Corpo a Corpo.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "time_machine",
@@ -3377,13 +3545,14 @@
     "damage": "",
     "effect_en": "If the Survivor holding the Time Machine would die, discard the Time Machine and place the Survivor on the Starting Zone.",
     "effect_pt": "Se o Sobrevivente segurando a Maquina do tempo for morrer, descarte a Maquina do Tempo e coloque o Sobrevivente na Zona Inicial.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8b/TimeMachine_PNP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/8b/TimeMachine_PNP.png",
+    "visible": "TRUE"
   },
   {
     "id": "torch",
     "name_en": "Torch",
     "name_pt": "Tocha",
-    "set": "Black Plague, Green Horde, White Death, Eternal Empire",
+    "set": "Black Plague; Green Horde; White Death; Eternal Empire",
     "deck": "search",
     "class": "item",
     "type": "",
@@ -3397,7 +3566,8 @@
     "damage": "",
     "effect_en": "Black Plague / Green Horde: Draw two cards when Searching. Spend an Action, discard the Torch from hand and select a Dragon Bile token at Range 0-1: Resolve a Dragon Fire. White Death / Eternal Empire SEARCH: Draw 2 cards. Spend an Action and discard with a Dragon Bile. Resolve a Dragon Fire at Range 1 and Within Line of Sight. May be used in the Backpack.",
     "effect_pt": "Black Plague / Green Horde: Compre 2 cartas quando realizar uma Procura. Gaste uma Ação e descarte Tocha de sua mão. Selecione uma ficha de Bile de Dragão no Alcance 0-1: Resolva um Fogo de Dragão. White Death: Gaste uma Ação e descarte com uma Bile de Dragão. Resolva um Fogo de Dragão no Alcance 1 e dentro da Linha de Visão. Pode ser usado na Mochila.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/3/34/Torch_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/34/Torch_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "transmutation",
@@ -3417,7 +3587,8 @@
     "damage": "",
     "effect_en": "Once per Turn. The Survivor discards an Equipment card of your choosing from his inventory. Then, draw an Equipment card for him. He can reorganise his inventory for free. This is not a Search Action. The Aahh!! card is played as usual.",
     "effect_pt": "Uma vez por turno. O Sobrevivente descarta uma carta de equipamento do seu inventário. Então, compra uma carta de equipamento do baralho. Ele pode reorganizar o inventário de graça. Esta não é uma ação de Procura. Cartas Aahh!! são resolvidas normalmente.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e9/Transmutation_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/e/e9/Transmutation_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "tremor",
@@ -3437,7 +3608,8 @@
     "damage": "",
     "effect_en": "Once per Turn. Zombies requiring Damage 1 to be eliminated (Walkers, Runners, Wolfz, etc.) in the target Zone are laid down. They spend their next Activation standing up.",
     "effect_pt": "Uma vez por turno. Zumbis que necessitam de Dano 1 para serem eliminados na Zona alvo são deitados. Eles gastam sua próxima Ativação se levantando",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/2/29/Tremor_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/29/Tremor_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "triple_crossbow",
@@ -3457,7 +3629,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "triple_crossbow_(chi)",
@@ -3477,7 +3650,8 @@
     "damage": "1/2",
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "tygras_bolo_whip",
@@ -3497,7 +3671,8 @@
     "damage": 1,
     "effect_en": "Spend 1 Action: 1 Zombie at Range 0-1 can't activate this turn.",
     "effect_pt": "Gaste 1 ação: 1 Zumbi no Alcance 0-1 não pode ativar este turno.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/TygrasBoloWhip_TC.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/TygrasBoloWhip_TC.png",
+    "visible": "TRUE"
   },
   {
     "id": "vampire_crossbow",
@@ -3517,7 +3692,8 @@
     "damage": 3,
     "effect_en": "The Survivor heals 1 Wound each time he kills a Zombie with this weapon.",
     "effect_pt": "O Sobrevivente cura 1 Ferimento cada vez que abate um Zumbi com esta arma.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fc/VampireCrossbow_WB.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/fc/VampireCrossbow_WB.png",
+    "visible": "TRUE"
   },
   {
     "id": "vanadis",
@@ -3537,7 +3713,8 @@
     "damage": 1,
     "effect_en": "Vanadis has the following Skills: Bird's-eye view, Low profile, Search, Slippery. If Vanadis is in the same Zone as its handler, that Survivor gains: +1 max Range, Bird's-eye view.",
     "effect_pt": "Vanadis possui as seguintes Habilidades: Visão Aérea, Esguio, Procura, Liso. Se Vanadis estiver na mesma Zona que seu treinador, o Sobrevivente ganha: Alcance +1, Visão Aérea.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/Vanadis.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/Vanadis.png",
+    "visible": "TRUE"
   },
   {
     "id": "vatan",
@@ -3557,7 +3734,8 @@
     "damage": 2,
     "effect_en": "Vatan has the following Skills: Low profile, Slippery. If Vatan is in the same Zone as its handler, that Survivor gains: +2 dice: Melee.",
     "effect_pt": "Vatan possui as seguintes Habilidades: Esguio, Liso. Se Vatan estiver na mesma Zona que seu treinador, o Sobrevivente ganha: +2 dados: Corpo a Corpo",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/3/31/Vatan.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/31/Vatan.png",
+    "visible": "TRUE"
   },
   {
     "id": "war_bow",
@@ -3577,7 +3755,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "war_bow_(chi)",
@@ -3597,7 +3776,8 @@
     "damage": 1,
     "effect_en": "",
     "effect_pt": "",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
   },
   {
     "id": "war_cleaver",
@@ -3617,13 +3797,14 @@
     "damage": 2,
     "effect_en": "Roll 6: +1 die Melee.",
     "effect_pt": "Resultado 6: +1 dado Corpo a Corpo",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/a/af/WarCleaver_GH.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/af/WarCleaver_GH.png",
+    "visible": "TRUE"
   },
   {
     "id": "water",
     "name_en": "Water",
     "name_pt": "Água",
-    "set": "Black Plague, Green Horde, White Death, Eternal Empire",
+    "set": "Black Plague; Green Horde; White Death; Eternal Empire",
     "deck": "search",
     "class": "item",
     "type": "",
@@ -3637,7 +3818,8 @@
     "damage": "",
     "effect_en": "Black Plague / Green Horde: Discard this card: Gain 1 experience point. White Death / Eternal Empire: Discard this card: Gain 3 experience points.",
     "effect_pt": "Black Plague/ Green Horde: Descarte esta carta: Ganhe 1 ponto de experiência. White Death: Descarte esta carta: Ganhe 3 pontos de adrenalina.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/8/85/Water_BP.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/85/Water_BP.png",
+    "visible": "TRUE"
   },
   {
     "id": "wintergrad_fur",
@@ -3657,7 +3839,8 @@
     "damage": "",
     "effect_en": "ARMOR 5+. Hoard. Set 1/4. FULL SET: Gain all your Red Skills.",
     "effect_pt": "ARMADURA 5+. Acumulador. CONJUNTO 1/4. CONJUNTO COMPLETO: Ganhe todas as Habilidades Vermelhas.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/6/63/WintergradFur_FR.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/63/WintergradFur_FR.png",
+    "visible": "TRUE"
   },
   {
     "id": "wintergrad_gloves",
@@ -3677,7 +3860,8 @@
     "damage": "",
     "effect_en": "+1 DIE: COMBAT. Set 2/4. FULL SET: Gain all your Red Skills. May be used in the Backpack.",
     "effect_pt": "+1 Dado Combate. CONJUNTO 2/4. CONJUNTO COMPLETO: Ganhe todas as Habilidades Vermelhas.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d8/WintergradGloves_FR.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d8/WintergradGloves_FR.png",
+    "visible": "TRUE"
   },
   {
     "id": "wintergrad_hat",
@@ -3697,7 +3881,8 @@
     "damage": "",
     "effect_en": "BORN LEADER. Set 3/4. FULL SET: Gain all your Red Skills. May be used in the Backpack.",
     "effect_pt": "Líder Nato: CONJUNTO 3/4. CONJUNTO COMPLETO: Ganhe todas as Habilidades Vermelhas.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b1/WintergradHat_FR.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/b/b1/WintergradHat_FR.png",
+    "visible": "TRUE"
   },
   {
     "id": "wintergrad_shoes",
@@ -3717,7 +3902,8 @@
     "damage": "",
     "effect_en": "+1 FREE MOVE ACTION. Set 4/4. FULL SET: Gain all your Red Skills. May be used in the Backpack.",
     "effect_pt": "+1 Ação de Movimento grátis. CONJUNTO 4/4. CONJUNTO COMPLETO: Ganhe todas as Habilidades Vermelhas.",
-    "image": "https://static.wikia.nocookie.net/zombicide/images/5/50/WintergradShoes_FR.png"
+    "image": "https://static.wikia.nocookie.net/zombicide/images/5/50/WintergradShoes_FR.png",
+    "visible": "TRUE"
   },
   {
     "id": "wushu_sword_(chi)",
@@ -3737,6 +3923,280 @@
     "damage": 1,
     "effect_en": "Roll 6: +1 Damage. Chi: +1 to dice roll: Melee",
     "effect_pt": "Resultado 6: Dano +1. Chi: +1 no Resultado: Corpo a Corpo.",
-    "image": ""
+    "image": "",
+    "visible": "TRUE"
+  },
+  {
+    "id": "sword_of_omens_or_claw_shield",
+    "name_en": "Sword of Omens OR Claw Shield",
+    "name_pt": "Espada Justiceira ou Escudo Garra",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_enchantment",
+    "name_en": "ANY Enchantment",
+    "name_pt": "Qualquer Encantamento",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_combat_spell",
+    "name_en": "ANY Combat Spell",
+    "name_pt": "Qualquer Feitiço de Combate",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_shield",
+    "name_en": "ANY Shield",
+    "name_pt": "Qualquer Escudo",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_polearm",
+    "name_en": "ANY Polearm",
+    "name_pt": "Qualquer Arma de Haste",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_melee_weapon",
+    "name_en": "ANY Melee weapon",
+    "name_pt": "Qualquer Arma Corpo a Corpo",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_dagger",
+    "name_en": "ANY Dagger",
+    "name_pt": "Qualquer Adaga",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_axe",
+    "name_en": "ANY Axe",
+    "name_pt": "Qualquer Machado",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_sword",
+    "name_en": "ANY Sword",
+    "name_pt": "Qualquer Espada",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_crossbow",
+    "name_en": "ANY Crossbow",
+    "name_pt": "Qualquer Besta",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "any_equipment",
+    "name_en": "ANY Equipment",
+    "name_pt": "Qualquer Equipamento",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "only_great_axe_or_shield",
+    "name_en": "ONLY Great Axe or Shield",
+    "name_pt": "Somente Grão Machado ou Escudo",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
+  },
+  {
+    "id": "only_armor",
+    "name_en": "ONLY Armor",
+    "name_pt": "Somente Armadura",
+    "set": "",
+    "deck": "",
+    "class": "",
+    "type": "",
+    "danger": "",
+    "dual": "",
+    "noise": "",
+    "door": "",
+    "range": "",
+    "dice": "",
+    "accuracy": "",
+    "damage": "",
+    "effect_en": "",
+    "effect_pt": "",
+    "image": "",
+    "visible": "FALSE"
   }
 ]
