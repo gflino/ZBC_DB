@@ -12,7 +12,7 @@ let idiomaAtual = 'pt';
 
 // Dicionário Global da Interface do Usuário (i18n)
 const i18nUI = {
-    title: { pt: "Zombicide Compêndio", en: "Zombicide Compendium" },
+    title: { pt: "Zombicide DB", en: "Zombicide DB" },
     menuHome: { pt: "Início", en: "Home" },
     menuSkills: { pt: "Habilidades", en: "Skills" },
     menuSurvivors: { pt: "Sobreviventes", en: "Survivors" },
