@@ -1,8 +1,28 @@
 [
   {
+    "tags": "class",
+    "tags_en": "Class",
+    "tags_pt": "Classe"
+  },
+  {
+    "tags": "deck",
+    "tags_en": "Deck",
+    "tags_pt": "Baralho"
+  },
+  {
+    "tags": "type",
+    "tags_en": "Type",
+    "tags_pt": "Tipo"
+  },
+  {
     "tags": "priority",
     "tags_en": "Priority",
     "tags_pt": "Prioridade"
+  },
+  {
+    "tags": "role",
+    "tags_en": "Role",
+    "tags_pt": "Função"
   },
   {
     "tags": "yes",
@@ -15,14 +35,14 @@
     "tags_pt": "Não"
   },
   {
-    "tags": "body",
-    "tags_en": "Body",
-    "tags_pt": "Corpo"
-  },
-  {
     "tags": "name",
     "tags_en": "Name",
     "tags_pt": "Nome"
+  },
+  {
+    "tags": "body",
+    "tags_en": "Body",
+    "tags_pt": "Corpo"
   },
   {
     "tags": "combat",
@@ -55,16 +75,6 @@
     "tags_pt": "PA"
   },
   {
-    "tags": "magic",
-    "tags_en": "Magic",
-    "tags_pt": "Magia"
-  },
-  {
-    "tags": "melee",
-    "tags_en": "Melee",
-    "tags_pt": "Corpo a Corpo"
-  },
-  {
     "tags": "meditation",
     "tags_en": "Meditation",
     "tags_pt": "Meditação"
@@ -73,6 +83,21 @@
     "tags": "move",
     "tags_en": "Move",
     "tags_pt": "Movimento"
+  },
+  {
+    "tags": "support",
+    "tags_en": "Support",
+    "tags_pt": "Suporte"
+  },
+  {
+    "tags": "magic",
+    "tags_en": "Magic",
+    "tags_pt": "Magia"
+  },
+  {
+    "tags": "melee",
+    "tags_en": "Melee",
+    "tags_pt": "Corpo a Corpo"
   },
   {
     "tags": "ranged",

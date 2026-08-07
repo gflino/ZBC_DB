@@ -1,16 +1,21 @@
 tags,tags_en,tags_pt
 priority,Priority,Prioridade
+role,Role,Função
+yes,Yes,Sim
+no,No,Não
 name,Name,Nome
+body,Body,Corpo
 combat,Combat,Combate
 lethal,Lethal,Letal
 damage,Damage,Dano
 guard_action,Guard Action,Ação de Guarda
 actions,Actions,Ações
 ap,AP,PA
-magic,Magic,Magia
-melee,Melee,Corpo a Corpo
 meditation,Meditation,Meditação
 move,Move,Movimento
+support,Support,Suporte
+magic,Magic,Magia
+melee,Melee,Corpo a Corpo
 ranged,Ranged,Longo Alcance
 search,Search,Procura
 starter,Starter,Inicial

@@ -19,6 +19,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/Ann.png"
   },
   {
@@ -41,6 +42,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1a/Baldrick.png"
   },
   {
@@ -63,6 +65,7 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/28/Clovis.png"
   },
   {
@@ -85,6 +88,7 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/Nelly.png"
   },
   {
@@ -107,6 +111,7 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/Samson.png/"
   },
   {
@@ -129,6 +134,7 @@
     "tag_red2": "combat",
     "red3": "iron_rain",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a6/Silas.png/"
   },
   {
@@ -151,6 +157,7 @@
     "tag_red2": "ranged",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f4/Ariane.png/"
   },
   {
@@ -173,6 +180,7 @@
     "tag_red2": "",
     "red3": "marksman",
     "tag_red3": "",
+    "role": "melee; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/bd/KarlFantasy.png/"
   },
   {
@@ -195,6 +203,7 @@
     "tag_red2": "magic",
     "red3": "bloodlust_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/39/Morrigan.png/"
   },
   {
@@ -217,6 +226,7 @@
     "tag_red2": "",
     "red3": "marksman",
     "tag_red3": "",
+    "role": "melee; ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/51/Theo.png/"
   },
   {
@@ -239,6 +249,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/af/Arnaud.png/"
   },
   {
@@ -261,6 +272,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c3/Glynda.png/"
   },
   {
@@ -283,6 +295,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/00/JULIAN.png/"
   },
   {
@@ -305,6 +318,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/6c/Sylvia.png/"
   },
   {
@@ -327,6 +341,7 @@
     "tag_red2": "combat",
     "red3": "free_reload",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/cc/Tucker.png/"
   },
   {
@@ -349,6 +364,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Bob.png/"
   },
   {
@@ -371,6 +387,7 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/Danton.png/"
   },
   {
@@ -393,6 +410,7 @@
     "tag_red2": "",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c9/EvilTroy.png/"
   },
   {
@@ -415,6 +433,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f7/Falstaff.png"
   },
   {
@@ -437,6 +456,7 @@
     "tag_red2": "melee",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/eb/Gilbert.png"
   },
   {
@@ -459,6 +479,7 @@
     "tag_red2": "melee",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/8c/Hitch.png"
   },
   {
@@ -481,6 +502,7 @@
     "tag_red2": "combat",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d2/JamesFantasy.png"
   },
   {
@@ -503,6 +525,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/31/LadyFaye.png"
   },
   {
@@ -525,6 +548,7 @@
     "tag_red2": "walker",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a6/Lucas.png"
   },
   {
@@ -547,6 +571,7 @@
     "tag_red2": "move",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/17/Montalban.png"
   },
   {
@@ -569,6 +594,7 @@
     "tag_red2": "melee",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "melee; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b5/Morgan.png"
   },
   {
@@ -591,6 +617,7 @@
     "tag_red2": "combat",
     "red3": "charge",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/39/Mortimer.png"
   },
   {
@@ -613,6 +640,7 @@
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
+    "role": "melee; ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e0/PaulFantasy.png"
   },
   {
@@ -635,6 +663,7 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/Piper.png"
   },
   {
@@ -657,6 +686,7 @@
     "tag_red2": "ranged",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/Troy.png"
   },
   {
@@ -679,6 +709,7 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/0b/William.png"
   },
   {
@@ -701,6 +732,7 @@
     "tag_red2": "walker",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/8d/Beauregard.png"
   },
   {
@@ -723,6 +755,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/13/Chauncey.png"
   },
   {
@@ -745,6 +778,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/DoctorStormcrow.png"
   },
   {
@@ -767,6 +801,7 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/7a/Gowan.png"
   },
   {
@@ -789,6 +824,7 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c4/Gregoire.png"
   },
   {
@@ -811,6 +847,7 @@
     "tag_red2": "combat",
     "red3": "jump",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/Scowl.png"
   },
   {
@@ -833,6 +870,7 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/35/Grom.png"
   },
   {
@@ -855,6 +893,7 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/43/Thalia.png"
   },
   {
@@ -877,6 +916,7 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/65/CulNar.png"
   },
   {
@@ -899,6 +939,7 @@
     "tag_red2": "combat",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d6/Gurbak.png"
   },
   {
@@ -921,6 +962,7 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d5/Jorvak.png"
   },
   {
@@ -943,6 +985,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1e/ShaKeel.png"
   },
   {
@@ -965,6 +1008,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/BlackCurrant.png"
   },
   {
@@ -987,6 +1031,7 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Persephone.png"
   },
   {
@@ -1009,6 +1054,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4a/Thrud.png"
   },
   {
@@ -1031,6 +1077,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1c/Brickborn.png"
   },
   {
@@ -1053,6 +1100,7 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/3d/Hewelin.png"
   },
   {
@@ -1075,6 +1123,7 @@
     "tag_red2": "magic",
     "red3": "frenzy_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d8/Kalia.png"
   },
   {
@@ -1097,6 +1146,7 @@
     "tag_red2": "ranged",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ac/Shalheira.png"
   },
   {
@@ -1119,6 +1169,7 @@
     "tag_red2": "combat",
     "red3": "lifesaver",
     "tag_red3": "",
+    "role": "ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5b/CeliaLaSanta.png"
   },
   {
@@ -1141,6 +1192,7 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e5/DonnaCarlotta.png"
   },
   {
@@ -1163,6 +1215,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/3d/Pipino.png"
   },
   {
@@ -1185,6 +1238,7 @@
     "tag_red2": "combat",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/TheLittlePrince.png"
   },
   {
@@ -1207,6 +1261,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/14/Cyrine.png"
   },
   {
@@ -1229,6 +1284,7 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/37/Dravog.png"
   },
   {
@@ -1251,6 +1307,7 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c9/Gorvin.png"
   },
   {
@@ -1273,6 +1330,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c6/Hildir.png"
   },
   {
@@ -1295,6 +1353,7 @@
     "tag_red2": "combat",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/96/Johrgrund.png"
   },
   {
@@ -1317,6 +1376,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/88/Korin.png"
   },
   {
@@ -1339,6 +1399,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c3/RuffGhanor.png"
   },
   {
@@ -1361,6 +1422,7 @@
     "tag_red2": "",
     "red3": "lifesaver",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/ThePrior.png"
   },
   {
@@ -1383,6 +1445,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f7/DameAhelissa.png"
   },
   {
@@ -1405,6 +1468,7 @@
     "tag_red2": "",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/73/Garuk.png"
   },
   {
@@ -1427,6 +1491,7 @@
     "tag_red2": "move",
     "red3": "mana_rain",
     "tag_red3": "",
+    "role": "ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a3/Marcus.png"
   },
   {
@@ -1449,6 +1514,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/01/Ulfo.png"
   },
   {
@@ -1471,6 +1537,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "magic",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/8b/Antha.png"
   },
   {
@@ -1493,6 +1560,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/63/Cadence.png"
   },
   {
@@ -1515,6 +1583,7 @@
     "tag_red2": "combat",
     "red3": "is_that_all_youve_got",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/07/LadyGrimm.png"
   },
   {
@@ -1537,6 +1606,7 @@
     "tag_red2": "melee",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ac/RedcapRodney.png"
   },
   {
@@ -1559,6 +1629,7 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/fb/Merieil.png"
   },
   {
@@ -1581,6 +1652,7 @@
     "tag_red2": "move",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5c/Milo.png"
   },
   {
@@ -1603,6 +1675,7 @@
     "tag_red2": "magic",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a8/Ostokar.png"
   },
   {
@@ -1625,6 +1698,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/9a/Thundergut.png"
   },
   {
@@ -1647,6 +1721,7 @@
     "tag_red2": "combat",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/22/Alainon.png"
   },
   {
@@ -1669,6 +1744,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/57/Golor.png"
   },
   {
@@ -1691,6 +1767,7 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/9a/Gronstag.png"
   },
   {
@@ -1713,6 +1790,7 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/42/Yrina.png"
   },
   {
@@ -1735,6 +1813,7 @@
     "tag_red2": "move",
     "red3": "two_zones_move",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/51/Arnwal.png"
   },
   {
@@ -1757,6 +1836,7 @@
     "tag_red2": "combat",
     "red3": "frenzy_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/Konrad.png"
   },
   {
@@ -1779,6 +1859,7 @@
     "tag_red2": "melee",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/15/Skoll.png"
   },
   {
@@ -1801,6 +1882,7 @@
     "tag_red2": "melee",
     "red3": "lifesaver",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/Undraal.png"
   },
   {
@@ -1823,6 +1905,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Genevieve.png"
   },
   {
@@ -1845,6 +1928,7 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/64/Klom.png"
   },
   {
@@ -1867,6 +1951,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/2e/Lord_Bazak.png"
   },
   {
@@ -1889,6 +1974,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1f/Mizar.png"
   },
   {
@@ -1911,6 +1997,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c0/Azure.png"
   },
   {
@@ -1933,6 +2020,7 @@
     "tag_red2": "",
     "red3": "rotten",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/Gaak.png"
   },
   {
@@ -1955,6 +2043,7 @@
     "tag_red2": "combat",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/2c/TheBlackheart.png"
   },
   {
@@ -1977,6 +2066,7 @@
     "tag_red2": "combat",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/be/Ysabel.png"
   },
   {
@@ -1999,6 +2089,7 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/bd/Benson.png"
   },
   {
@@ -2021,6 +2112,7 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/33/Homer.png"
   },
   {
@@ -2043,6 +2135,7 @@
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Willow.png"
   },
   {
@@ -2065,6 +2158,7 @@
     "tag_red2": "move",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/14/Bruce.png"
   },
   {
@@ -2087,6 +2181,7 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5a/Asim.png"
   },
   {
@@ -2109,6 +2204,7 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ac/Berin.png"
   },
   {
@@ -2131,6 +2227,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "ranged",
+    "role": "ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/Johannes.png"
   },
   {
@@ -2153,6 +2250,7 @@
     "tag_red2": "magic",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e5/Megan.png"
   },
   {
@@ -2175,6 +2273,7 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/66/Rolf.png"
   },
   {
@@ -2197,6 +2296,7 @@
     "tag_red2": "combat",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/04/Seli.png"
   },
   {
@@ -2219,6 +2319,7 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/43/Doran.png"
   },
   {
@@ -2241,6 +2342,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/96/Kabral.png"
   },
   {
@@ -2263,6 +2365,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "combat",
+    "role": "melee; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/6f/Katelyn.png"
   },
   {
@@ -2285,6 +2388,7 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/65/Solveig.png"
   },
   {
@@ -2307,6 +2411,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c8/AntonGuffen.png"
   },
   {
@@ -2329,6 +2434,7 @@
     "tag_red2": "",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/34/Asmodeus.png"
   },
   {
@@ -2351,6 +2457,7 @@
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/ff/Badger.png"
   },
   {
@@ -2373,6 +2480,7 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/Billy.png"
   },
   {
@@ -2395,6 +2503,7 @@
     "tag_red2": "walker",
     "red3": "tough",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/7f/Brannog.png"
   },
   {
@@ -2417,6 +2526,7 @@
     "tag_red2": "",
     "red3": "mana_rain",
     "tag_red3": "",
+    "role": "melee; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/04/BrixMoonshine.png"
   },
   {
@@ -2439,6 +2549,7 @@
     "tag_red2": "brute",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/7f/Cassius.png"
   },
   {
@@ -2461,6 +2572,7 @@
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e2/CountessOrdelia.png"
   },
   {
@@ -2483,6 +2595,7 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/05/EarlJaimie.png"
   },
   {
@@ -2505,6 +2618,7 @@
     "tag_red2": "",
     "red3": "battle_rage",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/0b/Finarton.png"
   },
   {
@@ -2527,6 +2641,7 @@
     "tag_red2": "move",
     "red3": "mana_rain",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b2/Fylguria.png"
   },
   {
@@ -2549,6 +2664,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/72/Gannicus.png"
   },
   {
@@ -2571,6 +2687,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "enchantment",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f4/GraysonGruber.png"
   },
   {
@@ -2593,6 +2710,7 @@
     "tag_red2": "plus_1_free_[action]_action:melee",
     "red3": "swordmaster",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4c/Hyg.png"
   },
   {
@@ -2615,6 +2733,7 @@
     "tag_red2": "",
     "red3": "lifesaver",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/6e/Hyld.png"
   },
   {
@@ -2637,6 +2756,7 @@
     "tag_red2": "combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "plus_1_die_[action]:combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e7/Jeanne.png"
   },
   {
@@ -2659,6 +2779,7 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/Kelsey.png"
   },
   {
@@ -2681,6 +2802,7 @@
     "tag_red2": "move",
     "red3": "lifesaver",
     "tag_red3": "",
+    "role": "melee; ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/51/Lividia.png"
   },
   {
@@ -2703,6 +2825,7 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d9/Lorentz.png"
   },
   {
@@ -2725,6 +2848,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e6/PrincessAyla.png"
   },
   {
@@ -2747,6 +2871,7 @@
     "tag_red2": "ranged",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1c/Rocco.png"
   },
   {
@@ -2769,6 +2894,7 @@
     "tag_red2": "",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b0/RyanJohn.png"
   },
   {
@@ -2791,6 +2917,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_zone_move",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/65/Sigrun.png"
   },
   {
@@ -2813,6 +2940,7 @@
     "tag_red2": "",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/37/SirSchwarz.png"
   },
   {
@@ -2835,6 +2963,7 @@
     "tag_red2": "combat",
     "red3": "frenzy_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/ce/Spearhead.png"
   },
   {
@@ -2857,6 +2986,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d3/TheDeathmaster.png"
   },
   {
@@ -2879,6 +3009,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/cd/TheMarquis.png"
   },
   {
@@ -2901,6 +3032,7 @@
     "tag_red2": "magic",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "magic",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/42/Thomas.png"
   },
   {
@@ -2923,6 +3055,7 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/Ygraine.png"
   },
   {
@@ -2945,6 +3078,7 @@
     "tag_red2": "",
     "red3": "mana_rain",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/24/Zanzibar.png"
   },
   {
@@ -2967,6 +3101,7 @@
     "tag_red2": "",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/9d/Zee.png"
   },
   {
@@ -2989,6 +3124,7 @@
     "tag_red2": "move",
     "red3": "rotten",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/15/Liam.png"
   },
   {
@@ -3011,6 +3147,7 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/fe/NorthTheHalfling.png"
   },
   {
@@ -3033,6 +3170,7 @@
     "tag_red2": "",
     "red3": "collector_[zombie]",
     "tag_red3": "walker",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5e/CarolBlackOak.png"
   },
   {
@@ -3055,6 +3193,7 @@
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "iron_hide",
+    "role": "ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b6/Kirag.png"
   },
   {
@@ -3077,6 +3216,7 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "plus_1_free_[action]_action:combat",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/98/Thorg.png"
   },
   {
@@ -3099,6 +3239,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/85/Tola.png"
   },
   {
@@ -3121,6 +3262,7 @@
     "tag_red2": "magic",
     "red3": "point_blank",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/Birmbauer.png"
   },
   {
@@ -3143,6 +3285,7 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "magic",
+    "role": "melee; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/88/Kendra.png"
   },
   {
@@ -3165,6 +3308,7 @@
     "tag_red2": "magic",
     "red3": "rotten",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/2f/Spellbones.png"
   },
   {
@@ -3187,6 +3331,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
+    "role": "melee; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/AnnUltimate.png"
   },
   {
@@ -3209,6 +3354,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/64/BaldricUltimate.png"
   },
   {
@@ -3231,6 +3377,7 @@
     "tag_red2": "plus_1_free_[action]_action:combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/53/ClovisUltimate.png"
   },
   {
@@ -3253,6 +3400,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_zone_move",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/30/NellyUltimate.png"
   },
   {
@@ -3275,6 +3423,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/9e/SamsonUltimate.png"
   },
   {
@@ -3297,6 +3446,7 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/3e/SilasUltimate.png"
   },
   {
@@ -3319,6 +3469,7 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "shove",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4e/LionO.png"
   },
   {
@@ -3341,6 +3492,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/0b/Cheetara.png"
   },
   {
@@ -3363,6 +3515,7 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/2f/Snarf.png"
   },
   {
@@ -3385,6 +3538,7 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/60/Slithe.png"
   },
   {
@@ -3407,6 +3561,7 @@
     "tag_red2": "walker",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -3429,6 +3584,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "ranged; magic; support",
     "image": ""
   },
   {
@@ -3451,6 +3607,7 @@
     "tag_red2": "ranged",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "support",
     "image": ""
   },
   {
@@ -3473,6 +3630,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "support",
     "image": ""
   },
   {
@@ -3495,6 +3653,7 @@
     "tag_red2": "ranged",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; ranged; support",
     "image": ""
   },
   {
@@ -3517,6 +3676,7 @@
     "tag_red2": "",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "plus_1_die_[action]:ranged",
+    "role": "ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/84/PharaohEddie_IM.png"
   },
   {
@@ -3539,6 +3699,7 @@
     "tag_red2": "melee",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/89/ReaperEddie_IM.png"
   },
   {
@@ -3561,6 +3722,7 @@
     "tag_red2": "melee",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -3583,6 +3745,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/ShamanEddie_IM.png"
   },
   {
@@ -3605,6 +3768,7 @@
     "tag_red2": "magic",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "magic; support",
     "image": ""
   },
   {
@@ -3627,6 +3791,7 @@
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/bc/Annalisa.png"
   },
   {
@@ -3649,6 +3814,7 @@
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "trick_shot",
     "tag_red3": "",
+    "role": "ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a8/Bertrand.png"
   },
   {
@@ -3671,6 +3837,7 @@
     "tag_red2": "move",
     "red3": "tactician",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/90/Bran.png"
   },
   {
@@ -3693,6 +3860,7 @@
     "tag_red2": "melee",
     "red3": "tactician",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/48/CaptainGoliath.png"
   },
   {
@@ -3715,6 +3883,7 @@
     "tag_red2": "melee",
     "red3": "break_in",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5e/Ciacco.png"
   },
   {
@@ -3737,6 +3906,7 @@
     "tag_red2": "magic",
     "red3": "mana_rain",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/94/DoctorNadir.png"
   },
   {
@@ -3759,6 +3929,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/GrandVizier.png"
   },
   {
@@ -3781,6 +3952,7 @@
     "tag_red2": "search",
     "red3": "born_leader",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/3b/ImperialMessenger.png"
   },
   {
@@ -3803,6 +3975,7 @@
     "tag_red2": "",
     "red3": "lifesaver",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1b/Rosencranz.png"
   },
   {
@@ -3825,6 +3998,7 @@
     "tag_red2": "",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d3/SirCrumb.png"
   },
   {
@@ -3847,6 +4021,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f9/SirPercy.png"
   },
   {
@@ -3869,6 +4044,7 @@
     "tag_red2": "melee",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "melee; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5a/TheSparrow.png"
   },
   {
@@ -3891,6 +4067,7 @@
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "tactician",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f2/CordDankwart.png"
   },
   {
@@ -3913,6 +4090,7 @@
     "tag_red2": "",
     "red3": "born_leader",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/73/Drakka.png"
   },
   {
@@ -3935,6 +4113,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/9e/Einar.png"
   },
   {
@@ -3957,6 +4136,7 @@
     "tag_red2": "",
     "red3": "sprint",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/29/Freya.png"
   },
   {
@@ -3979,6 +4159,7 @@
     "tag_red2": "magic",
     "red3": "double_casting",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/Lewyn.png"
   },
   {
@@ -4001,6 +4182,7 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/69/Lotas.png"
   },
   {
@@ -4023,6 +4205,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/91/LotasWerewolf.png"
   },
   {
@@ -4045,6 +4228,7 @@
     "tag_red2": "",
     "red3": "frenzy_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d9/Marike.png"
   },
   {
@@ -4067,6 +4251,7 @@
     "tag_red2": "melee",
     "red3": "swordmaster",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/87/NetoOrash.png"
   },
   {
@@ -4089,6 +4274,7 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f6/Otto.png"
   },
   {
@@ -4111,6 +4297,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/OttoArmored.png"
   },
   {
@@ -4133,6 +4320,7 @@
     "tag_red2": "ranged",
     "red3": "iron_rain",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f3/Rainer.png"
   },
   {
@@ -4155,6 +4343,7 @@
     "tag_red2": "ranged",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/Dragomir_WD.png"
   },
   {
@@ -4177,6 +4366,7 @@
     "tag_red2": "ranged",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/Dragomir_WD.png"
   },
   {
@@ -4199,6 +4389,7 @@
     "tag_red2": "",
     "red3": "chi_[skill]",
     "tag_red3": "iron_rain",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/91/Jenia_WD.png"
   },
   {
@@ -4221,6 +4412,7 @@
     "tag_red2": "",
     "red3": "chi_[skill]",
     "tag_red3": "iron_rain",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/91/Jenia_WD.png"
   },
   {
@@ -4243,6 +4435,7 @@
     "tag_red2": "move",
     "red3": "born_leader",
     "tag_red3": "",
+    "role": "melee; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f3/Lorna_WD.png"
   },
   {
@@ -4265,6 +4458,7 @@
     "tag_red2": "move",
     "red3": "born_leader",
     "tag_red3": "",
+    "role": "melee; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f3/Lorna_WD.png"
   },
   {
@@ -4287,6 +4481,7 @@
     "tag_red2": "",
     "red3": "chi_[skill]",
     "tag_red3": "hit_run",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4b/Ogon_WD.png"
   },
   {
@@ -4309,6 +4504,7 @@
     "tag_red2": "",
     "red3": "chi_[skill]",
     "tag_red3": "hit_run",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4b/Ogon_WD.png"
   },
   {
@@ -4331,6 +4527,7 @@
     "tag_red2": "combat",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/84/Sarnai_WD.png"
   },
   {
@@ -4353,6 +4550,7 @@
     "tag_red2": "combat",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/84/Sarnai_WD.png"
   },
   {
@@ -4375,6 +4573,7 @@
     "tag_red2": "roll_6_plus_1_dice_roll_[action]:combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/67/Yasuke_WD.png"
   },
   {
@@ -4397,6 +4596,7 @@
     "tag_red2": "roll_6_plus_1_dice_roll_[action]:combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/67/Yasuke_WD.png"
   },
   {
@@ -4419,6 +4619,7 @@
     "tag_red2": "combat",
     "red3": "marksman",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/44/Fengbao_EE.png"
   },
   {
@@ -4441,6 +4642,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/17/Jianrui_EE.png"
   },
   {
@@ -4463,6 +4665,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Shao_EE.png"
   },
   {
@@ -4485,6 +4688,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/7c/Yinying_EE.png"
   },
   {
@@ -4507,6 +4711,7 @@
     "tag_red2": "enchantment",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "magic",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/97/ZhiShen_EE.png"
   },
   {
@@ -4529,6 +4734,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/ZhiYang_EE.png"
   },
   {
@@ -4551,6 +4757,7 @@
     "tag_red2": "magic",
     "red3": "sprint",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/8e/ChangE.png"
   },
   {
@@ -4573,6 +4780,7 @@
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/ce/HouYi.png"
   },
   {
@@ -4595,6 +4803,7 @@
     "tag_red2": "combat",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e9/AprilONeil.png"
   },
   {
@@ -4617,6 +4826,7 @@
     "tag_red2": "combat",
     "red3": "jump",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1b/CaseyJones.png"
   },
   {
@@ -4639,6 +4849,7 @@
     "tag_red2": "move",
     "red3": "turtle_focus_plus_3_dice_combat",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5c/DonatelloFantasy.png"
   },
   {
@@ -4661,6 +4872,7 @@
     "tag_red2": "melee",
     "red3": "turtle_focus_plus_2_dice_roll_combat",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/8a/LeonardoFantasy.png"
   },
   {
@@ -4683,6 +4895,7 @@
     "tag_red2": "",
     "red3": "turtle_focus_plus_3_dice_combat",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b7/MichelangeloFantasy.png"
   },
   {
@@ -4705,6 +4918,7 @@
     "tag_red2": "",
     "red3": "turtle_focus_damage_3_combat",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/7f/RaphaelFantasy.png"
   },
   {
@@ -4727,6 +4941,7 @@
     "tag_red2": "combat",
     "red3": "one_free_turtle_power",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/Splinter.png"
   },
   {
@@ -4749,6 +4964,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/6d/Jennika.png"
   },
   {
@@ -4771,6 +4987,7 @@
     "tag_red2": "move",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/0d/AlgharaSteelSworn_FR.png"
   },
   {
@@ -4793,6 +5010,7 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/25/AndreaFantasy.png"
   },
   {
@@ -4815,6 +5033,7 @@
     "tag_red2": "melee",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/Artema_FF.png"
   },
   {
@@ -4837,6 +5056,7 @@
     "tag_red2": "move",
     "red3": "jump",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d6/Badang_FR.png"
   },
   {
@@ -4859,6 +5079,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d0/ByakkoMaru_FR.png"
   },
   {
@@ -4881,6 +5102,7 @@
     "tag_red2": "magic",
     "red3": "hoard",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/bd/CaishenYe_FR.png"
   },
   {
@@ -4903,6 +5125,7 @@
     "tag_red2": "melee",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/bc/CaoRen_FR.png"
   },
   {
@@ -4925,6 +5148,7 @@
     "tag_red2": "magic",
     "red3": "freeze_[action]",
     "tag_red3": "magic",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/fd/CirinaBlackMantle_FR.png"
   },
   {
@@ -4947,6 +5171,7 @@
     "tag_red2": "combat",
     "red3": "marksman",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/df/Cristina.png"
   },
   {
@@ -4969,6 +5194,7 @@
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
     "tag_red3": "runner",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c6/DaQiao_FR.png"
   },
   {
@@ -4991,6 +5217,7 @@
     "tag_red2": "melee",
     "red3": "born_leader",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c2/DateMasamune_FR.png"
   },
   {
@@ -5013,6 +5240,7 @@
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/68/DD.png"
   },
   {
@@ -5035,6 +5263,7 @@
     "tag_red2": "melee",
     "red3": "swordmaster",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/0f/DianWei_FR.png"
   },
   {
@@ -5057,6 +5286,7 @@
     "tag_red2": "ranged",
     "red3": "marksman",
     "tag_red3": "",
+    "role": "ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/21/DiaoChan_FR.png"
   },
   {
@@ -5079,6 +5309,7 @@
     "tag_red2": "move",
     "red3": "damage_2_[action]",
     "tag_red3": "melee",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/GanNing_FR.png"
   },
   {
@@ -5101,6 +5332,7 @@
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d0/GenghisKhan_FR.png"
   },
   {
@@ -5123,6 +5355,7 @@
     "tag_red2": "",
     "red3": "marksman",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/Haya_FR.png"
   },
   {
@@ -5145,6 +5378,7 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/28/HondaTakadatsu_FR.png"
   },
   {
@@ -5167,6 +5401,7 @@
     "tag_red2": "magic",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/06/HongVar_FF.png"
   },
   {
@@ -5189,6 +5424,7 @@
     "tag_red2": "move",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a3/HuaMulan_FR.png"
   },
   {
@@ -5211,6 +5447,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -5233,6 +5470,7 @@
     "tag_red2": "ranged",
     "red3": "escalation_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": ""
   },
   {
@@ -5255,6 +5493,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c7/Ichiro_FR.png"
   },
   {
@@ -5277,6 +5516,7 @@
     "tag_red2": "melee",
     "red3": "escalation_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": ""
   },
   {
@@ -5299,6 +5539,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/JadeEmpress_FF.png"
   },
   {
@@ -5321,6 +5562,7 @@
     "tag_red2": "combat",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/20/JieKe_FR.png"
   },
   {
@@ -5343,6 +5585,7 @@
     "tag_red2": "combat",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "melee; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d2/Jiraiya_FR.png"
   },
   {
@@ -5365,6 +5608,7 @@
     "tag_red2": "melee",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/31/KidoMaru_FR.png"
   },
   {
@@ -5387,6 +5631,7 @@
     "tag_red2": "melee",
     "red3": "escalation_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/da/KodaiIn_FF.png"
   },
   {
@@ -5409,6 +5654,7 @@
     "tag_red2": "ranged",
     "red3": "escalation_[action]",
     "tag_red3": "ranged",
+    "role": "ranged; support",
     "image": ""
   },
   {
@@ -5431,6 +5677,7 @@
     "tag_red2": "melee",
     "red3": "jump",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -5453,6 +5700,7 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/77/KurokageMaru_FF.png"
   },
   {
@@ -5475,6 +5723,7 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/7e/Lakshmana_FR.png"
   },
   {
@@ -5497,6 +5746,7 @@
     "tag_red2": "melee",
     "red3": "freeze_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -5519,6 +5769,7 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
+    "role": "melee; ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d7/LuBu_FR.png"
   },
   {
@@ -5541,6 +5792,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -5563,6 +5815,7 @@
     "tag_red2": "combat",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "melee; magic; support",
     "image": ""
   },
   {
@@ -5585,6 +5838,7 @@
     "tag_red2": "melee",
     "red3": "escalation_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/93/MakiFantasy.png"
   },
   {
@@ -5607,6 +5861,7 @@
     "tag_red2": "melee",
     "red3": "jump",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -5629,6 +5884,7 @@
     "tag_red2": "move",
     "red3": "damage_2_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": ""
   },
   {
@@ -5651,6 +5907,7 @@
     "tag_red2": "enchantment",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "magic; support",
     "image": ""
   },
   {
@@ -5673,6 +5930,7 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -5695,6 +5953,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
+    "role": "melee; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/12/MuGuiying_FF.png"
   },
   {
@@ -5717,6 +5976,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee; ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b9/Nezha_FR.png"
   },
   {
@@ -5739,6 +5999,7 @@
     "tag_red2": "move",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "ranged",
     "image": ""
   },
   {
@@ -5761,6 +6022,7 @@
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "spellbook",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f7/Okuni_FF.png"
   },
   {
@@ -5783,6 +6045,7 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a2/RajarajaChola.png"
   },
   {
@@ -5805,6 +6068,7 @@
     "tag_red2": "",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f1/Rama.png"
   },
   {
@@ -5827,6 +6091,7 @@
     "tag_red2": "move",
     "red3": "lifesaver",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/8d/Rebecca_FR.png"
   },
   {
@@ -5849,6 +6114,7 @@
     "tag_red2": "magic",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "magic",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/cc/Renart_FF.png"
   },
   {
@@ -5871,6 +6137,7 @@
     "tag_red2": "",
     "red3": "iron_rain",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/Richard.png"
   },
   {
@@ -5893,6 +6160,7 @@
     "tag_red2": "",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "ranged",
     "image": ""
   },
   {
@@ -5915,6 +6183,7 @@
     "tag_red2": "melee",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -5937,6 +6206,7 @@
     "tag_red2": "ranged",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
+    "role": "ranged; support",
     "image": ""
   },
   {
@@ -5959,6 +6229,7 @@
     "tag_red2": "enchantment",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -5981,6 +6252,7 @@
     "tag_red2": "magic",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "magic",
     "image": ""
   },
   {
@@ -6003,6 +6275,7 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6025,6 +6298,7 @@
     "tag_red2": "move",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic; support",
     "image": ""
   },
   {
@@ -6047,6 +6321,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/79/SunWukong_FF.png"
   },
   {
@@ -6069,6 +6344,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -6091,6 +6367,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic; support",
     "image": ""
   },
   {
@@ -6113,6 +6390,7 @@
     "tag_red2": "",
     "red3": "",
     "tag_red3": "",
+    "role": "",
     "image": ""
   },
   {
@@ -6135,6 +6413,7 @@
     "tag_red2": "combat",
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5c/TomoeGozen_FF.png"
   },
   {
@@ -6157,6 +6436,7 @@
     "tag_red2": "magic",
     "red3": "double_casting",
     "tag_red3": "",
+    "role": "magic; support",
     "image": ""
   },
   {
@@ -6179,6 +6459,7 @@
     "tag_red2": "melee",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -6201,6 +6482,7 @@
     "tag_red2": "ranged",
     "red3": "escalation_[action]",
     "tag_red3": "ranged",
+    "role": "ranged; support",
     "image": ""
   },
   {
@@ -6223,6 +6505,7 @@
     "tag_red2": "",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -6245,6 +6528,7 @@
     "tag_red2": "ironclad_[zombie]:abomination",
     "red3": "born_leader",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/YiSunSin_FR.png"
   },
   {
@@ -6267,6 +6551,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "guard_action",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6289,6 +6574,7 @@
     "tag_red2": "magic",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "magic",
+    "role": "magic",
     "image": ""
   },
   {
@@ -6311,6 +6597,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/61/MiyamotoUsagi.png"
   },
   {
@@ -6333,6 +6620,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6355,6 +6643,7 @@
     "tag_red2": "combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "escalation_[action]:combat",
+    "role": "support",
     "image": ""
   },
   {
@@ -6377,6 +6666,7 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": ""
   },
   {
@@ -6399,6 +6689,7 @@
     "tag_red2": "combat",
     "red3": "barbarian",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6421,6 +6712,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6443,6 +6735,7 @@
     "tag_red2": "",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "ranged",
+    "role": "ranged",
     "image": ""
   },
   {
@@ -6465,6 +6758,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "melee; ranged; magic; support",
     "image": ""
   },
   {
@@ -6487,6 +6781,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6509,6 +6804,7 @@
     "tag_red2": "melee",
     "red3": "jump",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -6531,6 +6827,7 @@
     "tag_red2": "",
     "red3": "lucky",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -6553,6 +6850,7 @@
     "tag_red2": "melee",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6575,6 +6873,7 @@
     "tag_red2": "melee",
     "red3": "damage_2_[action]",
     "tag_red3": "ranged",
+    "role": "melee; ranged",
     "image": ""
   },
   {
@@ -6597,6 +6896,7 @@
     "tag_red2": "combat",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "plus_1_free_[action]_action:combat",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6619,6 +6919,7 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/70/CaoCao_WMK.png"
   },
   {
@@ -6641,6 +6942,7 @@
     "tag_red2": "melee",
     "red3": "damage_2_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6663,6 +6965,7 @@
     "tag_red2": "plus_1_roll_[action]:combat",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "combat",
+    "role": "melee; ranged; magic; support",
     "image": ""
   },
   {
@@ -6685,6 +6988,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic; support",
     "image": ""
   },
   {
@@ -6707,6 +7011,7 @@
     "tag_red2": "melee",
     "red3": "damage_2_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6729,6 +7034,7 @@
     "tag_red2": "melee",
     "red3": "sprint",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -6751,6 +7057,7 @@
     "tag_red2": "melee",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "melee; support",
     "image": ""
   },
   {
@@ -6773,6 +7080,7 @@
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "melee",
+    "role": "magic",
     "image": ""
   },
   {
@@ -6795,6 +7103,7 @@
     "tag_red2": "ranged",
     "red3": "point_blank",
     "tag_red3": "",
+    "role": "ranged",
     "image": ""
   },
   {
@@ -6817,6 +7126,7 @@
     "tag_red2": "",
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": ""
   },
   {
@@ -6839,6 +7149,7 @@
     "tag_red2": "move",
     "red3": "freeze_[action]",
     "tag_red3": "magic",
+    "role": "magic; support",
     "image": ""
   },
   {
@@ -6861,6 +7172,7 @@
     "tag_red2": "melee",
     "red3": "brother_in_arms_[game_effect]",
     "tag_red3": "escalation_[action]:combat",
+    "role": "melee; ranged; magic; support",
     "image": ""
   },
   {
@@ -6883,6 +7195,7 @@
     "tag_red2": "",
     "red3": "ironclad_[zombie]",
     "tag_red3": "walker",
+    "role": "melee; ranged; magic",
     "image": ""
   },
   {
@@ -6905,6 +7218,7 @@
     "tag_red2": "combat",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": ""
   },
   {
@@ -6927,6 +7241,7 @@
     "tag_red2": "melee",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "support",
     "image": ""
   },
   {
@@ -6949,6 +7264,7 @@
     "tag_red2": "combat",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": ""
   },
   {
@@ -6971,6 +7287,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/43/Eileen.png"
   },
   {
@@ -6993,6 +7310,7 @@
     "tag_red2": "magic",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/48/Kador.png"
   },
   {
@@ -7015,6 +7333,7 @@
     "tag_red2": "combat",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/74/Lugh.png"
   },
   {
@@ -7037,6 +7356,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b8/Myrinia.png"
   },
   {
@@ -7059,6 +7379,7 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/5a/Orobox.png"
   },
   {
@@ -7081,6 +7402,7 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "combat",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/8a/Osvith.png"
   },
   {
@@ -7103,6 +7425,7 @@
     "tag_red2": "combat",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1a/BjornBS.png"
   },
   {
@@ -7125,6 +7448,7 @@
     "tag_red2": "combat",
     "red3": "iron_rain",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/36/KhazMaghur.png"
   },
   {
@@ -7147,6 +7471,7 @@
     "tag_red2": "magic",
     "red3": "regeneration",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c0/Ajax.png"
   },
   {
@@ -7169,6 +7494,7 @@
     "tag_red2": "combat",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/fa/Azrael.png"
   },
   {
@@ -7191,6 +7517,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/28/BjornMassiveDarkness.png"
   },
   {
@@ -7213,6 +7540,7 @@
     "tag_red2": "combat",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/2/20/Elias.png"
   },
   {
@@ -7235,6 +7563,7 @@
     "tag_red2": "melee",
     "red3": "frenzy_[action]",
     "tag_red3": "melee",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/08/LilNed.png"
   },
   {
@@ -7257,6 +7586,7 @@
     "tag_red2": "",
     "red3": "spellcaster",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/Malleus.png"
   },
   {
@@ -7279,6 +7609,7 @@
     "tag_red2": "combat",
     "red3": "jump",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/Mila.png"
   },
   {
@@ -7301,6 +7632,7 @@
     "tag_red2": "magic",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b5/Moira.png"
   },
   {
@@ -7323,6 +7655,7 @@
     "tag_red2": "",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d5/Myriam.png"
   },
   {
@@ -7345,6 +7678,7 @@
     "tag_red2": "melee",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/74/OstaraMassiveDarkness.png"
   },
   {
@@ -7367,6 +7701,7 @@
     "tag_red2": "",
     "red3": "zombie_link",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/db/Owen.png"
   },
   {
@@ -7389,6 +7724,7 @@
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
     "tag_red3": "walker",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/fd/Sarah.png"
   },
   {
@@ -7411,6 +7747,7 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/ee/Sibyl.png"
   },
   {
@@ -7433,6 +7770,7 @@
     "tag_red2": "melee",
     "red3": "plus_1_die_[action]",
     "tag_red3": "melee",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f4/Sicarius.png"
   },
   {
@@ -7455,6 +7793,7 @@
     "tag_red2": "combat",
     "red3": "taunt",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/e/e8/Siegfried.png"
   },
   {
@@ -7477,6 +7816,7 @@
     "tag_red2": "melee",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/76/Silence.png"
   },
   {
@@ -7499,6 +7839,7 @@
     "tag_red2": "combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/d1/Sylvan.png"
   },
   {
@@ -7521,6 +7862,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_roll_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/3/3f/Valerie.png"
   },
   {
@@ -7543,6 +7885,7 @@
     "tag_red2": "combat",
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
+    "role": "melee; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/1f/Victoria.png"
   },
   {
@@ -7565,6 +7908,7 @@
     "tag_red2": "move",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/44/Whisper.png"
   },
   {
@@ -7587,6 +7931,7 @@
     "tag_red2": "",
     "red3": "iron_hide",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4a/Zoe.png"
   },
   {
@@ -7609,6 +7954,7 @@
     "tag_red2": "",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/Berko.png"
   },
   {
@@ -7631,6 +7977,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/Cassiel.png"
   },
   {
@@ -7653,6 +8000,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c1/Daisy.png"
   },
   {
@@ -7660,21 +8008,22 @@
     "name": "Dylan",
     "set": "Massive Darkness 2 Crossover Pack",
     "body": "any_dagger",
-    "blue1": "",
+    "blue1": "lucky",
     "tag_blue1": "",
     "blue2": "",
     "tag_blue2": "",
-    "yellow": "",
-    "orange1": "",
-    "tag_orange1": "",
-    "orange2": "",
-    "tag_orange2": "",
-    "red1": "",
+    "yellow": "plus_1_action",
+    "orange1": "plus_1_free_[action]_action",
+    "tag_orange1": "magic",
+    "orange2": "plus_1_free_[action]_action",
+    "tag_orange2": "melee",
+    "red1": "plus_1_action",
     "tag_red1": "",
-    "red2": "",
-    "tag_red2": "",
-    "red3": "",
+    "red2": "plus_1_damage_[action]",
+    "tag_red2": "melee",
+    "red3": "shove",
     "tag_red3": "",
+    "role": "melee; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/72/Dylan.png"
   },
   {
@@ -7697,6 +8046,7 @@
     "tag_red2": "magic",
     "red3": "two_zones_move",
     "tag_red3": "",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/c7/Ego.png"
   },
   {
@@ -7719,6 +8069,7 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/ff/FatherCorvus.png"
   },
   {
@@ -7741,6 +8092,7 @@
     "tag_red2": "",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/05/Feydra.png"
   },
   {
@@ -7763,6 +8115,7 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/68/Gera.png"
   },
   {
@@ -7785,6 +8138,7 @@
     "tag_red2": "",
     "red3": "reaper_[action]",
     "tag_red3": "combat",
+    "role": "melee",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/81/Gheta.png"
   },
   {
@@ -7807,6 +8161,7 @@
     "tag_red2": "combat",
     "red3": "ironclad_[zombie]",
     "tag_red3": "brute",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/7d/Harin.png"
   },
   {
@@ -7829,6 +8184,7 @@
     "tag_red2": "melee",
     "red3": "ironclad_[zombie]",
     "tag_red3": "runner",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a7/Harriet.png"
   },
   {
@@ -7851,6 +8207,7 @@
     "tag_red2": "magic",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "melee",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/6/6b/Irk.png"
   },
   {
@@ -7873,6 +8230,7 @@
     "tag_red2": "combat",
     "red3": "shove",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a5/Ivan.png"
   },
   {
@@ -7895,6 +8253,7 @@
     "tag_red2": "move",
     "red3": "ironclad_[zombie]",
     "tag_red3": "walker",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/f1/Jebediah.png"
   },
   {
@@ -7917,6 +8276,7 @@
     "tag_red2": "",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "melee; ranged; magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/c/cc/Kaylee.png"
   },
   {
@@ -7939,6 +8299,7 @@
     "tag_red2": "walker",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee; ranged; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/4/45/Lyn.png"
   },
   {
@@ -7961,6 +8322,7 @@
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
     "tag_red3": "abomination",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/b/b8/Mathrin.png"
   },
   {
@@ -7983,6 +8345,7 @@
     "tag_red2": "melee",
     "red3": "reaper_[action]",
     "tag_red3": "melee",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/Mist.png"
   },
   {
@@ -8005,6 +8368,7 @@
     "tag_red2": "abomination",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/1/15/Mortemyr.png"
   },
   {
@@ -8027,6 +8391,7 @@
     "tag_red2": "combat",
     "red3": "slippery",
     "tag_red3": "",
+    "role": "ranged",
     "image": "https://static.wikia.nocookie.net/zombicide/images/d/db/Nahias.png"
   },
   {
@@ -8049,6 +8414,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "ranged",
+    "role": "melee; ranged; magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/75/Riya.png"
   },
   {
@@ -8071,6 +8437,7 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "search_plus_1_card",
     "tag_red3": "",
+    "role": "support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/a0/Ryff.png"
   },
   {
@@ -8093,6 +8460,7 @@
     "tag_red2": "melee",
     "red3": "regeneration",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ad/SirRonen.png"
   },
   {
@@ -8115,6 +8483,7 @@
     "tag_red2": "plus_1_die_[action]:combat",
     "red3": "hit_run",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/a/ab/ThaliaMD.png"
   },
   {
@@ -8137,6 +8506,7 @@
     "tag_red2": "magic",
     "red3": "ironclad_[zombie]",
     "tag_red3": "runner",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/8/89/Valdis.png"
   },
   {
@@ -8159,6 +8529,7 @@
     "tag_red2": "",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "melee; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/5/59/VictorMD.png"
   },
   {
@@ -8181,6 +8552,7 @@
     "tag_red2": "walker_runner",
     "red3": "super_strength",
     "tag_red3": "",
+    "role": "magic; support",
     "image": "https://static.wikia.nocookie.net/zombicide/images/7/75/YgraineMD.png"
   },
   {
@@ -8203,6 +8575,7 @@
     "tag_red2": "combat",
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "magic",
+    "role": "magic",
     "image": "https://static.wikia.nocookie.net/zombicide/images/f/fe/Zuri.png"
   }
 ]

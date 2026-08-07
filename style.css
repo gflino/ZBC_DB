@@ -712,3 +712,84 @@ header {
 .hidden {
     display: none !important;
 }
+/* ==========================================
+   FILTROS DINÂMICOS (SOBREVIVENTES, INIMIGOS, EQUIPAMENTOS)
+   ========================================== */
+.filtro-section {
+    margin-bottom: 15px;
+}
+
+.filtro-linha {
+    margin-bottom: 12px;
+}
+
+.filtro-linha:last-child {
+    margin-bottom: 0;
+}
+
+.filtro-label {
+    display: block;
+    font-size: 0.85em;
+    color: #9e9ea8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.filtro-container {
+    display: flex;
+    flex-wrap: wrap; /* Esta é a mágica que joga os botões para a linha de baixo */
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+/* Você pode apagar as regras .filtro-container::-webkit-scrollbar que estavam aqui, 
+   pois como não há mais barra de rolagem, elas não são mais necessárias! */
+
+.btn-filtro {
+    background-color: #2d2d34;
+    color: #e1e1e6;
+    border: 1px solid #383840;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-filtro:hover {
+    background-color: #44444c;
+}
+
+.btn-filtro.ativo {
+    background-color: #ff4747;
+    color: #ffffff;
+    border-color: #ff4747;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(255, 71, 71, 0.4);
+}
+/* ==========================================
+   TELA DE HABILIDADES (CARDS DE RESULTADO)
+   ========================================== */
+.card-foco-habilidade {
+    background-color: #1a1a1e;
+    border: 1px solid #2d2d34;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.card-foco-habilidade h3 {
+    margin: 0 0 4px 0;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.desc-foco {
+    margin-top: 10px;
+    color: #d1d1d6;
+    line-height: 1.5;
+    font-size: 0.95em;
+}

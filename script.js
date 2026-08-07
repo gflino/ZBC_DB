@@ -1,6 +1,6 @@
 // ==========================================
 // 1. BANCOS DE DADOS E ESTADO GERAL
-// ========================================== 
+// ==========================================
 let habilidadesBase = [];
 let sobreviventesBase = [];
 let inimigosBase = [];
@@ -9,6 +9,12 @@ let auxBase = [];
 let priorityBpGhBase = [];
 let priorityWdBase = [];
 let idiomaAtual = 'pt';
+// Variáveis Globais de Filtros
+let roleFiltroAtivo = '';
+let classFiltroInimigo = '';
+let deckFiltroEquip = '';
+let classFiltroEquip = '';
+let typeFiltroEquip = '';
 
 // Dicionário Global da Interface do Usuário (i18n)
 const i18nUI = {
@@ -106,6 +112,7 @@ const ordemCaixasPreferida = [
         "White Death",
         "Eternal Empire",
         "Frozen Fortress",
+        "TMNT Timecrash",
         "Crossfire Pack",
         "Divine Beasts",
         "Berserker Walkers",
@@ -114,11 +121,10 @@ const ordemCaixasPreferida = [
         "Virtues of Bushido",
         "Warlords of the Middle Kingdom",
         "Warlords of the Rising Sun",
-        "Chang' E and Hou Yi Box",
-        "TMNT Timecrash",
-        "TMNT Bebop & Rocksteady",
+        "Chang' E and Hou Yi Box",   
         "Jennika Box",
-        "Usagi Yojimbo Box"
+        "Usagi Yojimbo Box",
+        "TMNT Bebop & Rocksteady"
     ];
 
 Promise.all([
@@ -129,6 +135,7 @@ Promise.all([
     fetch('aux.json').then(res => res.json()).catch(() => []),
     fetch('prioritybpgh.json').then(res => res.json()).catch(() => []),
     fetch('prioritywd.json').then(res => res.json()).catch(() => [])
+// NO FINAL DO Promise.all
 ]).then(results => {
     habilidadesBase = results[0];
     sobreviventesBase = results[1];
@@ -139,14 +146,20 @@ Promise.all([
     priorityWdBase = results[6];
     
     configurarBuscas();
+    renderizarFiltrosRole();        // Sobreviventes
+    renderizarFiltrosInimigos();    // Inimigos
+    renderizarFiltrosEquipamentos(); // Equipamentos
+    
     atualizarIdiomaInterface();
     renderizarTabelasPrioridade(); 
     mudarTela('home-view');
 });
 
+
 // ==========================================
 // 2. SISTEMA DE NAVEGAÇÃO, MENU E IDIOMA
 // ==========================================
+
 function toggleMenu() {
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('overlay');
@@ -185,7 +198,9 @@ function limparTelasEBuscas() {
     });
 }
 
-function mudarTela(telaId) {
+// === NOVA FUNÇÃO ATUALIZADA ===
+// Adicionamos o parâmetro 'registrarNoHistorico' (padrão: true)
+function mudarTela(telaId, registrarNoHistorico = true) {
     limparTelasEBuscas();
     
     const sidebar = document.getElementById('sidebar');
@@ -199,27 +214,44 @@ function mudarTela(telaId) {
     
     document.getElementById(telaId).classList.remove('hidden');
 
-    // Se abrir a tela de prioridade, já desenha a tabela na hora
+    // Mágica para o celular: registra a mudança no histórico do navegador
+    if (registrarNoHistorico) {
+        history.pushState({ tela: telaId }, '');
+    }
+
     if (telaId === 'priority-view') {
         renderizarTabelasPrioridade();
     }
 }
+
+// O "Ouvinte" do botão físico de Voltar do celular (ou seta do navegador do PC)
+window.addEventListener('popstate', (event) => {
+    // Se o navegador salvou o estado (nome da tela), recarrega aquela tela
+    if (event.state && event.state.tela) {
+        // Passamos 'false' para não registrar a mesma tela duas vezes no histórico
+        mudarTela(event.state.tela, false); 
+    } else {
+        // Ponto de segurança: se voltar tudo, retorna para a tela inicial
+        mudarTela('home-view', false);
+    }
+});
 
 
 // ==========================================
 // SISTEMA DE IDIOMA E INTERFACE
 // ==========================================
 
+// NA FUNÇÃO DE MUDAR IDIOMA (Bloco 2)
 function mudarIdiomaSelecionado(novoIdioma) {
     idiomaAtual = novoIdioma;
     
-    // Executa a tradução de todo o site
     atualizarIdiomaInterface();
-    
-    // Remonta a tabela de prioridades no novo idioma
     renderizarTabelasPrioridade();
     
-    // Limpa as pesquisas antigas para evitar bilinguismo nas fichas abertas
+    renderizarFiltrosRole();
+    renderizarFiltrosInimigos();
+    renderizarFiltrosEquipamentos();
+    
     limparTelasEBuscas();
 }
 
@@ -398,22 +430,62 @@ function criarCardHabilidadeCompleto(skill) {
 // ==========================================
 // 5. SOBREVIVENTES
 // ==========================================
+
+function renderizarFiltrosRole() {
+    const view = document.getElementById('characters-view');
+    if (!view) return;
+    let section = document.getElementById('role-filter-section');
+    
+    if (!section) {
+        section = document.createElement('div');
+        section.id = 'role-filter-section';
+        section.className = 'filtro-section';
+        const controls = view.querySelector('.character-controls');
+        view.insertBefore(section, controls);
+    }
+
+    const labelRole = traduzirTag('role') || (idiomaAtual === 'pt' ? 'Função' : 'Role');
+    const todosLabel = idiomaAtual === 'pt' ? 'Todos' : 'All';
+
+    const todasRoles = [];
+    sobreviventesBase.forEach(s => {
+        if (s.role && String(s.role).trim() !== '') {
+            todasRoles.push(...String(s.role).split(';').map(r => r.trim()).filter(Boolean));
+        }
+    });
+    const rolesUnicas = [...new Set(todasRoles)].sort();
+
+    let botoesHtml = `
+        <div class="filtro-linha">
+            <span class="filtro-label">${labelRole}:</span>
+            <div class="filtro-container">
+                <button class="btn-filtro ${roleFiltroAtivo === '' ? 'ativo' : ''}" onclick="selecionarFiltroRole('')">${todosLabel}</button>
+    `;
+
+    rolesUnicas.forEach(roleCrua => {
+        botoesHtml += `<button class="btn-filtro ${roleFiltroAtivo === roleCrua ? 'ativo' : ''}" onclick="selecionarFiltroRole('${roleCrua}')">${traduzirTag(roleCrua)}</button>`;
+    });
+
+    botoesHtml += `</div></div>`;
+    section.innerHTML = botoesHtml;
+}
+
+function selecionarFiltroRole(roleCrua) {
+    roleFiltroAtivo = roleCrua;
+    renderizarFiltrosRole();
+    const divResultados = document.getElementById('characters-results-foco');
+    if (divResultados && divResultados.innerHTML.trim() !== '') listarPorCaixas();
+}
+
 function sugerirPersonagens(termo) {
     const dropdown = document.getElementById('characters-dropdown');
     dropdown.innerHTML = '';
-
-    if (!termo.trim()) {
-        dropdown.classList.add('hidden');
-        return;
-    }
-
+    if (!termo.trim()) { dropdown.classList.add('hidden'); return; }
     dropdown.classList.remove('hidden');
     const termoMin = termo.toLowerCase();
 
-    // 1. Busca Caixas (Sets) que batem com o termo
     const caixasUnicas = [...new Set(sobreviventesBase.map(s => s.set))];
     const caixasFiltradas = caixasUnicas.filter(c => c && c.toLowerCase().includes(termoMin));
-
     caixasFiltradas.forEach(caixa => {
         const itemBox = document.createElement('div');
         itemBox.className = 'item-sugestao-lista destaque-caixa';
@@ -426,14 +498,17 @@ function sugerirPersonagens(termo) {
         dropdown.appendChild(itemBox);
     });
 
-    // 2. Busca Personagens que batem com o termo
-    const filtrados = sobreviventesBase.filter(s => s.name.toLowerCase().includes(termoMin));
+    const filtrados = sobreviventesBase.filter(s => {
+        if (roleFiltroAtivo !== '') {
+            if (!s.role || !String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo)) return false;
+        }
+        return s.name.toLowerCase().includes(termoMin);
+    });
 
     filtrados.forEach(s => {
         const item = document.createElement('div');
         item.className = 'item-sugestao-lista';
-        item.innerHTML = `<strong>${s.name}</strong> <span class="sub-sugestao">${s.set}</span>`;
-        
+        item.innerHTML = `<strong>${s.name}</strong> <span class="sub-sugestao">${s.set ? s.set.replace(/;/g, ' / ') : ''}</span>`;
         item.onclick = () => {
             renderizarFichaPersonagem(s);
             dropdown.classList.add('hidden');
@@ -443,16 +518,25 @@ function sugerirPersonagens(termo) {
     });
 }
 
-// Renderiza todos os personagens de uma caixa (set) específica
 function listarPersonagensDaCaixa(caixaNome) {
     const divResultados = document.getElementById('characters-results-foco');
     divResultados.innerHTML = '';
-
     const boxDiv = document.createElement('div');
     boxDiv.className = 'bloco-caixa';
     boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixaNome}</h3>`;
     
-    const lista = sobreviventesBase.filter(s => s.set === caixaNome);
+    let lista = sobreviventesBase.filter(s => {
+        if (!s.set || !s.set.includes(caixaNome)) return false;
+        if (roleFiltroAtivo !== '') {
+            if (!s.role || !String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo)) return false;
+        }
+        return true;
+    });
+
+    if(lista.length === 0) {
+        boxDiv.innerHTML += `<div class="item-sugestao-lista" style="color:#9e9ea8; text-align:center; font-style:italic;">Nenhum personagem correspondente.</div>`;
+    }
+
     lista.forEach(s => {
         const li = document.createElement('div');
         li.className = 'item-sugestao-lista';
@@ -460,20 +544,21 @@ function listarPersonagensDaCaixa(caixaNome) {
         li.onclick = () => renderizarFichaPersonagem(s);
         boxDiv.appendChild(li);
     });
-    
     divResultados.appendChild(boxDiv);
 }
 
 function sortearPersonagem() {
-    if (sobreviventesBase.length === 0) return;
+    const listaFiltrada = sobreviventesBase.filter(s => {
+        if (roleFiltroAtivo === '') return true;
+        if (!s.role) return false;
+        return String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo);
+    });
+    if (listaFiltrada.length === 0) return;
     document.getElementById('characters-dropdown').classList.add('hidden');
-    const aleatorio = Math.floor(Math.random() * sobreviventesBase.length);
-    renderizarFichaPersonagem(sobreviventesBase[aleatorio]);
+    const aleatorio = Math.floor(Math.random() * listaFiltrada.length);
+    renderizarFichaPersonagem(listaFiltrada[aleatorio]);
 }
 
-// ==========================================
-// FUNÇÃO DE LISTAGEM - SOBREVIVENTES
-// ==========================================
 function listarPorCaixas() {
     const divResultados = document.getElementById('characters-results-foco');
     const dropdown = document.getElementById('characters-dropdown');
@@ -483,30 +568,29 @@ function listarPorCaixas() {
     divResultados.innerHTML = '';
     const porCaixa = {};
 
-    sobreviventesBase.forEach(s => {
+    const listaFiltrada = sobreviventesBase.filter(s => {
+        if (roleFiltroAtivo === '') return true;
+        if (!s.role) return false;
+        return String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo);
+    });
+
+    listaFiltrada.forEach(s => {
         if (!s.set || String(s.set).trim() === '') {
             const caixaPadrao = 'Sem Caixa';
             if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
             porCaixa[caixaPadrao].push(s);
             return;
         }
-
-        // Separa, limpa espaços em branco e ignora vazios
         const caixasDoItem = String(s.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
-
         caixasDoItem.forEach(caixa => {
-            if (!porCaixa[caixa]) {
-                porCaixa[caixa] = [];
-            }
+            if (!porCaixa[caixa]) porCaixa[caixa] = [];
             porCaixa[caixa].push(s);
         });
     });
 
-    // Ordenação blindada
     const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
-        const indexA = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === a.toLowerCase());
-        const indexB = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === b.toLowerCase());
-
+        const indexA = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === a.toLowerCase());
+        const indexB = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === b.toLowerCase());
         if (indexA !== -1 && indexB !== -1) return indexA - indexB;
         if (indexA !== -1) return -1;
         if (indexB !== -1) return 1;
@@ -515,7 +599,6 @@ function listarPorCaixas() {
 
     caixasOrdenadas.forEach(caixa => {
         if (porCaixa[caixa].length === 0) return;
-
         const boxDiv = document.createElement('div');
         boxDiv.className = 'bloco-caixa';
         boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
@@ -541,30 +624,21 @@ function renderizarFichaPersonagem(sobrevivente) {
     const divResultados = document.getElementById('characters-results-foco');
     if (!divResultados) return;
     
-    // 1. Título e Caixas
     const nome = (idiomaAtual === 'pt' ? sobrevivente.name_pt : sobrevivente.name_en) || sobrevivente.name;
     const caixas = sobrevivente.set ? sobrevivente.set.replace(/;/g, ' / ') : '';
 
-    // 2. Injeção do Body (Equipamento Inicial) - Centralizado e com tradução dinâmica
     let bodyHtml = '';
     if (sobrevivente.body && sobrevivente.body.trim() !== '') {
         const tituloBody = traduzirTag('body');
         const termoBody = sobrevivente.body.trim().toLowerCase();
-        
         const equip = equipamentosBase.find(e => 
             (e.id && e.id.toLowerCase() === termoBody) ||
             (e.name_en && e.name_en.toLowerCase() === termoBody) ||
             (e.name_pt && e.name_pt.toLowerCase() === termoBody) ||
             (e.name && e.name.toLowerCase() === termoBody)
         );
+        let equipamentoBody = equip ? (idiomaAtual === 'pt' ? (equip.name_pt || equip.name) : (equip.name_en || equip.name)) : traduzirTag(sobrevivente.body);
         
-        let equipamentoBody = sobrevivente.body;
-        if (equip) {
-            equipamentoBody = idiomaAtual === 'pt' ? (equip.name_pt || equip.name) : (equip.name_en || equip.name);
-        } else {
-            equipamentoBody = traduzirTag(sobrevivente.body);
-        }
-
         bodyHtml = `
             <div style="text-align: center; margin-top: 5px; margin-bottom: 15px; font-size: 0.9em;">
                 <span style="color: #4da6ff; text-transform: uppercase; letter-spacing: 1px; margin-right: 5px;">${tituloBody}:</span>
@@ -573,7 +647,6 @@ function renderizarFichaPersonagem(sobrevivente) {
         `;
     }
 
-    // 3. Injeção Condicional da Imagem - Centralizada
     let imagemHtml = '';
     if (sobrevivente.image && sobrevivente.image.trim() !== '') {
         imagemHtml = `
@@ -583,7 +656,16 @@ function renderizarFichaPersonagem(sobrevivente) {
         `;
     }
 
-    // 4. Montagem do Cabeçalho
+    let roleHtml = '';
+    if (sobrevivente.role && sobrevivente.role.trim() !== '') {
+        const rolesFormatados = String(sobrevivente.role).split(';').map(r => traduzirTag(r.trim())).filter(Boolean).join(' <span style="color: #ff4747;">|</span> '); 
+        roleHtml = `
+            <div style="text-align: center; margin-bottom: 15px; font-size: 0.9em; font-weight: bold; color: #d1d1d6; text-transform: uppercase; letter-spacing: 1px;">
+                ${rolesFormatados}
+            </div>
+        `;
+    }
+
     divResultados.innerHTML = `
         <div class="ficha-sobrevivente">
             <div class="ficha-cabecalho" style="text-align: center;">
@@ -591,11 +673,11 @@ function renderizarFichaPersonagem(sobrevivente) {
             </div>
             ${bodyHtml}
             ${imagemHtml}
+            ${roleHtml}
             <div id="ficha-niveis" class="niveis-container"></div>
         </div>
     `;
 
-    // 5. Motor Robusto de Habilidades (Procura por chaves com ou sem números)
     const containerNiveis = document.getElementById('ficha-niveis');
     const titulosNiveis = {
         pt: { azul: 'Azul', amarelo: 'Amarelo', laranja: 'Laranja', vermelho: 'Vermelho' },
@@ -623,7 +705,6 @@ function renderizarFichaPersonagem(sobrevivente) {
 
     estrutura.forEach(bloco => {
         if (bloco.slots.length === 0) return;
-
         bloco.slots.forEach(slot => {
             const hab = obterHabilidadeFormatada(slot.id, slot.tag);
             if (hab) {
@@ -642,24 +723,70 @@ function renderizarFichaPersonagem(sobrevivente) {
             }
         });
     });
+    divResultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
 // ==========================================
 // 6. INIMIGOS
 // ==========================================
 
+function renderizarFiltrosInimigos() {
+    const view = document.getElementById('enemies-view');
+    if (!view) return;
+    let section = document.getElementById('enemy-filter-section');
+    
+    if (!section) {
+        section = document.createElement('div');
+        section.id = 'enemy-filter-section';
+        section.className = 'filtro-section';
+        const controls = view.querySelector('.character-controls');
+        view.insertBefore(section, controls);
+    }
+
+    const labelClass = traduzirTag('class') || (idiomaAtual === 'pt' ? 'Classe' : 'Class');
+    const todosLabel = idiomaAtual === 'pt' ? 'Todos' : 'All';
+
+    const todasClasses = [];
+    inimigosBase.forEach(i => {
+        if (i.class && String(i.class).trim() !== '') {
+            todasClasses.push(...String(i.class).split(';').map(c => c.trim()).filter(Boolean));
+        }
+    });
+    const classesUnicas = [...new Set(todasClasses)].sort();
+
+    let botoesHtml = `
+        <div class="filtro-linha">
+            <span class="filtro-label">${labelClass}:</span>
+            <div class="filtro-container">
+                <button class="btn-filtro ${classFiltroInimigo === '' ? 'ativo' : ''}" onclick="selecionarFiltroInimigo('')">${todosLabel}</button>
+    `;
+
+    classesUnicas.forEach(c => {
+        botoesHtml += `<button class="btn-filtro ${classFiltroInimigo === c ? 'ativo' : ''}" onclick="selecionarFiltroInimigo('${c}')">${traduzirTag(c)}</button>`;
+    });
+
+    botoesHtml += `</div></div>`;
+    section.innerHTML = botoesHtml;
+}
+
+function selecionarFiltroInimigo(classe) {
+    classFiltroInimigo = classe;
+    renderizarFiltrosInimigos();
+    const divResultados = document.getElementById('enemies-results-foco');
+    if (divResultados && divResultados.innerHTML.trim() !== '') listarInimigosPorCaixas();
+}
+
 function buscarInimigos(termo) {
     const dropdown = document.getElementById('enemies-dropdown');
     dropdown.innerHTML = '';
-    
-    if (!termo.trim()) {
-        dropdown.classList.add('hidden');
-        return;
-    }
-
+    if (!termo.trim()) { dropdown.classList.add('hidden'); return; }
     dropdown.classList.remove('hidden');
     const termoMin = termo.toLowerCase();
     
     const filtrados = inimigosBase.filter(i => {
+        if (classFiltroInimigo !== '') {
+            if (!i.class || !String(i.class).split(';').map(c => c.trim()).includes(classFiltroInimigo)) return false;
+        }
         const pt = (i.name_pt || "").toLowerCase();
         const en = (i.name_en || "").toLowerCase();
         return pt.includes(termoMin) || en.includes(termoMin);
@@ -667,13 +794,10 @@ function buscarInimigos(termo) {
 
     filtrados.forEach(inimigo => {
         const nomeVisivel = idiomaAtual === 'pt' ? inimigo.name_pt : inimigo.name_en;
-        // Substitui o ; por / na sugestão do autocomplete
         const sub = inimigo.set ? inimigo.set.replace(/;/g, ' / ') : '';
-
         const item = document.createElement('div');
         item.className = 'item-sugestao-lista';
         item.innerHTML = `<strong>${nomeVisivel}</strong> <span class="sub-sugestao">${sub}</span>`;
-        
         item.onclick = () => {
             renderizarFichaInimigo(inimigo);
             dropdown.classList.add('hidden');
@@ -683,20 +807,75 @@ function buscarInimigos(termo) {
     });
 }
 
+function listarInimigosPorCaixas() {
+    const divResultados = document.getElementById('enemies-results-foco');
+    const dropdown = document.getElementById('enemies-dropdown');
+    if (dropdown) dropdown.classList.add('hidden');
+    if (!divResultados) return;
+    divResultados.innerHTML = '';
+    const porCaixa = {};
+    
+    const listaFiltrada = inimigosBase.filter(i => {
+        if (classFiltroInimigo === '') return true;
+        if (!i.class) return false;
+        return String(i.class).split(';').map(c => c.trim()).includes(classFiltroInimigo);
+    });
+
+    listaFiltrada.forEach(i => {
+        if (!i.set || String(i.set).trim() === '') {
+            const caixaPadrao = 'Sem Caixa';
+            if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
+            porCaixa[caixaPadrao].push(i);
+            return;
+        }
+        const caixasDoItem = String(i.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
+        caixasDoItem.forEach(caixa => {
+            if (!porCaixa[caixa]) porCaixa[caixa] = [];
+            porCaixa[caixa].push(i);
+        });
+    });
+
+    const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
+        const indexA = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === a.toLowerCase());
+        const indexB = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === b.toLowerCase());
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.localeCompare(b);
+    });
+
+    caixasOrdenadas.forEach(caixa => {
+        if (porCaixa[caixa].length === 0) return;
+        const boxDiv = document.createElement('div');
+        boxDiv.className = 'bloco-caixa';
+        boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
+        
+        const listaInimigos = porCaixa[caixa].sort((a, b) => {
+            const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
+            const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
+            return nomeA.localeCompare(nomeB);
+        });
+
+        listaInimigos.forEach(i => {
+            const li = document.createElement('div');
+            li.className = 'item-sugestao-lista';
+            li.textContent = idiomaAtual === 'pt' ? i.name_pt : i.name_en;
+            li.onclick = () => renderizarFichaInimigo(i);
+            boxDiv.appendChild(li);
+        });
+        divResultados.appendChild(boxDiv);
+    });
+}
+
 function renderizarFichaInimigo(inimigo) {
     const divResultados = document.getElementById('enemies-results-foco'); 
     if (!divResultados) return;
 
     const nome = idiomaAtual === 'pt' ? inimigo.name_pt : inimigo.name_en;
     const regras = idiomaAtual === 'pt' ? inimigo.rules_pt : inimigo.rules_en;
-    
-    // Substitui o ; por / nas caixas na exibição da ficha
     const caixasFormatadas = inimigo.set ? inimigo.set.replace(/;/g, ' / ') : '';
-
-    // Traduz a classe buscando no aux.json (suporta classes duplas separadas por ponto e vírgula)
     const classFormatada = inimigo.class ? String(inimigo.class).split(';').map(c => traduzirTag(c.trim())).join(' / ') : '';
 
-    // Utiliza o dicionário inteligente (se disponível) ou fallback para os status
     const labels = {
         acoes: traduzirTag('actions') || (idiomaAtual === 'pt' ? 'Ações' : 'Actions'),
         alcance: traduzirTag('range') || (idiomaAtual === 'pt' ? 'Alcance' : 'Range'),
@@ -735,70 +914,7 @@ function renderizarFichaInimigo(inimigo) {
             </div>
         </div>
     `;
-}
-
-// ==========================================
-// FUNÇÃO DE LISTAGEM - INIMIGOS
-// ==========================================
-function listarInimigosPorCaixas() {
-    const divResultados = document.getElementById('enemies-results-foco');
-    const dropdown = document.getElementById('enemies-dropdown');
-    if (dropdown) dropdown.classList.add('hidden');
-    if (!divResultados) return;
-    
-    divResultados.innerHTML = '';
-    const porCaixa = {};
-    
-    inimigosBase.forEach(i => {
-        if (!i.set || String(i.set).trim() === '') {
-            const caixaPadrao = 'Sem Caixa';
-            if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
-            porCaixa[caixaPadrao].push(i);
-            return;
-        }
-
-        const caixasDoItem = String(i.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
-
-        caixasDoItem.forEach(caixa => {
-            if (!porCaixa[caixa]) {
-                porCaixa[caixa] = [];
-            }
-            porCaixa[caixa].push(i);
-        });
-    });
-
-    const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
-        const indexA = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === a.toLowerCase());
-        const indexB = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === b.toLowerCase());
-
-        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
-        if (indexA !== -1) return -1;
-        if (indexB !== -1) return 1;
-        return a.localeCompare(b);
-    });
-
-    caixasOrdenadas.forEach(caixa => {
-        if (porCaixa[caixa].length === 0) return;
-
-        const boxDiv = document.createElement('div');
-        boxDiv.className = 'bloco-caixa';
-        boxDiv.innerHTML = `<h3 style="color:#ff4747; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
-        
-        const listaInimigos = porCaixa[caixa].sort((a, b) => {
-            const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
-            const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
-            return nomeA.localeCompare(nomeB);
-        });
-
-        listaInimigos.forEach(i => {
-            const li = document.createElement('div');
-            li.className = 'item-sugestao-lista';
-            li.textContent = idiomaAtual === 'pt' ? i.name_pt : i.name_en;
-            li.onclick = () => renderizarFichaInimigo(i);
-            boxDiv.appendChild(li);
-        });
-        divResultados.appendChild(boxDiv);
-    });
+    divResultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 
@@ -874,21 +990,90 @@ function renderizarTabelasPrioridade() {
 // 8. EQUIPAMENTOS
 // ==========================================
 
+function renderizarFiltrosEquipamentos() {
+    const view = document.getElementById('equipment-view');
+    if (!view) return;
+    let section = document.getElementById('equipment-filter-section');
+    
+    if (!section) {
+        section = document.createElement('div');
+        section.id = 'equipment-filter-section';
+        section.className = 'filtro-section';
+        const controls = view.querySelector('.character-controls');
+        view.insertBefore(section, controls);
+    }
+
+    const todosLabel = idiomaAtual === 'pt' ? 'Todos' : 'All';
+
+    // Helper para extrair valores únicos de um campo específico (ignorando itens invisíveis)
+    const extrairValores = (campo) => {
+        const valores = [];
+        equipamentosBase.forEach(e => {
+            if (e.visible !== undefined && String(e.visible).trim().toLowerCase() === 'false') return;
+            if (e[campo] && String(e[campo]).trim() !== '') {
+                valores.push(...String(e[campo]).split(';').map(x => x.trim()).filter(Boolean));
+            }
+        });
+        return [...new Set(valores)].sort();
+    };
+
+    const decks = extrairValores('deck');
+    const classes = extrairValores('class');
+    const types = extrairValores('type');
+
+    // Helper para criar uma linha de botões
+    const criarLinhaFiltro = (label, valores, filtroAtivo, tipoState) => {
+        if (valores.length === 0) return '';
+        let html = `
+            <div class="filtro-linha">
+                <span class="filtro-label">${traduzirTag(label) || label}:</span>
+                <div class="filtro-container">
+                    <button class="btn-filtro ${filtroAtivo === '' ? 'ativo' : ''}" onclick="selecionarFiltroEquipamento('${tipoState}', '')">${todosLabel}</button>
+        `;
+        valores.forEach(v => {
+            html += `<button class="btn-filtro ${filtroAtivo === v ? 'ativo' : ''}" onclick="selecionarFiltroEquipamento('${tipoState}', '${v}')">${traduzirTag(v)}</button>`;
+        });
+        html += `</div></div>`;
+        return html;
+    };
+
+    section.innerHTML = 
+        criarLinhaFiltro('deck', decks, deckFiltroEquip, 'deck') +
+        criarLinhaFiltro('class', classes, classFiltroEquip, 'class') +
+        criarLinhaFiltro('type', types, typeFiltroEquip, 'type');
+}
+
+function selecionarFiltroEquipamento(tipo, valor) {
+    if (tipo === 'deck') deckFiltroEquip = valor;
+    if (tipo === 'class') classFiltroEquip = valor;
+    if (tipo === 'type') typeFiltroEquip = valor;
+    
+    renderizarFiltrosEquipamentos();
+    const divResultados = document.getElementById('equipment-results-foco');
+    if (divResultados && divResultados.innerHTML.trim() !== '') listarEquipamentosPorCaixas();
+}
+
+// Verifica se um item passa no teste de um filtro específico
+const verificaFiltroEquipamento = (valorFiltro, campoItem) => {
+    if (valorFiltro === '') return true; // Se não tem filtro selecionado, passa livre.
+    if (!campoItem) return false; // Se tem filtro ativo mas o item não tem esse campo, bloqueia.
+    return String(campoItem).split(';').map(x => x.trim()).includes(valorFiltro);
+};
+
 function buscarEquipamentos(termo) {
     const dropdown = document.getElementById('equipment-dropdown');
     dropdown.innerHTML = '';
-    
-    if (!termo.trim()) {
-        dropdown.classList.add('hidden');
-        return;
-    }
-
+    if (!termo.trim()) { dropdown.classList.add('hidden'); return; }
     dropdown.classList.remove('hidden');
     const termoMin = termo.toLowerCase();
     
     const filtrados = equipamentosBase.filter(e => {
-        // Filtro Blindado: converte qualquer formato de 'false' para ocultar a entrada
         if (e.visible !== undefined && String(e.visible).trim().toLowerCase() === 'false') return false;
+        
+        // Aplica os três filtros combinados
+        if (!verificaFiltroEquipamento(deckFiltroEquip, e.deck)) return false;
+        if (!verificaFiltroEquipamento(classFiltroEquip, e.class)) return false;
+        if (!verificaFiltroEquipamento(typeFiltroEquip, e.type)) return false;
 
         const pt = (e.name_pt || "").toLowerCase();
         const en = (e.name_en || "").toLowerCase();
@@ -898,11 +1083,9 @@ function buscarEquipamentos(termo) {
     filtrados.forEach(equip => {
         const nomeVisivel = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
         const sub = equip.set ? equip.set.replace(/;/g, ' / ') : '';
-
         const item = document.createElement('div');
         item.className = 'item-sugestao-lista';
         item.innerHTML = `<strong>${nomeVisivel}</strong> <span class="sub-sugestao">${sub}</span>`;
-        
         item.onclick = () => {
             renderizarFichaEquipamento(equip);
             dropdown.classList.add('hidden');
@@ -912,115 +1095,6 @@ function buscarEquipamentos(termo) {
     });
 }
 
-function renderizarFichaEquipamento(equip) {
-    const divResultados = document.getElementById('equipment-results-foco'); 
-    if (!divResultados) return;
-
-    const nome = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
-    const texto = idiomaAtual === 'pt' ? equip.effect_pt : equip.effect_en;
-    const setFormatado = equip.set ? equip.set.replace(/;/g, ' / ') : ''; 
-
-    // 1. Helper Inteligente para Separar Atributos (Armas Mistas)
-    const formatarAtributoSplit = (valor, index) => {
-        if (valor === 0 || valor === '0') {
-            return index === 0 ? '0' : '-'; 
-        }
-        if (valor === undefined || valor === null || String(valor).trim() === '') return '-';
-        
-        const parts = String(valor).split(';');
-        if (parts.length > index) {
-            const part = parts[index].trim();
-            if (part === '0') return '0';
-            return part ? part : '-';
-        }
-        return '-';
-    };
-
-    // 2. Helper de Tradução Múltipla (Resolve o problema do "search;starter")
-    const traduzirMultiplos = (campo) => {
-        if (!campo || String(campo).trim() === '') return null;
-        // Corta por ;, traduz cada pedaço independentemente no aux.json e junta com /
-        return String(campo).split(';').map(tag => traduzirTag(tag.trim())).join(' / ');
-    };
-
-    // 3. Helper Tradutor para Atributos Secundários (Danger, Dual, etc)
-    const formatarETraduzir = (valor) => {
-        if (!valor || String(valor).trim() === '') return '-';
-        return String(valor).split(';').map(v => traduzirTag(v.trim())).join(' / ');
-    };
-
-    // Aplica a tradução múltipla corrigida para Deck, Classe e Tipo
-    const tagsEquipamento = [
-        traduzirMultiplos(equip.deck),
-        traduzirMultiplos(equip.class),
-        traduzirMultiplos(equip.type)
-    ].filter(Boolean).join(' | ');
-
-    let imagemHtml = '';
-    if (equip.image && equip.image.trim() !== '') {
-        imagemHtml = `
-            <div class="equipamento-imagem-container">
-                <img src="${equip.image}" alt="${nome}" class="equipamento-img" loading="lazy" onerror="this.style.display='none'">
-            </div>
-        `;
-    }
-    
-    // 4. Verificador de Armas Mistas (Checa se há ponto e vírgula nos atributos numéricos)
-    const hasSecondMode = (equip.range && String(equip.range).includes(';')) ||
-                          (equip.dice && String(equip.dice).includes(';')) ||
-                          (equip.accuracy && String(equip.accuracy).includes(';')) ||
-                          (equip.damage && String(equip.damage).includes(';'));
-
-    // 5. Constrói a 1ª Caixa de Combate
-    let statsHtml = `
-        <div class="equipamento-stats-grid">
-            <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributoSplit(equip.range, 0)}</span></div>
-            <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributoSplit(equip.dice, 0)}</span></div>
-            <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributoSplit(equip.accuracy, 0)}</span></div>
-            <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributoSplit(equip.damage, 0)}</span></div>
-        </div>
-    `;
-
-    // 6. Constrói a 2ª Caixa de Combate (apenas se for Arma Mista)
-    if (hasSecondMode) {
-        statsHtml += `
-        <div class="equipamento-stats-grid" style="margin-top: 8px;">
-            <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributoSplit(equip.range, 1)}</span></div>
-            <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributoSplit(equip.dice, 1)}</span></div>
-            <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributoSplit(equip.accuracy, 1)}</span></div>
-            <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributoSplit(equip.damage, 1)}</span></div>
-        </div>
-        `;
-    }
-    
-    // 7. Renderização Final do HTML
-    divResultados.innerHTML = `
-        <div class="ficha-equipamento">
-            <div class="equipamento-cabecalho">
-                <h2>${nome}</h2>
-                <div class="equipamento-set">${setFormatado}</div>
-                <div class="equipamento-tags">${tagsEquipamento}</div>
-            </div>
-            
-            ${imagemHtml}
-            
-            ${statsHtml}
-
-            <div class="equipamento-stats-grid">
-                <div class="stat-item"><span class="stat-label">${traduzirTag('danger')}</span><span class="stat-valor">${formatarETraduzir(equip.danger)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('dual')}</span><span class="stat-valor">${formatarETraduzir(equip.dual)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('noise')}</span><span class="stat-valor">${formatarETraduzir(equip.noise)}</span></div>
-                <div class="stat-item"><span class="stat-label">${traduzirTag('door')}</span><span class="stat-valor">${formatarETraduzir(equip.door)}</span></div>
-            </div>
-            
-            ${texto ? `<div class="equipamento-texto"><p>${texto}</p></div>` : ''}
-        </div>
-    `;
-}
-
-// ==========================================
-// FUNÇÃO DE LISTAGEM - EQUIPAMENTOS
-// ==========================================
 function listarEquipamentosPorCaixas() {
     const divResultados = document.getElementById('equipment-results-foco');
     const dropdown = document.getElementById('equipment-dropdown');
@@ -1030,30 +1104,34 @@ function listarEquipamentosPorCaixas() {
     divResultados.innerHTML = '';
     const porCaixa = {};
 
-    equipamentosBase.forEach(e => {
-        if (e.visible !== undefined && String(e.visible).trim().toLowerCase() === 'false') return;
+    const listaFiltrada = equipamentosBase.filter(e => {
+        if (e.visible !== undefined && String(e.visible).trim().toLowerCase() === 'false') return false;
+        
+        // Aplica os três filtros combinados
+        if (!verificaFiltroEquipamento(deckFiltroEquip, e.deck)) return false;
+        if (!verificaFiltroEquipamento(classFiltroEquip, e.class)) return false;
+        if (!verificaFiltroEquipamento(typeFiltroEquip, e.type)) return false;
+        
+        return true;
+    });
 
+    listaFiltrada.forEach(e => {
         if (!e.set || String(e.set).trim() === '') {
             const caixaPadrao = 'Sem Caixa';
             if (!porCaixa[caixaPadrao]) porCaixa[caixaPadrao] = [];
             porCaixa[caixaPadrao].push(e);
             return;
         }
-
         const caixasDoItem = String(e.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
-
         caixasDoItem.forEach(caixa => {
-            if (!porCaixa[caixa]) {
-                porCaixa[caixa] = [];
-            }
+            if (!porCaixa[caixa]) porCaixa[caixa] = [];
             porCaixa[caixa].push(e);
         });
     });
 
     const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
-        const indexA = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === a.toLowerCase());
-        const indexB = ordemCaixasPreferida.findIndex(caixa => caixa.toLowerCase() === b.toLowerCase());
-
+        const indexA = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === a.toLowerCase());
+        const indexB = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === b.toLowerCase());
         if (indexA !== -1 && indexB !== -1) return indexA - indexB;
         if (indexA !== -1) return -1;
         if (indexB !== -1) return 1;
@@ -1062,7 +1140,6 @@ function listarEquipamentosPorCaixas() {
 
     caixasOrdenadas.forEach(caixa => {
         if (porCaixa[caixa].length === 0) return;
-
         const boxDiv = document.createElement('div');
         boxDiv.className = 'bloco-caixa';
         boxDiv.innerHTML = `<h3 style="color:#4da6ff; border-bottom:1px solid #383840; margin-bottom:10px;">📦 ${caixa}</h3>`;
@@ -1082,4 +1159,95 @@ function listarEquipamentosPorCaixas() {
         });
         divResultados.appendChild(boxDiv);
     });
+}
+
+function renderizarFichaEquipamento(equip) {
+    const divResultados = document.getElementById('equipment-results-foco'); 
+    if (!divResultados) return;
+
+    const nome = idiomaAtual === 'pt' ? equip.name_pt : equip.name_en;
+    const texto = idiomaAtual === 'pt' ? equip.effect_pt : equip.effect_en;
+    const setFormatado = equip.set ? equip.set.replace(/;/g, ' / ') : ''; 
+
+    const formatarAtributoSplit = (valor, index) => {
+        if (valor === 0 || valor === '0') return index === 0 ? '0' : '-'; 
+        if (valor === undefined || valor === null || String(valor).trim() === '') return '-';
+        const parts = String(valor).split(';');
+        if (parts.length > index) {
+            const part = parts[index].trim();
+            if (part === '0') return '0';
+            return part ? part : '-';
+        }
+        return '-';
+    };
+
+    const traduzirMultiplos = (campo) => {
+        if (!campo || String(campo).trim() === '') return null;
+        return String(campo).split(';').map(tag => traduzirTag(tag.trim())).join(' / ');
+    };
+
+    const formatarETraduzir = (valor) => {
+        if (!valor || String(valor).trim() === '') return '-';
+        return String(valor).split(';').map(v => traduzirTag(v.trim())).join(' / ');
+    };
+
+    const tagsEquipamento = [
+        traduzirMultiplos(equip.deck),
+        traduzirMultiplos(equip.class),
+        traduzirMultiplos(equip.type)
+    ].filter(Boolean).join(' | ');
+
+    let imagemHtml = '';
+    if (equip.image && equip.image.trim() !== '') {
+        imagemHtml = `
+            <div class="equipamento-imagem-container">
+                <img src="${equip.image}" alt="${nome}" class="equipamento-img" loading="lazy" onerror="this.style.display='none'">
+            </div>
+        `;
+    }
+    
+    const hasSecondMode = (equip.range && String(equip.range).includes(';')) ||
+                          (equip.dice && String(equip.dice).includes(';')) ||
+                          (equip.accuracy && String(equip.accuracy).includes(';')) ||
+                          (equip.damage && String(equip.damage).includes(';'));
+
+    let statsHtml = `
+        <div class="equipamento-stats-grid">
+            <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributoSplit(equip.range, 0)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributoSplit(equip.dice, 0)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributoSplit(equip.accuracy, 0)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributoSplit(equip.damage, 0)}</span></div>
+        </div>
+    `;
+
+    if (hasSecondMode) {
+        statsHtml += `
+        <div class="equipamento-stats-grid" style="margin-top: 8px;">
+            <div class="stat-item"><span class="stat-label">${traduzirTag('range')}</span><span class="stat-valor">${formatarAtributoSplit(equip.range, 1)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('dice')}</span><span class="stat-valor">${formatarAtributoSplit(equip.dice, 1)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('accuracy')}</span><span class="stat-valor">${formatarAtributoSplit(equip.accuracy, 1)}</span></div>
+            <div class="stat-item"><span class="stat-label">${traduzirTag('damage')}</span><span class="stat-valor">${formatarAtributoSplit(equip.damage, 1)}</span></div>
+        </div>
+        `;
+    }
+    
+    divResultados.innerHTML = `
+        <div class="ficha-equipamento">
+            <div class="equipamento-cabecalho">
+                <h2>${nome}</h2>
+                <div class="equipamento-set">${setFormatado}</div>
+                <div class="equipamento-tags">${tagsEquipamento}</div>
+            </div>
+            ${imagemHtml}
+            ${statsHtml}
+            <div class="equipamento-stats-grid">
+                <div class="stat-item"><span class="stat-label">${traduzirTag('danger')}</span><span class="stat-valor">${formatarETraduzir(equip.danger)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('dual')}</span><span class="stat-valor">${formatarETraduzir(equip.dual)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('noise')}</span><span class="stat-valor">${formatarETraduzir(equip.noise)}</span></div>
+                <div class="stat-item"><span class="stat-label">${traduzirTag('door')}</span><span class="stat-valor">${formatarETraduzir(equip.door)}</span></div>
+            </div>
+            ${texto ? `<div class="equipamento-texto"><p>${texto}</p></div>` : ''}
+        </div>
+    `;
+    divResultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

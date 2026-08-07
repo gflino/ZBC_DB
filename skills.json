@@ -557,7 +557,7 @@
     "name_en": "Reaper: [Action]",
     "name_pt": "Ceifador: [Ação] / Letal: [Ação]",
     "desc_en": "This Skill can be used when assigning hits while resolving an Action of the specified type (Combat, Magic, Melee, or Ranged). 1 of these hits can eliminate an additional identical Zombie in the same Zone. Only a single additional Zombie can be eliminated per Action when using this Skill. The Survivor gains the Adrenaline for the additional Zombie.",
-    "desc_pt": "Use esta Habilidade para atribuir acertosdurante a resolução de uma Ação do tipo especificado (Combate, Magia, Corpo a Corpo ou Longo Alcance). 1 desses acertos pode eliminar gratuitamente um Zumbi idêntico adicional na mesma Zona. Apenas um Zumbi extra pode ser eliminado por Ação ao usar essa Habilidade. O Sobrevivente ganha o PA pelo Zumbi extra."
+    "desc_pt": "Use esta Habilidade para atribuir acertos durante a resolução de uma Ação do tipo especificado (Combate, Magia, Corpo a Corpo ou Longo Alcance). 1 desses acertos pode eliminar gratuitamente um Zumbi idêntico adicional na mesma Zona. Apenas um Zumbi extra pode ser eliminado por Ação ao usar essa Habilidade. O Sobrevivente ganha o PA pelo Zumbi extra."
   },
   {
     "id": "regeneration",
