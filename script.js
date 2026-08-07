@@ -1,6 +1,6 @@
 // ==========================================
 // 1. BANCOS DE DADOS E ESTADO GERAL
-// ==========================================
+// ========================================== 
 let habilidadesBase = [];
 let sobreviventesBase = [];
 let inimigosBase = [];
