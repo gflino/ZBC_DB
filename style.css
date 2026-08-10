@@ -793,3 +793,61 @@ header {
     line-height: 1.5;
     font-size: 0.95em;
 }
+/* ==========================================
+   HABILIDADES CLICÁVEIS (EFEITO HOVER)
+   ========================================== */
+.habilidade-clicavel {
+    cursor: pointer;
+    transition: transform 0.15s, border-color 0.15s, background-color 0.15s;
+}
+
+.habilidade-clicavel:hover, .habilidade-clicavel:active {
+    border-color: #4da6ff;
+    background-color: #25252b;
+    transform: translateX(4px);
+}
+/* ==========================================
+   MENU RETRÁTIL (FILTRO DE CAIXAS)
+   ========================================== */
+.filtro-caixa-wrapper {
+    margin-bottom: 15px;
+}
+
+.filtro-caixa-header {
+    background-color: #2d2d34;
+    color: #e1e1e6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.filtro-caixa-header:hover {
+    background-color: #383840;
+}
+
+.filtro-caixa-header.aberto {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #383840;
+}
+
+.filtro-caixa-body {
+    display: none;
+    padding: 12px;
+    background-color: #1a1a1e;
+    border: 1px solid #383840;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.filtro-caixa-body.aberto {
+    display: block;
+}

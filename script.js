@@ -15,6 +15,8 @@ let classFiltroInimigo = '';
 let deckFiltroEquip = '';
 let classFiltroEquip = '';
 let typeFiltroEquip = '';
+let caixasFiltroAtivo = [];   // NOVO: Filtro múltiplo de caixas
+let menuCaixasAberto = false; // NOVO: Controle do menu sanfona
 
 // Dicionário Global da Interface do Usuário (i18n)
 const i18nUI = {
@@ -147,6 +149,7 @@ Promise.all([
     
     configurarBuscas();
     renderizarFiltrosRole();        // Sobreviventes
+    renderizarFiltrosCaixa();
     renderizarFiltrosInimigos();    // Inimigos
     renderizarFiltrosEquipamentos(); // Equipamentos
     
@@ -198,15 +201,11 @@ function limparTelasEBuscas() {
     });
 }
 
-// === NOVA FUNÇÃO ATUALIZADA ===
-// Adicionamos o parâmetro 'registrarNoHistorico' (padrão: true)
 function mudarTela(telaId, registrarNoHistorico = true) {
     limparTelasEBuscas();
     
     const sidebar = document.getElementById('sidebar');
-    if (sidebar.classList.contains('aberto')) {
-        toggleMenu();
-    }
+    if (sidebar.classList.contains('aberto')) toggleMenu();
 
     document.querySelectorAll('.view-section').forEach(secao => {
         secao.classList.add('hidden');
@@ -219,19 +218,46 @@ function mudarTela(telaId, registrarNoHistorico = true) {
         history.pushState({ tela: telaId }, '');
     }
 
-    if (telaId === 'priority-view') {
-        renderizarTabelasPrioridade();
-    }
+    if (telaId === 'priority-view') renderizarTabelasPrioridade();
 }
 
-// O "Ouvinte" do botão físico de Voltar do celular (ou seta do navegador do PC)
+
+// ----------------------------------------------------
+// NAVEGADORES DE ROTAS ESPECÍFICAS (WIKI INTERLIGADA)
+// ----------------------------------------------------
+function navegarParaPersonagem(sobrevivente, registrar = true) {
+    mudarTela('characters-view', false); 
+    if (registrar) {
+        history.pushState({ tela: 'characters-view', item_id: sobrevivente.name, tipo: 'sobrevivente' }, '');
+    }
+    renderizarFichaPersonagem(sobrevivente);
+}
+
+function navegarParaHabilidade(skill, registrar = true) {
+    mudarTela('skills-view', false);
+    if (registrar) {
+        history.pushState({ tela: 'skills-view', item_id: skill.id, tipo: 'habilidade' }, '');
+    }
+    renderizarFichaHabilidade(skill);
+}
+
+// Ouvinte do Botão Físico de Voltar do Celular
 window.addEventListener('popstate', (event) => {
-    // Se o navegador salvou o estado (nome da tela), recarrega aquela tela
-    if (event.state && event.state.tela) {
-        // Passamos 'false' para não registrar a mesma tela duas vezes no histórico
-        mudarTela(event.state.tela, false); 
+    if (event.state) {
+        if (event.state.tipo === 'sobrevivente') {
+            mudarTela('characters-view', false);
+            const s = sobreviventesBase.find(x => x.name === event.state.item_id);
+            if (s) renderizarFichaPersonagem(s);
+        } else if (event.state.tipo === 'habilidade') {
+            mudarTela('skills-view', false);
+            const h = habilidadesBase.find(x => x.id === event.state.item_id);
+            if (h) renderizarFichaHabilidade(h);
+        } else if (event.state.tela) {
+            mudarTela(event.state.tela, false);
+        } else {
+            mudarTela('home-view', false);
+        }
     } else {
-        // Ponto de segurança: se voltar tudo, retorna para a tela inicial
         mudarTela('home-view', false);
     }
 });
@@ -241,38 +267,34 @@ window.addEventListener('popstate', (event) => {
 // SISTEMA DE IDIOMA E INTERFACE
 // ==========================================
 
-// NA FUNÇÃO DE MUDAR IDIOMA (Bloco 2)
 function mudarIdiomaSelecionado(novoIdioma) {
     idiomaAtual = novoIdioma;
     
     atualizarIdiomaInterface();
     renderizarTabelasPrioridade();
     
-    renderizarFiltrosRole();
-    renderizarFiltrosInimigos();
-    renderizarFiltrosEquipamentos();
+    // Atualiza todos os filtros na tela caso existam
+    if (typeof renderizarFiltrosRole === 'function') renderizarFiltrosRole();
+    if (typeof renderizarFiltrosCaixa === 'function') renderizarFiltrosCaixa();
+    if (typeof renderizarFiltrosInimigos === 'function') renderizarFiltrosInimigos();
+    if (typeof renderizarFiltrosEquipamentos === 'function') renderizarFiltrosEquipamentos();
     
     limparTelasEBuscas();
 }
 
 function atualizarIdiomaInterface() {
-    // Varre TODOS os elementos do HTML que possuem o atributo data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const chave = el.getAttribute('data-i18n');
         
-        // Se a chave existir no nosso dicionário (i18nUI)
         if (i18nUI[chave] && i18nUI[chave][idiomaAtual]) {
-            // Se o elemento for um campo de digitação, traduz o "placeholder"
             if (el.tagName === 'INPUT') {
                 el.setAttribute('placeholder', i18nUI[chave][idiomaAtual]);
             } else {
-                // Se for um título, botão ou texto normal, traduz o conteúdo
                 el.innerHTML = i18nUI[chave][idiomaAtual];
             }
         }
     });
 }
-
 
 // ==========================================
 // 3. TRADUTOR INTELIGENTE DE TAGS E COLCHETES
@@ -345,31 +367,16 @@ function obterHabilidadeFormatada(skillId, tagValor) {
 // 4. BUSCA DE HABILIDADES
 // ==========================================
 function configurarBuscas() {
-    document.getElementById('search-skills').addEventListener('input', (e) => {
-        buscarHabilidades(e.target.value);
-    });
-
-    document.getElementById('search-characters').addEventListener('input', (e) => {
-        sugerirPersonagens(e.target.value);
-    });
-
-    document.getElementById('search-enemies').addEventListener('input', (e) => {
-        buscarInimigos(e.target.value);
-    });
-
-    document.getElementById('search-equipment').addEventListener('input', (e) => {
-        buscarEquipamentos(e.target.value);
-    });
+    document.getElementById('search-skills').addEventListener('input', (e) => buscarHabilidades(e.target.value));
+    document.getElementById('search-characters').addEventListener('input', (e) => sugerirPersonagens(e.target.value));
+    document.getElementById('search-enemies').addEventListener('input', (e) => buscarInimigos(e.target.value));
+    document.getElementById('search-equipment').addEventListener('input', (e) => buscarEquipamentos(e.target.value));
 }
 
 function buscarHabilidades(termo) {
     const dropdown = document.getElementById('skills-dropdown');
     dropdown.innerHTML = '';
-    
-    if (!termo.trim()) {
-        dropdown.classList.add('hidden');
-        return;
-    }
+    if (!termo.trim()) { dropdown.classList.add('hidden'); return; }
 
     dropdown.classList.remove('hidden');
     const termoMin = termo.toLowerCase();
@@ -387,20 +394,13 @@ function buscarHabilidades(termo) {
         const item = document.createElement('div');
         item.className = 'item-sugestao-lista';
         item.innerHTML = `<strong>${nomeVisivel}</strong> <span class="sub-sugestao">${sub}</span>`;
-        
         item.onclick = () => {
-            renderizarFichaHabilidade(skill);
+            navegarParaHabilidade(skill); // Usa a nova navegação roteada
             dropdown.classList.add('hidden');
             document.getElementById('search-skills').value = ''; 
         };
         dropdown.appendChild(item);
     });
-}
-
-function renderizarFichaHabilidade(skill) {
-    const divResultados = document.getElementById('skills-results-foco');
-    divResultados.innerHTML = '';
-    divResultados.appendChild(criarCardHabilidadeCompleto(skill));
 }
 
 function listarTodasHabilidades() {
@@ -411,7 +411,12 @@ function listarTodasHabilidades() {
     divResultados.innerHTML = '';
 
     habilidadesBase.forEach(skill => {
-        divResultados.appendChild(criarCardHabilidadeCompleto(skill));
+        const card = criarCardHabilidadeCompleto(skill);
+        // Faz o card inteiro da listagem geral ser clicável
+        card.style.cursor = 'pointer';
+        card.classList.add('habilidade-clicavel');
+        card.onclick = () => navegarParaHabilidade(skill);
+        divResultados.appendChild(card);
     });
 }
 
@@ -426,11 +431,102 @@ function criarCardHabilidadeCompleto(skill) {
     return card;
 }
 
+// A Ficha Principal da Habilidade, agora com a lista agrupada por caixa
+function renderizarFichaHabilidade(skill) {
+    const divResultados = document.getElementById('skills-results-foco');
+    divResultados.innerHTML = '';
+    
+    divResultados.appendChild(criarCardHabilidadeCompleto(skill));
+
+    const personagensComHabilidade = sobreviventesBase.filter(s => {
+        const slotsVerificar = [
+            s.blue, s.blue1, s.blue2, s.blue3, s.blue4,
+            s.yellow, s.yellow1, s.yellow2, s.yellow3, s.yellow4,
+            s.orange, s.orange1, s.orange2, s.orange3, s.orange4,
+            s.red, s.red1, s.red2, s.red3, s.red4
+        ];
+        return slotsVerificar.includes(skill.id);
+    });
+
+    if (personagensComHabilidade.length > 0) {
+        const divMestre = document.createElement('div');
+        divMestre.style.marginTop = '20px';
+        const tituloLista = idiomaAtual === 'pt' ? 'Sobreviventes com esta Habilidade' : 'Survivors with this Skill';
+        divMestre.innerHTML = `<h3 style="color:#ffcc00; border-bottom:1px solid #383840; margin-bottom:10px;">👥 ${tituloLista}</h3>`;
+
+        const porCaixa = {};
+        personagensComHabilidade.forEach(s => {
+            if (!s.set || String(s.set).trim() === '') {
+                const cxPadrao = 'Sem Caixa';
+                if (!porCaixa[cxPadrao]) porCaixa[cxPadrao] = [];
+                porCaixa[cxPadrao].push(s);
+                return;
+            }
+            const caixasDoItem = String(s.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
+            caixasDoItem.forEach(cx => {
+                if (!porCaixa[cx]) porCaixa[cx] = [];
+                porCaixa[cx].push(s);
+            });
+        });
+
+        const caixasOrdenadas = Object.keys(porCaixa).sort((a, b) => {
+            const indexA = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === a.toLowerCase());
+            const indexB = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === b.toLowerCase());
+            if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+            if (indexA !== -1) return -1;
+            if (indexB !== -1) return 1;
+            return a.localeCompare(b);
+        });
+
+        caixasOrdenadas.forEach(caixa => {
+            const boxDiv = document.createElement('div');
+            boxDiv.className = 'bloco-caixa';
+            boxDiv.style.marginBottom = '12px';
+            boxDiv.innerHTML = `<h4 style="color:#ff4747; margin-bottom:6px; font-size: 0.95em;">📦 ${caixa}</h4>`;
+            
+            const lista = porCaixa[caixa].sort((a, b) => {
+                const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || a.name || '';
+                const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || b.name || '';
+                return nomeA.localeCompare(nomeB);
+            });
+
+            lista.forEach(s => {
+                const li = document.createElement('div');
+                li.className = 'item-sugestao-lista';
+                li.innerHTML = `<strong>${(idiomaAtual === 'pt' ? s.name_pt : s.name_en) || s.name}</strong>`;
+                li.onclick = () => navegarParaPersonagem(s);
+                boxDiv.appendChild(li);
+            });
+            divMestre.appendChild(boxDiv);
+        });
+        
+        divResultados.appendChild(divMestre);
+    }
+    divResultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 
 // ==========================================
 // 5. SOBREVIVENTES
 // ==========================================
 
+// --- MÓDULO DE VERIFICAÇÃO DE FILTROS ---
+function personagemPassaNosFiltros(s) {
+    // Verifica Filtro de Função (Role)
+    if (roleFiltroAtivo !== '') {
+        if (!s.role || !String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo)) return false;
+    }
+    // Verifica Filtro Multiplo de Caixas (Expansões)
+    if (caixasFiltroAtivo.length > 0) {
+        if (!s.set) return false;
+        const caixasDoItem = String(s.set).split(/[;/]/).map(c => c.trim()).filter(Boolean);
+        const temCaixa = caixasFiltroAtivo.some(cx => caixasDoItem.includes(cx));
+        if (!temCaixa) return false;
+    }
+    return true;
+}
+
+// --- RENDERIZAÇÃO DOS CONTROLES DE FILTRO ---
 function renderizarFiltrosRole() {
     const view = document.getElementById('characters-view');
     if (!view) return;
@@ -470,6 +566,63 @@ function renderizarFiltrosRole() {
     section.innerHTML = botoesHtml;
 }
 
+function renderizarFiltrosCaixa() {
+    const view = document.getElementById('characters-view');
+    if (!view) return;
+    let section = document.getElementById('box-filter-section');
+    
+    if (!section) {
+        section = document.createElement('div');
+        section.id = 'box-filter-section';
+        section.className = 'filtro-caixa-wrapper';
+        
+        // Insere o filtro de caixa logo abaixo do filtro de roles (se existir)
+        const roleSection = document.getElementById('role-filter-section');
+        if (roleSection) {
+            roleSection.insertAdjacentElement('afterend', section);
+        } else {
+            const controls = view.querySelector('.character-controls');
+            view.insertBefore(section, controls);
+        }
+    }
+
+    const titulo = idiomaAtual === 'pt' ? 'Filtrar por Coleção / Caixas' : 'Filter by Collection / Sets';
+
+    const todasCaixas = [];
+    sobreviventesBase.forEach(s => {
+        if (s.set && String(s.set).trim() !== '') {
+            todasCaixas.push(...String(s.set).split(/[;/]/).map(c => c.trim()).filter(Boolean));
+        }
+    });
+    
+    const caixasUnicas = [...new Set(todasCaixas)].sort((a, b) => {
+        const indexA = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === a.toLowerCase());
+        const indexB = ordemCaixasPreferida.findIndex(c => c.toLowerCase() === b.toLowerCase());
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.localeCompare(b);
+    });
+
+    let html = `
+        <div class="filtro-caixa-header ${menuCaixasAberto ? 'aberto' : ''}" onclick="toggleMenuCaixas()">
+            <span>${titulo}</span>
+            <span>${menuCaixasAberto ? '▲' : '▼'}</span>
+        </div>
+        <div class="filtro-caixa-body ${menuCaixasAberto ? 'aberto' : ''}">
+            <div class="filtro-container">
+    `;
+
+    caixasUnicas.forEach(cx => {
+        const isAtivo = caixasFiltroAtivo.includes(cx);
+        html += `<button class="btn-filtro ${isAtivo ? 'ativo' : ''}" onclick="alternarFiltroCaixa('${cx}')">${cx}</button>`;
+    });
+
+    html += `</div></div>`;
+    section.innerHTML = html;
+}
+
+// --- AÇÕES DE CLIQUE DOS FILTROS ---
 function selecionarFiltroRole(roleCrua) {
     roleFiltroAtivo = roleCrua;
     renderizarFiltrosRole();
@@ -477,6 +630,25 @@ function selecionarFiltroRole(roleCrua) {
     if (divResultados && divResultados.innerHTML.trim() !== '') listarPorCaixas();
 }
 
+function toggleMenuCaixas() {
+    menuCaixasAberto = !menuCaixasAberto;
+    renderizarFiltrosCaixa();
+}
+
+function alternarFiltroCaixa(caixa) {
+    if (caixasFiltroAtivo.includes(caixa)) {
+        caixasFiltroAtivo = caixasFiltroAtivo.filter(c => c !== caixa);
+    } else {
+        caixasFiltroAtivo.push(caixa);
+    }
+    renderizarFiltrosCaixa();
+    
+    // Atualiza a visualização atual caso esteja mostrando os sobreviventes
+    const divResultados = document.getElementById('characters-results-foco');
+    if (divResultados && divResultados.innerHTML.trim() !== '') listarPorCaixas();
+}
+
+// --- LÓGICA DAS BUSCAS E LISTAGENS ---
 function sugerirPersonagens(termo) {
     const dropdown = document.getElementById('characters-dropdown');
     dropdown.innerHTML = '';
@@ -489,7 +661,7 @@ function sugerirPersonagens(termo) {
     caixasFiltradas.forEach(caixa => {
         const itemBox = document.createElement('div');
         itemBox.className = 'item-sugestao-lista destaque-caixa';
-        itemBox.innerHTML = `<strong>📦 Caixa: ${caixa}</strong>`;
+        itemBox.innerHTML = `<strong>Caixa: ${caixa}</strong>`;
         itemBox.onclick = () => {
             listarPersonagensDaCaixa(caixa);
             dropdown.classList.add('hidden');
@@ -499,9 +671,7 @@ function sugerirPersonagens(termo) {
     });
 
     const filtrados = sobreviventesBase.filter(s => {
-        if (roleFiltroAtivo !== '') {
-            if (!s.role || !String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo)) return false;
-        }
+        if (!personagemPassaNosFiltros(s)) return false;
         return s.name.toLowerCase().includes(termoMin);
     });
 
@@ -510,7 +680,7 @@ function sugerirPersonagens(termo) {
         item.className = 'item-sugestao-lista';
         item.innerHTML = `<strong>${s.name}</strong> <span class="sub-sugestao">${s.set ? s.set.replace(/;/g, ' / ') : ''}</span>`;
         item.onclick = () => {
-            renderizarFichaPersonagem(s);
+            navegarParaPersonagem(s);
             dropdown.classList.add('hidden');
             document.getElementById('search-characters').value = '';
         };
@@ -527,6 +697,7 @@ function listarPersonagensDaCaixa(caixaNome) {
     
     let lista = sobreviventesBase.filter(s => {
         if (!s.set || !s.set.includes(caixaNome)) return false;
+        // Burlamos o filtro de caixas aqui, pois o jogador solicitou ver ESTA caixa específica, mas mantemos o filtro de Role.
         if (roleFiltroAtivo !== '') {
             if (!s.role || !String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo)) return false;
         }
@@ -541,22 +712,23 @@ function listarPersonagensDaCaixa(caixaNome) {
         const li = document.createElement('div');
         li.className = 'item-sugestao-lista';
         li.textContent = s.name;
-        li.onclick = () => renderizarFichaPersonagem(s);
+        li.onclick = () => navegarParaPersonagem(s);
         boxDiv.appendChild(li);
     });
     divResultados.appendChild(boxDiv);
 }
 
 function sortearPersonagem() {
-    const listaFiltrada = sobreviventesBase.filter(s => {
-        if (roleFiltroAtivo === '') return true;
-        if (!s.role) return false;
-        return String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo);
-    });
-    if (listaFiltrada.length === 0) return;
+    const listaFiltrada = sobreviventesBase.filter(s => personagemPassaNosFiltros(s));
+    
+    if (listaFiltrada.length === 0) {
+        alert(idiomaAtual === 'pt' ? 'Nenhum sobrevivente encontrado com os filtros atuais.' : 'No survivors found with current filters.');
+        return;
+    }
+    
     document.getElementById('characters-dropdown').classList.add('hidden');
     const aleatorio = Math.floor(Math.random() * listaFiltrada.length);
-    renderizarFichaPersonagem(listaFiltrada[aleatorio]);
+    navegarParaPersonagem(listaFiltrada[aleatorio]);
 }
 
 function listarPorCaixas() {
@@ -568,11 +740,7 @@ function listarPorCaixas() {
     divResultados.innerHTML = '';
     const porCaixa = {};
 
-    const listaFiltrada = sobreviventesBase.filter(s => {
-        if (roleFiltroAtivo === '') return true;
-        if (!s.role) return false;
-        return String(s.role).split(';').map(r => r.trim()).includes(roleFiltroAtivo);
-    });
+    const listaFiltrada = sobreviventesBase.filter(s => personagemPassaNosFiltros(s));
 
     listaFiltrada.forEach(s => {
         if (!s.set || String(s.set).trim() === '') {
@@ -613,7 +781,7 @@ function listarPorCaixas() {
             const li = document.createElement('div');
             li.className = 'item-sugestao-lista';
             li.textContent = (idiomaAtual === 'pt' ? s.name_pt : s.name_en) || s.name;
-            li.onclick = () => renderizarFichaPersonagem(s);
+            li.onclick = () => navegarParaPersonagem(s);
             boxDiv.appendChild(li);
         });
         divResultados.appendChild(boxDiv);
@@ -709,8 +877,10 @@ function renderizarFichaPersonagem(sobrevivente) {
             const hab = obterHabilidadeFormatada(slot.id, slot.tag);
             if (hab) {
                 const sub = idiomaAtual === 'pt' ? `<div class="subtitulo-en" style="color: #9e9ea8; font-size: 0.85em; font-style: italic;">${hab.nomeEn}</div>` : '';
+                
                 const div = document.createElement('div');
-                div.className = 'linha-habilidade';
+                div.className = 'linha-habilidade habilidade-clicavel'; 
+                
                 div.innerHTML = `
                     <div class="coluna-cor cor-${bloco.classe}">${bloco.cor}</div>
                     <div class="coluna-divisor">|</div>
@@ -719,6 +889,12 @@ function renderizarFichaPersonagem(sobrevivente) {
                         <p class="desc-habilidade" style="margin-top: 6px; color: #dedede; font-size: 0.9em; line-height: 1.4;">${hab.desc}</p>
                     </div>
                 `;
+
+                div.onclick = () => {
+                    const skillObj = habilidadesBase.find(s => s.id === slot.id);
+                    if (skillObj) navegarParaHabilidade(skillObj);
+                };
+
                 containerNiveis.appendChild(div);
             }
         });
