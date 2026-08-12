@@ -387,6 +387,13 @@ function buscarHabilidades(termo) {
         return pt.includes(termoMin) || en.includes(termoMin);
     });
 
+    // NOVO: Ordena os resultados da pesquisa de acordo com o idioma selecionado
+    filtradas.sort((a, b) => {
+        const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
+        const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
+        return nomeA.localeCompare(nomeB);
+    });
+
     filtradas.forEach(skill => {
         const nomeVisivel = idiomaAtual === 'pt' ? skill.name_pt : skill.name_en;
         const sub = idiomaAtual === 'pt' ? skill.name_en : '';
@@ -395,7 +402,7 @@ function buscarHabilidades(termo) {
         item.className = 'item-sugestao-lista';
         item.innerHTML = `<strong>${nomeVisivel}</strong> <span class="sub-sugestao">${sub}</span>`;
         item.onclick = () => {
-            navegarParaHabilidade(skill); // Usa a nova navegação roteada
+            navegarParaHabilidade(skill); 
             dropdown.classList.add('hidden');
             document.getElementById('search-skills').value = ''; 
         };
@@ -410,7 +417,14 @@ function listarTodasHabilidades() {
     const divResultados = document.getElementById('skills-results-foco');
     divResultados.innerHTML = '';
 
-    habilidadesBase.forEach(skill => {
+    // NOVO: Cria uma cópia da base e ordena de acordo com o idioma antes de listar
+    const habilidadesOrdenadas = [...habilidadesBase].sort((a, b) => {
+        const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
+        const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
+        return nomeA.localeCompare(nomeB);
+    });
+
+    habilidadesOrdenadas.forEach(skill => {
         const card = criarCardHabilidadeCompleto(skill);
         // Faz o card inteiro da listagem geral ser clicável
         card.style.cursor = 'pointer';
