@@ -851,3 +851,291 @@ header {
 .filtro-caixa-body.aberto {
     display: block;
 }
+/* ==========================================
+   AJUSTE DE ROLAGEM (COMPENSAÇÃO DO HEADER FIXO)
+   ========================================== */
+#skills-results-foco, 
+#characters-results-foco, 
+#enemies-results-foco, 
+#equipment-results-foco {
+    scroll-margin-top: 80px;
+}
+/* ==========================================
+   TELA DE CONTADOR DE AÇÕES (COMPLETO)
+   ========================================== */
+.tracker-item-selecionado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1e;
+    border: 1px solid #383840;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.btn-remover-tracker {
+    background: transparent;
+    border: none;
+    color: #ff4747;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0;
+}
+
+.tracker-card {
+    background-color: #1a1a1e;
+    border: 1px solid #2d2d34;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Cabeçalho com o botão + */
+.tracker-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #383840;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.header-info-personagem {
+    display: flex;
+    align-items: center;
+}
+
+/* ESSENCIAL: Controle do tamanho da imagem (Impede que fique gigante) */
+.tracker-avatar {
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #383840; 
+    margin-right: 12px;
+    background-color: #121214;
+}
+
+.tracker-name { 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    color: #ffffff; 
+}
+
+/* Novo Botão Discreto de Adicionar (+) */
+.btn-add-mini {
+    background-color: #2d2d34;
+    color: #e1e1e6;
+    border: 1px solid #44444c;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2em;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.btn-add-mini:hover {
+    background-color: #4da6ff;
+    color: #121214;
+}
+
+/* Menu Flutuante Oculto de Seleção de Ação */
+.add-action-menu-container {
+    position: relative;
+}
+.add-action-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1a1a1e;
+    border: 1px solid #44444c;
+    border-radius: 6px;
+    padding: 8px 0;
+    width: 160px;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    display: none;
+    margin-top: 8px;
+}
+.add-action-menu.aberto {
+    display: block;
+}
+.add-action-item {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.85em;
+    color: #e1e1e6;
+    transition: background 0.2s;
+}
+.add-action-item:hover {
+    background-color: #2d2d34;
+    color: #4da6ff;
+}
+
+/* ESSENCIAL: Grid horizontal para emparelhar as ações lado a lado */
+.tracker-actions-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-bottom: 15px;
+}
+
+/* Container que abriga os botões + e - lado a lado */
+.tracker-header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Novo Botão Discreto de Remover (-) */
+.btn-remove-mini {
+    background-color: #2d2d34;
+    color: #e1e1e6;
+    border: 1px solid #44444c;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.4em;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.btn-remove-mini:hover {
+    background-color: #ff4747;
+    color: #ffffff;
+}
+
+/* Indicador de botão de remover ativo */
+.btn-remove-mini.ativo {
+    background-color: #ff4747;
+    color: #fff;
+    border-color: #ff4747;
+}
+
+/* Caixas de Ação 100% Padronizadas e com Posicionamento Relativo */
+.action-box {
+    position: relative; /* Permite posicionar o 'x' solto na caixa */
+    background-color: #121214; 
+    border: 1px solid #2d2d34; 
+    border-radius: 6px; 
+    padding: 8px 6px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    flex: 0 0 auto; 
+    width: 86px;  
+    height: 96px; 
+}
+
+/* Botão Flutuante de Exclusão (X) */
+.btn-delete-action {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4747;
+    color: #fff;
+    border: 1px solid #1a1a1e;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    z-index: 10;
+    transition: 0.1s;
+}
+
+.btn-delete-action:hover {
+    transform: scale(1.15);
+}
+
+.action-label {
+    font-size: 0.55em; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    text-align: center; 
+    color: #9e9ea8;
+    letter-spacing: 0.5px;
+    white-space: pre-wrap;
+    line-height: 1.2;
+    height: 2.4em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.action-circle {
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+    border: 2px solid transparent; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Estado de ação gasta */
+.action-circle.usada {
+    background-color: #25252b !important; 
+    border-color: #1a1a1e !important; 
+    box-shadow: inset 0 4px 6px rgba(0,0,0,0.4) !important;
+}
+
+.action-circle.usada::after {
+    content: '✓'; 
+    color: #555560; 
+    font-size: 1.5em; 
+    font-weight: bold;
+}
+
+.tracker-controls {
+    display: flex; 
+    gap: 10px; 
+    margin-top: 15px; 
+    border-top: 1px dashed #383840; 
+    padding-top: 15px; 
+    flex-wrap: wrap;
+}
+
+.btn-tracker-control {
+    flex: 1 1 45%; 
+    padding: 10px; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 0.9em;
+}
+.btn-undo { background-color: #383840; color: #e1e1e6; }
+.btn-end-turn { background-color: #b32d2e; color: #fff; }
+
+/* ESSENCIAL: Cores das Ações no Painel */
+.color-free { background-color: #4da6ff; box-shadow: 0 0 10px rgba(77, 166, 255, 0.4); }
+.color-move { background-color: #ffcc00; box-shadow: 0 0 10px rgba(255, 204, 0, 0.4); }
+.color-melee { background-color: #ff8800; box-shadow: 0 0 10px rgba(255, 136, 0, 0.4); }
+.color-magic { background-color: #9933cc; box-shadow: 0 0 10px rgba(153, 51, 204, 0.4); }
+.color-ranged { background-color: #4caf50; box-shadow: 0 0 10px rgba(76, 175, 80, 0.4); }
+.color-combat { background-color: #ff4747; box-shadow: 0 0 10px rgba(255, 71, 71, 0.4); }
+.color-enchantment { background-color: #cba6ff; box-shadow: 0 0 10px rgba(203, 166, 255, 0.4); }
+.color-guard_action { background-color: #8d6e63; box-shadow: 0 0 10px rgba(141, 110, 99, 0.4); }
+.color-skill { background-color: #00bcd4; box-shadow: 0 0 10px rgba(0, 188, 212, 0.4); }
+.color-search { background-color: #e0e0e0; box-shadow: 0 0 10px rgba(224, 224, 224, 0.4); }

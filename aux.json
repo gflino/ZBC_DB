@@ -4,6 +4,16 @@
     "tags_en": "Class",
     "tags_pt": "Classe"
   },
+   {
+    "tags": "skill",
+    "tags_en": "Skill",
+    "tags_pt": "Habilidade"
+  },
+    {
+    "tags": "free",
+    "tags_en": "Free",
+    "tags_pt": "Livre"
+  },
   {
     "tags": "deck",
     "tags_en": "Deck",

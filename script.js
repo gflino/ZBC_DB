@@ -45,7 +45,15 @@ const i18nUI = {
     placeholderEquipment: { pt: "Digite o nome do equipamento...", en: "Type the equipment's name..." },
     btnAllSkills: { pt: "Ver Tudo", en: "Show All" },
     btnRandom: { pt: "Sobrevivente Aleatório", en: "Random Survivor" },
-    btnListBoxes: { pt: "Ver Tudo", en: "Show All" }
+    btnListBoxes: { pt: "Ver Tudo", en: "Show All" },
+    menuActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
+    btnActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
+    titleActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
+    btnStartTracker: { pt: "Confirmar e Iniciar", en: "Confirm & Start" },
+    btnBackToSetup: { pt: "Voltar para Seleção", en: "Back to Selection" },
+    btnAddAction: { pt: "Adicionar", en: "Add" },
+    btnUndo: { pt: "Desfazer Última", en: "Undo Last" },
+    btnEndTurn: { pt: "Encerrar Turno", en: "End Turn" }
 };
 const ordemCaixasPreferida = [
         // === ERA BLACK PLAGUE (2015) ===
@@ -182,9 +190,10 @@ function limparTelasEBuscas() {
     document.getElementById('search-characters').value = '';
     document.getElementById('search-enemies').value = '';
     document.getElementById('search-equipment').value = '';
+    if(document.getElementById('search-tracker-characters')) document.getElementById('search-tracker-characters').value = '';
     
     // Esconde Dropdowns
-    const dropdowns = ['skills-dropdown', 'characters-dropdown', 'enemies-dropdown', 'equipment-dropdown'];
+    const dropdowns = ['skills-dropdown', 'characters-dropdown', 'enemies-dropdown', 'equipment-dropdown', 'tracker-characters-dropdown'];
     dropdowns.forEach(id => {
         const el = document.getElementById(id);
         if(el) {
@@ -371,6 +380,7 @@ function configurarBuscas() {
     document.getElementById('search-characters').addEventListener('input', (e) => sugerirPersonagens(e.target.value));
     document.getElementById('search-enemies').addEventListener('input', (e) => buscarInimigos(e.target.value));
     document.getElementById('search-equipment').addEventListener('input', (e) => buscarEquipamentos(e.target.value));
+    document.getElementById('search-tracker-characters').addEventListener('input', (e) => sugerirPersonagensTracker(e.target.value));
 }
 
 function buscarHabilidades(termo) {
@@ -851,7 +861,10 @@ function renderizarFichaPersonagem(sobrevivente) {
     divResultados.innerHTML = `
         <div class="ficha-sobrevivente">
             <div class="ficha-cabecalho" style="text-align: center;">
-                <h2>${nome} <span class="divisor-caixa">|</span> <span class="texto-caixa">${caixas}</span></h2>
+                <h2 style="border-bottom: none; padding-bottom: 0; margin-bottom: 4px;">${nome}</h2>
+                <div style="font-size: 0.85em; color: #9e9ea8; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 10px; border-bottom: 1px solid #383840; margin-bottom: 10px;">
+                    ${caixas}
+                </div>
             </div>
             ${bodyHtml}
             ${imagemHtml}
@@ -1440,4 +1453,288 @@ function renderizarFichaEquipamento(equip) {
         </div>
     `;
     divResultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ==========================================
+// 9. CONTADOR DE AÇÕES (ACTION TRACKER)
+// ==========================================
+
+let trackerSetupSurvivors = [];
+let trackerState = []; 
+// trackerState model: { survivorObj: {}, actions: [{id, type, used}], history: [], nextId: 4 }
+
+const tiposAcoesTracker = ['free', 'move', 'melee', 'magic', 'ranged', 'combat', 'enchantment', 'guard_action', 'skill', 'search'];
+
+function sugerirPersonagensTracker(termo) {
+    const dropdown = document.getElementById('tracker-characters-dropdown');
+    dropdown.innerHTML = '';
+    if (!termo.trim()) { dropdown.classList.add('hidden'); return; }
+    dropdown.classList.remove('hidden');
+    const termoMin = termo.toLowerCase();
+
+    // Filtra sobreviventes que já não estejam na lista
+    const filtrados = sobreviventesBase.filter(s => {
+        const jaEstaNaLista = trackerSetupSurvivors.some(listado => listado.name === s.name);
+        if (jaEstaNaLista) return false;
+        return s.name.toLowerCase().includes(termoMin);
+    });
+
+    filtrados.forEach(s => {
+        const item = document.createElement('div');
+        item.className = 'item-sugestao-lista';
+        item.innerHTML = `<strong>${s.name}</strong> <span class="sub-sugestao">${s.set ? s.set.replace(/;/g, ' / ') : ''}</span>`;
+        item.onclick = () => {
+            trackerSetupSurvivors.push(s);
+            renderizarListaSetupTracker();
+            dropdown.classList.add('hidden');
+            document.getElementById('search-tracker-characters').value = '';
+        };
+        dropdown.appendChild(item);
+    });
+}
+
+function renderizarListaSetupTracker() {
+    const listDiv = document.getElementById('tracker-selected-list');
+    listDiv.innerHTML = '';
+    
+    trackerSetupSurvivors.forEach((s, index) => {
+        const item = document.createElement('div');
+        item.className = 'tracker-item-selecionado';
+        item.innerHTML = `
+            <span><strong>${s.name}</strong></span>
+            <button class="btn-remover-tracker" onclick="removerSetupTracker(${index})">×</button>
+        `;
+        listDiv.appendChild(item);
+    });
+
+    const btnStart = document.getElementById('btn-start-tracker');
+    if (trackerSetupSurvivors.length > 0) {
+        btnStart.removeAttribute('disabled');
+        btnStart.style.backgroundColor = '#ff4747';
+        btnStart.style.color = '#fff';
+    } else {
+        btnStart.setAttribute('disabled', 'true');
+        btnStart.style.backgroundColor = '#202024';
+        btnStart.style.color = '#e1e1e6';
+    }
+}
+
+function removerSetupTracker(index) {
+    trackerSetupSurvivors.splice(index, 1);
+    renderizarListaSetupTracker();
+}
+
+function iniciarContador() {
+    if(trackerSetupSurvivors.length === 0) return;
+    
+    // Monta o estado inicial de cada sobrevivente (3 ações livres)
+    trackerState = trackerSetupSurvivors.map(s => {
+        return {
+            survivorObj: s,
+            actions: [
+                { id: 1, type: 'free', used: false },
+                { id: 2, type: 'free', used: false },
+                { id: 3, type: 'free', used: false }
+            ],
+            history: [],
+            nextId: 4
+        };
+    });
+
+    document.getElementById('tracker-setup-mode').classList.add('hidden');
+    document.getElementById('tracker-active-mode').classList.remove('hidden');
+    
+    renderizarCartoesTracker();
+}
+
+function voltarSetupContador() {
+    document.getElementById('tracker-active-mode').classList.add('hidden');
+    document.getElementById('tracker-setup-mode').classList.remove('hidden');
+}
+
+function renderizarCartoesTracker() {
+    const container = document.getElementById('tracker-cards-container');
+    container.innerHTML = '';
+
+    trackerState.forEach((tracker, survivorIndex) => {
+        const s = tracker.survivorObj;
+        const nome = (idiomaAtual === 'pt' ? s.name_pt : s.name_en) || s.name;
+        
+        let imagemHtml = `<div class="tracker-avatar" style="display:flex; justify-content:center; align-items:center; font-weight:bold;">${nome.charAt(0)}</div>`;
+        if (s.image && s.image.trim() !== '') {
+            imagemHtml = `<img src="${s.image}" class="tracker-avatar" alt="Avatar" onerror="this.style.display='none'">`;
+        }
+
+        const card = document.createElement('div');
+        card.className = 'tracker-card';
+
+        // Menu (+) Adicionar
+        let menuAddHtml = tiposAcoesTracker.map(tipo => {
+            return `<div class="add-action-item" onclick="adicionarNovaAcao(${survivorIndex}, '${tipo}')">${traduzirTag(tipo)}</div>`;
+        }).join('');
+
+        // Verifica se o botão de exclusão está ativo neste personagem
+        const isDeleteMode = tracker.deleteMode === true;
+        const classRemoveAtivo = isDeleteMode ? 'ativo' : '';
+
+        // Cabeçalho do Card (O botão - agora apenas ativa o modo de exclusão)
+        let html = `
+            <div class="tracker-card-header">
+                <div class="header-info-personagem">
+                    ${imagemHtml}
+                    <div class="tracker-name">${nome}</div>
+                </div>
+                <div class="tracker-header-actions">
+                    <button class="btn-remove-mini ${classRemoveAtivo}" onclick="toggleDeleteMode(${survivorIndex})">-</button>
+                    
+                    <div class="add-action-menu-container">
+                        <button class="btn-add-mini" onclick="toggleMenuAcoesTracker(${survivorIndex})">+</button>
+                        <div id="add-action-menu-${survivorIndex}" class="add-action-menu">
+                            ${menuAddHtml}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tracker-actions-grid">
+        `;
+
+        // Renderiza as Caixas de Ação Padronizadas
+        tracker.actions.forEach(action => {
+            const classUsada = action.used ? 'usada' : `color-${action.type}`;
+            const labelTraduzida = traduzirTag(action.type) || action.type;
+            
+            // Injeta o botão 'x' apenas se o delete mode estiver ativo
+            const btnX = isDeleteMode ? `<button class="btn-delete-action" onclick="removerAcaoEspecifica(${survivorIndex}, ${action.id})">✖</button>` : '';
+            
+            // A ação de clicar só funcionará se NÃO estiver no modo de exclusão (evita clicks acidentais ao tentar apagar)
+            const clickAcao = !isDeleteMode ? `onclick="marcarAcaoComoUsada(${survivorIndex}, ${action.id})"` : '';
+
+            html += `
+                <div class="action-box">
+                    ${btnX}
+                    <div class="action-label">${labelTraduzida}</div>
+                    <div class="action-circle ${classUsada}" ${clickAcao}></div>
+                </div>
+            `;
+        });
+        
+        html += `</div>`; // Fecha tracker-actions-grid
+
+        // Controles de Rodada
+        const labelUndo = i18nUI['btnUndo'] ? i18nUI['btnUndo'][idiomaAtual] : (idiomaAtual === 'pt' ? 'Desfazer Última' : 'Undo Last');
+        const labelEnd = i18nUI['btnEndTurn'] ? i18nUI['btnEndTurn'][idiomaAtual] : (idiomaAtual === 'pt' ? 'Encerrar Turno' : 'End Turn');
+
+        html += `
+            <div class="tracker-controls">
+                <button class="btn-tracker-control btn-undo" onclick="desfazerAcaoTracker(${survivorIndex})">${labelUndo}</button>
+                <button class="btn-tracker-control btn-end-turn" onclick="encerrarTurnoTracker(${survivorIndex})">${labelEnd}</button>
+            </div>
+        `;
+
+        card.innerHTML = html;
+        container.appendChild(card);
+    });
+}
+
+// Controla a abertura do menu de adicionar
+// Ativa ou desativa o modo de apagar botões
+function toggleDeleteMode(survivorIndex) {
+    const tracker = trackerState[survivorIndex];
+    tracker.deleteMode = !tracker.deleteMode;
+    renderizarCartoesTracker();
+}
+
+// Controla a abertura do menu de adicionar
+function toggleMenuAcoesTracker(survivorIndex) {
+    const menu = document.getElementById(`add-action-menu-${survivorIndex}`);
+    const estaAberto = menu.classList.contains('aberto');
+    
+    document.querySelectorAll('.add-action-menu').forEach(m => m.classList.remove('aberto'));
+    
+    if (!estaAberto) {
+        menu.classList.add('aberto');
+    }
+}
+
+// Fecha o menu de adicionar caso clique fora dele
+document.addEventListener('click', function(event) {
+    if (!event.target.closest('.add-action-menu-container')) {
+        document.querySelectorAll('.add-action-menu').forEach(m => m.classList.remove('aberto'));
+    }
+});
+
+// Controla a abertura do menu de remover
+function toggleMenuRemoverTracker(survivorIndex) {
+    const menu = document.getElementById(`remove-action-menu-${survivorIndex}`);
+    const estaAberto = menu.classList.contains('aberto');
+    
+    document.querySelectorAll('.add-action-menu').forEach(m => m.classList.remove('aberto'));
+    
+    if (!estaAberto) {
+        menu.classList.add('aberto');
+    }
+}
+
+// Fecha menus abertos caso clique fora
+document.addEventListener('click', function(event) {
+    if (!event.target.closest('.add-action-menu-container')) {
+        document.querySelectorAll('.add-action-menu').forEach(m => m.classList.remove('aberto'));
+    }
+});
+
+function marcarAcaoComoUsada(survivorIndex, actionId) {
+    const tracker = trackerState[survivorIndex];
+    const action = tracker.actions.find(a => a.id === actionId);
+    
+    if (action && !action.used) {
+        action.used = true;
+        tracker.history.push(actionId);
+        renderizarCartoesTracker();
+    }
+}
+
+function adicionarNovaAcao(survivorIndex, tipo) {
+    const tracker = trackerState[survivorIndex];
+    
+    tracker.actions.push({
+        id: tracker.nextId,
+        type: tipo,
+        used: false
+    });
+    tracker.nextId++;
+    
+    renderizarCartoesTracker();
+}
+
+function removerAcaoEspecifica(survivorIndex, actionId) {
+    const tracker = trackerState[survivorIndex];
+    
+    tracker.actions = tracker.actions.filter(a => a.id !== actionId);
+    tracker.history = tracker.history.filter(id => id !== actionId);
+    
+    // Se o usuário excluiu a última ação existente, desativa o modo de exclusão sozinho
+    if (tracker.actions.length === 0) {
+        tracker.deleteMode = false;
+    }
+    
+    renderizarCartoesTracker();
+}
+
+function desfazerAcaoTracker(survivorIndex) {
+    const tracker = trackerState[survivorIndex];
+    if (tracker.history.length === 0) return; 
+    
+    const lastActionId = tracker.history.pop();
+    const action = tracker.actions.find(a => a.id === lastActionId);
+    if (action) {
+        action.used = false;
+        renderizarCartoesTracker();
+    }
+}
+
+function encerrarTurnoTracker(survivorIndex) {
+    const tracker = trackerState[survivorIndex];
+    tracker.actions.forEach(a => a.used = false);
+    tracker.history = [];
+    renderizarCartoesTracker();
 }
