@@ -713,6 +713,29 @@
     "image": "https://static.wikia.nocookie.net/zombicide/images/0/0b/William.png"
   },
   {
+    "id": "xuxa",
+    "name": "Xuxa",
+    "set": "Huntsman Pack",
+    "body": "longbow",
+    "blue1": "super_strength",
+    "tag_blue1": "",
+    "blue2": "",
+    "tag_blue2": "",
+    "yellow": "plus_1_action",
+    "orange1": "plus_1_roll_[action]",
+    "tag_orange1": "combat",
+    "orange2": "charge",
+    "tag_orange2": "",
+    "red1": "plus_1_free_[action]_action",
+    "tag_red1": "combat",
+    "red2": "barbarian",
+    "tag_red2": "",
+    "red3": "shove",
+    "tag_red3": "",
+    "role": "melee",
+    "image": "https://static.wikia.nocookie.net/zombicide/images/7/7f/Xuxa.png"
+  },
+  {
     "id": "beauregard",
     "name": "Beauregard",
     "set": "Knight Pack",
@@ -3769,7 +3792,7 @@
     "red3": "slippery",
     "tag_red3": "",
     "role": "magic; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/f/f0/ShamanEddie_IM.png"
   },
   {
     "id": "annalisa",
@@ -5908,7 +5931,7 @@
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "move",
     "role": "magic; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/80/Midoriko_Extracted.png"
   },
   {
     "id": "miyamoto_musashi",
@@ -5931,7 +5954,7 @@
     "red3": "hit_run",
     "tag_red3": "",
     "role": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/21/Miyamoto_Musashi_Image.png"
   },
   {
     "id": "mu_guiying",
@@ -6000,7 +6023,7 @@
     "red3": "lucky",
     "tag_red3": "",
     "role": "ranged",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/2/26/Ohori_Tsuruhime_Extracted2.png"
   },
   {
     "id": "okuni",
@@ -6184,7 +6207,7 @@
     "red3": "lucky",
     "tag_red3": "",
     "role": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/8/83/Sanada_Yukimura_Extracted.png"
   },
   {
     "id": "sarana_far_sight",
@@ -6207,7 +6230,7 @@
     "red3": "roll_6_plus_1_die_[action]",
     "tag_red3": "ranged",
     "role": "ranged; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/6/6f/Bow_fixed.png"
   },
   {
     "id": "sha_wujing",
@@ -6230,7 +6253,7 @@
     "red3": "bloodlust_[action]",
     "tag_red3": "melee",
     "role": "melee; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/3/36/Sha_Wujing_Image_3.png"
   },
   {
     "id": "she_saihua",
@@ -6253,7 +6276,7 @@
     "red3": "hit_run",
     "tag_red3": "",
     "role": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/9/9c/She_Saihua_Image_2.png"
   },
   {
     "id": "sun_quan",
@@ -6368,7 +6391,7 @@
     "red3": "spellcaster",
     "tag_red3": "",
     "role": "magic; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4b/Tang_Sanzang_Extracted.png"
   },
   {
     "id": "the_young_phoenix",
@@ -6391,7 +6414,7 @@
     "red3": "spellcaster",
     "tag_red3": "",
     "role": "magic",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/44/The_Young_Phoenix_Image.png"
   },
   {
     "id": "tomoe_gozen",
@@ -6460,7 +6483,7 @@
     "red3": "roll_6_plus_1_damage_[action]",
     "tag_red3": "melee",
     "role": "melee; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/d/d4/Extracted_with_rendered_blades.png"
   },
   {
     "id": "xiahou_yuan",
@@ -6483,7 +6506,7 @@
     "red3": "escalation_[action]",
     "tag_red3": "ranged",
     "role": "ranged; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/c/cb/Xiahou_Yuan_Extracted.png/"
   },
   {
     "id": "xu_chu",
@@ -6506,7 +6529,7 @@
     "red3": "lucky",
     "tag_red3": "",
     "role": "melee; support",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/a/a0/Xu_Chu_Extracted.png"
   },
   {
     "id": "yi_sun_sin",
@@ -6552,7 +6575,7 @@
     "red3": "plus_1_free_[action]_action",
     "tag_red3": "guard_action",
     "role": "melee",
-    "image": ""
+    "image": "https://static.wikia.nocookie.net/zombicide/images/4/4d/Zhao_Yun.png"
   },
   {
     "id": "zuo_ci",
