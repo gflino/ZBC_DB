@@ -1,0 +1,62 @@
+[
+  {
+    "priority": 1,
+    "name": "dragon",
+    "lethal": 2,
+    "ap": 1
+  },
+  {
+    "priority": 1,
+    "name": "zombie_giant",
+    "lethal": 2,
+    "ap": 1
+  },
+  {
+    "priority": 2,
+    "name": "murder_of_crowz",
+    "lethal": 1,
+    "ap": 1
+  },
+  {
+    "priority": 2,
+    "name": "swarm_of_ratz",
+    "lethal": 1,
+    "ap": 1
+  },
+  {
+    "priority": 3,
+    "name": "walker",
+    "lethal": 1,
+    "ap": 1
+  },
+  {
+    "priority": 4,
+    "name": "abomination",
+    "lethal": 3,
+    "ap": 5
+  },
+  {
+    "priority": 4,
+    "name": "brute",
+    "lethal": 2,
+    "ap": 1
+  },
+  {
+    "priority": 5,
+    "name": "runner",
+    "lethal": 1,
+    "ap": 1
+  },
+  {
+    "priority": 6,
+    "name": "wolfz",
+    "lethal": 1,
+    "ap": 1
+  },
+  {
+    "priority": 7,
+    "name": "necromancer",
+    "lethal": 1,
+    "ap": 1
+  }
+]

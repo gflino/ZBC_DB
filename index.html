@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menu Lateral Oculto -->
+   <!-- Menu Lateral Oculto -->
     <div id="overlay" class="overlay hidden" onclick="toggleMenu()"></div>
     <nav id="sidebar" class="sidebar">
         <button class="close-btn" onclick="toggleMenu()">×</button>
-        <a href="#" onclick="mudarTela('home-view')" data-i18n="menuHome">Início</a>
-        <a href="#" onclick="mudarTela('characters-view')" data-i18n="menuSurvivors">Sobreviventes</a>
-        <a href="#" onclick="mudarTela('skills-view')" data-i18n="menuSkills">Habilidades</a>
-        <a href="#" onclick="mudarTela('enemies-view')" data-i18n="menuEnemies">Inimigos</a>
-        <a href="#" onclick="mudarTela('equipment-view')" data-i18n="menuEquipment">Equipamentos</a>
-        <a href="#" onclick="mudarTela('priority-view')" data-i18n="menuPriority">Ordem de Prioridade</a>
-        <a href="#" onclick="mudarTela('action-tracker-view')" data-i18n="menuActionTracker">Contador de Ações</a>
-                <a href="https://gflino.github.io/ZBC_Spawn_Web/" target="_blank" data-i18n="menuDraw">Gerenciamento de Entradas de Zumbi</a>
+        <a style="cursor: pointer;" onclick="mudarTela('home-view')" data-i18n="menuHome">Início</a>
+        <a style="cursor: pointer;" onclick="mudarTela('characters-view')" data-i18n="menuSurvivors">Sobreviventes</a>
+        <a style="cursor: pointer;" onclick="mudarTela('skills-view')" data-i18n="menuSkills">Habilidades</a>
+        <a style="cursor: pointer;" onclick="mudarTela('enemies-view')" data-i18n="menuEnemies">Inimigos</a>
+        <a style="cursor: pointer;" onclick="mudarTela('equipment-view')" data-i18n="menuEquipment">Equipamentos</a>
+        <a style="cursor: pointer;" onclick="mudarTela('priority-view')" data-i18n="menuPriority">Ordem de Prioridade</a>
+        <a style="cursor: pointer;" onclick="mudarTela('action-tracker-view')" data-i18n="menuActionTracker">Contador de Ações</a>
         
+        <!-- O link externo para o Spawn mantém o href normal -->
+        <a href="https://gflino.github.io/ZBC_Spawn_Web/" target="_blank" data-i18n="menuDraw">Gerenciamento de Entradas de Zumbi</a>
     </nav>
 
     <!-- Cabeçalho Principal -->

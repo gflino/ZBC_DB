@@ -8,15 +8,19 @@ let equipamentosBase = [];
 let auxBase = []; 
 let priorityBpGhBase = [];
 let priorityWdBase = [];
-let idiomaAtual = 'pt';
+
+// DETECÇÃO AUTOMÁTICA DE IDIOMA
+const idiomaNavegador = navigator.language || navigator.userLanguage;
+let idiomaAtual = idiomaNavegador.startsWith('pt') ? 'pt' : 'en';
+
 // Variáveis Globais de Filtros
 let roleFiltroAtivo = '';
 let classFiltroInimigo = '';
 let deckFiltroEquip = '';
 let classFiltroEquip = '';
 let typeFiltroEquip = '';
-let caixasFiltroAtivo = [];   // NOVO: Filtro múltiplo de caixas
-let menuCaixasAberto = false; // NOVO: Controle do menu sanfona
+let caixasFiltroAtivo = [];   
+let menuCaixasAberto = false; 
 
 // Dicionário Global da Interface do Usuário (i18n)
 const i18nUI = {
@@ -28,17 +32,20 @@ const i18nUI = {
     menuEquipment: { pt: "Equipamentos", en: "Equipment" },
     menuPriority: { pt: "Ordem de Prioridade", en: "Priority Order" },
     menuDraw: { pt: "Gerenciamento de Entradas de Zumbi", en: "Zombie Spawn Manager" },
+    menuActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
     btnSearchSkills: { pt: "Habilidades", en: "Skills" },
     btnSearchSurvivors: { pt: "Sobreviventes", en: "Survivors" },
     btnSearchEnemies: { pt: "Inimigos", en: "Enemies" },
     btnSearchEquipment: { pt: "Equipamentos", en: "Equipment" },
     btnPriority: { pt: "Ordem de Prioridade", en: "Priority Order" },
     btnDraw: { pt: "Gerenciamento de Entradas de Zumbi", en: "Zombie Spawn Manager" },
+    btnActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
     titleSkills: { pt: "Habilidades", en: "Skill" },
     titleSurvivors: { pt: "Sobreviventes", en: "Survivors" },
     titleEnemies: { pt: "Inimigos", en: "Enemies" },
     titleEquipment: { pt: "Equipamentos", en: "Equipment" },
     titlePriority: { pt: "Ordem de Prioridade", en: "Priority Order" },
+    titleActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
     placeholderSkills: { pt: "Digite o nome da habilidade...", en: "Type the skill name..." },
     placeholderSurvivors: { pt: "Digite o nome do personagem...", en: "Type the character's name..." },
     placeholderEnemies: { pt: "Digite o nome do inimigo...", en: "Type the enemy's name..." },
@@ -46,106 +53,52 @@ const i18nUI = {
     btnAllSkills: { pt: "Ver Tudo", en: "Show All" },
     btnRandom: { pt: "Sobrevivente Aleatório", en: "Random Survivor" },
     btnListBoxes: { pt: "Ver Tudo", en: "Show All" },
-    menuActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
-    btnActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
-    titleActionTracker: { pt: "Contador de Ações", en: "Action Tracker" },
     btnStartTracker: { pt: "Confirmar e Iniciar", en: "Confirm & Start" },
     btnBackToSetup: { pt: "Voltar para Seleção", en: "Back to Selection" },
     btnAddAction: { pt: "Adicionar", en: "Add" },
     btnUndo: { pt: "Desfazer Última", en: "Undo Last" },
     btnEndTurn: { pt: "Encerrar Turno", en: "End Turn" }
 };
+
 const ordemCaixasPreferida = [
-        // === ERA BLACK PLAGUE (2015) ===
-        "Black Plague",
-        "Wulfsburg",
-        "Hero Box-1",
-        "NPC-1",
-        "NPC-2",
-        "Zombie Bosses Abomination Pack",
-        "Deadeye Walkers",
-        "Murder of Crowz",
-        "Huntsman Pack",
-        "Knight Pack",
-        "Grom and Thalia Box",
-        "Evil Troy Box",
-        "Erik the Summoner Box",
-        "Benson Box",
-        "Homer Box",
-        "Willow Box",
-        "Special Guest Adrian Smith",
-        "Special Guest Edouard Guiton",
-        "Special Guest Gipi",
-        "Special Guest John Howe",
-        "Special Guest Jovem Nerd",
-        "Special Guest Karl Kopinski",
-        "Special Guest Marc Simonetti",
-        "Special Guest Naïade",
-        "Special Guest Neal Adams",
-        "Special Guest Paolo Parente",
-        "Special Guest Paul Bonner",
-        "B-Sieged Crossover Pack",
-        "Game Night Kit",
-
-        // === ERA GREEN HORDE (2017) ===
-        "Green Horde",
-        "Friends and Foes",
-        "No Rest for the Wicked",
-        "Horde Box",
-        "Fatty Bursters Box",
-        "Rat King & Swamp Troll",
-        "Abominarat and Dr Stormcrow Box",
-        "Grin and Scowl Box",
-        "Liam Box",
-        "North the Halfling Box",
-        "Special Guest Adrian Smith 2",
-        "Special Guest Carl Critchlow",
-        "Special Guest Paul Bonner 2",
-        "Special Guest Sean A. Murray",
-        "Special Guest Stefan Kopinski",
-        "Massive Darkness Crossover Pack",
-        "Black Plague Ultimate Survivors",
-        "Time Machine PNP",
-
-        // === CROSSOVERS E PACOTES ESPECIAIS (2019-2022) ===
-        "Massive Darkness 2 Crossover Pack",
-        "Comic Book Extras (Road to Hell)",
-        "Thundercats Pack 1",
-        "Thundercats Pack 2",
-        "Thundercats Pack 3",
-        "Iron Maiden Pack 1",
-        "Iron Maiden Pack 2",
-        "Iron Maiden Pack 3",
-        "La Compagnia Della Forca",
-
-        // === ERA WHITE DEATH (2023) ===
-        "White Death",
-        "Eternal Empire",
-        "Frozen Fortress",
-        "TMNT Timecrash",
-        "Crossfire Pack",
-        "Divine Beasts",
-        "Berserker Walkers",
-        "Climbers & Terrorcotta Walkers",
-        "Celestial Knights",
-        "Virtues of Bushido",
-        "Warlords of the Middle Kingdom",
-        "Warlords of the Rising Sun",
-        "Chang' E and Hou Yi Box",   
-        "Jennika Box",
-        "Usagi Yojimbo Box",
-        "TMNT Bebop & Rocksteady"
-    ];
+    // === ERA BLACK PLAGUE (2015) ===
+    "Black Plague", "Wulfsburg", "Hero Box-1", "NPC-1", "NPC-2", 
+    "Zombie Bosses Abomination Pack", "Deadeye Walkers", "Murder of Crowz", 
+    "Huntsman Pack", "Knight Pack", "Grom and Thalia Box", "Evil Troy Box", 
+    "Erik the Summoner Box", "Benson Box", "Homer Box", "Willow Box", 
+    "Special Guest Adrian Smith", "Special Guest Edouard Guiton", 
+    "Special Guest Gipi", "Special Guest John Howe", "Special Guest Jovem Nerd", 
+    "Special Guest Karl Kopinski", "Special Guest Marc Simonetti", 
+    "Special Guest Naïade", "Special Guest Neal Adams", "Special Guest Paolo Parente", 
+    "Special Guest Paul Bonner", "B-Sieged Crossover Pack", "Game Night Kit",
+    // === ERA GREEN HORDE (2017) ===
+    "Green Horde", "Friends and Foes", "No Rest for the Wicked", "Horde Box", 
+    "Fatty Bursters Box", "Rat King & Swamp Troll", "Abominarat and Dr Stormcrow Box", 
+    "Grin and Scowl Box", "Liam Box", "North the Halfling Box", 
+    "Special Guest Adrian Smith 2", "Special Guest Carl Critchlow", 
+    "Special Guest Paul Bonner 2", "Special Guest Sean A. Murray", 
+    "Special Guest Stefan Kopinski", "Massive Darkness Crossover Pack", 
+    "Black Plague Ultimate Survivors", "Time Machine PNP",
+    // === CROSSOVERS E PACOTES ESPECIAIS (2019-2022) ===
+    "Massive Darkness 2 Crossover Pack", "Comic Book Extras (Road to Hell)", 
+    "Thundercats Pack 1", "Thundercats Pack 2", "Thundercats Pack 3", 
+    "Iron Maiden Pack 1", "Iron Maiden Pack 2", "Iron Maiden Pack 3", "La Compagnia Della Forca",
+    // === ERA WHITE DEATH (2023) ===
+    "White Death", "Eternal Empire", "Frozen Fortress", "TMNT Timecrash", 
+    "Crossfire Pack", "Divine Beasts", "Berserker Walkers", 
+    "Climbers & Terrorcotta Walkers", "Celestial Knights", "Virtues of Bushido", 
+    "Warlords of the Middle Kingdom", "Warlords of the Rising Sun", 
+    "Chang' E and Hou Yi Box", "Jennika Box", "Usagi Yojimbo Box", "TMNT Bebop & Rocksteady"
+];
 
 Promise.all([
-    fetch('skills.json').then(res => res.json()).catch(() => []),
-    fetch('survivors.json').then(res => res.json()).catch(() => []),
-    fetch('enemies.json').then(res => res.json()).catch(() => []),
-    fetch('equipment.json').then(res => res.json()).catch(() => []),
-    fetch('aux.json').then(res => res.json()).catch(() => []),
-    fetch('prioritybpgh.json').then(res => res.json()).catch(() => []),
-    fetch('prioritywd.json').then(res => res.json()).catch(() => [])
-// NO FINAL DO Promise.all
+    fetch('source/skills.json').then(res => res.json()).catch(() => []),
+    fetch('source/survivors.json').then(res => res.json()).catch(() => []),
+    fetch('source/enemies.json').then(res => res.json()).catch(() => []),
+    fetch('source/equipment.json').then(res => res.json()).catch(() => []),
+    fetch('source/aux.json').then(res => res.json()).catch(() => []),
+    fetch('source/prioritybpgh.json').then(res => res.json()).catch(() => []),
+    fetch('source/prioritywd.json').then(res => res.json()).catch(() => [])
 ]).then(results => {
     habilidadesBase = results[0];
     sobreviventesBase = results[1];
@@ -155,11 +108,15 @@ Promise.all([
     priorityBpGhBase = results[5];
     priorityWdBase = results[6];
     
+    // Atualiza visualmente o seletor HTML de idioma
+    const langSelector = document.getElementById('lang-selector');
+    if (langSelector) langSelector.value = idiomaAtual;
+    
     configurarBuscas();
-    renderizarFiltrosRole();        // Sobreviventes
+    renderizarFiltrosRole();        
     renderizarFiltrosCaixa();
-    renderizarFiltrosInimigos();    // Inimigos
-    renderizarFiltrosEquipamentos(); // Equipamentos
+    renderizarFiltrosInimigos();    
+    renderizarFiltrosEquipamentos(); 
     
     atualizarIdiomaInterface();
     renderizarTabelasPrioridade(); 
@@ -192,7 +149,7 @@ function limparTelasEBuscas() {
     document.getElementById('search-equipment').value = '';
     if(document.getElementById('search-tracker-characters')) document.getElementById('search-tracker-characters').value = '';
     
-    // Esconde Dropdowns
+    // Esconde e Limpa Dropdowns
     const dropdowns = ['skills-dropdown', 'characters-dropdown', 'enemies-dropdown', 'equipment-dropdown', 'tracker-characters-dropdown'];
     dropdowns.forEach(id => {
         const el = document.getElementById(id);
@@ -208,10 +165,43 @@ function limparTelasEBuscas() {
         const el = document.getElementById(id);
         if(el) el.innerHTML = '';
     });
+
+    // Zera totalmente os dados e as telas do Contador de Ações
+    if (typeof trackerSetupSurvivors !== 'undefined') {
+        trackerSetupSurvivors = [];
+        trackerState = [];
+        
+        const listDiv = document.getElementById('tracker-selected-list');
+        const container = document.getElementById('tracker-cards-container');
+        if (listDiv) listDiv.innerHTML = '';
+        if (container) container.innerHTML = '';
+        
+        const activeMode = document.getElementById('tracker-active-mode');
+        const setupMode = document.getElementById('tracker-setup-mode');
+        if (activeMode) activeMode.classList.add('hidden');
+        if (setupMode) setupMode.classList.remove('hidden');
+        
+        const btnStart = document.getElementById('btn-start-tracker');
+        if (btnStart) {
+            btnStart.setAttribute('disabled', 'true');
+            btnStart.style.backgroundColor = '#202024';
+            btnStart.style.color = '#e1e1e6';
+        }
+    }
 }
 
 function mudarTela(telaId, registrarNoHistorico = true) {
-    limparTelasEBuscas();
+    // SÓ LIMPA TUDO SE FOR PARA A TELA INICIAL
+    if (telaId === 'home-view') {
+        limparTelasEBuscas();
+    } else {
+        // Esconde apenas os dropdowns de autocomplete ao trocar de tela para não ficarem flutuando na tela
+        const dropdowns = ['skills-dropdown', 'characters-dropdown', 'enemies-dropdown', 'equipment-dropdown', 'tracker-characters-dropdown'];
+        dropdowns.forEach(id => {
+            const el = document.getElementById(id);
+            if(el) el.classList.add('hidden');
+        });
+    }
     
     const sidebar = document.getElementById('sidebar');
     if (sidebar.classList.contains('aberto')) toggleMenu();
@@ -222,7 +212,6 @@ function mudarTela(telaId, registrarNoHistorico = true) {
     
     document.getElementById(telaId).classList.remove('hidden');
 
-    // Mágica para o celular: registra a mudança no histórico do navegador
     if (registrarNoHistorico) {
         history.pushState({ tela: telaId }, '');
     }
@@ -282,13 +271,14 @@ function mudarIdiomaSelecionado(novoIdioma) {
     atualizarIdiomaInterface();
     renderizarTabelasPrioridade();
     
-    // Atualiza todos os filtros na tela caso existam
     if (typeof renderizarFiltrosRole === 'function') renderizarFiltrosRole();
     if (typeof renderizarFiltrosCaixa === 'function') renderizarFiltrosCaixa();
     if (typeof renderizarFiltrosInimigos === 'function') renderizarFiltrosInimigos();
     if (typeof renderizarFiltrosEquipamentos === 'function') renderizarFiltrosEquipamentos();
     
-    limparTelasEBuscas();
+    // Força o retorno para o início ao alterar o idioma para que fichas pré-carregadas 
+    // não fiquem presas no idioma anterior
+    mudarTela('home-view');
 }
 
 function atualizarIdiomaInterface() {
@@ -397,7 +387,7 @@ function buscarHabilidades(termo) {
         return pt.includes(termoMin) || en.includes(termoMin);
     });
 
-    // NOVO: Ordena os resultados da pesquisa de acordo com o idioma selecionado
+    // Ordena os resultados da pesquisa de acordo com o idioma selecionado
     filtradas.sort((a, b) => {
         const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
         const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
@@ -427,7 +417,7 @@ function listarTodasHabilidades() {
     const divResultados = document.getElementById('skills-results-foco');
     divResultados.innerHTML = '';
 
-    // NOVO: Cria uma cópia da base e ordena de acordo com o idioma antes de listar
+    // Cria uma cópia da base e ordena de acordo com o idioma antes de listar
     const habilidadesOrdenadas = [...habilidadesBase].sort((a, b) => {
         const nomeA = (idiomaAtual === 'pt' ? a.name_pt : a.name_en) || '';
         const nomeB = (idiomaAtual === 'pt' ? b.name_pt : b.name_en) || '';
@@ -1606,7 +1596,7 @@ function renderizarCartoesTracker() {
             // Injeta o botão 'x' apenas se o delete mode estiver ativo
             const btnX = isDeleteMode ? `<button class="btn-delete-action" onclick="removerAcaoEspecifica(${survivorIndex}, ${action.id})">✖</button>` : '';
             
-            // A ação de clicar só funcionará se NÃO estiver no modo de exclusão (evita clicks acidentais ao tentar apagar)
+            // A ação de clicar só funcionará se NÃO estiver no modo de exclusão
             const clickAcao = !isDeleteMode ? `onclick="marcarAcaoComoUsada(${survivorIndex}, ${action.id})"` : '';
 
             html += `
@@ -1636,7 +1626,6 @@ function renderizarCartoesTracker() {
     });
 }
 
-// Controla a abertura do menu de adicionar
 // Ativa ou desativa o modo de apagar botões
 function toggleDeleteMode(survivorIndex) {
     const tracker = trackerState[survivorIndex];
@@ -1656,13 +1645,6 @@ function toggleMenuAcoesTracker(survivorIndex) {
     }
 }
 
-// Fecha o menu de adicionar caso clique fora dele
-document.addEventListener('click', function(event) {
-    if (!event.target.closest('.add-action-menu-container')) {
-        document.querySelectorAll('.add-action-menu').forEach(m => m.classList.remove('aberto'));
-    }
-});
-
 // Controla a abertura do menu de remover
 function toggleMenuRemoverTracker(survivorIndex) {
     const menu = document.getElementById(`remove-action-menu-${survivorIndex}`);
@@ -1675,7 +1657,7 @@ function toggleMenuRemoverTracker(survivorIndex) {
     }
 }
 
-// Fecha menus abertos caso clique fora
+// Fecha qualquer menu aberto caso o usuário clique fora dele
 document.addEventListener('click', function(event) {
     if (!event.target.closest('.add-action-menu-container')) {
         document.querySelectorAll('.add-action-menu').forEach(m => m.classList.remove('aberto'));

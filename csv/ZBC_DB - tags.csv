@@ -1,0 +1,161 @@
+tags,tags_en,tags_pt
+combat,Combat,Combate
+enchantment,Enchantment,Encantamento
+guard_action,Guard Action,Ação de Guarda
+magic,Magic,Magia
+melee,Melee,Corpo a Corpo
+meditation,Meditation,Meditação
+move,Move,Movimento
+ranged,Ranged,Longo Alcance
+search,Search,Procura
+aprils_harp,April's Harp,Harpa da April
+axe,Axe,Machado
+dagger,Dagger,Adaga
+donatellos_bo_staff,Donatello's Bo Staff,Cajado Bô do Donatello
+dragon_aura,Dragon Aura,Aura Dracônica
+dwarven_hammer,Dwarven Hammer,Martelo dos Anões
+caseys_hockey_stick,Casey's Hockey Stick,Taco de Hóquei do Casey
+crocca,Crocca,Crocca
+crossbow,Crossbow,Besta
+curved_dagger,Curved Dagger,Adaga Curva
+flaming_great_sword,Flaming Great Sword,Espada Larga Flamejante
+great_sword,Great Sword,Espada Larga
+hammer,Hammer,Martelo
+healing,Healing,Cura
+hell_goat,Hell Goat,Cabra do Inferno
+jennikas_tekko_kagi,Jennika's Tekko-Kagi,Tekko-Kagi da Jennika
+katana,Katana,Katana
+leonardos_ninjatos,Leonardo's Ninjatos,Ninjatos do Leonardo
+lightning_ball,Lightning Ball,Bola de Raios
+longbow,Longbow,Arco Longo
+michelangelos_nunchakus,Michelangelo's Nunchakus,Nunchaku do Michelangelo
+norse_shield,Norse Shield,Escudo Nórdico
+raphaels_sai,Raphael's Sai,Sai do Rafael
+splinters_cane,Splinter's Cane,Bengala do Splinter
+sword,Sword,Espada
+abomination,Abomination,Abominação
+brute,Brute,Bruto
+runner,Runner,Corredor
+walker,Walker,Lerdo
+walker_runner,Walker and Runner,Lerdo e Corredor
+wolfz,Zombie Wolfz,Loboz Zumbis
+plus_1_action,+1 Action,+1 Ação
+plus_1_damage_[action],+1 Damage: [Action],+1 de Dano: [Ação]
+plus_1_roll_[action],+1 to Dice Roll: [Action],+1 no Resultado: [Ação]
+plus_1_die_[action],+1 Die: [Action],+1 Dado: [Ação]
+plus_1_free_[action]_action,+1 Free [Action] Action,+1 Ação [Ação] gratuita
+plus_1_max_range,+1 max Range,+1 no Alcance máximo
+plus_1_zone_move,+1 Zone per Move,+1 Zona por Movimento 
+plus_2_dice_[action],+ 2 Dice: [Action],+2 Dados: [Ação]
+plus_2_dice_roll_[action],+2 to Dice Roll: [Action],+2 no Resultado: [Ação]
+plus_3_dice_[action],+3 Dice: [Action],+3 Dados: [Ação]
+two_zones_move,2 Zones per Move Action,2 Zonas por Ação de Movimento
+three_zones_move,3 Zones per Move Action,3 Zonas por Ação de Movimento
+ambidextrous,Ambidextrous,Ambidestro
+barbarian,Barbarian,Bárbaro
+battle_rage,Battle rage,Fúria de Batalha
+birds_eye_view,Bird's-eye View,Visão Aérea
+blitz,Blitz,Blitz
+bloodlust_[action],Bloodlust: [Action],Sede de sangue: [Ação] / Louco por Sangue [Ação]
+born_leader,Born leader,Líder Nato
+break_in,Break-in,Arrombar / Invasor
+bridge_walker,Bridge Walker,
+brother_in_arms_[game_effect],Brother in Arms: [game effect],Irmão de Armas: [efeito de jogo] 
+can_search_more_than_once,Can Search More Than Once,Pode Procurar Mais de Uma Vez
+carries_kirag,Carries Kirag,Carrega Kirag
+charge,Charge,Carga / Atacar
+choose_any_skill,Choose Any Skill,Escolha Qualquer Habilidade
+chi_[skill],Chi [Skill],
+close_quarter_master,Close-Quarter Master,Mestre da Curta Distância
+collector_[zombie],Collector: [Zombie type],Colecionador: [tipo de Zumbi] 
+combat_reflexes,Combat Reflexes,Reflexos de Combate
+corruption_searcher,Corruption Searcher,Escarafunchador da Corrupção
+corruption_walker,Corruption Walker,Andarilho da Corrupção
+damage_2_[action],Damage 2: [Action],Dano 2: [Ação] 
+damage_3_[action],Damage 3: [Action],Dano 3: [Ação] 
+dance_of_death,Dance of Death,Dance of Death
+death_or_glory,Death or Glory,Death or Glory
+destiny,Destiny,Destino
+double_casting,Double Casting,Duplamente Encantador
+dual_expert,Dual Expert,Especialista Duplo
+escalation_[action],Escalation: [Action],Reação em Cadeia: [Ação]
+flash_of_the_blade,Flash of the Blade,Flash of the Blade
+free_reload,Free reload,Recarga Gratuita / Recarga Grátis
+freeze_[action],Freeze: [Action],Congelar: [Ação] 
+frenzy_[action],Frenzy: [Action],Furor: [Ação]
+ghost_sight,Ghost Sight,Visão de Fantasma
+giant,Giant,Gigante
+guards_[skill],Guards: [Skill],Guardas: [Habilidade] 
+guards_evade,Guards: Evade,Guardas: Esquivar
+guards_push,Guards: Push,Guardas: Empurrar
+guards_warden_killers,Guards: Warden Killers,
+heaven_can_wait,Heaven Can Wait,Heaven Can Wait
+hit_run,Hit & run,Bate & Corre
+hoard,Hoard,Acumulador
+hold_your_nose,Hold your nose,Raspa do Tacho / Prenda a Respiração
+ice_walker,Ice Walker,
+ice_warrior,Ice Warrior,
+improvised_weapon_[action],Improvised Weapon: [Action],Arma Improvisada: [Ação]
+inner_god,Inner God,
+ironclad_[zombie],Ironclad: [Zombie type],Encouraçado: [tipo de Zumbi] 
+iron_hide,Iron hide,Pele de Ferro
+iron_rain,Iron rain,Chuva de Ferro
+is_that_all_youve_got,Is that all you’ve got?,Isso é Tudo?
+jump,Jump,Salto / Pulo
+lifesaver,Lifesaver,Salva-vidas
+lock_it_down,Lock it down,Trancar
+loud,Loud,Barulhento
+low_profile,Low profile,Esguio / Escondido
+lucky,Lucky,Sorte / Sortudo
+mana_rain,Mana rain,Chuva de Mana
+marksman,Marksman,Atirador
+matching_set,Matching set,Dupla Letal!
+medic,Medic,Médico
+no_move_actions,No Move Action. Moves with Thorg,Sem Ação de Movimento. Mova com Thorg
+one_free_turtle_power,1 Free Turtle Power,1 Poder de Tartaruga Gratuito
+once_per_turn_[skill],Once per Turn: [Skill],Uma Vez Por Turno: [Habilidade]
+point_blank,Point-blank,À queima-roupa
+powerslave,Powerslave,Powerslave
+range_plus_2_[skill],Range 2+: [Skill],Alcance 2+: [Habilidade]
+reach,Reach,Extensão
+reaper_[action],Reaper: [Action],Ceifador: [Ação] / Letal: [Ação]
+regeneration,Regeneration,Regeneração
+roll_1_equals_6,Roll 1 = 6,Roll 1 = 6
+roll_6_plus_1_chi,Roll 6: +1 Chi,Resultado 6: +1 Chi
+roll_6_plus_1_damage_[action],Roll 6: +1 Damage [Action],Resultado 6: +1 Dano [Ação]
+roll_6_plus_1_die_[action],Roll 6: +1 Die [Action],Resultado 6: +1 Dado [Ação]
+roll_6_plus_1_dice_roll_[action],Roll 6: +1 to dice roll: [Action],Resultado 6: +1 no Resultado: [Ação]
+rotten,Rotten,Apodrecido
+ruin_searcher,Ruin Searcher,Escarafunchador de Ruínas 
+ruin_sight,Ruin Sight,Visão das Ruínas
+safe_search,Safe Search,Vasculhada Segura
+scavenger,Scavenger,Catador
+search_plus_1_card,Search: +1 card,Procura: +1 carta
+search_2_cards,Search: 2 Cards,Procurar: 2 Cartas
+shove,Shove,Empurrão
+sidestep,Sidestep,Evasão
+slippery,Slippery,Liso
+spellbook,Spellbook,Livro de Feitiços
+spellcaster,Spellcaster,Conjurador / Feiticeiro
+sprint,Sprint,Corrida
+starts_with_2_AP,Starts with 2 AP,Começa com 2 PA
+steady_hand,Steady Hand,Mão Firme
+super_strength,Super strength,Superforça
+starts_with_[equipment],Starts with a [Equipment],Começa com um(a) [Equipamento] 
+swordmaster,Swordmaster,Mestre Espadachim
+tactician,Tactician,Estrategista
+taunt,Taunt,Provocação / Provocar
+throw,Throw,
+tough,Tough,Durão
+trasform_werewolf,Transform into Lotas (Werewolf),Transforma em Lotas (Lobisomem)
+transmutation,Transmutation,Transmutação
+trick_shot,Trick shot,Agilidade
+turtle_bonus_[skill],Turtle Bonus [Skill],Bônus de Tartaruga: [Habilidade]
+turtle_focus_plus_2_dice_roll_combat,Turtle Focus: +2 to Dice Roll: Combat,Foco de Tartaruga: +2 no Resultado: Combate
+turtle_focus_plus_3_dice_combat,Turtle Focus:+3 Dice: Combat,Foco de Tartaruga: +3 Dados: Combate
+turtle_focus_damage_3_combat,Turtle Focus: Damage 3: Combat,Foco de Tartaruga: Dano 3: Combate
+turtle_power_2_for_1,Turtle Power: 2 for 1,Poder de Tartaruga: 2 por 1
+vault_picker,Vault Picker,Trapeiro de Cripta
+wall_climber,Wall Climber,Escalador de Muralhas
+warden_killers,Warden Killers,
+zombie_link,Zombie link,Conexão Zumbi
