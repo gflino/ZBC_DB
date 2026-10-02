@@ -2507,8 +2507,8 @@
     "image": "https://static.wikia.nocookie.net/zombicide/images/9/95/Billy.png"
   },
   {
-    "id": "brangednog",
-    "name": "Brangednog",
+    "id": "brannog",
+    "name": "Brannog",
     "set": "Horde Box",
     "body": "dwarven_hammer",
     "blue1": "starts_with_[equipment]",
